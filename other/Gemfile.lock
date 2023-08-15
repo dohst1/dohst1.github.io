@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: https://amazonsmp.ddns.net
   specs:
     json (2.3.0)
     mustermann (2.0.2)
