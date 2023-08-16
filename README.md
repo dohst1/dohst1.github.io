@@ -1,6 +1,6 @@
 # AmazonSMP Website
-The Official AmazonSMP Website
+### The Official AmazonSMP Website
 
-more content coming soon
+**more content coming soon**
 
-last update: 15/08/2023
+_`- last update: 15/08/2023 : 0.0.0-start`_
