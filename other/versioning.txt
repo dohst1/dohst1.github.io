@@ -1,0 +1,4 @@
+Major.Minor.Patch[.Build+Name]-VersionName
+Name: the name of who made the specific patch/build
+
+example: 1.12.3.69+dohst-sus
