@@ -1,8 +1,14 @@
 html {
-    font-size: 20px;
+    font-size: 18px;
 }
 body {
     background-color: rgb(13, 17, 23);
     color: rgb(226, 226, 226);
     font-family: Arial;
+}
+address {
+    font-size: 14px;
+}
+:any-link {
+    color: cadetblue;
 }
