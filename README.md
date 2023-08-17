@@ -1,6 +1,5 @@
 # AmazonSMP Website
-### The Official AmazonSMP Website
 
-**more content coming soon**
+Dohst owns all pages on the amazonsmp.dddns.net website and all its contents (excluding external links), and Dohst owns all copyright
 
-_`- last update: 16/08/2023 : 0.0.1-start`_
+_`- last update: 16/08/2023 : 0.1.0.3-moreHTML`_
