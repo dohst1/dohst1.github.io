@@ -42,6 +42,10 @@ lang attribute of <html>: defines the language (en = english)
 <abbr></abbr> adds a tooltip to text (abbreviations)
 <address></address> browser handles it as an address (makes it italic)
 
+-Semantic Elements
+<section id='name'></section> makes a section, section name/title is defined with the id tag
+<nav></nav>
+
 -Entities:
 &copy; copyright symbol
 &lt; less than symbol
