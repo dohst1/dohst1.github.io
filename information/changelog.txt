@@ -40,3 +40,8 @@ Change logs:
             = renamed file "about-dohst" to "copyright"
             = made the subtitle of a page under the top horizontal line 
             = changed some text
+
+        0.1.2-moreHTML (22-08-2023)
+            + issue templates
+            + security file in unused with the github default
+            = moved 404.htm to unused
