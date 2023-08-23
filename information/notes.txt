@@ -33,6 +33,9 @@ lang attribute of <html>: defines the language (en = english)
 <dt></dt> description term (item) (needs to be inside a description list)
 <dd></dd> description detail (description) (needs to be inside a description list)
 <a href="link reference"></a> link (href is the link address) (absolute reference: the full path, relative reference: the path from the current file location) (if add target="_blank" it will open a new tab with the link) (/ as the first character in href, will go back to the root folder)
+<img src="" alt"" width="" height=""> image, src is the image source, and alt is alternative text if the image can not load (width is the width of the image, height is the height of the image) (add attribute loading="lazy" to load the image when you get near it, to help with performance)
+<figure></figure> adds indentation
+<figcaption><figcaption> caption to the indentation (needs to be inside a figure)
 
 -In Line Elements:
 <hr> makes a horizontal line
@@ -41,6 +44,7 @@ lang attribute of <html>: defines the language (en = english)
 <strong></strong> makes text bold
 <abbr></abbr> adds a tooltip to text (abbreviations)
 <address></address> browser handles it as an address (makes it italic)
+<code></code> displays code with a different font 
 
 -Semantic Elements
 <section id='name'></section> makes a section, section name/title is defined with the id tag
@@ -77,6 +81,9 @@ dark link: rgb(26, 70, 134)
 
 green outline: rgb(35, 134, 54) hex(238636)
 green background: rgb(18, 38, 30) hex(12261e)
+
+red outline: rgb(218, 54, 51) hex(da3633)
+red background: rgb(37, 23, 28) hex(25171c)
 
 blue outline: rgb(31, 111, 235) hex(1f6feb)
 blue background: rgb(18, 29, 47) hex(121d2f)

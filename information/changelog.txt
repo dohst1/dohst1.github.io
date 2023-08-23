@@ -43,7 +43,12 @@ Change logs:
         0.1.2-images (22-08-2023 - 2?-08-2023)
             + issue templates
             + security file in unused with the github default
+            + new webicon image
+            + code element style with css
+            + unused button element style with css
             = moved 404.htm to unused
             = changed dark theme to actually be dark
             = renamed season8-old.zip to season8-before.zip
             = renamed season9-old.zip to season9-before.zip
+            = renamed old webicon image to favicon
+            = updated some world download text
