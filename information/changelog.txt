@@ -29,7 +29,7 @@ Change logs:
             + main css file
             = changed license
 
-        0.1.1-moreHTML (22-08-2023)
+        0.1.1-fixes (22-08-2023)
             + made downloads.htm file with download links
             + about folder for about pages
             + about file for amazonsmp
@@ -39,9 +39,11 @@ Change logs:
             = updated download list
             = renamed file "about-dohst" to "copyright"
             = made the subtitle of a page under the top horizontal line 
-            = changed some text
-
-        0.1.2-moreHTML (22-08-2023)
+            
+        0.1.2-images (22-08-2023 - 2?-08-2023)
             + issue templates
             + security file in unused with the github default
             = moved 404.htm to unused
+            = changed dark theme to actually be dark
+            = renamed season8-old.zip to season8-before.zip
+            = renamed season9-old.zip to season9-before.zip

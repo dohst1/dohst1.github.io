@@ -32,7 +32,7 @@ lang attribute of <html>: defines the language (en = english)
 <dl></dl> description list
 <dt></dt> description term (item) (needs to be inside a description list)
 <dd></dd> description detail (description) (needs to be inside a description list)
-<a href="link reference"></a> link (href is the link address) (absolute reference: the full path, relative reference: the path from the current file location)
+<a href="link reference"></a> link (href is the link address) (absolute reference: the full path, relative reference: the path from the current file location) (if add target="_blank" it will open a new tab with the link) (/ as the first character in href, will go back to the root folder)
 
 -In Line Elements:
 <hr> makes a horizontal line
@@ -54,8 +54,48 @@ lang attribute of <html>: defines the language (en = english)
 
 
 
+
 Nice Colors:
 white smoke = rgb(245, 245, 245)
 cadetblue = rgb(95, 158, 160)
 nice white1 = rgb(226, 226, 226)
 nice black1 = rgb(13, 17, 23)
+
+
+Dark Colors:
+background: rgb(13, 17, 23) hex(0d1117)
+lighter background: rgb(52, 57, 66) hex(343942)
+
+main horizontal line: rgb(33, 38, 45) hex(21262d)
+side line: rgb(48, 54, 61) hex(30363d)
+
+text: rgb(230, 237, 243) hex(e6edf3)
+link: rgb(47, 129, 247) hex(2f81f7)
+dark text: rgb(125, 133, 144) hex(7d8590)
+dark link: rgb(26, 70, 134)
+
+
+green outline: rgb(35, 134, 54) hex(238636)
+green background: rgb(18, 38, 30) hex(12261e)
+
+blue outline: rgb(31, 111, 235) hex(1f6feb)
+blue background: rgb(18, 29, 47) hex(121d2f)
+dark blue outline: rgb(21, 46, 85) hex(152e55)
+
+dark grey outline: rgb(48, 54, 61) hex(30363d)
+dark grey background: rgb(33, 38, 45) hex(21262d)
+dark grey text: rgb(110, 118, 129) hex(6e7681)
+
+
+Grey Colors:
+background: rgb(13, 17, 23) hex(0d1117)
+lighter background: rgb(52, 57, 66) hex(343942)
+
+main horizontal line: rgb(33, 38, 45) hex(21262d)
+side line: rgb(48, 54, 61) hex(30363d)
+
+text: rgb(230, 237, 243) hex(e6edf3)
+link: rgb(47, 129, 247) hex(2f81f7)
+
+
+Light Colors:

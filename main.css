@@ -3,12 +3,22 @@ html {
 }
 body {
     background-color: rgb(13, 17, 23);
-    color: rgb(226, 226, 226);
+    color: rgb(230, 237, 243);
     font-family: Arial;
 }
+hr {
+    color: rgb(33, 38, 45);
+}
 address {
+    color: rgb(125, 133, 144);
     font-size: 14px;
 }
 :any-link {
-    color: cadetblue;
+    color: rgb(47, 129, 247);
+}
+:any-link:hover, :any-link:active {
+    color: rgb(44, 102, 168);
+}
+h1:any-link {
+    color: rgb(26, 70, 134);
 }
