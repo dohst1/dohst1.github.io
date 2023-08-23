@@ -1,14 +1,41 @@
 html {
-    font-size: 18px;
+    font-size: 17px;
 }
 body {
     background-color: rgb(13, 17, 23);
-    color: rgb(226, 226, 226);
+    color: rgb(230, 237, 243);
     font-family: Arial;
 }
-address {
+address, footer {
+    color: rgb(125, 133, 144);
     font-size: 14px;
 }
+hr {
+    border-color: rgb(33, 38, 45);
+}
+code {
+    background-color: rgb(33, 38, 45);
+    padding: 5px 8px;
+    outline: none;
+    border: 2px solid none;
+    border-radius: 5px;
+    font-size: 15px;
+}
 :any-link {
-    color: cadetblue;
+    color: rgb(47, 129, 247);
+}
+:any-link:hover, :any-link:active {
+    color: rgb(44, 102, 168);
+}
+
+button {
+    padding: 8px 25px;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
 }

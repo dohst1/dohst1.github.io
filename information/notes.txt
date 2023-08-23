@@ -11,6 +11,7 @@ end file with .html or .htm
 <html> </html> all pages start and end with the html tags
 <head> </head> the head element contains data about the page which is not displayed to the user 
 <body> </body> the body element contains everything that user will see
+<!-- --> comment anything inside will be a comment and will not display on the page
 
 --Head:
 lang attribute of <html>: defines the language (en = english)
@@ -24,27 +25,48 @@ lang attribute of <html>: defines the language (en = english)
 
 --Body:
 <h1></h1> the biggest heading, you should only 1 per page that says what your page is about
-<h2></h2> 2nd biggest heading. h1 to h6 are headings, h1 the biggest and h6 the smallest
-<p></p> a paragraph just a paragraph
+<h2></h2> 2nd biggest heading, sub heading
+<h3></h3> 3nd biggest heading, sub sub heading
+<h4></h4> 4nd biggest heading, (probably will not need to use this)
+<h5></h5> 5nd biggest heading, (probably will not need to use this)
+<h6></h6> 6nd biggest heading, (probably will not need to use this)
+<p></p> paragraph
+<li></li> list item (needs to be in a list)
+<dt></dt> description term(item) (needs to be inside a description list)
+<dd></dd> description detail (description) (needs to be inside a description list)
+<a href="link reference"></a> link (href is the link reference) (absolute reference: the full path, relative reference: the path from the current file location) (if add target="_blank" it will open a new tab with the link) (/ as the first character in href, will go back to the root folder)
+<figcaption><figcaption> caption to the indentation (needs to be inside a figure)
+
+-Semantic Elements
 <ol></ol> ordered list
 <ul></ul> unordered list
-<li></li> list item (needs to be inside a list)
 <dl></dl> description list
-<dt></dt> description term (item) (needs to be inside a description list)
-<dd></dd> description detail (description) (needs to be inside a description list)
-<a href="link reference"></a> link (href is the link address) (absolute reference: the full path, relative reference: the path from the current file location)
+<section id='name'></section> makes a section, section name/title is defined with the id tag
+<aside></aside> same as section but named aside instead
+<article></article> article
+<details></details> makes dropdown, when click text a dropdown will appear with anything written in details section (if summary element, whatever text is in the summary will be shown as the title of the dropdown)
+<summary></summary> summary (needs to be in details)
+<figure></figure> adds an indentation
+<nav></nav> navigation
+<header></header> header 
+<main></main> main section
+<footer></footer> footer
+<div></div> divider, a section without the semantic meaning (works with css) (add no meaning by them selves)
+<span></span> unknown (add no meaning by them selves)
 
 -In Line Elements:
-<hr> makes a horizontal line
-<br> makes a new line
 <em></em> emphasizes text
 <strong></strong> makes text bold
 <abbr></abbr> adds a tooltip to text (abbreviations)
 <address></address> browser handles it as an address (makes it italic)
+<code></code> displays code with a different font 
+<mark></mark> highlights text
+<time datetime="00:00"></time> time, does not do anything to the visible page but does add more information (datetime attribute is 24 clock) (datetime attribute for duration is PH0H, ex: 3 hours = PH3H)
 
--Semantic Elements
-<section id='name'></section> makes a section, section name/title is defined with the id tag
-<nav></nav>
+-Other Elements
+<br> makes a new line
+<hr> makes a horizontal line
+<img src="" alt"" width="" height=""> image, src is the image source, and alt is alternative text if the image can not load (width is the width of the image, height is the height of the image) (add attribute loading="lazy" to load the image when you get near it, to help with performance)
 
 -Entities:
 &copy; copyright symbol
@@ -54,8 +76,70 @@ lang attribute of <html>: defines the language (en = english)
 
 
 
+
 Nice Colors:
 white smoke = rgb(245, 245, 245)
 cadetblue = rgb(95, 158, 160)
 nice white1 = rgb(226, 226, 226)
 nice black1 = rgb(13, 17, 23)
+
+
+Dark Colors:
+    background: rgb(13, 17, 23) hex(0d1117)
+    lighter background: rgb(52, 57, 66) hex(343942)
+    
+    main horizontal line: rgb(33, 38, 45) hex(21262d)
+    side line: rgb(48, 54, 61) hex(30363d)
+    
+    text: rgb(230, 237, 243) hex(e6edf3)
+    link: rgb(47, 129, 247) hex(2f81f7)
+    dark text: rgb(125, 133, 144) hex(7d8590)
+    dark link: rgb(26, 70, 134)
+    
+    
+    green outline: rgb(35, 134, 54) hex(238636)
+    green background: rgb(18, 38, 30) hex(12261e)
+    
+    red outline: rgb(218, 54, 51) hex(da3633)
+    red background: rgb(37, 23, 28) hex(25171c)
+    
+    blue outline: rgb(31, 111, 235) hex(1f6feb)
+    blue background: rgb(18, 29, 47) hex(121d2f)
+    dark blue outline: rgb(21, 46, 85) hex(152e55)
+    
+    dark grey outline: rgb(48, 54, 61) hex(30363d)
+    dark grey background: rgb(33, 38, 45) hex(21262d)
+    dark grey text: rgb(110, 118, 129) hex(6e7681)
+
+    text size = 16
+    small text size = 14
+    code {
+        background-color: rgb(33, 38, 45);
+        padding: 1px 8px;
+        outline: none;
+        border: 2px solid none;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+
+Grey Colors:
+    background: rgb() hex()
+    lighter background: rgb() hex()
+
+    main horizontal line: rgb() hex()
+    side line: rgb() hex()
+
+    text: rgb() hex()
+    link: rgb() hex()
+
+
+Light Colors:
+    background: rgb() hex()
+    lighter background: rgb() hex()
+
+    main horizontal line: rgb() hex()
+    side line: rgb() hex()
+
+    text: rgb() hex()
+    link: rgb() hex()

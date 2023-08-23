@@ -17,7 +17,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-the license may change in future versions but it will always be included with the files. 
-each version will have its own license file, and that license will apply to that version of the content
+the license may change in future versions but it will always be included with the files.
 
-this version of the license includes versions: 0.1.0, 0.1.1
+
+this version of the license does not include versions: 0.0 (0.0.0, 0.0.1)
+this version of the license includes versions: 0.1 (0.1.0, 0.1.1, 0.1.2)
