@@ -1,7 +1,9 @@
 Change Log:
 
-Major.Minor.Patch[.Build+EditorDohstIdentification]-VersionName (StartDate - EndDate)
-dates: dd-mm-yyyy
+Major.Minor.Patch[.Build][-PreReleaseTag.PreReleaseNumber][+EditorDohstIdentification][=VersionName][=StartDate+EndDate] (StartDate - EndDate)
+
+Dates: dd-mm-yyyy
+
 = updated/changed
 + added
 - removed
@@ -12,14 +14,14 @@ Change logs:
     
 0-beta (16-08-2023 - ??-??-2023)
     0.0-start (16-08-2023)
-        0.0.0-start (16-08-2023)
+        0.0.0 (16-08-2023)
             = readme file 
             + license file
 
-        0.0.1-start (16-08-2023)
+        0.0.1 (16-08-2023)
             = changed readme
 
-    0.1-html (16-08-2023 - ??-08-2023)
+    0.1-html (16-08-2023 - 2?-08-2023)
         0.1.0-html (16-08-2023 - 17-08-2023)
             + index.htm as main page
             + about dohst page with copyright notice
@@ -40,15 +42,30 @@ Change logs:
             = renamed file "about-dohst" to "copyright"
             = made the subtitle of a page under the top horizontal line 
             
-        0.1.2-images (22-08-2023 - 2?-08-2023)
-            + issue templates
-            + security file in unused with the github default
+        0.1.2-semantics (22-08-2023 - 23-08-2023)
+            + added issue templates
+            + added security file in unused with the github default
             + new webicon image
-            + code element style with css
-            + unused button element style with css
+            + added code element style with css
+            + added unused button element style with css
+            + added header, main, and footer sections to all used files
+            + added information file
+            + added about file
+            + added about amaoznsmp section in about file
+            + added about Dohst section in about file
+            + version information to information file
             = moved 404.htm to unused
             = changed dark theme to actually be dark
             = renamed season8-old.zip to season8-before.zip
             = renamed season9-old.zip to season9-before.zip
             = renamed old webicon image to favicon
             = updated some world download text
+            = changed footer copyright notifier to have different styling
+            = moved copyright information to information file
+            = updated code element style
+            - removed about dohst file
+            - removed about amazonsmp file
+            - removed copyright file
+
+        0.1.3-tables (2?-08-2023 - 2?-08-2023)
+            =
