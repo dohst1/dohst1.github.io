@@ -1,0 +1,59 @@
+CSS: Cascading StyleSheets
+HyperText refers to links that connect pages with each other
+
+--File:
+index.html is the file name that is always expected to launch a website
+always keep file names lowercase and with no spaces, can also use -
+end file with .html or .htm
+
+--Main:
+<!DOCTYPE html> declares html and should be on the first line of each html file
+<html> </html> all pages start and end with the html tags
+<head> </head> the head element contains data about the page which is not displayed to the user 
+<body> </body> the body element contains everything that user will see
+<!-- --> comment anything inside will be a comment and will not display on the page
+
+
+--Head:
+lang attribute of <html>: defines the language (en = english)
+
+
+--Body:
+<h1></h1> the biggest heading, you should only 1 per page that says what your page is about
+
+-Semantic Elements
+<header></header> header 
+
+-In Line Elements:
+<em></em> emphasizes text
+<strong></strong> makes text bold
+<abbr></abbr> adds a tooltip to text (abbreviations)
+<address></address> browser handles it as an address (makes it italic)
+<code></code> displays code with a different font 
+<mark></mark> highlights text
+<time datetime="00:00"></time> time, does not do anything to the visible page but does add more information (datetime attribute is 24 clock) (datetime attribute for duration is PH0H, ex: 3 hours = PH3H)
+
+-Other Elements
+<br> makes a new line
+<hr> makes a horizontal line
+<img src="" alt"" width="" height=""> image, src is the image source, and alt is alternative text if the image can not load (width is the width of the image, height is the height of the image) (add attribute loading="lazy" to load the image when you get near it, to help with performance)
+<input type="text" name="" id="" placeholder=""> input placeholder is what is shown when nothing is in the input box
+
+-Entities:
+&copy; copyright symbol
+
+
+
+
+other:
+button {
+    padding: 8px 25px;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}

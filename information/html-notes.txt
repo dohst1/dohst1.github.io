@@ -34,13 +34,23 @@ lang attribute of <html>: defines the language (en = english)
 <li></li> list item (needs to be in a list)
 <dt></dt> description term(item) (needs to be inside a description list)
 <dd></dd> description detail (description) (needs to be inside a description list)
+<tr></tr> table row
+<td></td> table data (colspan="" is column span) (rowspan="" is row span)
+<th scope=""></th> table header (scope="" is "col" or "row", which shows if the heading is for a column or a row)
 <a href="link reference"></a> link (href is the link reference) (absolute reference: the full path, relative reference: the path from the current file location) (if add target="_blank" it will open a new tab with the link) (/ as the first character in href, will go back to the root folder)
 <figcaption><figcaption> caption to the indentation (needs to be inside a figure)
 
 -Semantic Elements
+<header></header> header 
+<main></main> main section
+<footer></footer> footer
 <ol></ol> ordered list
 <ul></ul> unordered list
 <dl></dl> description list
+<table></table> table
+<thead></thead> table head section
+<tbody></tbody> table body section
+<tfoot></tfoot> table footer section
 <section id='name'></section> makes a section, section name/title is defined with the id tag
 <aside></aside> same as section but named aside instead
 <article></article> article
@@ -48,11 +58,12 @@ lang attribute of <html>: defines the language (en = english)
 <summary></summary> summary (needs to be in details)
 <figure></figure> adds an indentation
 <nav></nav> navigation
-<header></header> header 
-<main></main> main section
-<footer></footer> footer
 <div></div> divider, a section without the semantic meaning (works with css) (add no meaning by them selves)
 <span></span> unknown (add no meaning by them selves)
+<form action=""></form> form (action attribute is where it will send the form)
+<label for=""></label> label
+<fieldset></fieldset> a section that is inclosed in a box
+<textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea> a large text input area
 
 -In Line Elements:
 <em></em> emphasizes text
@@ -67,79 +78,10 @@ lang attribute of <html>: defines the language (en = english)
 <br> makes a new line
 <hr> makes a horizontal line
 <img src="" alt"" width="" height=""> image, src is the image source, and alt is alternative text if the image can not load (width is the width of the image, height is the height of the image) (add attribute loading="lazy" to load the image when you get near it, to help with performance)
+<input type="text" name="" id="" placeholder=""> input placeholder is what is shown when nothing is in the input box
 
 -Entities:
 &copy; copyright symbol
 &lt; less than symbol
 &gt; greater than symbol
-
-
-
-
-
-Nice Colors:
-white smoke = rgb(245, 245, 245)
-cadetblue = rgb(95, 158, 160)
-nice white1 = rgb(226, 226, 226)
-nice black1 = rgb(13, 17, 23)
-
-
-Dark Colors:
-    background: rgb(13, 17, 23) hex(0d1117)
-    lighter background: rgb(52, 57, 66) hex(343942)
-    
-    main horizontal line: rgb(33, 38, 45) hex(21262d)
-    side line: rgb(48, 54, 61) hex(30363d)
-    
-    text: rgb(230, 237, 243) hex(e6edf3)
-    link: rgb(47, 129, 247) hex(2f81f7)
-    dark text: rgb(125, 133, 144) hex(7d8590)
-    dark link: rgb(26, 70, 134)
-    
-    
-    green outline: rgb(35, 134, 54) hex(238636)
-    green background: rgb(18, 38, 30) hex(12261e)
-    
-    red outline: rgb(218, 54, 51) hex(da3633)
-    red background: rgb(37, 23, 28) hex(25171c)
-    
-    blue outline: rgb(31, 111, 235) hex(1f6feb)
-    blue background: rgb(18, 29, 47) hex(121d2f)
-    dark blue outline: rgb(21, 46, 85) hex(152e55)
-    
-    dark grey outline: rgb(48, 54, 61) hex(30363d)
-    dark grey background: rgb(33, 38, 45) hex(21262d)
-    dark grey text: rgb(110, 118, 129) hex(6e7681)
-
-    text size = 16
-    small text size = 14
-    code {
-        background-color: rgb(33, 38, 45);
-        padding: 1px 8px;
-        outline: none;
-        border: 2px solid none;
-        border-radius: 5px;
-        font-size: 14px;
-    }
-
-
-Grey Colors:
-    background: rgb() hex()
-    lighter background: rgb() hex()
-
-    main horizontal line: rgb() hex()
-    side line: rgb() hex()
-
-    text: rgb() hex()
-    link: rgb() hex()
-
-
-Light Colors:
-    background: rgb() hex()
-    lighter background: rgb() hex()
-
-    main horizontal line: rgb() hex()
-    side line: rgb() hex()
-
-    text: rgb() hex()
-    link: rgb() hex()
+&nbsp; space
