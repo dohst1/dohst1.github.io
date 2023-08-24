@@ -21,12 +21,26 @@ code {
     border-radius: 5px;
     font-size: 15px;
 }
+table, tr, th, td, caption {
+    background-color: rgb(33, 38, 45);
+    border-color: rgb(48, 54, 61);
+    padding: 5px 8px;
+    outline: none;
+    border: 2px solid rgb(48, 54, 61);
+    border-radius: 5px;
+    font-size: 15px;
+}
+tr:hover, th:hover, td:hover {
+    border-color: rgb(125, 133, 144);
+    background-color: rgb(48, 54, 61);
+}
 :any-link {
     color: rgb(47, 129, 247);
 }
 :any-link:hover, :any-link:active {
     color: rgb(44, 102, 168);
 }
+
 
 button {
     padding: 8px 25px;

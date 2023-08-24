@@ -1,0 +1,66 @@
+Nice Colors:
+white smoke = rgb(245, 245, 245)
+cadetblue = rgb(95, 158, 160)
+nice white1 = rgb(226, 226, 226)
+nice black1 = rgb(13, 17, 23)
+
+
+Dark Colors: (github.com)
+    background: rgb(13, 17, 23) hex(0d1117)
+    lighter background: rgb(52, 57, 66) hex(343942)
+    
+    main horizontal line: rgb(33, 38, 45) hex(21262d)
+    side line: rgb(48, 54, 61) hex(30363d)
+    
+    text: rgb(230, 237, 243) hex(e6edf3)
+    link: rgb(47, 129, 247) hex(2f81f7)
+    dark text: rgb(125, 133, 144) hex(7d8590)
+    dark link: rgb(26, 70, 134) hex()
+    
+    
+    green outline: rgb(35, 134, 54) hex(238636)
+    green background: rgb(18, 38, 30) hex(12261e)
+    
+    red outline: rgb(218, 54, 51) hex(da3633)
+    red background: rgb(37, 23, 28) hex(25171c)
+    
+    blue outline: rgb(31, 111, 235) hex(1f6feb)
+    blue background: rgb(18, 29, 47) hex(121d2f)
+    dark blue outline: rgb(21, 46, 85) hex(152e55)
+    
+    dark grey outline: rgb(48, 54, 61) hex(30363d)
+    dark grey background: rgb(33, 38, 45) hex(21262d)
+    dark grey text: rgb(110, 118, 129) hex(6e7681)
+
+    text size = 16
+    small text size = 14
+    code {
+        background-color: rgb(33, 38, 45);
+        padding: 1px 8px;
+        outline: none;
+        border: 2px solid none;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+
+Grey Colors: (mozilla.org)
+    background: rgb(27, 27, 27) hex(1b1b1b)
+    lighter background: rgb(52, 52, 52) hex(343434)
+
+    line: rgb(133, 133, 133) hex(858585)
+
+    text: rgb(255, 255, 255) hex(ffffff)
+    link: rgb(140, 180, 255) hex(8cb4ff)
+    dark text: rgb(205, 205, 205) hex(cdcdcd)
+
+
+Light Colors: (gov.uk)
+    background: rgb(255, 255, 255) hex(ffffff)
+
+    line: rgb(177, 180, 182) hex(b1b4b6)
+
+    text: rgb(11, 12, 12) hex(0b0c0c)
+    link: rgb(29, 134, 209) hex(1d86d1)
+    dark text: rgb(80, 90, 95) hex(505a5f)
+    dark link: rgb(76, 104, 192) hex(4c68c0)
