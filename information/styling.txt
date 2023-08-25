@@ -38,8 +38,10 @@ Grey Colors: (mozilla.org)
 Light Colors: (gov.uk)
     background: rgb(255, 255, 255) hex(ffffff)
     line: rgb(177, 180, 182) hex(b1b4b6)
+    
     text: rgb(11, 12, 12) hex(0b0c0c)
     link: rgb(29, 134, 209) hex(1d86d1)
+
     dark text: rgb(80, 90, 95) hex(505a5f)
     dark link: rgb(76, 104, 192) hex(4c68c0)
 

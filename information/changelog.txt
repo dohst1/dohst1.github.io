@@ -21,7 +21,9 @@ Change logs:
         0.0.1 (16-08-2023)
             = changed readme
 
+
     0.1-html (16-08-2023 - 24-08-2023)
+
         0.1.0-html (16-08-2023 - 17-08-2023)
             + index.htm as main page
             + about dohst page with copyright notice
@@ -76,4 +78,15 @@ Change logs:
             = renamed downloads file to contact file 
             = made contact file be inaccessible due to forms being unusable
             - downloads list
-            
+
+
+    0.2-html (25-08-2023 - 2?-08-2023)
+
+        0.2.0-css (25-08-2023)
+            + added code of conduct file
+            + added report issue template for github
+            + added dark, grey, and light theme css files (unused currently)
+            + added 404 page not found page
+            = changed readme
+            = moved main css file to css folder
+            - removed custom-issue-template1
