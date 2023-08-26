@@ -39,9 +39,13 @@ hr {
     border-color: rgb(48, 54, 61);
 }
 
-:any-link {
+:any-link, a abbr{
     color: rgb(47, 129, 247);
 }
 :any-link:hover, :any-link:active {
     color: rgb(44, 102, 168);
+}
+
+.gray {
+    color: gray;
 }

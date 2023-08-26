@@ -12,6 +12,7 @@ Inline StyleSheet: style:"color:blue" (as an attribute to an element)
 
 **will be using external stylesheet on html** (so, might be different if you are using something else)
 
+
 --Syntax:
 selector {
     property: propertyValue; 
@@ -19,8 +20,37 @@ selector {
 property propertyValue pair is called a declaration
 the whole structure is called a ruleset (often referred to as rule)
 
-if the declaration is incorrect it will just be ignored
 
---Attributes:
-color: color of text (usually, might be different sometimes)
-text-font: the font style of the text
+--notes
+if the declaration is incorrect it will just be ignored
+a . in front of were the selector goes will style a class
+set a class with attribute class="class"
+
+a # in front of were the selector goes will style a id (#)
+set a id with attribute id="identifier"
+
+can group selectors with commas in between
+without commas in between will look for secondSelector in firstSelector (p em {} will style em in paragraphs)
+
+* selects everything
+cascading, top to bottom, which ever declaration is last over rules any other past declaration with the same selector (classes can only be changed with )
+specificity, for example: if you, make a class called grey with color grey and you later on change the color of paragraphs to green, any paragraph with the grey class will still be grey since it is more specific
+
+inheritance is were another element inherits properties from its parent element (example: body is parent to most other elements)
+font elements typically do not inherit font properties
+
+!important overrides everything
+
+
+--specificity:
+IDs
+Classes, attributes, and pseudo-classes
+Elements, and pseudo-elements
+
+
+
+--Properties:
+color: font color (sometimes might change the color of something else)
+font-family: font style
+font-size: text size
+background-color / background: background color

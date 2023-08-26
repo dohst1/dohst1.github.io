@@ -92,4 +92,5 @@ Change logs:
             - removed custom-issue-template1
 
         0.2.1-css (26-08-2023)
-            =
+            = main.css file
+            
