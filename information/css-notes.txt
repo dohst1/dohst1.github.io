@@ -1,23 +1,26 @@
-CSS: Cascading StyleSheets
-HyperText refers to links that connect pages with each other
+CSS: Cascading Style Sheets
+StyleSheet language used to describe the presentation of a document
+Decoration
 
 --File:
-index.html is the file name that is always expected to launch a website
-always keep file names lowercase and with no spaces, can also use -
-end file with .html or .htm
+Can have an External Style Sheet, Internal StyleSheet or an Inline StyleSheet
+Make a folder named 'css' and put any css files in there
+the main file should be 'main.css' or 'style.css'
+Load External StyleSheet: <link rel="stylesheet" href="/css/main.css" type="text/css"> or <link rel="stylesheet" href="/css/main.css">
+Internal StyleSheet: <style></style>
+Inline StyleSheet: style:"color:blue" (as an attribute to an element)
 
+**will be using external stylesheet on html** (so, might be different if you are using something else)
 
-
-
-other:
-button {
-    padding: 8px 25px;
-    background: transparent;
-    outline: none;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
+--Syntax:
+selector {
+    property: propertyValue; 
 }
+property propertyValue pair is called a declaration
+the whole structure is called a ruleset (often referred to as rule)
+
+if the declaration is incorrect it will just be ignored
+
+--Attributes:
+color: color of text (usually, might be different sometimes)
+text-font: the font style of the text

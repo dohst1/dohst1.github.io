@@ -90,3 +90,6 @@ Change logs:
             = changed readme
             = moved main css file to css folder
             - removed custom-issue-template1
+
+        0.2.1-css (26-08-2023)
+            =

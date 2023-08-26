@@ -1,10 +1,14 @@
 HTML: HyperText Markup Language
 HyperText refers to links that connect pages with each other
+Foundation
 
 --File:
 index.html is the file name that is always expected to launch a website
 always keep file names lowercase and with no spaces, can also use -
 end file with .html or .htm
+
+--Shortcuts:
+! enter : generates everything you need at the start of a new basic html file
 
 --Main:
 <!DOCTYPE html> declares html and should be on the first line of each html file
@@ -15,13 +19,13 @@ end file with .html or .htm
 
 --Head:
 lang attribute of <html>: defines the language (en = english)
+<meta charset="UTF-8">
 <meta> hold meta data about the site
 <meta name="author" content="Dohst"> sets an author name
 <meta name="description" content="The Official AmazonSMP Website"> sets a page description
 <title></title> sets a browser tab title
-<link rel="icon" href="images/webicon.png" type="image/x-icon">
-<link rel="stylesheet" href="main.css" type="text/css">
-
+<link rel="icon" href="images/favicon.png" type="image/x-icon"> load favicon
+<link rel="stylesheet" href="main.css" type="text/css"> load stylesheet
 
 --Body:
 <h1></h1> the biggest heading, you should only 1 per page that says what your page is about
