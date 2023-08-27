@@ -9,7 +9,7 @@ address, footer {
     font-size: 14px;
 }
 
-code, table, tr, th, td, caption, fieldset, legend,input, textarea, button {
+code, table, tr, th, td, caption, fieldset, legend, input, textarea, button {
     color: rgb(230, 237, 243);
     background-color: rgb(13, 17, 23);
     border: 2px solid rgb(48, 54, 61);

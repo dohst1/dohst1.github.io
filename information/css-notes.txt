@@ -21,6 +21,13 @@ property propertyValue pair is called a declaration
 the whole structure is called a ruleset (often referred to as rule)
 
 
+--specificity:
+IDs
+Classes, attributes, and pseudo-classes
+Elements, and pseudo-elements
+
+
+
 --notes
 if the declaration is incorrect it will just be ignored
 a . in front of were the selector goes will style a class
@@ -42,15 +49,27 @@ font elements typically do not inherit font properties
 !important overrides everything
 
 
---specificity:
-IDs
-Classes, attributes, and pseudo-classes
-Elements, and pseudo-elements
 
+--units:
+px pixels (USE THIS, IT THE BEST ONE)
+cm centimeters
+% percent, size depending on the page size (usually used for width and height)
+rem ? (font only), the size relative to default size set by the browser (1 = browser font size, 2 = double browser font size) (browser font size can be overwritten by the html selector, rem still works)
+ch characters, size determined by the size of the character '0'
+(others exist but are mostly irrelevant)
 
 
 --Properties:
-color: font color (sometimes might change the color of something else)
+color: color, usually the font color 
 font-family: font style
 font-size: text size
-background-color / background: background color
+background-color: background color (color)
+background: background ()
+boarder: boarder (size, type, color)
+padding: space between the element and the boarder of the element
+width: width
+height: height
+min-width: minimum width
+min-width: minimum width
+max-height: maximum height
+max-height: maximum height
