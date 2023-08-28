@@ -52,6 +52,8 @@ typography is the wat that text is arranged and presented
 
 /* text */ comment
 
+color palette website: https://coolors.co
+
 
 
 --Sections
