@@ -48,9 +48,20 @@ font elements typically do not inherit font properties
 
 !important overrides everything
 
+typography is the wat that text is arranged and presented
+
+/* text */ comment
 
 
---units:
+
+--Sections
+margin (the space between the border and anything else on the page)
+border (the border of the content)
+padding (the space between the content and the border)
+content (the actual content)
+
+
+--Units:
 px pixels (USE THIS, IT THE BEST ONE)
 cm centimeters
 % percent, size depending on the page size (usually used for width and height)
@@ -61,15 +72,34 @@ ch characters, size determined by the size of the character '0'
 
 --Properties:
 color: color, usually the font color 
+font: font (size type color)
 font-family: font style
 font-size: text size
 background-color: background color (color)
 background: background ()
-boarder: boarder (size, type, color)
-padding: space between the element and the boarder of the element
+border: border (size type color)
+padding: space between the element and the border of the element
 width: width
 height: height
 min-width: minimum width
 min-width: minimum width
 max-height: maximum height
 max-height: maximum height
+margin: margin (top right bottom left) (if only one provided then will set that for all) ("auto" will center it)
+margin-top: top margin (size)
+margin-right: right margin (size)
+margin-bottom: bottom margin (size)
+margin-left: left margin (size)
+padding: padding (top right bottom left) (if only one provided then will set that for all)
+padding-top: top padding (size)
+padding-right: right padding (size)
+padding-bottom: bottom padding (size)
+padding-left: left padding (size)
+border: border (size type color)
+border-top: top border (size type color)
+border-right: right border (size type color)
+border-bottom: bottom border (size type color)
+border-left: left border (size type color)
+border-radius: rounds the corners (size) (0 normal rectangle) (50 circle)
+outline: line just outside the border, does not normally take up space (size type color)
+outline-offset: space between the outline and the border (size)
