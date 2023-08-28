@@ -92,5 +92,6 @@ Change logs:
             - removed custom-issue-template1
 
         0.2.1-css (26-08-2023)
-            = main.css file
-            
+            + added roboto font
+            = changed main.css file
+            = changed index.html file

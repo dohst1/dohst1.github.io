@@ -71,26 +71,32 @@ ch characters, size determined by the size of the character '0'
 
 
 --Properties:
-color: color, usually the font color 
-font: font (size type color)
-font-family: font style
-font-size: text size
+color: color, usually the font color (color)
 background-color: background color (color)
 background: background ()
-border: border (size type color)
-padding: space between the element and the border of the element
-width: width
-height: height
-min-width: minimum width
-min-width: minimum width
-max-height: maximum height
-max-height: maximum height
+font: font (size type color)
+font-family: font (type) ("serif" default, "sans-serif", "Arial" is good)
+font-size: text size (size)
+font-weight: the bold-ness of the font (size) (100 not bold at all, 900 very bold)
+font-style: style of the font (type) ("oblique" very italic)
+text-decoration: text decoration (type)
+text-align: the alignment of text (type) ("justify" makes it equal on both sides)
+text-indent: indents the first line (size)
+line-height: space between lines of text (size) (1.5 is good)
+letter-spacing: space between letters (size)
+word-spacing: space between words (size)
+width: width (size)
+height: height (size)
+min-width: minimum width (size)
+min-width: minimum width (size)
+max-height: maximum height (size)
+max-height: maximum height (size)
 margin: margin (top right bottom left) (if only one provided then will set that for all) ("auto" will center it)
 margin-top: top margin (size)
 margin-right: right margin (size)
 margin-bottom: bottom margin (size)
 margin-left: left margin (size)
-padding: padding (top right bottom left) (if only one provided then will set that for all)
+padding: space between the content and the border of the content (top right bottom left) (if only one provided then will set that for all)
 padding-top: top padding (size)
 padding-right: right padding (size)
 padding-bottom: bottom padding (size)
