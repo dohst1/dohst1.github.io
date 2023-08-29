@@ -51,6 +51,8 @@ hr {
     text-decoration: underline;
 }
 
-.gray {
-    color: gray;
+/* changes any link in a table item to take up the whole table item block, 
+by making it a block level element*/
+td a{
+    display: block;
 }

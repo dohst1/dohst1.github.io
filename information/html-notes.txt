@@ -35,7 +35,7 @@ lang attribute of <html>: defines the language (en = english)
 <h5></h5> 5nd biggest heading, (probably will not need to use this)
 <h6></h6> 6nd biggest heading, (probably will not need to use this)
 <p></p> paragraph
-<li></li> list item (needs to be in a list)
+<li></li> list item (needs to be in a list) (value"", sets a value to the item, changes the list marker if its an ordered list)
 <dt></dt> description term(item) (needs to be inside a description list)
 <dd></dd> description detail (description) (needs to be inside a description list)
 <tr></tr> table row
@@ -48,7 +48,7 @@ lang attribute of <html>: defines the language (en = english)
 <header></header> header 
 <main></main> main section
 <footer></footer> footer
-<ol></ol> ordered list
+<ol></ol> ordered list (start="", sets the number to start the order at) (reversed, reverses the list numbers)
 <ul></ul> unordered list
 <dl></dl> description list
 <table></table> table

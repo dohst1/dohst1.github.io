@@ -13,4 +13,4 @@ The AmazonSMP website is still under development, you can expect links to change
 
 - this github repository has to be public to allow for the github pages site to be publicly available
 
-_`-version: 0.2.0-css (27-08-2023)`_
+_`-version: 0.2.1-css (30-08-2023)`_

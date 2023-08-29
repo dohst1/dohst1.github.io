@@ -38,7 +38,7 @@ a # in front of were the selector goes will style a id (#)
 set a id with attribute id="identifier"
 
 can group selectors with commas in between
-without commas in between will look for secondSelector in firstSelector (p em {} will style em in paragraphs)
+without commas in between will look for secondSelector in firstSelector (example: p em {} will style em in paragraphs and only paragraphs)
 
 * selects everything
 cascading, top to bottom, which ever declaration is last over rules any other past declaration with the same selector (classes can only be changed with )
@@ -56,6 +56,10 @@ typography is the wat that text is arranged and presented
 color palette website: https://coolors.co
 
 sudo-class (example: a:visited, ":visited" is a sudo-class)
+
+marker is referring to the bullet-point/numbers/other in a list (marker selector: ::marker)
+
+block level elements will stack on top of each other because it sets the width to 100%
 
 
 
@@ -115,4 +119,10 @@ border-radius: rounds the corners (size) (0 normal rectangle) (50 circle)
 outline: line just outside the border, does not normally take up space (size type color)
 outline-offset: space between the outline and the border (size)
 cursor: cursor type when over content (type)
-opacity: (value) (value from 0 to 1)
+opacity: transparency (value) (value from 0 to 1)
+list-style-type: the marker style in a list (type)
+list-align: list alignment (right/left/center)
+list-style-position: the marker position (type)
+list-style-image: (url("path")) (path = path to image)
+content: text/image/other
+display: ? (type)
