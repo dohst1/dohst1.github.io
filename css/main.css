@@ -42,13 +42,16 @@ hr {
     border-color: rgb(48, 54, 61);
 }
 
-:any-link, a abbr{
+:any-link {
     color: rgb(47, 129, 247);
     text-decoration: none;
 }
 :any-link:hover, :any-link:active {
     color: rgb(44, 102, 168);
     text-decoration: underline;
+}
+a abbr {
+    text-decoration: none;
 }
 
 /* changes any link in a table item to take up the whole table item block, 
