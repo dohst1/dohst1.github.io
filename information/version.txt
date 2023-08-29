@@ -54,7 +54,7 @@ Versions:
             0.2.1.5 (28-08-2023) typography -changes
             0.2.1.6 (29-08-2023) styling links -changes
             0.2.1.7 (29-08-2023) list styles
-            0.2.1.8 (29-08-2023) display
+            0.2.1.8 (29-08-2023) display  -changes
 
 ---
             0.2.2.1 (2?-08-2023) floats
