@@ -44,9 +44,11 @@ hr {
 
 :any-link, a abbr{
     color: rgb(47, 129, 247);
+    text-decoration: none;
 }
 :any-link:hover, :any-link:active {
     color: rgb(44, 102, 168);
+    text-decoration: underline;
 }
 
 .gray {

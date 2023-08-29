@@ -2,10 +2,11 @@ CSS: Cascading Style Sheets
 StyleSheet language used to describe the presentation of a document
 Decoration
 
+
 --File:
 Can have an External Style Sheet, Internal StyleSheet or an Inline StyleSheet
-Make a folder named 'css' and put any css files in there
 the main file should be 'main.css' or 'style.css'
+Make a folder named 'css' and put any css files in there
 Load External StyleSheet: <link rel="stylesheet" href="/css/main.css" type="text/css"> or <link rel="stylesheet" href="/css/main.css">
 Internal StyleSheet: <style></style>
 Inline StyleSheet: style:"color:blue" (as an attribute to an element)
@@ -54,6 +55,8 @@ typography is the wat that text is arranged and presented
 
 color palette website: https://coolors.co
 
+sudo-class (example: a:visited, ":visited" is a sudo-class)
+
 
 
 --Sections
@@ -75,7 +78,7 @@ ch characters, size determined by the size of the character '0'
 --Properties:
 color: color, usually the font color (color)
 background-color: background color (color)
-background: background ()
+background: background (color)
 font: font (size type color)
 font-family: font (type) ("serif" default, "sans-serif", "Arial" is good)
 font-size: text size (size)
@@ -111,3 +114,5 @@ border-left: left border (size type color)
 border-radius: rounds the corners (size) (0 normal rectangle) (50 circle)
 outline: line just outside the border, does not normally take up space (size type color)
 outline-offset: space between the outline and the border (size)
+cursor: cursor type when over content (type)
+opacity: (value) (value from 0 to 1)
