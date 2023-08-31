@@ -127,7 +127,13 @@ list-style-position: the marker position (type)
 list-style-image: (url("path")) (path = path to image)
 content: text/image/other
 display: display type (type) (display: flow-root; makes empty space in a block element with a div count as space of that block element)
+column-count: splits the content into the given amount of columns (amount)
+column-width: column width should never be less than the given amount (size)
+columns: column-count and column-width (amount size)
+column-rule: border (size type color)
+column-gap: gap between the columns (size)
 
 float: where the content goes (right/left)
 clear: make a section have nothing
-overflow: overflow 
+overflow: ? 
+break-inside: ? (?) (break-inside: avoid;)

@@ -89,3 +89,4 @@ lang attribute of <html>: defines the language (en = english)
 &lt; less than symbol
 &gt; greater than symbol
 &nbsp; space
+&#8212; em dash / long dash
