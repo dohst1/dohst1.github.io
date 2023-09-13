@@ -132,6 +132,8 @@ column-width: column width should never be less than the given amount (size)
 columns: column-count and column-width (amount size)
 column-rule: border (size type color)
 column-gap: gap between the columns (size)
+position: (static/absolute/) (needs a parent: top right bottom left)
+top
 
 float: where the content goes (right/left)
 clear: make a section have nothing
