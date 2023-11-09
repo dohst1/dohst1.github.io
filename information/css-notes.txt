@@ -132,10 +132,15 @@ column-width: column width should never be less than the given amount (size)
 columns: column-count and column-width (amount size)
 column-rule: border (size type color)
 column-gap: gap between the columns (size)
-position: (static/absolute/) (needs a parent: top right bottom left)
-top
+position: (static (default) / absolute (can have a parent) / relative (always relative to parent container from html) / fixed (always is relative from the page not any other element, and is always on screen) / sticky (stays in normal spot until it reaches a defined spot))  (might need a parent and, top, right, bottom, left)
+top: space between the top of the page and the element (size)
+left: space between the left of the page and the element (size)
+bottom: space between the bottom of the page and the element (size)
+right: space between the right of the page and the element (size)
+z-index: sets in what layer of the page an element is in (default is 0, set to one if want to be on top of everything)
 
 float: where the content goes (right/left)
 clear: make a section have nothing
 overflow: ? 
 break-inside: ? (?) (break-inside: avoid;)
+html {scroll-behavior: smooth;}    makes scrolling smother and also smother when clicking links

@@ -96,3 +96,7 @@ Change logs:
             = changed main.css file
             = changed index.html file
             
+
+        0.2.2-css_more (07-11-2023)
+            = changed main.css file
+            
