@@ -126,7 +126,7 @@ list-align: list alignment (right/left/center)
 list-style-position: the marker position (type)
 list-style-image: (url("path")) (path = path to image)
 content: text/image/other
-display: display type (type) (display: flow-root; makes empty space in a block element with a div count as space of that block element)
+display: display type (type) (display: flow-root; makes empty space in a block element with a div count as space of that block element, display: flex; you can change where the content is displayed using 'justify-content' you can also change the gap with 'gap')
 column-count: splits the content into the given amount of columns (amount)
 column-width: column width should never be less than the given amount (size)
 columns: column-count and column-width (amount size)
@@ -138,6 +138,10 @@ left: space between the left of the page and the element (size)
 bottom: space between the bottom of the page and the element (size)
 right: space between the right of the page and the element (size)
 z-index: sets in what layer of the page an element is in (default is 0, set to one if want to be on top of everything)
+justify-content: where the content goes (flex-right (makes it go right), flex-center (makes it centered), flex-end (make it go left), space-between (spaces the content out almost evenly), space-evenly (spaces the content around evenly))
+align-items: same as 'justify-content' but for vertical alignment
+flex-direction: what way the items stack (column or row)
+gap: space between elements (size)
 
 float: where the content goes (right/left)
 clear: make a section have nothing

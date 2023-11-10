@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+    background-color: rgb(13, 17, 23);
+    color: rgb(230, 237, 243);
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+address, footer {
+    color: rgb(125, 133, 144);
+    font-size: 14px;
+}
+
+code, table, tr, th, td, caption, fieldset, legend, input, textarea, button {
+    color: rgb(230, 237, 243);
+    background-color: rgb(13, 17, 23);
+    border: 2px solid rgb(48, 54, 61);
+    border-radius: 5px;
+    padding: 5px 8px;
+    outline: none;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+tr:hover, th:hover, td:hover, input:hover, textarea:hover, button:hover, button:active {
+    background-color: rgb(48, 54, 61);
+    border-color: rgb(110, 118, 129);
+}
+
+code {
+    background-color: rgb(33, 38, 45);
+    border: 2px solid none;
+    padding: 5px 5px;
+    border: none;
+}
+button {
+    padding: 8px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+p {
+    text-align: auto;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+hr {
+    border-color: rgb(48, 54, 61);
+}
+
+:any-link {
+    color: rgb(47, 129, 247);
+    text-decoration: none;
+}
+:any-link:hover, :any-link:active {
+    color: rgb(44, 102, 168);
+    text-decoration: underline;
+}
+a abbr {
+    text-decoration: none;
+}
+
+/* changes any link in a table item to take up the whole table item block, 
+by making it a block level element*/
+td a{
+    display: block;
+}
+
+nav, nav button{
+    font-size: 25px;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    line-height: 30px;
+    row-gap: 80px;
+}
+nav th, nav th:hover{
+    border: none;
+    background-color: rgb(13, 17, 23);
+    border-color: none;
+}

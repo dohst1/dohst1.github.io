@@ -1,7 +1,7 @@
 Version:
 
 Development: Major.Minor.Patch.Build-ReleaseType[+EditorDohstIdentification][=ReleaseDate]
-public: Major.Minor.Patch-ReleaseType
+public: Major.Minor.Patch[.build]-ReleaseType
 
 ReleaseType:
 alpha
@@ -68,21 +68,26 @@ Versions:
             0.2.1.9 (31-08-2023) floats
             0.2.1.10 (31-08-2023) columns
 
-
-        0.2.2-css_more (07-11-2023 - 1?-11-2023)
----
+        0.2.2-css_more (07-11-2023 - 09-11-2023 - canceled)
             0.2.2.1 (07-11-2023) position
-            0.2.2.2 (??-08-2023) flexbox
-            0.2.2.3 (??-08-2023) grid layout
-            0.2.2.4 (??-08-2023) images
-            0.2.2.5 (??-08-2023) media queries
+         |---
+         |            0.2.2.2 (09-11-2023) flexbox
+         |            0.2.2.3 (1?-11-2023) grid layout
+         |            0.2.2.4 (1?-11-2023) images
+         |            0.2.2.5 (1?-11-2023) media queries
+canceled-|
+         |            0.2.2.6 (1?-11-2023) pseudo
+         |            0.2.2.7 (1?-11-2023) variables
+         |            0.2.2.8 (1?-11-2023) functions
+         |            0.2.2.9 (1?-11-2023) animations
+         |            0.2.2.10 (1?-11-2023) organization
+         |---
 
-            0.2.?.6 (??-0?-2023) pseudo
-            0.2.?.7 (??-0?-2023) variables
-            0.2.?.8 (??-0?-2023) functions
-            0.2.?.9 (??-0?-2023) animations
-            0.2.?.10 (??-0?-2023) organization
----
+
+
+    0.3-content (09-11-2023 - 1?-11-2023)
+        0.3.0-content (09-11-2023 - 1?-11-2023)
+
 
 
 
