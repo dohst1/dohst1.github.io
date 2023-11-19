@@ -1,0 +1,44 @@
+html, body {
+    background-color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 18px;
+}
+address, footer {
+    color: rgb(205, 205, 205);
+    font-size: 14px;
+}
+
+code, table, tr, th, td, caption, fieldset, legend,input, textarea, button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(27, 27, 27);
+    border: 2px solid rgb(133, 133, 133);
+    border-radius: 5px;
+    padding: 5px 8px;
+    outline: none;
+    font-size: 16px;
+}
+tr:hover, th:hover, td:hover, input:hover, textarea:hover, button:hover, button:active {
+    background-color: rgb(133, 133, 133);
+    border-color: rgb(110, 118, 129);
+}
+
+code {
+    background-color: rgb(52, 52, 52);
+    border: 2px solid none;
+    padding: 5px 5px;
+    border: none;
+}
+button {
+    padding: 8px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+hr {
+    border-color: rgb(133, 133, 133);
+}
+
+:any-link {
+    color: rgb(140, 180, 255);
+}

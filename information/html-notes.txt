@@ -1,10 +1,14 @@
 HTML: HyperText Markup Language
 HyperText refers to links that connect pages with each other
+Foundation
 
 --File:
 index.html is the file name that is always expected to launch a website
 always keep file names lowercase and with no spaces, can also use -
 end file with .html or .htm
+
+--Shortcuts:
+! enter : generates everything you need at the start of a new basic html file
 
 --Main:
 <!DOCTYPE html> declares html and should be on the first line of each html file
@@ -15,13 +19,13 @@ end file with .html or .htm
 
 --Head:
 lang attribute of <html>: defines the language (en = english)
+<meta charset="UTF-8">
 <meta> hold meta data about the site
 <meta name="author" content="Dohst"> sets an author name
 <meta name="description" content="The Official AmazonSMP Website"> sets a page description
 <title></title> sets a browser tab title
-<link rel="icon" href="images/webicon.png" type="image/x-icon">
-<link rel="stylesheet" href="main.css" type="text/css">
-
+<link rel="icon" href="images/favicon.png" type="image/x-icon"> load favicon
+<link rel="stylesheet" href="main.css" type="text/css"> load stylesheet
 
 --Body:
 <h1></h1> the biggest heading, you should only 1 per page that says what your page is about
@@ -31,7 +35,7 @@ lang attribute of <html>: defines the language (en = english)
 <h5></h5> 5nd biggest heading, (probably will not need to use this)
 <h6></h6> 6nd biggest heading, (probably will not need to use this)
 <p></p> paragraph
-<li></li> list item (needs to be in a list)
+<li></li> list item (needs to be in a list) (value"", sets a value to the item, changes the list marker if its an ordered list)
 <dt></dt> description term(item) (needs to be inside a description list)
 <dd></dd> description detail (description) (needs to be inside a description list)
 <tr></tr> table row
@@ -44,7 +48,7 @@ lang attribute of <html>: defines the language (en = english)
 <header></header> header 
 <main></main> main section
 <footer></footer> footer
-<ol></ol> ordered list
+<ol></ol> ordered list (start="", sets the number to start the order at) (reversed, reverses the list numbers)
 <ul></ul> unordered list
 <dl></dl> description list
 <table></table> table
@@ -58,8 +62,6 @@ lang attribute of <html>: defines the language (en = english)
 <summary></summary> summary (needs to be in details)
 <figure></figure> adds an indentation
 <nav></nav> navigation
-<div></div> divider, a section without the semantic meaning (works with css) (add no meaning by them selves)
-<span></span> unknown (add no meaning by them selves)
 <form action=""></form> form (action attribute is where it will send the form)
 <label for=""></label> label
 <fieldset></fieldset> a section that is inclosed in a box
@@ -79,9 +81,12 @@ lang attribute of <html>: defines the language (en = english)
 <hr> makes a horizontal line
 <img src="" alt"" width="" height=""> image, src is the image source, and alt is alternative text if the image can not load (width is the width of the image, height is the height of the image) (add attribute loading="lazy" to load the image when you get near it, to help with performance)
 <input type="text" name="" id="" placeholder=""> input placeholder is what is shown when nothing is in the input box
+<div></div> divider, section without the semantic meaning
+<span></span> div but is an inline element
 
 -Entities:
 &copy; copyright symbol
 &lt; less than symbol
 &gt; greater than symbol
 &nbsp; space
+&#8212; em dash / long dash
