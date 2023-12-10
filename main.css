@@ -1,94 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --background: rgb(13, 28, 56);
+    --background-light: rgb(28, 49, 88);
+    --background-gray: rgb(15, 25, 41); 
+    --background-dark: rgb(10, 21, 44); 
+    --border: rgb(63, 74, 87);
+    --border-light: rgb(97, 109, 124);
+    --text: rgb(230, 237, 243);
+    --text-dark: rgb(16, 16, 16);
+    --text-link: rgb(22, 117, 250);
+}
+
 html, body {
-    color: rgb(230, 237, 243);
+    color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to top left, rgb(12, 18, 27), rgb(10, 21, 44));
+    background-color: var(--background-dark);
+}   
+main {
+    background-color: var(--background);
+    border-radius: 10px;
+    border: 4px solid var(--border);
+}
+footer {
+    font-size: 18px;
+    color: var(--border-light);
 }
 
-code, table, tr, th, td, caption, fieldset, legend, input, textarea, button, li, ul, hr {
-    color: rgb(230, 237, 243);
-    background-color: rgb(13, 17, 23);
-    border: 2px solid rgb(48, 54, 61);
-    border-radius: 5px;
+code, table, th, td, button, li, ul, hr {
+    background-color: var(--background-gray);
+    border: 2px solid var(--border);
+    border-radius: 6px;
     padding: 5px 8px;
-    outline: none;
-    font-size: 18px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgb(17, 24, 36), rgb(14, 20, 32));
+    font-size: 18px;
 }
-tr:hover, th:hover, td:hover, input:hover, textarea:hover, button:hover, button:active, li:hover {
-    background-color: rgb(58, 64, 71);
-    border-color: rgb(110, 118, 129);
+code:hover, th:hover, td:hover, button:hover, li:hover {
+    border-color: var(--border-light);
 }
-body table, body ul {
-    background-image: linear-gradient(to top, rgb(11, 20, 36), rgb(11, 21, 44));
+ul {
+    padding-left: 25px;    
+}
+li {
+    justify-content: start;
+}
+.limited {
+    max-width: 250px;
+}
+
+hr {
+    padding: 0px;
+    border: 3px solid var(--border);
+}
+
+code {
+    padding: 3px 5px;
+    border-radius: 10px;
+}
+button {
+    padding: 12px 38px;
+    border-radius: 100px;
+    margin: 3px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p, h2, h3, ul {
+    text-align: auto;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    padding-top: 40px;
+    font-size: 40px;
+}
+h3 {
+    padding-top: 32px;
+    font-size: 32px;
+}
+
+:any-link, a abbr {
+    color: var(--text-link);
+    text-decoration: none;
+}
+:any-link:hover, :any-link:active {
+    text-decoration: underline;
 }
 td a{
     display: block;
 }
-ul {
-    padding-left: 25px;
-    text-align: auto;
-    margin-left: 30%;
-    margin-right: 30%;
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: var(--background-light);
+    padding: 0px 20px;
+    justify-content: start;
+}
+nav button {
+    font-size: 22px;
+    color: var(--text);
+    margin: 8px;
+    padding: 0 16px;
+    height: 32px;
+    line-height: 32px;
+    cursor: pointer;
+    min-width: 64px;
+    border-radius: 160px;
+    border: none;
+    background-color: transparent;
+    background-color: var(--background-light);
+}
+nav button:hover {
+    background-color: var(--background);
+}
+.active, .active:hover {
+    background-color: var(--text);
+    color: var(--background-light);
 }
 
-hr{
-    padding: 0px 0px;
-    border: 2px solid rgba(48, 54, 61, 0.5);
-    background-image: linear-gradient(to right, rgba(15, 25, 41, 0.25), rgba(10, 21, 44, 0.25));
-    background-color: rgb(12, 23, 44);
-}
-
-address, footer {
-    color: rgb(125, 133, 144);
-    font-size: 18px;
-}
-code {
-    background-color: rgb(33, 38, 45);
-    border: 2px solid rgb(13, 17, 23);
-    padding: 5px 5px;
-}
-
-h1, h1 a:hover {
-    font-size: 60px;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    text-decoration: none;
-}
-h2 {
-    padding-top: 60px;
-    font-size: 40px;
-}
-h3 {
-    font-size: 30px;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-p {
-    text-align: auto;
-    margin-left: 30%;
-    margin-right: 30%;
-}
-
-:any-link {
-    color: rgb(47, 129, 247);
-    text-decoration: none;
-}
-:any-link:hover, :any-link:active {
-    color: rgb(44, 102, 168);
-    text-decoration: underline;
-}
-a abbr {
-    text-decoration: none;
-}
-
-.limited {
-    max-width: 200px;
+@media only screen and /* (max-width: 600px) */ (max-width: 1000px) {
+    p, h1, h2, h3, ul {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }

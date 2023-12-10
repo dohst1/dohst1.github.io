@@ -2,129 +2,356 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="author" content="Dohst"> 
-        <meta name="description" content="AmazonSMP Website Main">
+        <meta name="author" content="Dohst Studios"> 
+        <meta name="description" content="AmazonSMP Website">
         <title>AmazonSMP Website</title>
-        <link rel="icon" href="favicon.png" type="image/x-icon">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <link rel="stylesheet" href="main.css" type="text/css">
     </head>
+
     <body>
+        <!-- header -->
         <header>
-            <h1><a href="index.html">Amazon<abbr title="Survival MultiPlayer">SMP</abbr> Website</a></h1><hr>
+            <nav id="nav" aria-label="primary-navigation">
+                <a href="index.html"><button class="active">AmazonSMP</button></a>
+                <a href="dohst.html"><button>Dohst</button></a>
+                <a href="information.html"><button>Information</button></a>
+            </nav>
+            <img src="images/amazonsmp.png" alt="AmazonSMP"  width="100%" height="100%">
         </header>
+        
+        <!-- main -->
         <main>
-            <br>
-            <section>
-                <h2>AmazonSMP Season Downloads</h2>
+            <section id="seasons">
+                <h2>AmazonSMP Seasons</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th scope="col">Season</th>
-                            <th scope="col">Version</th>
-                            <th scope="col">Start - End</th>
-                            <th scope="col" colspan="2">Download</th>
+                            <th>Season</th>
+                            <th>Version</th>
+                            <th>Start Date - End Date</th>
+                            <th>Lifetime</th>
+                            <th colspan="2">Downloads</th>
                         </tr>
                     </thead>
+                    <tr>
+                    </tr>
                     <tbody>
                         <tr>
-                            <td>Test 0</td>
-                            <td>1.18</td>
-                            <td>01/03/2023 - 14/03/2022</td>
-                            <td><a href="404.html">Unavailable</a></td>
-                            <td rowspan="9"></td>
-                        </tr>
-                        <tr>
-                            <td>Season 1</td>
+                            <th>Season 1</th>
                             <td>1.18</td>
                             <td>16/03/2022 - 02/05/2022</td>
-                            <td><a href="404.html">Unavailable</a></td>
+                            <!-- <td>1 month, 2 weeks, 2 days<br>(47 days)</td> -->
+                            <td>47 days</td>
+                            <td><a href="downloads/unavailable.html">Unavailable</a></td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td>Season 2</td>
+                            <th>Season 2</th>
                             <td>1.18.1</td>
                             <td>03/05/2022 - 05/06/2022</td>
-                            <td><a href="404.html">Unavailable</a></td>
+                            <!-- <td>1 month, 3 days<br>(34 days)</td> -->
+                            <td>34 days</td>
+                            <td><a href="downloads/unavailable.html">Unavailable</a></td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td>Season 3</td>
+                            <th>Season 3<br>(Amazon YEAR)</th>
                             <td>1.18.2 - 1.19.2</td>
                             <td>18/06/2022 - 18/08/2022</td>
-                            <td><a href="404.html">Download</a></td>
+                            <!-- <td>2 months<br>(61 days)</td> -->
+                            <td>61 days</td>
+                            <td><a href="downloads/amazonsmp/season3.zip" download>Download (53.8 MB)</a></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Season 4</td>
                             <td>1.19 mods</td>
                             <td>20/08/2022 - 16/09/2022</td>
-                            <td><a href="404.html">Download</a></td>
+                            <!-- <td>3 weeks, 6 days<br>(27 days)</td> -->
+                            <td>27 days</td>
+                            <td><a href="downloads/amazonsmp/season4.zip" download>Download (44.9 MB)</a></td>
+                            <td></td>
                         </tr>
+                        <!-- <tr>
+                            <td>Temporary 1</td>
+                            <td>1.19 mods</td>
+                            <td>11/09/2022 - 17/09/2022</td>
+                            <td>1 week<br>(6 days)</td>
+                            <td>6 days</td>
+                            <td><a href="downloads/unavailable.html">Unavailable</a></td>
+                            <td class="limited">(world file never saved)</td>
+                        </tr> -->
                         <tr>
                             <td>Season 5</td>
                             <td>1.19.2</td>
                             <td>19/09/2022 - 06/11/2022</td>
-                            <td><a href="404.html">Download</a></td>
+                            <!-- <td>1 month, 2 weeks, 4 days<br>(48 days)</td> -->
+                            <td>48 days</td>
+                            <td><a href="downloads/amazonsmp/season5.zip" download>Download (20.0 MB)</a></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Season 6</td>
                             <td>1.19.2 - 1.19.3</td>
                             <td>09/11/2022 - 22/11/2022</td>
-                            <td><a href="404.html">Download</a></td>
+                            <!-- <td>1 week, 6 days<br>(13 days)</td> -->
+                            <td>13 days</td>
+                            <td><a href="downloads/amazonsmp/season6.zip" download>Download (5.53 MB)</a></td>
+                            <td></td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td>Temporary 1</td>
                             <td>1.19 mods</td>
-                            <td>2?/11/2022 - 0?/12/2022</td>
-                            <td><a href="404.html">Unavailable</a></td>
-                        </tr>
+                            <td>25/11/2022 - 09/12/2022</td>
+                            <td>2 weeks<br>(14 days)</td>
+                            <td>14 days</td>
+                            <td><a href="downloads/unavailable.html">Unavailable</a></td>
+                            <td class="limited">(world file never saved)</td>
+                        </tr> -->
                         <tr>
                             <td>Season 7</td>
                             <td>1.19.3</td>
                             <td>11/12/2022 - 23/12/2022</td>
-                            <td><a href="downloads/season7.zip" download>Download</a></td>
+                            <!-- <td>1 week, 5 days<br>(12 days)</td> -->
+                            <td>12 days</td>
+                            <td><a href="downloads/amazonsmp/season7.zip" download>Download (74.6 MB)</a></td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td>Season 8</td>
+                            <th>Season 8</th>
                             <td>1.19.2 mods</td>
                             <td>10/01/2023 - 26/02/2023</td>
-                            <td><a href="downloads/season8.zip" download>Download Final</a></td>
-                            <td><a href="downloads/season8-before.zip" download>Before Destruction</a></td>
+                            <!-- <td>1 month, 2 weeks, 2 days<br>(47 days)</td> -->
+                            <td>47 days</td>
+                            <td><a href="downloads/amazonsmp/season8.zip" download>Download Final<br>(68.5 MB)</a></td>
+                            <td><a href="downloads/amazonsmp/season8-before.zip" download>Before Destruction<br>(54.5 MB)</a></td>
                         </tr>
                         <tr>
-                            <td>Season 9</td>
+                            <th>Season 9</th>
                             <td>1.19.3 - 1.19.4</td>
-                            <td>01/03/2023 - 10/06/2023</td>
-                            <td><a href="downloads/season9.zip" download>Download Final</a></td>
-                            <td class="limited"><a href="downloads/season9-before.zip" download>Before Destruction (26-05-2023)</a></td>
+                            <td>01/03/2023 -<!-- (10/04/2023 - 05/05/2023) - -->10/06/2023</td>
+                            <!-- <td>2 months, 2 weeks<br>(76 days)</td> -->
+                            <td>76 days</td>
+                            <td><a href="downloads/amazonsmp/season9.zip" download>Download Final<br>(66.9 MB)</a></td>
+                            <td><a href="downloads/amazonsmp/season9-before.zip" download>Before Destruction<br>(26/05/2023) (49.6 MB)</a></td>
                         </tr>
                         <tr>
                             <td>Temporary 2</td>
                             <td>1.19.2 mods</td>
                             <td>29/04/2023 - 04/05/2023</td>
-                            <td><a href="404.html">Unavailable</a></td>
-                            <td rowspan="2"></td>
+                            <!-- <td>3 weeks, 4 days<br>(25 days)</td> -->
+                            <td>25 days</td>
+                            <td><a href="downloads/amazonsmp/temporary2.zip">Download (6.30 MB)</a></td>
+                            <!-- <td class="limited">(very small, I don't see a point in even having this download)</td> -->
+                            <td class="limited"></td>
                         </tr>
                         <tr>
-                            <td>Season 10</td>
+                            <th>Season 10</th>
                             <td>1.20 - 1.20.1 mods</td>
-                            <td>10/06/2023 - present</td>
-                            <td><a href="404.html">Current</a></td>
+                            <td>10/06/2023 - <!--(01/10/2023 - 02/12/2023) - -->present</td>
+                            <!-- 10/06/2023 to 01/10/2023 = 113 days -->
+                            <td>Ongoing<br>&gt;113 days</td>
+                            <td><a href="downloads/unavailable.html">Ongoing</a></td>
+                            <!-- <td><a href="downloads/amazonsmp/season10.zip" download>Download Part 2<br>(final) (??? MB)</a></td> -->
+                            <td><a href="downloads/amazonsmp/season10_before.zip" download>Download Part 1<br>(01/10/2023) (97.8 MB)</a></td>
                         </tr>
                         <tr>
-                            <td>Temporary 3</td>
-                            <td>1.20.1 mods</td>
-                            <td>07/10/2023 - present</td>
-                            <td><a href="404.html">Current Season</a></td>
-                            <td class="limited"><a href="404.html">Before Fabric (02-11-2023)</a></td>
+                            <th>Temporary 3<br>(Season 11)</th>
+                            <td>1.20.1 - mods</td>
+                            <td>07/10/2023 - 02/12/2023</td>
+                            <!-- <td>1 month, 3 weeks, 4 days<br>(56 days)</td> -->
+                            <td>56 days</td>
+                            <td><a href="downloads/amazonsmp/temporary3.zip" download>Download Final<br>(52.8 MB)</a></td>
+                            <td><a href="downloads/amazonsmp/temporary3_before.zip" download>Before Fabric<br>(02/11/2023) (46.5 MB)</a></td>
                         </tr>
                     </tbody>
                 </table>
-                <p>If you would like an older download that is unavailable here, please contact Dohst.</p>
+                <p>After clicking the download link it might take a few seconds before the download actually starts (caused by the the size of the file).</p>
+                <p>Temporary 1 is currently being processed, a fix is in progress.</p>
             </section>
+
+            <section id="mods">
+                <h2>Mods Used on the AmazonSMP</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Required to Join</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Mod Page</th>
+                            <th scope="col">Version</th>
+                            <td scope="col">Description</td>
+                        </tr>
+                    </thead>
+                    <tr></tr>
+                    <tbody>
+                        <tr>
+                            <th rowspan="3">Yes</th>
+                            <td>Fabric API</td>
+                            <td><a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/4834952">Cursed Forge</a></td>
+                            <td>v0.90.7</td>
+                            <td class="limited">Needed for any Fabric Mod</td>
+                        </tr>
+                        <tr>
+                            <td>Create Fabric</td>
+                            <td><a href="https://www.curseforge.com/minecraft/mc-mods/create-fabric/files/4721061">Cursed Forge</a></td>
+                            <td>v0.5.1-d-build.1161</td>
+                            <td class="limited">variety of tools and blocks for Building, Decoration and Aesthetic Automation.</td>
+                        </tr>
+                        <tr>
+                            <td>Deeper and Darker</td>
+                            <td><a href="https://www.curseforge.com/minecraft/mc-mods/deeperdarker/files/4838841">Cursed Forge</a></td>
+                            <td>v1.2.3</td>
+                            <td class="limited">Adds a Deepdark dimension</td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                            <th rowspan="12">No</th>
+                            <td>Architectury</td>
+                            <td><a href="https://www.curseforge.com/minecraft/mc-mods/architectury-api/files/4663009">Cursed Forge</a></td>
+                            <td>v9.1.12</td>
+                            <td class="limited">Needed for some other mods</td>
+                        </tr>
+                        <tr>
+                            <td>Cloth Config</td>
+                            <td><a href="https://www.curseforge.com/minecraft/mc-mods/cloth-config/files/4633442">Cursed Forge</a></td>
+                            <td>v11.1.106</td>
+                            <td class="limited">Needed for some other mods</td>
+                        </tr>
+                        <tr>
+                            <td>Ferrite Core</td>
+                            <td><a href="https://www.curseforge.com/minecraft/mc-mods/ferritecore-fabric/files/4810977">Cursed Forge</a></td>
+                            <td>v6.0.1</td>
+                            <td class="limited">Helps with Performance</td>
+                        </tr>
+                        <tr>
+                            <td>Just Enough Items (JEI)</td>
+                            <td><a href="https://www.curseforge.com/minecraft/mc-mods/jei/files/4712867">Cursed Forge</a></td>
+                            <td>v15.2.0.27</td>
+                            <td class="limited">Helps with mod crafting recipes</td>
+                        </tr>
+                        <tr>
+                            <td>Lithium</td>
+                            <td><a href="https://www.curseforge.com/minecraft/mc-mods/lithium/files/4765724">Cursed Forge</a></td>
+                            <td>v0.11.2</td>
+                            <td class="limited">Helps with Performance</td>
+                        </tr>
+                        <tr>
+                            <td>Open Parties and Claims</td>
+                            <td><a href="https://www.curseforge.com/minecraft/mc-mods/open-parties-and-claims/files/4780182">Cursed Forge</a></td>
+                            <td>v0.20.0</td>
+                            <td class="limited">A chunk claim mod that helps to protect owned spaces</td>
+                        </tr>
+                        <tr>
+                            <td>Open Parties and Claims<br>(Fabric Create Support)</td>
+                            <td><a href="https://www.curseforge.com/minecraft/mc-mods/opac-fabric-create-support/files/4610263">Cursed Forge</a></td>
+                            <td>v1.3.0</td>
+                            <td class="limited">Adds Create Fabric Support for a chunk claim mod that helps to protect owned spaces</td>
+                        </tr>
+                        <tr>
+                            <td>Roughly Enough Items (REI)</td>
+                            <td><a href="https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items/files/4834407">Cursed Forge</a></td>
+                            <td>v12.0.674</td>
+                            <td class="limited">Helps with mod crafting recipes</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>All Mods are Fabric, 1.20.1.</p>
+            </section>
+
+            <section id="datapacks">
+                <h2>Datapacks Used on the AmazonSMP</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Author</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Download</th>
+                            <th scope="col">Version</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="10"><a href="https://vanillatweaks.net">Vanilla Tweaks</a></th>
+                            <td>AFK Display</td>
+                            <td><a href="downloads/vanilla_tweaks/afk_display-v1.1.5-1.20.zip" download> Download</a></td>
+                            <td>v1.1.5 - 1.20</td>
+                            <td class="limited">Makes a player's name grey if they have been afk for more than 5 minutes.</td>
+                        </tr>
+                        <tr>
+                            <td>Cauldron Concrete</td>
+                            <td><a href="downloads/vanilla_tweaks/cauldron_concrete-v2.0.8-1.20.zip" download> Download</a></td>
+                            <td>v2.0.8 - 1.20</td>
+                            <td class="limited">Allows you to convert concrete powder to concrete by just throwing it in a cauldron filled with water.</td>
+                        </tr>
+                        <tr>
+                            <td>Custom Nether Portals</td>
+                            <td><a href="downloads/vanilla_tweaks/custom_nether_portals-v2.3.8-1.20.zip" download> Download</a></td>
+                            <td>v2.3.8 - 1.20</td>
+                            <td class="limited">Allows you to make nether portals in lots of different shapes and you can also use crying obsidian.</td>
+                        </tr>
+                        <tr>
+                            <td>Double Shulker Shells</td>
+                            <td><a href="downloads/vanilla_tweaks/double_shulker_shells-v1.3.5-1.20.zip" download> Download</a></td>
+                            <td>v1.3.5 - 1.20</td>
+                            <td class="limited">Shulkers always drop 2 shulker shells.</td>
+                        </tr>
+                        <tr>
+                            <td>Fast Leaf Decay</td>
+                            <td><a href="downloads/vanilla_tweaks/fast_leaf_decay-v2.0.8-1.20.zip" download> Download</a></td>
+                            <td>v2.0.8 - 1.20</td>
+                            <td class="limited">Makes leaves decay faster.</td>
+                        </tr>
+                        <tr>
+                            <td>More Mob Heads</td>
+                            <td><a href="downloads/vanilla_tweaks/more_mob_heads-v2.12.2-1.20.zip" download> Download</a></td>
+                            <td>v2.12.2 - 1.20</td>
+                            <td class="limited">All mobs have a chance to drop their head.</td>
+                        </tr>
+                        <tr>
+                            <td>Player Head Drops</td>
+                            <td><a href="downloads/vanilla_tweaks/player_head_drops-v1.1.5-1.20.zip" download> Download</a></td>
+                            <td>v1.1.5 - 1.20</td>
+                            <td class="limited">If a player is killed by a player the player killed will drop their head.</td>
+                        </tr>
+                        <tr>
+                            <td>Silence Mobs</td>
+                            <td><a href="downloads/vanilla_tweaks/silence_mobs-v1.1.5-1.20.zip" download> Download</a></td>
+                            <td>v1.1.5 - 1.20</td>
+                            <td class="limited">If you name a mob 'Silence me', 'silence me' or 'silence_me', the mob won't make any sound.</td>
+                        </tr>
+                        <tr>
+                            <td>Unlock All Recipes</td>
+                            <td><a href="downloads/vanilla_tweaks/unlock_all_recipes-v2.0.6-1.20.zip" download> Download</a></td>
+                            <td>v2.0.6 - 1.20</td>
+                            <td class="limited">Unlocks all recipes.</td>
+                        </tr>
+                        <tr>
+                            <td>Crafting Tweaks</td>
+                            <td><a href="downloads/vanilla_tweaks/crafting-1.20.zip" download> Download</a></td>
+                            <td>v1.7.2 - 1.20</td>
+                            <td class="limited">Adds some crafting recipes (eg: 2 slabs = 1 plank).</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Remember all Datapacks that have the author as "Vanilla Tweaks" are not made by me, and you should check out some of their other creations on their <a href="/https://vanillatweaks.net">website.</a></p>
+            </section>
+
+            <br><br>
         </main>
+
+        <!-- footer -->
+        <br><br>
         <footer>
-            <br><hr>
             <address>A Website for a Minecraft server, NOT associated with the Amazon company in any way</address>
+            <br>
             <address>NOT associated with any other company in any way</address>
-            <p><code> &lt;&lt;&lt; <a href="https://www.gov.uk/copyright" target="_blank">&copy;</a> <a href="information.html">2023 Dohst</a> &gt;&gt;&gt; </code></p>
+            <!-- copyright -->
+            <br> 
+            <p><code> &lt;&lt;&lt; <a href="https://www.gov.uk/copyright" target="_blank">&copy;</a> <a href="information.html#copyright">2023, 2024 Dohst</a> &gt;&gt;&gt; </code></p>
+            <br>
         </footer>
     </body>
 </html>
