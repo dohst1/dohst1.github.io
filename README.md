@@ -13,4 +13,4 @@ Dohst owns all rights to all content on the AmazonSMP website (amazonsmp.ddns.ne
 
 - this github repository has to be public to allow for the github pages site to be publicly available
 
-_`-version: 1.0.0-release (09-12-2023)`_
+_`-version: 1.0.1-release (07-01-2024)`_

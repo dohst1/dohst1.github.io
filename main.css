@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 
+/* Dark Blue */
 :root {
     --background: rgb(13, 28, 56);
     --background-light: rgb(28, 49, 88);
@@ -10,13 +11,27 @@
     --text: rgb(230, 237, 243);
     --text-dark: rgb(16, 16, 16);
     --text-link: rgb(22, 117, 250);
+    --font-size: 20px;
+    --font-size-small: 18px
 }
+
+/* Blue
+:root {
+    --background: rgb(36, 68, 124);
+    --background-light: rgb(54, 93, 165);
+    --background-dark: rgb(28, 46, 80);
+    --border: rgb(63, 74, 87);
+    --border-light: rgb(97, 109, 124);
+    --text: rgb(230, 237, 243);
+    --text-dark: rgb(16, 16, 16);
+    --link: rgb(47, 129, 247);
+} */
 
 html, body {
     color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: var(--font-size);
     text-align: center;
     background-color: var(--background-dark);
 }   
@@ -30,31 +45,35 @@ footer {
     color: var(--border-light);
 }
 
-code, table, th, td, button, li, ul, hr {
+code, table, th, td, button, li, ul, ol, hr, img {
     background-color: var(--background-gray);
     border: 2px solid var(--border);
     border-radius: 6px;
     padding: 5px 8px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 18px;
+    font-size: var(--font-size-small);
 }
 code:hover, th:hover, td:hover, button:hover, li:hover {
     border-color: var(--border-light);
 }
-ul {
-    padding-left: 25px;    
+
+ol, ul, .small {
+    padding-left: 36px;    
+    text-align: start;
+    margin-left: 35%;
+    margin-right: 35%;
 }
-li {
-    justify-content: start;
+ul {
+    padding-left: 26px;    
 }
 .limited {
-    max-width: 250px;
+    max-width: 300px;
 }
 
-hr {
+hr, img {
     padding: 0px;
-    border: 3px solid var(--border);
+    border: 4px solid var(--border);
 }
 
 code {
@@ -69,7 +88,7 @@ button {
     text-decoration: none;
 }
 
-p, h2, h3, ul {
+p, h2, h3 {
     text-align: auto;
     margin-left: 30%;
     margin-right: 30%;
@@ -78,7 +97,7 @@ h1 {
     font-size: 48px;
 }
 h2 {
-    padding-top: 40px;
+    padding-top: 100px;
     font-size: 40px;
 }
 h3 {
@@ -97,6 +116,11 @@ td a{
     display: block;
 }
 
+nav h1{
+    position: flex;
+    width: 49%;
+    justify-content: center;
+}
 nav {
     position: fixed;
     top: 0px;
@@ -132,8 +156,18 @@ nav button:hover {
 }
 
 @media only screen and /* (max-width: 600px) */ (max-width: 1000px) {
-    p, h1, h2, h3, ul {
+    p, h1, h2, h3, ul, ol {
         margin-left: 5%;
         margin-right: 5%;
+        --font-size: 18px;
+        --font-size-small: 16px;
+    }
+    .limited {
+        max-width: 250px;
+    }
+
+    /* removes the 'AmazonSMP Websbite' if the page is too small too show it (does this by making it generate in the negatives)*/
+    nav h1 {
+        margin-left: -1000px;
     }
 }
