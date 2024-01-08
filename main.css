@@ -167,7 +167,7 @@ nav button:hover {
     }
 
     /* removes the 'AmazonSMP Websbite' if the page is too small too show it (does this by making it generate in the negatives)*/
-    nav h1 {
+    nav h1, nav .right {
         margin-left: -1000px;
     }
 }
