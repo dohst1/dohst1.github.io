@@ -375,16 +375,18 @@ Major (StartDate - EndDate) "UpdateName"
         - discontinued the version.md file (at the end of 1.0.1)
 
 - ### 1.0.2-release (04/02/2024 - 05/02/2024)
-    - updated some incorrect information on the Changes page 
     - removed amazonsmp download season8 
     - removed amazonsmp download season11-before 
     - removed amazonsmp season temporary1
     - removed amazonsmp season temporary2 
+    - updated some incorrect information on the Changes page 
     - updated amazonsmp seasons
     - updated amazonsmp mods
     - updated amazonsmp datapacks
     - updated some text on the Information page
     - updated some text on the 404 page
+    - updated the copyright at the bottom of each page to say "2024 Dohst"
+    - added a commented season 12 row in the AmazonSMP Seasons
 
 ---
 
