@@ -1,5 +1,20 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 
+/* Light Blue
+:root {
+    --background: rgb(18, 45, 92);
+    --background-light: rgb(19, 32, 56);
+    --background-gray: rgb(17, 38, 83); 
+    --background-dark: rgb(19, 36, 70);
+    --border: rgb(63, 74, 87);
+    --border-light: rgb(97, 109, 124);
+    --text: rgb(230, 237, 243);
+    --text-dark: rgb(16, 16, 16);
+    --text-link: rgb(47, 129, 247);
+    --font-size: 22px;
+    --font-size-small: 20px
+} */
+
 /* Dark Blue */
 :root {
     --background: rgb(13, 28, 56);
@@ -11,21 +26,9 @@
     --text: rgb(230, 237, 243);
     --text-dark: rgb(16, 16, 16);
     --text-link: rgb(22, 117, 250);
-    --font-size: 20px;
-    --font-size-small: 18px
+    --font-size: 22px;
+    --font-size-small: 20px
 }
-
-/* Blue
-:root {
-    --background: rgb(36, 68, 124);
-    --background-light: rgb(54, 93, 165);
-    --background-dark: rgb(28, 46, 80);
-    --border: rgb(63, 74, 87);
-    --border-light: rgb(97, 109, 124);
-    --text: rgb(230, 237, 243);
-    --text-dark: rgb(16, 16, 16);
-    --link: rgb(47, 129, 247);
-} */
 
 html, body {
     color: var(--text);
@@ -59,10 +62,10 @@ code:hover, th:hover, td:hover, button:hover, li:hover {
 }
 
 ol, ul, .small {
-    padding-left: 36px;    
+    padding-left: 34px;    
     text-align: start;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 ul {
     padding-left: 26px;    
