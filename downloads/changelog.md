@@ -360,6 +360,20 @@
     - renamed download season9_before to season9
     - removed season10_before download
 
+
+### 1.3-release (07/05/2024 - 12/05/2024) Season 11 Part 2
+- #### 1.3.0 (12/05/2024)
+    - updated readme file
+    - updated information file
+    - added an about me section to Dohst page that is commented out
+    - made link color slightly darker
+    - made the Dohst Image smaller
+    - updated Season 11 Section
+    - updated the mods section
+    - updated dates
+    - removed season download warnings
+    - updated mods copyright information
+    - added season 11 part 2 recommended client mods zip file
 ---
 
 ## Update Plan:
