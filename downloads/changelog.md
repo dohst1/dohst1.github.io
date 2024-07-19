@@ -2,7 +2,7 @@
 - by: Dohst
 - File Versioning: major.minor.patch-label[-date][-name]
     - label: 'release' / 'beta'
-    - date: yyyymm, yyyy = year, mm = month
+    - date: yyyymm[dd], yyyy = year, mm = month, dd = day
 - changelog format:
 ## Major-Label (StartDate - EndDate) UpdateName
 ### Major.Minor-Label (StartDate - EndDate) UpdateName
@@ -361,8 +361,8 @@
     - removed season10_before download
 
 
-### 1.3-release (07/05/2024 - 12/05/2024) Season 11 Part 2
-- #### 1.3.0 (12/05/2024)
+### 1.3-release (07/05/2024 - 19/07/2024) Season 11 Part 2
+- #### 1.3.0 (07/05/2024 - 12/05/2024)
     - updated readme file
     - updated information file
     - added an about me section to Dohst page that is commented out
@@ -374,10 +374,25 @@
     - removed season download warnings
     - updated mods copyright information
     - added season 11 part 2 recommended client mods zip file
+- #### 1.3.1 (17/07/2024 - 19/07/2024)
+    - updated readme file
+    - updated information file
+    - made a new version schedule
+    - made the Main Image credits have some links to peoples' social media
+    - renamed the previous "season 10 part 1" to "season 10 part 2" because it was part 2
+    - added a season 10 part 1 download 
+    - renamed the "season11" file to "season11p1"
+    - added future updates to read me file
+    - updated mods section
+    - updated the ongoing days counter for season 11
+    - updated the season 11 part 2 client mods
+    - added a required tag to some of the mods to show which are required to join
 ---
 
-## Update Plan:
-### 2023 (15 updates)
+
+
+## Updates:
+### 2023 (14 updates)
 - 0.0.0 : August
 - 0.0.1 : August
 - 0.1.0 : August
@@ -394,20 +409,40 @@
 - 1.0.0 : December 10
 
 ### 2024 (8 updates)
-- 1.1 : January 7
+- 1.1.0 : January 7
 - 1.1.1 : February 4
-- 1.2 : March 24
-- 1.3 : May 12
-- 1.4 : June 30
-- 1.5 : August 18
-- 1.6 : October 6
-- 1.7 : November 24
+- 1.2.0 : March 24
+- 1.3.0 : May 12
+(new schedule)
+- 1.3.1 : July 19
 
-### 2025 (7 updates)
-- 1.8 : January 12
-- 2.0 : March 23
-- 2.1 : May 11
-- 2.2 : June 29
-- 2.3 : August 17
-- 2.4 : October 5
-- 2.5 : November 23
+- 1.4.0 : august 30
+- 1.5.0 : october 30
+- 1.6.0 : december 30
+
+
+### new versioning (from v1.3.1 17/07/2024)
+- release a minor version on the 30th of every even numbered month
+- release a patch every time one is necessary (recommended to not release at least 3 weeks before a scheduled minor update)
+- all update releases will be on saturdays
+
+- average patch update changes : 10
+- average minor update changes : 30
+- average predicted major update changes : 90
+
+|----
+|old versioning system (from 1.0.0 10/12/2023 to 1.3.0 12/05/2024):
+|- 1.4 : June 30
+|- 1.5 : August 18
+|- 1.6 : October 6
+|- 1.7 : November 24
+|
+|### 2025 (7 updates)
+|- 1.8 : January 12
+|- 2.0 : March 23
+|- 2.1 : May 11
+|- 2.2 : June 29
+|- 2.3 : August 17
+|- 2.4 : October 5
+|- 2.5 : November 23
+|----
