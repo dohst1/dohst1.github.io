@@ -5,11 +5,9 @@ A website for a Minecraft server
 The website includes information about the server and minecraft world downloads, it also includes downloads to Dohst's packs.
 
 planned updates:
-- 1.3.2 : august 24
-- 1.4.0 : september 28
-- 1.4.1 : october 26
-- 1.4.2 : november 23
-- 1.5.0 : december 28
+- 1.4.0 : August 30
+- 1.5.0 : October 30
+- 1.6.0 : December 30
 
 
 This website is written and maintained by Dohst
