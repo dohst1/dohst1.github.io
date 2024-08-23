@@ -18,4 +18,4 @@ Copyright ©Dohst. ALL RIGHTS RESERVED.
 - NOT associated with the Amazon company in any way
 - this github repository has to be public to allow for the github pages site to be publicly available
 
-_`-version: 1.3.1-release (19-07-2024)`_
+_`-version: 1.3.2-release (23-08-2024)`_
