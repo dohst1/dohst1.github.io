@@ -1,12 +1,14 @@
 # AmazonSMP Website - Change Log
 - by: Dohst
-- File Versioning: major.minor.patch-label[-date][-name]
-    - label: 'release' / 'beta'
+- File Versioning: major.minor.patch-label[.beta_number][-date][-name]
+    - label: "release" / "beta" (if there isnt a label on that version and 'minor'/'major' versions are 'releases' then by default the version is a release)
+    - beta_number: the number of the current beta (only there if 'label' is "beta")
     - date: yyyymm[dd], yyyy = year, mm = month, dd = day
 - changelog format:
-## Major-Label (StartDate - EndDate) UpdateName
+## Major (StartDate - EndDate) UpdateName
 ### Major.Minor-Label (StartDate - EndDate) UpdateName
-- #### Major.Minor.Patch (Date)
+- #### Major.Minor.Patch-Label (Date)
+    [- #### beta x (only if 'label' is "beta")]
     - Changes
 
 ---
@@ -230,7 +232,7 @@
 ---
 
 
-## 1 (01/12/2023 - ??/??/202?) Release
+## 1 (01/12/2023 - ??/??/2025) Release
 
 ### 1.0-release (01/12/2023 - 10/12/2023) Release
 - #### 1.0.0 (01/12/2023 - 10/12/2023)
@@ -398,6 +400,7 @@
 
 ### 1.4 (23/08/2024 - 16/11/2024) ???
 - #### 1.4.0-beta (23/08/2024 - 23/08/2024)
+    - #### beta 1
     - updated Change log
     - updated readme file
     - renamed 'AmazonSMP Seasons' to 'Seasons and Downloads' on Main page
@@ -409,26 +412,30 @@
     - updated the copyright info
     - updated some wording on the 404 page
     - renamed the 'license_0.1-1.2' file to 'license_0.1-1.2.txt'
+    - #### beta 2
+    - updated Change log
+    - updated readme file
+    - updated LICENSE file
+
 
 ---
 
 
-
 ## Updates:
 ### 2023 (14 updates)
-- 0.0.0 : August
-- 0.0.1 : August
-- 0.1.0 : August
-- 0.1.1 : August
-- 0.1.2 : August
-- 0.1.3 : August
-- 0.2.0 : August
-- 0.2.1 : August
-- 0.3.0 : November
-- 0.3.1 : November
-- 0.3.2 : November
-- 0.3.3 : November
-- 0.4.0 : November
+- 0.0.0 : August ??
+- 0.0.1 : August ??
+- 0.1.0 : August ??
+- 0.1.1 : August ??
+- 0.1.2 : August ??
+- 0.1.3 : August ??
+- 0.2.0 : August ??
+- 0.2.1 : August ??
+- 0.3.0 : November ??
+- 0.3.1 : November ??
+- 0.3.2 : November ??
+- 0.3.3 : November ??
+- 0.4.0 : November ??
 - 1.0.0 : December 10
 
 ### 2024 (10 updates)
