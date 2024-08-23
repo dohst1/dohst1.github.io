@@ -388,12 +388,82 @@ Major (StartDate - EndDate) "UpdateName"
     - updated the copyright at the bottom of each page to say "2024 Dohst"
     - added a commented season 12 row in the AmazonSMP Seasons
 
----
+
+### 1.2-release (17/03/2024 - 24/03/2024) Season 11
+- #### 1.2.0 (24/03/2024)
+    - updated change log to new update times, every 7 weeks
+    - removed old season 11
+    - updated the changes page with new date information
+    - updated readme file
+    - updated license file, only added new version, did not change any terms as i dont feel like doing that right now
+    - removed version 0.2.2
+    - renamed version 1.0.1 to 1.1
+    - renamed version 1.0.2 to 1.1.1
+    - updated season 10 section in amazonsmp seasons
+    - updated season 11 section in amazonsmp seasons
+    - updated download message for seasons
+    - removed all 'before' downloads for seasons, only kept 'before' download for season9 and deleted final
+    - updated amazonsmp mods 
+    - updated amazonsmp mods info text
+    - updated more mob heads datapack from vanilla tweaks
+    - fixed datapack link wandering trades
+    - updated datapack descriptions
+    - updated amazonsmp datapack info text
+    - added mandoeam page with a message from him
+    - updated version info on the information page
+    - made font size and small font size 2px bigger
+    - added season 10 part 2 download
+    - updated some text
+    - added datapack to dohst datapacks, deepslate dungeons v2.1 for 1.20.4
+    - changed some alignment with lists
+    - made lists wider
+    - added a new light blue color scheme, not on by default
+    - removed season9 download
+    - renamed download season9_before to season9
+    - removed season10_before download
+
+
+### 1.3-release (07/05/2024 - 23/08/2024) Season 11 Part 2
+- #### 1.3.0 (07/05/2024 - 12/05/2024)
+    - updated readme file
+    - updated information file
+    - added an about me section to Dohst page that is commented out
+    - made link color slightly darker
+    - made the Dohst Image smaller
+    - updated Season 11 Section
+    - updated the mods section
+    - updated dates
+    - removed season download warnings
+    - updated mods copyright information
+    - added season 11 part 2 recommended client mods zip file
+- #### 1.3.1 (17/07/2024 - 19/07/2024)
+    - updated readme file
+    - updated information file
+    - made a new version schedule
+    - made the Main Image credits have some links to peoples' social media
+    - renamed the previous "season 10 part 1" to "season 10 part 2" because it was part 2
+    - added a season 10 part 1 download 
+    - renamed the "season11" file to "season11p1"
+    - added future updates to read me file
+    - updated mods section
+    - updated the ongoing days counter for season 11
+    - updated the season 11 part 2 client mods
+    - added a required tag to some of the mods to show which are required to join
+- #### 1.3.2 (22/08/2024 - 23/08/2024)
+    - updated Change log
+    - made a new update plan (replaced the one added in v1.3.1)
+    - updated season 11 lifetime in seasons information on Main page
+    - added 'dark smelting' to mod section on Main page
+    - added 'fabric language kotlin' to mod section on Main page
+    - changed some mod descriptions on Main page
+    - fixed the text saying that Whatcheeseburger was the owner of the website (now says Dohst) on Information page
 
 ---
 
-## Update Plan:
-### 2023 (15 updates)
+
+
+## Updates:
+### 2023 (14 updates)
 - 0.0.0 : August
 - 0.0.1 : August
 - 0.1.0 : August
@@ -410,19 +480,40 @@ Major (StartDate - EndDate) "UpdateName"
 - 0.4.0 : November
 - 1.0.0 : December
 
-### 2024 (planned: 7 updates)
-- 1.0.1 : January
-- #### 1.0.2 : February
-- 1.1.0 : March
-- 1.1.1 : May
-- 1.1.2 : July
-- 1.1.3 : September
-- 1.1.4 : November
+### 2024 (10 updates)
+- 1.1.0 : January 7
+- 1.1.1 : February 4
+- 1.2.0 : March 24
+- 1.3.0 : May 12
+- 1.3.1 : July 19
+- #### (new schedule)
+- 1.3.2-release : August 23
+- 1.4.0-beta    : September 16
+- 1.4.0-release : September 16
+- 1.4.1-release : October 16
+- 1.4.2-release : November 16
+- 1.5.0-release : December 16
 
-### 2025 (planned: 6 updates)
-- 1.1.5 : January 
-- 1.2.0 : March
-- 1.2.1 : May
-- 1.2.2 : July
-- 1.2.3 : September
-- 1.2.4 : November
+
+### new versioning (from v1.3.2 23/08/2024)
+- major.minor.patch
+- major + 1 every year or when needed (can be longer than every year)
+- minor + 1 every 3 months on the 16th
+- patch + 1 every month on the 16th or when needed (cant be in the same month as a scheduled minor/major patch)
+
+|----
+|old versioning system (from 1.0.0 10/12/2023 to 1.3.0 12/05/2024):
+|- 1.4 : June 30
+|- 1.5 : August 18
+|- 1.6 : October 6
+|- 1.7 : November 24
+|
+|### 2025 (7 updates)
+|- 1.8 : January 12
+|- 2.0 : March 23
+|- 2.1 : May 11
+|- 2.2 : June 29
+|- 2.3 : August 17
+|- 2.4 : October 5
+|- 2.5 : November 23
+|----

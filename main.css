@@ -40,9 +40,14 @@ main {
     border-radius: 10px;
     border: 4px solid var(--border);
 }
-footer {
+footer, address {
     font-size: 18px;
     color: var(--border-light);
+}
+
+main address {
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 code, table, th, td, button, li, ul, ol, hr, img {
