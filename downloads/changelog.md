@@ -1,6 +1,6 @@
 # AmazonSMP Website - Change Log
 - by: Dohst
-- File Versioning: major.minor.patch-label[.beta_number][-date][-name]
+- File Versioning: major.minor.patch-label[beta_number][-date][-name]
     - label: "release" / "beta" (if there isnt a label on that version and 'minor'/'major' versions are 'releases' then by default the version is a release)
     - beta_number: the number of the current beta (only there if 'label' is "beta")
     - date: yyyymm[dd], yyyy = year, mm = month, dd = day
@@ -416,6 +416,16 @@
     - updated Change log
     - updated readme file
     - updated LICENSE file
+    - #### beta 3
+    - updated version info on the information page
+    - renamed the license to "license_1.4_beta"
+    - made the license be the MIT License since i was making the license file more of a legal file
+    - removed all the github issue templates and added one for reporting bugs, requesting features and requesting changes
+    - made the 404 page title a link to the main page
+    - moved all the old unnecessary files to a new "old" folder
+    - updated the 'future updates' section on the Changes page
+    - updated the v1.3 information section on the changes page
+    - added a v1.4 information section on the changes page
 
 
 ---
