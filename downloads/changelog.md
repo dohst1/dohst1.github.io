@@ -230,7 +230,7 @@
 ---
 
 
-## 1 (01/12/2023 - 02/03/2025) Release
+## 1 (01/12/2023 - ??/??/202?) Release
 
 ### 1.0-release (01/12/2023 - 10/12/2023) Release
 - #### 1.0.0 (01/12/2023 - 10/12/2023)
@@ -361,7 +361,7 @@
     - removed season10_before download
 
 
-### 1.3-release (07/05/2024 - 19/07/2024) Season 11 Part 2
+### 1.3-release (07/05/2024 - 23/08/2024) Season 11 Part 2
 - #### 1.3.0 (07/05/2024 - 12/05/2024)
     - updated readme file
     - updated information file
@@ -387,6 +387,15 @@
     - updated the ongoing days counter for season 11
     - updated the season 11 part 2 client mods
     - added a required tag to some of the mods to show which are required to join
+- #### 1.3.2 (22/08/2024 - 23/08/2024)
+    - updated Change log
+    - made a new update plan (replaced the one added in v1.3.1)
+    - updated season 11 lifetime in seasons information on Main page
+    - added 'dark smelting' to mod section on Main page
+    - added 'fabric language kotlin' to mod section on Main page
+    - changed some mod descriptions on Main page
+    - fixed the text saying that Whatcheeseburger was the owner of the website (now says Dohst) on Information page
+
 ---
 
 
@@ -408,23 +417,26 @@
 - 0.4.0 : November
 - 1.0.0 : December 10
 
-### 2024 (8 updates)
+### 2024 (10 updates)
 - 1.1.0 : January 7
 - 1.1.1 : February 4
 - 1.2.0 : March 24
 - 1.3.0 : May 12
-(new schedule)
 - 1.3.1 : July 19
+(new schedule)
+- 1.3.2 : August 23
 
-- 1.4.0 : august 30
-- 1.5.0 : october 30
-- 1.6.0 : december 30
+- 1.4.0 : September 16
+- 1.4.1 : October 16
+- 1.4.2 : November 16
+- 1.5.0 : December 16
 
 
-### new versioning (from v1.3.1 17/07/2024)
-- release a minor version on the 30th of every even numbered month
-- release a patch every time one is necessary (recommended to not release at least 3 weeks before a scheduled minor update)
-- all update releases will be on saturdays
+### new versioning (from v1.3.2 23/08/2024)
+- X.Y.Z
+- X + 1 every year or when needed (can be longer than every year)
+- Y + 1 every 3 months on the 16th
+- Z + 1 every month on the 16th
 
 - average patch update changes : 10
 - average minor update changes : 30
