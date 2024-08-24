@@ -426,6 +426,11 @@
     - updated the 'future updates' section on the Changes page
     - updated the v1.3 information section on the changes page
     - added a v1.4 information section on the changes page
+    - #### beta 4
+    - added a 'Report / Request' section on the Information page
+    - remade the 'Main image credits' on Information page to be a table instead of a list
+    - made the css class 'limited' display: flex
+    - made the nav buttons have bigger font size and a bigger width and height when viewed in a smaller screen
 
 
 ---

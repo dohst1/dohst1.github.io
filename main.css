@@ -1,7 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 
-/* Light Blue
-:root {
+/* Light Blue */
+/* :root {
     --background: rgb(18, 45, 92);
     --background-light: rgb(19, 32, 56);
     --background-gray: rgb(17, 38, 83); 
@@ -13,7 +13,8 @@
     --text-link: rgb(47, 129, 247);
     --font-size: 22px;
     --font-size-small: 20px
-} */
+} 
+*/
 
 /* Dark Blue */
 :root {
@@ -77,6 +78,7 @@ ul {
 }
 .limited {
     max-width: 300px;
+    text-align: left;
 }
 
 hr, img {
@@ -163,12 +165,12 @@ nav button:hover {
     color: var(--background-light);
 }
 
-@media only screen and /* (max-width: 600px) */ (max-width: 1000px) {
+@media only screen and /* (max-width: 600px) */ (max-width: 1024px) {
     p, h1, h2, h3, ul, ol {
         margin-left: 5%;
         margin-right: 5%;
-        --font-size: 18px;
-        --font-size-small: 16px;
+        --font-size: 20px;
+        --font-size-small: 18px;
     }
     .limited {
         max-width: 250px;
@@ -177,5 +179,12 @@ nav button:hover {
     /* removes the 'AmazonSMP Websbite' if the page is too small too show it (does this by making it generate in the negatives)*/
     nav h1, .right {
         margin-left: -10000px;
+    }
+
+    nav button {
+        font-size: 32px;
+        height: 48px;
+        line-height: 48px;
+        min-width: 96px;
     }
 }
