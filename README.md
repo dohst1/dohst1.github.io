@@ -16,4 +16,4 @@ This website includes information about the AmazonSMP server and downloads to pa
 
 #### Copyright ©Dohst. ALL RIGHTS RESERVED.
 
-_`-version: 1.4.0-beta.2 (23-08-2024)`_
+_`-version: 1.4.0-beta (202408)`_

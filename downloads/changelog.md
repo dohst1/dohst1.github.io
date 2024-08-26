@@ -1,17 +1,17 @@
 # AmazonSMP Website - Change Log
 - by: Dohst
-- File Versioning: major.minor.patch-label[beta_number][-date][-name]
-    - label: "release" / "beta" (if there isnt a label on that version and 'minor'/'major' versions are 'releases' then by default the version is a release)
-    - beta_number: the number of the current beta (only there if 'label' is "beta")
-    - date: yyyymm[dd], yyyy = year, mm = month, dd = day
+- File Versioning: major.minor.patch-label[-date][-name]
+    - label: release / beta
+    - date: yyyymm, yyyy = year, mm = month, dd = day
 - changelog format:
 ## Major (StartDate - EndDate) UpdateName
 ### Major.Minor-Label (StartDate - EndDate) UpdateName
-- #### Major.Minor.Patch-Label (Date)
-    [- #### beta x (only if 'label' is "beta")]
+- #### Major.Minor.Patch (Date)
     - Changes
 
+
 ---
+
 
 ## 0 (16/08/2023 - 01-12-2023) beta
 
@@ -399,8 +399,7 @@
     - fixed the text saying that Whatcheeseburger was the owner of the website (now says Dohst) on Information page
 
 ### 1.4 (23/08/2024 - 16/11/2024) ???
-- #### 1.4.0-beta (23/08/2024 - 23/08/2024)
-    - #### beta 1
+- #### 1.4.0-beta (23/08/2024 - 31/08/2024) beta
     - updated Change log
     - updated readme file
     - renamed 'AmazonSMP Seasons' to 'Seasons and Downloads' on Main page
@@ -412,11 +411,6 @@
     - updated the copyright info
     - updated some wording on the 404 page
     - renamed the 'license_0.1-1.2' file to 'license_0.1-1.2.txt'
-    - #### beta 2
-    - updated Change log
-    - updated readme file
-    - updated LICENSE file
-    - #### beta 3
     - updated version info on the information page
     - renamed the license to "license_1.4_beta"
     - made the license be the MIT License since i was making the license file more of a legal file
@@ -426,11 +420,11 @@
     - updated the 'future updates' section on the Changes page
     - updated the v1.3 information section on the changes page
     - added a v1.4 information section on the changes page
-    - #### beta 4
     - added a 'Report / Request' section on the Information page
     - remade the 'Main image credits' on Information page to be a table instead of a list
     - made the css class 'limited' display: flex
     - made the nav buttons have bigger font size and a bigger width and height when viewed in a smaller screen
+    - added version 1.4 beta information on information page
 
 
 ---
@@ -460,19 +454,19 @@
 - 1.3.0 : May 12
 - 1.3.1 : July 19
 - #### (new schedule)
-- 1.3.2-release : August 23
-- 1.4.0-beta    : September 16
-- 1.4.0-release : September 16
-- 1.4.1-release : October 16
-- 1.4.2-release : November 16
-- 1.5.0-release : December 16
+- 1.3.2 : August 23
+- 1.4.0 beta : September
+- 1.4.0 : September 16
+- 1.4.1 : October 16
+- 1.4.2 : November 16
+- 1.5.0 : December 16
 
 
 ### new versioning (from v1.3.2 23/08/2024)
 - major.minor.patch
-- major + 1 every year or when needed (can be longer than every year)
+- major + 1 whenever needed
 - minor + 1 every 3 months on the 16th
-- patch + 1 every month on the 16th or when needed (cant be in the same month as a scheduled minor/major patch)
+- patch + 1 every month on the 16th or when needed
 
 |----
 |old versioning system (from 1.0.0 10/12/2023 to 1.3.0 12/05/2024):
