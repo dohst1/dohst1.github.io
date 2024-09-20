@@ -1,7 +1,7 @@
 # AmazonSMP Website - Change Log
 - by: Dohst
-- File Versioning: major.minor.patch-label[-date][-name]
-    - label: release / beta
+- File Versioning: major.minor.patch[label][-date][-name]
+    - label: "r"/"" = release, "b" = beta
     - date: yyyymm, yyyy = year, mm = month, dd = day
 - changelog format:
 ## Major (StartDate - EndDate) UpdateName
@@ -398,7 +398,7 @@
     - changed some mod descriptions on Main page
     - fixed the text saying that Whatcheeseburger was the owner of the website (now says Dohst) on Information page
 
-### 1.4 (23/08/2024 - 16/11/2024) ???
+### 1.4 (23/08/2024 - 16/11/2024) Season 12
 - #### 1.4.0-beta (23/08/2024 - 31/08/2024) beta
     - updated Change log
     - updated readme file
@@ -425,6 +425,17 @@
     - made the css class 'limited' display: flex
     - made the nav buttons have bigger font size and a bigger width and height when viewed in a smaller screen
     - added version 1.4 beta information on information page
+- #### 1.4.1 (18/09/2024 - 26/09/2024) release
+    - updated change log
+    - updated readme file
+    - updated version information in information file
+    - updated updates section in changes file
+    - updated season 11 information on main page
+    - added season 12 information on main page
+    - changed the format of the seasons information section on main page
+    - updated mods information on main page
+    - updated information on dohst page
+    - added a 1.20 version for nether village datapack
 
 
 ---
@@ -448,18 +459,18 @@
 - 1.0.0 : December 10
 
 ### 2024 (10 updates)
-- 1.1.0 : January 7
-- 1.1.1 : February 4
+- 1.1.0 : January 07
+- 1.1.1 : February 04
 - 1.2.0 : March 24
 - 1.3.0 : May 12
 - 1.3.1 : July 19
 - #### (new schedule)
 - 1.3.2 : August 23
 - 1.4.0 beta : September
-- 1.4.0 : September 16
-- 1.4.1 : October 16
-- 1.4.2 : November 16
-- 1.5.0 : December 16
+- 1.4.1 : September 26
+- 1.4.x : October 20
+- 1.4.x : November 20
+- 1.5.x : December 16
 
 
 ### new versioning (from v1.3.2 23/08/2024)
