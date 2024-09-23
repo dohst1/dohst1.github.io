@@ -19,7 +19,8 @@
 /* Dark Blue */
 :root {
     --background: rgb(13, 28, 56);
-    --background-light: rgb(28, 49, 88);
+    --background-light: rgb(35, 55, 92);
+    /* old --background-light: rgb(28, 49, 88); */
     --background-gray: rgb(15, 25, 41); 
     --background-dark: rgb(10, 21, 44); 
     --border: rgb(63, 74, 87);
@@ -30,6 +31,7 @@
     --font-size: 22px;
     --font-size-small: 20px
 }
+
 
 html, body {
     color: var(--text);

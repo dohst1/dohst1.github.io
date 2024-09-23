@@ -436,6 +436,8 @@
     - updated mods information on main page
     - updated information on dohst page
     - added a 1.20 version for nether village datapack
+    - updated background light color to be lighter in main.css
+    - added season 11 part 2 download
 
 
 ---
