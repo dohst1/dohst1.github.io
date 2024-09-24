@@ -12,7 +12,7 @@ This website includes information about the AmazonSMP server and downloads to pa
 
 ---
 
-#### NOT associated with the Amazon company or any other company in any way
+#### Not associated with any company in any way
 
 #### Copyright ©Dohst. ALL RIGHTS RESERVED.
 

@@ -438,6 +438,11 @@
     - added a 1.20 version for nether village datapack
     - updated background light color to be lighter in main.css
     - added season 11 part 2 download
+    - added download for recommended mods for season 12
+    - updated footer information at the bottom of every page
+    - updated some information in readme file
+    - updated Dohst and Mandoeam page titles
+    - updated datapacks section on main page
 
 
 ---
@@ -468,18 +473,19 @@
 - 1.3.1 : July 19
 - #### (new schedule)
 - 1.3.2 : August 23
-- 1.4.0 beta : September
+- 1.4.0b : September
 - 1.4.1 : September 26
 - 1.4.x : October 20
 - 1.4.x : November 20
+- 1.5.0b : November 30
 - 1.5.x : December 16
 
 
 ### new versioning (from v1.3.2 23/08/2024)
-- major.minor.patch
-- major + 1 whenever needed
-- minor + 1 every 3 months on the 16th
-- patch + 1 every month on the 16th or when needed
+- x.y.z
+- x + 1 when needed
+- y + 1 every few months on the 16th
+- z + 1 every month on the 16th or sooner if needed
 
 |----
 |old versioning system (from 1.0.0 10/12/2023 to 1.3.0 12/05/2024):
