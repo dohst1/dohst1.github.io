@@ -1,15 +1,17 @@
 # AmazonSMP Website - Change Log
 - by: Dohst
-- File Versioning: major.minor.patch-label[-date][-name]
-    - label: 'release' / 'beta'
-    - date: yyyymm[dd], yyyy = year, mm = month, dd = day
+- File Versioning: major.minor.patch[label][-date][-name]
+    - label: "r"/"" = release, "b" = beta
+    - date: yyyymm, yyyy = year, mm = month, dd = day
 - changelog format:
-## Major-Label (StartDate - EndDate) UpdateName
+## Major (StartDate - EndDate) UpdateName
 ### Major.Minor-Label (StartDate - EndDate) UpdateName
 - #### Major.Minor.Patch (Date)
     - Changes
 
+
 ---
+
 
 ## 0 (16/08/2023 - 01-12-2023) beta
 
@@ -230,7 +232,7 @@
 ---
 
 
-## 1 (01/12/2023 - ??/??/202?) Release
+## 1 (01/12/2023 - ??/??/2025) Release
 
 ### 1.0-release (01/12/2023 - 10/12/2023) Release
 - #### 1.0.0 (01/12/2023 - 10/12/2023)
@@ -396,51 +398,96 @@
     - changed some mod descriptions on Main page
     - fixed the text saying that Whatcheeseburger was the owner of the website (now says Dohst) on Information page
 
----
+### 1.4 (23/08/2024 - 16/11/2024) Season 12
+- #### 1.4.0-beta (23/08/2024 - 31/08/2024) beta
+    - updated Change log
+    - updated readme file
+    - renamed 'AmazonSMP Seasons' to 'Seasons and Downloads' on Main page
+    - renamed 'AmazonSMP Mods' to 'Server / Client Mods' on Main page
+    - updated mods information on Main page
+    - updated datapacks information on Main page
+    - changed css file to make address element have the same properties as the 'footer' 
+    - make address element in main section to have 30% left right margins 
+    - updated the copyright info
+    - updated some wording on the 404 page
+    - renamed the 'license_0.1-1.2' file to 'license_0.1-1.2.txt'
+    - updated version info on the information page
+    - renamed the license to "license_1.4_beta"
+    - made the license be the MIT License since i was making the license file more of a legal file
+    - removed all the github issue templates and added one for reporting bugs, requesting features and requesting changes
+    - made the 404 page title a link to the main page
+    - moved all the old unnecessary files to a new "old" folder
+    - updated the 'future updates' section on the Changes page
+    - updated the v1.3 information section on the changes page
+    - added a v1.4 information section on the changes page
+    - added a 'Report / Request' section on the Information page
+    - remade the 'Main image credits' on Information page to be a table instead of a list
+    - made the css class 'limited' display: flex
+    - made the nav buttons have bigger font size and a bigger width and height when viewed in a smaller screen
+    - added version 1.4 beta information on information page
+- #### 1.4.1 (18/09/2024 - 26/09/2024) release
+    - updated change log
+    - updated readme file
+    - updated version information in information file
+    - updated updates section in changes file
+    - updated season 11 information on main page
+    - added season 12 information on main page
+    - changed the format of the seasons information section on main page
+    - updated mods information on main page
+    - updated information on dohst page
+    - added a 1.20 version for nether village datapack
+    - updated background light color to be lighter in main.css
+    - added season 11 part 2 download
+    - added download for recommended mods for season 12
+    - updated footer information at the bottom of every page
+    - updated some information in readme file
+    - updated Dohst and Mandoeam page titles
+    - updated datapacks section on main page
+    - updated the credits section on information page
+    - updated v1.4 section on changes page
 
+
+---
 
 
 ## Updates:
 ### 2023 (14 updates)
-- 0.0.0 : August
-- 0.0.1 : August
-- 0.1.0 : August
-- 0.1.1 : August
-- 0.1.2 : August
-- 0.1.3 : August
-- 0.2.0 : August
-- 0.2.1 : August
-- 0.3.0 : November
-- 0.3.1 : November
-- 0.3.2 : November
-- 0.3.3 : November
-- 0.4.0 : November
+- 0.0.0 : August ??
+- 0.0.1 : August ??
+- 0.1.0 : August ??
+- 0.1.1 : August ??
+- 0.1.2 : August ??
+- 0.1.3 : August ??
+- 0.2.0 : August ??
+- 0.2.1 : August ??
+- 0.3.0 : November ??
+- 0.3.1 : November ??
+- 0.3.2 : November ??
+- 0.3.3 : November ??
+- 0.4.0 : November ??
 - 1.0.0 : December 10
 
 ### 2024 (10 updates)
-- 1.1.0 : January 7
-- 1.1.1 : February 4
+- 1.1.0 : January 07
+- 1.1.1 : February 04
 - 1.2.0 : March 24
 - 1.3.0 : May 12
 - 1.3.1 : July 19
-(new schedule)
+- #### (new schedule)
 - 1.3.2 : August 23
-
-- 1.4.0 : September 16
-- 1.4.1 : October 16
-- 1.4.2 : November 16
-- 1.5.0 : December 16
+- 1.4.0b : September
+- 1.4.1 : September 26
+- 1.4.x : October 20
+- 1.4.x : November 20
+- 1.5.0b : November 30
+- 1.5.x : December 16
 
 
 ### new versioning (from v1.3.2 23/08/2024)
-- X.Y.Z
-- X + 1 every year or when needed (can be longer than every year)
-- Y + 1 every 3 months on the 16th
-- Z + 1 every month on the 16th
-
-- average patch update changes : 10
-- average minor update changes : 30
-- average predicted major update changes : 90
+- x.y.z
+- x + 1 when needed
+- y + 1 every few months on the 16th
+- z + 1 every month on the 16th or sooner if needed
 
 |----
 |old versioning system (from 1.0.0 10/12/2023 to 1.3.0 12/05/2024):

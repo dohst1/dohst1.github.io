@@ -1,0 +1,18 @@
+Copyright (c) 2024 Dohst
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+I (Dohst) don't claim the rights to the name "AmazonSMP" as I think I'll get sued by Amazon.
+If there is any issues with the use of the name "AmazonSMP", I will change the name of the website and server as soon as possible to something else.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+The license may change in future versions, but it will be included in the official files of the current version of the website. The latest official release version of the LICENSE applies to all versions of the website. (If for some reason the latest version of the LICENSE file is unavailable, then the LICENSE in the current version of the website files is the License that applies for that version).
+
+This version of the license includes versions (and all sub-versions, not including future versions): 1.4
