@@ -443,6 +443,8 @@
     - updated some information in readme file
     - updated Dohst and Mandoeam page titles
     - updated datapacks section on main page
+    - updated the credits section on information page
+    - updated v1.4 section on changes page
 
 
 ---
