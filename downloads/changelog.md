@@ -1,8 +1,8 @@
 # AmazonSMP Website - Change Log
 - by: Dohst
-- File Versioning: major.minor.patch[label][-date][-name]
-    - label: "r"/"" = release, "b" = beta
-    - date: yyyymm, yyyy = year, mm = month, dd = day
+- File Versioning: major.minor.patch[-label][-date][-name]
+    - label: "rel" or "pre" or "dev"
+    - date: yyyymm, yyyy = year, mm = month
 - changelog format:
 ## Major (StartDate - EndDate) UpdateName
 ### Major.Minor-Label (StartDate - EndDate) UpdateName
@@ -11,7 +11,6 @@
 
 
 ---
-
 
 ## 0 (16/08/2023 - 01-12-2023) beta
 
@@ -364,6 +363,7 @@
 
 
 ### 1.3-release (07/05/2024 - 23/08/2024) Season 11 Part 2
+
 - #### 1.3.0 (07/05/2024 - 12/05/2024)
     - updated readme file
     - updated information file
@@ -376,6 +376,7 @@
     - removed season download warnings
     - updated mods copyright information
     - added season 11 part 2 recommended client mods zip file
+
 - #### 1.3.1 (17/07/2024 - 19/07/2024)
     - updated readme file
     - updated information file
@@ -389,6 +390,7 @@
     - updated the ongoing days counter for season 11
     - updated the season 11 part 2 client mods
     - added a required tag to some of the mods to show which are required to join
+
 - #### 1.3.2 (22/08/2024 - 23/08/2024)
     - updated Change log
     - made a new update plan (replaced the one added in v1.3.1)
@@ -398,7 +400,9 @@
     - changed some mod descriptions on Main page
     - fixed the text saying that Whatcheeseburger was the owner of the website (now says Dohst) on Information page
 
+
 ### 1.4 (23/08/2024 - 16/11/2024) Season 12
+
 - #### 1.4.0-beta (23/08/2024 - 31/08/2024) beta
     - updated Change log
     - updated readme file
@@ -425,6 +429,7 @@
     - made the css class 'limited' display: flex
     - made the nav buttons have bigger font size and a bigger width and height when viewed in a smaller screen
     - added version 1.4 beta information on information page
+
 - #### 1.4.1 (18/09/2024 - 26/09/2024) release
     - updated change log
     - updated readme file
@@ -446,25 +451,41 @@
     - updated the credits section on information page
     - updated v1.4 section on changes page
 
+- #### 1.4.2 (14/10/2024 - 20/10/2024) release
+    - updated change log
+    - updated readme file
+    - removed 'old' folder
+    - removed 'amazonsmp-1.0.png' image
+    - removed '.github' folder
+    - changed the dohst page description
+    - updated season 12 information on main page
+    - removed 'season11p2_smol'
+    - added 'nether_village-v3.1-1.21.zip' file
+    - added nether village version 3.1 for minecraft 1.21 download on dohst page
+    - fixed 1.4.1 issue : Some datapack link labels haven't been updated
+    - fixed 1.4.1 issue : version is labeled incorrectly on the future updates table
+    - fixed 1.4.1 issue : Dohst nether village datapack description
+    - updated dohst datapack table and description
+    - fixed 1.4.1 issue : Dohst datapack table description
+
 
 ---
 
-
 ## Updates:
 ### 2023 (14 updates)
-- 0.0.0 : August ??
-- 0.0.1 : August ??
-- 0.1.0 : August ??
-- 0.1.1 : August ??
-- 0.1.2 : August ??
-- 0.1.3 : August ??
+- 0.0.0 : August 2?
+- 0.0.1 : August 2?
+- 0.1.0 : August 2?
+- 0.1.1 : August 2?
+- 0.1.2 : August 2?
+- 0.1.3 : August 2?
 - 0.2.0 : August ??
 - 0.2.1 : August ??
 - 0.3.0 : November ??
 - 0.3.1 : November ??
 - 0.3.2 : November ??
 - 0.3.3 : November ??
-- 0.4.0 : November ??
+- 0.4.0 : November 2?
 - 1.0.0 : December 10
 
 ### 2024 (10 updates)
@@ -475,33 +496,9 @@
 - 1.3.1 : July 19
 - #### (new schedule)
 - 1.3.2 : August 23
-- 1.4.0b : September
+- 1.4.0-dev : September
 - 1.4.1 : September 26
 - 1.4.x : October 20
 - 1.4.x : November 20
-- 1.5.0b : November 30
-- 1.5.x : December 16
-
-
-### new versioning (from v1.3.2 23/08/2024)
-- x.y.z
-- x + 1 when needed
-- y + 1 every few months on the 16th
-- z + 1 every month on the 16th or sooner if needed
-
-|----
-|old versioning system (from 1.0.0 10/12/2023 to 1.3.0 12/05/2024):
-|- 1.4 : June 30
-|- 1.5 : August 18
-|- 1.6 : October 6
-|- 1.7 : November 24
-|
-|### 2025 (7 updates)
-|- 1.8 : January 12
-|- 2.0 : March 23
-|- 2.1 : May 11
-|- 2.2 : June 29
-|- 2.3 : August 17
-|- 2.4 : October 5
-|- 2.5 : November 23
-|----
+- 1.5.0-dev : November 30
+- 1.5.1 : December 16
