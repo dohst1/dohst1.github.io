@@ -452,6 +452,7 @@
     - updated v1.4 section on changes page
 
 - #### 1.4.2 (14/10/2024 - 20/10/2024) release
+    - 2024 10 14
     - updated change log
     - updated readme file
     - removed 'old' folder
@@ -467,6 +468,13 @@
     - fixed 1.4.1 issue : Dohst nether village datapack description
     - updated dohst datapack table and description
     - fixed 1.4.1 issue : Dohst datapack table description
+    - 2024 10 15
+    - made the text size bigger for smaller windows
+    - fixed 1.4.1 issue : Some copyright info has too much padding on the sides on mobile
+    - changed the way font size is changed for smaller windows, now reassigns the variables in ':root'
+    - fixed 1.4.1 issue : Table font is too small for mobile
+    - added nether village to datapacks table on main page
+    - updated the 'dohst.png' image
 
 
 ---
