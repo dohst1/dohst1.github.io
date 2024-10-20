@@ -475,25 +475,40 @@
     - fixed 1.4.1 issue : Table font is too small for mobile
     - added nether village to datapacks table on main page
     - updated the 'dohst.png' image
+    - 2024 10 19
+    - updated 1.4 patch information on changes page 
+    - added a change in some style settings when screen is smaller than 1500 but bigger than 1024 pixels
+    - updated CNAME for labeling on Github
+    - added MandoEAM page to navigation bar on all pages
+    - added voicechat mod in recommended client mods for Season 12
+    - added "walking_my_fish" image for mandoeam page
+    - added Dohst image credit on information page
+    - updated some css styling to fix some visual bugs with smaller windows 
+    - updated the font to lato
+    - made some backgrounds darker
+    - updated some text on all pages
+    - updated seasons on main image credit table on information page
+    - changed subheading "Main Image" to "Credit" on information page
+    - removed the subheading "Other" on information page
 
 
 ---
 
 ## Updates:
 ### 2023 (14 updates)
-- 0.0.0 : August 2?
-- 0.0.1 : August 2?
-- 0.1.0 : August 2?
-- 0.1.1 : August 2?
-- 0.1.2 : August 2?
-- 0.1.3 : August 2?
-- 0.2.0 : August ??
-- 0.2.1 : August ??
-- 0.3.0 : November ??
-- 0.3.1 : November ??
-- 0.3.2 : November ??
-- 0.3.3 : November ??
-- 0.4.0 : November 2?
+- 0.0.0 : August 16
+- 0.0.1 : August 16
+- 0.1.0 : August 16
+- 0.1.1 : August 22
+- 0.1.2 : August 22
+- 0.1.3 : August 23
+- 0.2.0 : August 25
+- 0.2.1 : August 27
+- 0.3.0 : November 09
+- 0.3.1 : November 10
+- 0.3.2 : November 11
+- 0.3.3 : November 25
+- 0.4.0 : December 01
 - 1.0.0 : December 10
 
 ### 2024 (10 updates)
@@ -506,7 +521,7 @@
 - 1.3.2 : August 23
 - 1.4.0-dev : September
 - 1.4.1 : September 26
-- 1.4.x : October 20
+- 1.4.2 : October 20 <-- current
 - 1.4.x : November 20
 - 1.5.0-dev : November 30
 - 1.5.1 : December 16
