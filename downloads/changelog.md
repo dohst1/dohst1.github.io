@@ -1,12 +1,12 @@
 # AmazonSMP Website - Change Log
 - by: Dohst
-- File Versioning: major.minor.patch[-label][-date][-name]
+- Versions: major.minor.patch[-label][-date][-name]
     - label: "rel" or "pre" or "dev"
-    - date: yyyymm, yyyy = year, mm = month
+    - date: yyyymm or yyyymmdd or dd/mm/yyyy
 - changelog format:
 ## Major (StartDate - EndDate) UpdateName
-### Major.Minor-Label (StartDate - EndDate) UpdateName
-- #### Major.Minor.Patch (Date)
+### Major.Minor Label (StartDate - EndDate) UpdateName
+- #### Major.Minor.Patch-Label (StartDate - EndDate)
     - Changes
 
 
@@ -490,6 +490,10 @@
     - updated seasons on main image credit table on information page
     - changed subheading "Main Image" to "Credit" on information page
     - removed the subheading "Other" on information page
+    - 2024 10 20
+    - updated CNAME
+    - updated dohst image
+    - updated changes page
 
 
 ---
