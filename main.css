@@ -1,4 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 /* Light Blue */
 /* :root {
@@ -16,13 +17,28 @@
 } 
 */
 
-/* Dark Blue */
-:root {
+/* Old Dark Blue */
+/* :root {
     --background: rgb(13, 28, 56);
     --background-light: rgb(35, 55, 92);
-    /* old --background-light: rgb(28, 49, 88); */
+    old --background-light: rgb(28, 49, 88);
     --background-gray: rgb(15, 25, 41); 
     --background-dark: rgb(10, 21, 44); 
+    --border: rgb(63, 74, 87);
+    --border-light: rgb(97, 109, 124);
+    --text: rgb(230, 237, 243);
+    --text-dark: rgb(16, 16, 16);
+    --text-link: rgb(20, 110, 240);
+    --font-size: 22px;
+    --font-size-small: 20px
+} */
+
+/* Dark Blue */
+:root {
+    --background: rgb(10, 21, 44);
+    --background-light: rgb(35, 55, 92);
+    --background-gray: rgb(15, 25, 41); 
+    --background-dark: rgb(6, 12, 24); 
     --border: rgb(63, 74, 87);
     --border-light: rgb(97, 109, 124);
     --text: rgb(230, 237, 243);
@@ -52,8 +68,8 @@ footer, address {
 }
 
 main address {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 code, table, th, td, button, li, ul, ol, hr, img {
@@ -128,11 +144,6 @@ td a{
     display: block;
 }
 
-nav h1{
-    position: flex;
-    width: 49%;
-    justify-content: center;
-}
 nav {
     position: fixed;
     top: 0px;
@@ -144,6 +155,22 @@ nav {
     background-color: var(--background-light);
     padding: 0px 20px;
     justify-content: start;
+}
+nav .left {
+    position: flex;
+    justify-content: left;
+}
+nav .right {
+    position: flex;
+    justify-content: right;
+}
+nav h1 {
+    position: flex;
+    width: 90%;
+    /* makes AmazonSMP nav bar title stay in center, but causes some other visual issues with smaller screens
+    padding-left: 6%;
+    padding-right: 6%; */
+    justify-content: center;
 }
 nav button {
     font-size: 22px;
@@ -167,20 +194,44 @@ nav button:hover {
     color: var(--background-light);
 }
 
+
+@media only screen and /* (max-width: 600px) */ (max-width: 1500px) {
+    
+    p, h1, h2, h3, ul, ol, main address {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    /* removes the 'AmazonSMP Websbite' if the page is too small to show it (makes it generate in the negatives)*/
+    .right {
+        margin-left: -3000px;
+    }
+    nav h1 {
+        width: 20%;
+        padding-left: 0%;
+        padding-right: 0%;
+        justify-content: left;
+    }
+}
+
+
 @media only screen and /* (max-width: 600px) */ (max-width: 1024px) {
-    p, h1, h2, h3, ul, ol {
+    :root {
+        --font-size: 24px;
+        --font-size-small: 22px
+    }
+    
+    p, h1, h2, h3, ul, ol, main address {
         margin-left: 5%;
         margin-right: 5%;
-        --font-size: 20px;
-        --font-size-small: 18px;
     }
     .limited {
         max-width: 250px;
     }
 
-    /* removes the 'AmazonSMP Websbite' if the page is too small too show it (does this by making it generate in the negatives)*/
+    /* removes the 'AmazonSMP Websbite' if the page is too small to show it (makes it generate in the negatives)*/
     nav h1, .right {
-        margin-left: -10000px;
+        margin-left: -3000px;
     }
 
     nav button {
