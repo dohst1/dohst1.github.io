@@ -569,6 +569,32 @@
     - changed downloads to contain only the fragmented downloads since i dont feel like learning github lfs rn
     - done i think
 
+- #### 1.5.2 (22/06/2025 - 25/06/2025) release
+    - updated Change log
+    - updated readme file
+    - renamed all season12 to season12 part 1
+    - updated main page seasons table (headers for parts and more part information)
+    - updated server mods on main page for season12p2
+    - updated server datapacks on main page for season12p2
+    - renamed "mandoeam.html" to "quote.html" (and changed all refrences to this page to be 'Quotes')
+    - updated footer for all pages for latest version
+    - updated 404 error page 
+    - updated rules on rules information page
+    - restyled rules page (to have lists not just paragraphs)
+    - added season 12 part 1 page in information 
+    - updated information pages side bar to include all seasons (except season 0) and rules
+    - added Dannygpr quotes on quotes page
+    - added season 11 part 3 page in information 
+    - added season 12 part 2 page in information 
+    - added assets (icon and map) for season 11 part 3, season 12 part 1, season 12 part 2
+    - added season 11 part 3 downloads (2 sections)
+    - added links to season information pages in seasons table on main page
+    - added season 12 part 1 downloads
+    - updated changes page with 1.5 version changelog
+    - removed CNAME file
+    - removed ddns address from website
+
+
 ---
 
 ## Updates:
@@ -604,14 +630,14 @@
 - 1.5.1 : December 16 (canceled)
 
 ### 2025 (8 updates)
-- 1.5.0dev : january 22
-- #### 1.5.1 : March 02
-- 1.5.2 : april
-- 1.5.3 : june
-- 1.5.4 : august
-- 1.5.5 : october
-- 1.6.0dev : december
-- 1.6.1 : december 30
+- 1.5.0d : january 22 (dev)
+- 1.5.1 : March 02
+- #### 1.5.2 : june 25
+- 1.6.0d : july
+- 1.6.1 : august
+- 1.6.2 : october
+- 2.0.0d : november/december
+- 2.0.1 : december 30
 
 ### 2026 (1 update)
 - March31

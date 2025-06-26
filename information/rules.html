@@ -3,13 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Dohst"> 
-        <meta name="description" content="AmazonSMP Rules">
+        <meta name="description" content="AmazonSMP Rules"> <!-- version 4.0 -->
         <title>AmazonSMP Rules</title>
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/main.css" type="text/css">
     </head>
-
-    <!-- v1.5.1 NOTE - Change style/layout of information pages cuz looking kinda ugly rn -->
 
     <body>
         <!-- header -->
@@ -17,17 +15,17 @@
             <nav id="nav" aria-label="primary-navigation">
                 <a href="/index.html" class="left"><button>AmazonSMP</button></a>
                 <a href="/dohst.html" class="left"><button>Dohst</button></a>
-                <a href="/mandoeam.html" class="left"><button>MandoEAM</button></a>
+                <a href="/quote.html" class="left"><button>Quotes</button></a>
                 <a href="main.html" class="left"><button class="active">Information</button></a>
                 <h1><strong><a href="/index.html">AmazonSMP Website</a></h1></strong>
                 <!-- <h1><a href="index.html">Amazon<abbr title="Survival MultiPlayer">SMP</abbr> Website</a></h1> -->
                 <a href="main.html" class="right"><button>Main</button></a>
-                <a href="season12.html" class="right"><button>Current</button></a>
+                <a href="season12p1.html" class="right"><button>Current</button></a>
                 <a href="changes.html" class="right"><button>Changelog</button></a>
             </nav>
             <h1>'</h1>
             <br><br>
-            <h1>Rules Information</h1>
+            <h1>Server Rules Information</h1>
             <br><br><br><br>
         </header>
 
@@ -40,6 +38,9 @@
                     </tr>
                     <tr>
                         <th><a href="changes.html">Changelog</a></th>
+                    </tr>
+                    <tr>
+                        <th><a href="rules.html">Rules</a></th>
                     </tr>
                 </table>
                 <br>
@@ -87,7 +88,13 @@
                         <th><a href="season11p2.html">Season 11 Part 2</a></th>
                     </tr>
                     <tr>
-                        <th><a href="season12.html">Season 12</a></th>
+                        <th><a href="season11p3.html">Season 11 Part 3</a></th>
+                    </tr>
+                    <tr>
+                        <th><a href="season12p1.html">Season 12 Part 1</a></th>
+                    </tr>
+                    <tr>
+                        <th><a href="season12p2.html">Season 12 Part 2</a></th>
                     </tr>
                 </table>
             </div>
@@ -101,35 +108,47 @@
                 </section> -->
 
                 <section id="current">
-                    <h2>Current: Season 12</h2>
+                    <h2>Current: Season 12 Part 2</h2>
                     <h3>Server IP: Unavailable</h3>
-                    <h3>Website: amazonsmp.ddns.net</h3>
+                    <h3>Website: dohst1.github.io</h3>
                     <h3>Discord: discord.gg/ygpzuppKgy</h3>
                 </section>
                     
                 <section id="rules">
                     <h2>Rules:</h2>
-                    <p>- No Cheating/Hacking (ban 4 - 128 days)</p>
-                    <p>- No Administrator Abuse (ban 2 - 16 days, and no more admin)</p>
-                    <p>- No Inappropriate Content (doesn't apply to small insults unless repetitive) (if to do with someone will only ban if that someone wants to ban) (ban/mute 2 - 16 days)</p>
-                    <p>- No Griefing (will only ban if person getting griefed wants to ban) (ban 2 - 16 days)</p>
-                    <p>- No Spamming (mute 1 - 4 days)</p>
-                    <p>- No Assaulting Charlotte</p>
+                    <ul>
+                        <li>No Cheating/Hacking (ban 4 - 16 days)</li>
+                        <li>No Administrator Abuse (ban 3 - 8 days)</li>
+                        <li>No Inappropriate Content (ban/mute 2 - 4 days)</li>
+                        <li>No Griefing (ban 4 - 16 days)</li>
+                        <li>No Spamming (mute 1 - 2 days)</li>
+                        <li>No Assaulting Charlotte</li>
+                    </ul>
                 </section>
 
                 <section id="conditions">
                     <h2>Conditions:</h2>
-                    <p>- You can only vote if you played the server in the last 4 months</p>
-                    <p>- Ban time = total_bans x  current_offence_ban_time</p>
-                    <p>- To add a new member send an admin (Dohst, Mandoeam, Secret7, WhatCheeseBurger) their minecraft username to be whitelisted</p>
+                    <ul>
+                        <li>No Administrator Abuse rule: Offender's admin will be removed, and wont be able to obtain admin2/3 again</li>
+                        <li>No Inappropriate Content rule: Doesn't apply to insults unless repetitive. Offender will only be banned if victim wants to. (if banned and muted then will only add 1 count to total_bans_and_mutes)</li>
+                        <li>No Griefing rule: Offender will only be banned if the victim wants to.</li>
+                        <li>You can only vote if you played the server in the last 4 months (for over an hour).</li>
+                        <li>Ban time = total_bans *  current_offence_ban_time.</li>
+                        <li>Mute time = total_bans_and_mutes *  current_offence_mute_time / 2.</li>
+                        <li>total_bans includes the current ban, and total_bans_and_mutes includes current mute and/or ban.</li>
+                        <li>To add a new member send their minecraft username to an admin (Dohst, Mandoeam, Secret7, WhatCheeseBurger).</li>
+                        <li>total_bans, total_bans_and_mutes, and total_mutes reset to 0 at the start of a new season (or part)</li>
+                    </ul>
                 </section>
 
                 <section id="reliability">
-                    <h2>Information Sources Reliability Order:</h2>
-                    <p>- AmazonSMP Github Repository (https://github.com/dohst1/dohst1.github.io)</p>
-                    <p>- AmazonSMP Website https://amazonsmp.ddns.net/information/rules.html (after v1.5 update)</p>
-                    <p>- AmazonSMP Discord Server (discord.gg/ygpzuppKgy) Information Channel</p>
-                    <p>- AmazonSMP Whatsapp Community Announcements Description</p>
+                    <h2>Official Information Sources (order of reliability):</h2>
+                    <ul>
+                        <li>- AmazonSMP Github Repository (https://github.com/dohst1/dohst1.github.io) (main branch)</li>
+                        <li>- AmazonSMP Website (https://dohst1.github.io/information/rules.html) (after v1.5 update)</li>
+                        <li>- AmazonSMP Discord Server (discord.gg/ygpzuppKgy) Information Channel</li>
+                        <li>- AmazonSMP Whatsapp Community Announcements Description</li>
+                    </ul>
                 </section>
 
                 <br><br>
@@ -141,7 +160,7 @@
             <br>
             <address>Not associated with any company in any way</address>
             <address>This website is written and maintained by <a href="https://github.com/dohst1">Dohst</a></address>
-            <address>website version: 1.5.1 20250302</address>
+            <address>website version: 1.5.2 20250625</address>
             <address>Copyright ©Dohst. ALL RIGHTS RESERVED.</address>
             <!-- <address>I'm not claiming ownership over the name 'AmazonSMP' because I don't feel like getting sued by the Amazon company (I'll change the name if I have to).</address> -->
             <p><code> &lt;&lt;&lt; <a href="https://www.gov.uk/copyright" target="_blank">&copy;</a> <a href="https://github.com/dohst1">2025 Dohst</a> &gt;&gt;&gt; </code></p>
