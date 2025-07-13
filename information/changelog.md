@@ -586,7 +586,7 @@
     - removed ddns address from website
 
 
-### 1.6 (11/07/2025 - ??/10/2025) Season 13
+### 1.6 (11/07/2025 - ??/09/2025) Season 13
 
 - #### 1.6.0 (11/07/2025 - 13/07/2025) release
     - updated Change log
@@ -596,22 +596,24 @@
     - changed all update names to be the season that they were updated during
     - updated seasons table on main page
     - fixed all known issues from v1.5:
-        - should add season descriptions for season information pages
-        - information page for season 12 part 2 has incorrect dates
-        - downloads for season 12 part 1 dont have sizes on download text, on main page and information page
-        - some mods are missing links/version information on main page
+        (- should add season descriptions for season information pages)
+        (- information page for season 12 part 2 has incorrect dates)
+        (- downloads for season 12 part 1 dont have sizes on download text, on main page and information page)
+        (- some mods are missing links/version information on main page)
     - updated sidebar for all information pages (added sub headings "main" and "seasons / worlds")
     - made all images be under 30 mb for quicker page load time and to save space
     - removed all references to type 0, 1, 2 and 3
     - added a dohst quote to quotes page
     - removed season 11 part 3 (downloads and page)
     - restyled season pages (removed floating div, moved icon to left sidebar, moved seed download and date info to world list)
-
+    - updated 404 error page
+    - readded changes to changes page
+    - combined season 9 part 1 and season 9 part 2 (they are basically the same thing, but there was like a 2 week break inbetween)
     - added s13 mods to main page
     - added s13 datapacks to main page
+
     - added s13 information page
-    - readded changes to changes page
-    - updated 404 error page
+    - added s12p2 download
     - updated main amazonsmp image
     - updated main amazonsmp image credit on main info page
 
