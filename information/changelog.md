@@ -1,20 +1,22 @@
 # AmazonSMP Website - Change Log
 - by: Dohst
-- Versions: major.minor.patch[-label][-date][-name]
+- Versions: major.minor.patch[label][-date][-name]
     - label: "rel" or "dev"
     - date: yyyymmdd or dd/mm/yyyy
 - changelog format:
 ## Major (StartDate - EndDate) UpdateName
-### Major.Minor Label (StartDate - EndDate) UpdateName
-- #### Major.Minor.Patch-Label (StartDate - EndDate)
+### Major.Minor (StartDate - EndDate) UpdateName
+- #### Major.Minor.Patch (StartDate - EndDate) label
     - Changes
 
 
 ---
 
-## 0 (16/08/2023 - 01-12-2023) beta
 
-### 0.0-beta (16/08/2023) setup
+
+## 0 part 1 (16/08/2023 - 27/08/2023) alpha
+
+### 0.0-beta (16/08/2023) alpha - setup
 - #### 0.0.0 (16/08/2023)
   - added readme file 
   - added license file
@@ -23,12 +25,12 @@
   - changed readme
 
 
-### 0.1-beta (16/08/2023 - 24/08/2023) html
+### 0.1-beta (16/08/2023 - 24/08/2023) alpha - html
 - #### 0.1.0 (16/08/2023)
     - added index.htm as main page
     - added about dohst page with copyright notice
     - added unavailable download page for any unavailable downloads
-    - added download zip files for season 3, 4, 5, 6, 7, 8, 8 old, 9, 9 old
+    - added download zip files for season 6, 7, 8, 8 old, 9, 9 old
     - added download list in main file with all files
     - added main css file
     - changed license
@@ -80,7 +82,7 @@
     - removed downloads list
 
 
-### 0.2-release (25/08/2023 - 27/08/2023) css
+### 0.2-release (25/08/2023 - 27/08/2023) alpha - css
 - #### 0.2.0 (25/08/2023)
     - added code of conduct file
     - added report issue template for github
@@ -97,9 +99,12 @@
 
 
 ---
-## new Beta
 
-### 0.3-release (09/11/2023 - 25/11/2023) content
+
+
+## 0 part 2 (09/11/2023 - 01/12/2023) beta
+
+### 0.3-release (09/11/2023 - 25/11/2023) beta - style
 - #### 0.3.0 (09/11/2023)
     - made everything centered
     - moved contact file to unused folder
@@ -151,8 +156,6 @@
     - fixed the little slither of a different shade of dark blue on the Dohst page
     - fixed issue on Unavailable page where the was a differently shaded slither of color at the bottom 
     - made it so the Dohst logo gradually becomes dark (rgb(16, 16, 16)) using the Alpha channel 
-    - started using Chat GPT 3.5 from openAI for some inspiration and ideas on how to do some things 
-    - added gpt3.5 folder with all Chat GPT 3.5 generated stuff
     - updated css style gradient to be lighter in color
     - updated css styles on Dohst page to match the new mains
     - finished the Datapacks list on the AmazonSMP page (index.html)
@@ -189,7 +192,7 @@
     - nope: added an unused Dohst mods section on the Dohst page
 
 
-### 0.4-beta (25/11/2023 - 01/12/2023) release candidate
+### 0.4-beta (25/11/2023 - 01/12/2023) beta - content
 - #### 0.4.0 (25/11/2023 - 01/12/2023)
     - changed the border class in css
     - made button have the same border and background style as code
@@ -217,23 +220,20 @@
     - made colors more vibrant (because of taylor swift)
     - made the Dohst page logo picture last a full desktop page then transition
     - added a Contact page
-    - added a form going to 'amazonsmp3@gmail.com'
     - added an issue form and a contact form on the Contact page (dont work fore some reason, page will be moved to unused)
     - readded headers for the Main page season downloads table
     - removed most the style css from the Dohst page because of the new color scheme
     - updated some text
     - added a 'Season 10 before' download
-    - added a download for 'temporary 2'
-    - added a download for 'temporary 3'
-    - added a download for 'temporary 3 before'
 
 
 ---
 
 
-## 1 (01/12/2023 - ??/??/2025) Release
 
-### 1.0-release (01/12/2023 - 10/12/2023) Release
+## 1 (01/12/2023 - ??/11/2025) Release (Type 4-5)
+
+### 1.0-release (01/12/2023 - 10/12/2023) Season 10 (release)
 - #### 1.0.0 (01/12/2023 - 10/12/2023)
     - combined the Main page, Datapacks page, and Mods page, into one big Main page
     - updated some text
@@ -267,11 +267,11 @@
     - added a Dohst image to the Dohst page
 
 
-### 1.1-release (03/01/2024 - 04/02/2024) Navigation
+### 1.1-release (03/01/2024 - 04/02/2024) Season 10 Part 2 (navigation)
 - #### 1.1.0 (03/01/2024 - 07/01/2024)
     - made the change log a markdown file
     - made the version file a markdown file
-    - renamed 'temporary3' to 'season11'
+    - renamed /// to 'season11'
     - updated mods section on Main page
     - added 'AmazonSMP Website' text to the nav bar of every page
     - updated the changelog.md file with a new style
@@ -316,8 +316,6 @@
 - #### 1.1.1 (04/02/2024)
     - removed amazonsmp download season8 
     - removed amazonsmp download season11-before 
-    - removed amazonsmp season temporary1
-    - removed amazonsmp season temporary2 
     - updated some incorrect information on the Changes page 
     - updated amazonsmp seasons
     - updated amazonsmp mods
@@ -496,7 +494,7 @@
     - updated changes page
 
 
-### 1.5 (22/01/2025 - 15/03/2025) Information
+### 1.5 (22/01/2025 - 25/06/2025) Season 12 Part 2 (information)
 
 - #### 1.5.0dev (22/01/2025) beta
     - updated Change log
@@ -532,13 +530,6 @@
     - updated changes.html updates section
     - added main.html
     - combined all information files except changelog and season files onto main.html
-    - added season 3 information page 
-    - added season 3 icon
-    - added season 3 map
-    - removed all old season downloads
-    - added season3 download
-    - added season 4 information page
-    - added season 5 information page
     - added season 6 information page
     - added season 7 information page
     - added download instructions
@@ -582,7 +573,7 @@
     - updated rules on rules information page
     - restyled rules page (to have lists not just paragraphs)
     - added season 12 part 1 page in information 
-    - updated information pages side bar to include all seasons (except season 0) and rules
+    - updated information pages side bar to include most seasons and rules
     - added Dannygpr quotes on quotes page
     - added season 11 part 3 page in information 
     - added season 12 part 2 page in information 
@@ -595,7 +586,39 @@
     - removed ddns address from website
 
 
+### 1.6 (11/07/2025 - ??/10/2025) Season 13
+
+- #### 1.6.0 (11/07/2025 - 13/07/2025) release
+    - updated Change log
+    - updated readme file
+    - updated changes page
+    - updated all footers (made it smaller - removed waffle and squished)
+    - changed all update names to be the season that they were updated during
+    - updated seasons table on main page
+    - fixed all known issues from v1.5:
+        - should add season descriptions for season information pages
+        - information page for season 12 part 2 has incorrect dates
+        - downloads for season 12 part 1 dont have sizes on download text, on main page and information page
+        - some mods are missing links/version information on main page
+    - updated sidebar for all information pages (added sub headings "main" and "seasons / worlds")
+    - made all images be under 30 mb for quicker page load time and to save space
+    - removed all references to type 0, 1, 2 and 3
+    - added a dohst quote to quotes page
+    - removed season 11 part 3 (downloads and page)
+    - restyled season pages (removed floating div, moved icon to left sidebar, moved seed download and date info to world list)
+
+    - added s13 mods to main page
+    - added s13 datapacks to main page
+    - added s13 information page
+    - readded changes to changes page
+    - updated 404 error page
+    - updated main amazonsmp image
+    - updated main amazonsmp image credit on main info page
+
+
 ---
+
+
 
 ## Updates:
 ### 2023 (14 updates)
@@ -622,21 +645,20 @@
 - 1.3.1 : July 19
 - #### (new schedule)
 - 1.3.2 : August 23
-- 1.4.0-dev : September
+- 1.4.0-dev : August 28
 - 1.4.1 : September 26
 - 1.4.2 : October 20
-- 1.4.3 : November 20 (canceled)
-- 1.5.0-dev : November 30 (canceled)
-- 1.5.1 : December 16 (canceled)
 
 ### 2025 (8 updates)
 - 1.5.0d : january 22 (dev)
 - 1.5.1 : March 02
-- #### 1.5.2 : june 25
-- 1.6.0d : july
+- 1.5.2 : june 25
+- #### 1.6.0 : july 13
 - 1.6.1 : august
-- 1.6.2 : october
-- 2.0.0d : november/december
+- 1.6.2 : september
+- 1.7.0 : october
+- 1.7.1 : november
+- 2.0.0d : december
 - 2.0.1 : december 30
 
 ### 2026 (1 update)

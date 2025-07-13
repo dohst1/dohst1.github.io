@@ -9,8 +9,6 @@
         <link rel="stylesheet" href="/main.css" type="text/css">
     </head>
 
-    <!-- v1.5.1 NOTE - Change style/layout of information pages cuz looking kinda ugly rn -->
-
     <body>
         <!-- header -->
         <header>
@@ -22,7 +20,7 @@
                 <h1><strong><a href="/index.html">AmazonSMP Website</a></h1></strong>
                 <!-- <h1><a href="index.html">Amazon<abbr title="Survival MultiPlayer">SMP</abbr> Website</a></h1> -->
                 <a href="main.html" class="right"><button>Main</button></a>
-                <a href="season12p1.html" class="right"><button>Current</button></a>
+                <a href="season13p1.html" class="right"><button>Current</button></a>
                 <a href="changes.html" class="right"><button>Changelog</button></a>
             </nav>
             <h1>'</h1>
@@ -33,8 +31,11 @@
 
         <main class="row">
             <div class="leftcolumn">
-                <h1 style="font-size: 32px;">Sections</h1>
+                <h1 style="font-size: 32px;">Information Pages</h1>
                 <table style="width: 100%;">
+                    <tr>
+                        <th>Main</th>
+                    </tr>
                     <tr>
                         <th><a href="main.html">Main</a></th>
                     </tr>
@@ -48,34 +49,19 @@
                 <br>
                 <table style="width: 100%;">
                     <tr>
-                        <th><a href="season1.html">Season 1</a></th>
+                        <th>Seasons / Worlds</th>
                     </tr>
                     <tr>
-                        <th><a href="season2.html">Season 2</a></th>
+                        <td><a href="season6.html">Season 6</a></td>
                     </tr>
                     <tr>
-                        <th><a href="season3.html">Season 3</a></th>
-                    </tr>
-                    <tr>
-                        <th><a href="season4.html">Season 4</a></th>
-                    </tr>
-                    <tr>
-                        <th><a href="season5.html">Season 5</a></th>
-                    </tr>
-                    <tr>
-                        <th><a href="season6.html">Season 6</a></th>
-                    </tr>
-                    <tr>
-                        <th><a href="season7.html">Season 7</a></th>
+                        <td><a href="season7.html">Season 7</a></td>
                     </tr>
                     <tr>
                         <th><a href="season8.html">Season 8</a></th>
                     </tr>
                     <tr>
-                        <th><a href="season9p1.html">Season 9 Part 1</a></th>
-                    </tr>
-                    <tr>
-                        <th><a href="season9p2.html">Season 9 Part 2</a></th>
+                        <th><a href="season9.html">Season 9</a></th>
                     </tr>
                     <tr>
                         <th><a href="season10p1.html">Season 10 Part 1</a></th>
@@ -90,13 +76,13 @@
                         <th><a href="season11p2.html">Season 11 Part 2</a></th>
                     </tr>
                     <tr>
-                        <th><a href="season11p3.html">Season 11 Part 3</a></th>
-                    </tr>
-                    <tr>
                         <th><a href="season12p1.html">Season 12 Part 1</a></th>
                     </tr>
                     <tr>
-                        <th><a href="season12p2.html">Season 12 Part 2</a></th>
+                        <td><a href="season12p2.html">Season 12 Part 2</a></td>
+                    </tr>
+                    <tr>
+                        <th><a href="season13p1.html">Season 13</a></th>
                     </tr>
                 </table>
             </div>
@@ -106,19 +92,19 @@
             <!-- main -->
             <div class="rightcolumn">
                 <section id="about">
-                    <h3>Currently Season 0 and Season 1 pages arent available.</h3>
+                    <h3>Seasons 0 to 5 are not available.</h3>
                 </section>
 
                 <section id="downloads">
                     <h2>Download Instructions</h2>
-                    <h3>Seasons 3 to Season 8 (Excluding Season 7)</h3>
+                    <h3>Seasons 6 and 8</h3>
                     <ul>
                         <li>Go to the <a href="/index.html#seasons">Seasons table</a> or the page of the season you want to download (left column of this page) and download the season you want <br>(all the files are zipped and less than 100 MB)</li>
                         <li>When it finishes downloading, extract the zip file <br>(the extracted folder should have a file inside called "level.dat")</li>
                         <li>move that folder into your minecraft worlds folder <br>(for windows it should be "%appdata%\.minecraft\saves")</li>
                         <li>When you open minecraft it should be in your singleplayer worlds</li>
                     </ul>
-                    <h3>Seasons 9 to Season 12 (Including Season 7)</h3>
+                    <h3>Seasons 9 to 13 (and 7)</h3>
                     <ul>
                         <li>Go to the <a href="/index.html#seasons">Seasons table</a> or the page of the season you want to download (left column of this page) and download all the season downloads you want <br>(all the files are zipped and less than 100 MB)</li>
                         <li>When they finish downloading, extract all the zip files <br>(the extracted folder ending in "_0" should have a file inside called "level.dat", i'll call it the main folder)</li>
@@ -126,9 +112,6 @@
                         <li>move the main folder into your minecraft worlds folder <br>(for windows it should be "%appdata%\.minecraft\saves")</li>
                         <li>When you open minecraft it should be in your singleplayer worlds</li>
                     </ul>
-                    <!-- <p>If this doesnt help, create a new <a href="https://github.com/dohst1/dohst1.github.io/issues">github issue</a>.</p> -->
-                    <!-- <p>In the next update i will make all the downloads only have a single zip file</p> -->
-                    <!-- <p>All the files are zipped. Seasons 3 to 6 and season 8 are less than 100 MB (unzipped size is less than ~150 MB), Season 7 and Seasons 9 Part 1 to Season 12 are over 100 MB (unzipped size varies from ~200 MB to ~600 MB).</p> -->
                     <h3></h3>
                 </section>
 
@@ -214,8 +197,8 @@
 
                 <section id="version">
                     <h2>Website Version</h2>
-                    <p><code>version: 1.5.2</code></p>
-                    <p><code>version release: 25/06/2025</code></p>
+                    <p><code>version: 1.6.0</code></p>
+                    <p><code>version release: 13/07/2025</code></p>
                     <p><code>version contributors: Dohst</code></p>
                 </section>
 
@@ -226,9 +209,7 @@
         <!-- footer -->
         <footer>
             <br>
-            <address>Not associated with any company in any way</address>
-            <address>This website is written and maintained by <a href="https://github.com/dohst1">Dohst</a></address>
-            <address>website version: 1.5.2 20250625</address>
+            <address>Website <a href="/information/changes.html#1-6">Version 1.6.0</a> - Written and Maintained by <a href="https://github.com/dohst1">Dohst</a></address>
             <address>Copyright ©Dohst. ALL RIGHTS RESERVED.</address>
             <!-- <address>I'm not claiming ownership over the name 'AmazonSMP' because I don't feel like getting sued by the Amazon company (I'll change the name if I have to).</address> -->
             <p><code> &lt;&lt;&lt; <a href="https://www.gov.uk/copyright" target="_blank">&copy;</a> <a href="https://github.com/dohst1">2025 Dohst</a> &gt;&gt;&gt; </code></p>
