@@ -588,10 +588,9 @@
 
 ### 1.6 (11/07/2025 - ??/09/2025) Season 13
 
-- #### 1.6.0 (11/07/2025 - 13/07/2025) release
+- #### 1.6.0 (11/07/2025 - 14/07/2025) release
     - updated Change log
     - updated readme file
-    - updated changes page
     - updated all footers (made it smaller - removed waffle and squished)
     - changed all update names to be the season that they were updated during
     - updated seasons table on main page
@@ -611,11 +610,12 @@
     - combined season 9 part 1 and season 9 part 2 (they are basically the same thing, but there was like a 2 week break inbetween)
     - added s13 mods to main page
     - added s13 datapacks to main page
-
     - added s13 information page
+    - added single full external download for s12p1 and s12p2
     - added s12p2 download
-    - updated main amazonsmp image
-    - updated main amazonsmp image credit on main info page
+    - added s13 map (8 k radius)
+    - added s13 interactive map (link to from s13 page and main page) (from 4:1 to 1:64)
+    - updated changes page
 
 
 ---
@@ -655,7 +655,7 @@
 - 1.5.0d : january 22 (dev)
 - 1.5.1 : March 02
 - 1.5.2 : june 25
-- #### 1.6.0 : july 13
+- #### 1.6.0 : july 14
 - 1.6.1 : august
 - 1.6.2 : september
 - 1.7.0 : october
