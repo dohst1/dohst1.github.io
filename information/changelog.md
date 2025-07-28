@@ -586,7 +586,7 @@
     - removed ddns address from website
 
 
-### 1.6 (11/07/2025 - ??/09/2025) Season 13
+### 1.6 (11/07/2025 - ??/09/2025) Season 12 Part 3
 
 - #### 1.6.0 (11/07/2025 - 14/07/2025) release
     - updated Change log
@@ -608,15 +608,35 @@
     - updated 404 error page
     - readded changes to changes page
     - combined season 9 part 1 and season 9 part 2 (they are basically the same thing, but there was like a 2 week break inbetween)
-    - added s13 mods to main page
-    - added s13 datapacks to main page
-    - added s13 information page
+    - added t4 mods to main page
+    - added t4 datapacks to main page
+    - added t4 information page
     - added single full external download for s12p1 and s12p2
     - added s12p2 download
-    - added s13 map (8 k radius)
-    - added s13 interactive map (link to from s13 page and main page) (from 4:1 to 1:64)
+    - added t4 map (8 k radius)
+    - added t4 interactive map (link to from t4 page and main page) (from 4:1 to 1:64)
     - updated changes page
 
+- #### 1.6.1 (28/07/2025 - 01/08/2025) release
+    - updated Change log
+    - updated readme file
+    - updated all page footers (with latest version info)
+    - renamed season 13 to temporary 4
+    - added ////////'s quote to quotes page
+    - removed season 6
+    - updated seasons table on main page
+    - added season 12 part 3 page
+    - updated temporary 4 page
+    - removed interactive map
+    - updated 404 page
+
+    - update mods table on main page
+    - update datapacks table on main page
+    - update main amazonsmp image
+    - add season 12 part 3 map
+    - update rules and conditions
+    - update version info on main info page
+    - add season 12 part 3 icon
 
 ---
 
@@ -655,8 +675,8 @@
 - 1.5.0d : january 22 (dev)
 - 1.5.1 : March 02
 - 1.5.2 : june 25
-- #### 1.6.0 : july 14
-- 1.6.1 : august
+- 1.6.0 : july 14
+- #### 1.6.1 : august 01
 - 1.6.2 : september
 - 1.7.0 : october
 - 1.7.1 : november
