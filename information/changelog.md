@@ -629,6 +629,8 @@
     - updated temporary 4 page
     - removed interactive map
     - updated 404 page
+    - fixed all v1.6.0 issues (and moved 1 issue to v2.0)
+    - updated update schedual - replaced v1.7.0 and v1.7.1 with v1.6.3 and v1.6.4 respectively
 
     - update mods table on main page
     - update datapacks table on main page
@@ -637,6 +639,8 @@
     - update rules and conditions
     - update version info on main info page
     - add season 12 part 3 icon
+    - update changes page
+    - update main amazonsmp image credit on main info page
 
 ---
 
@@ -678,8 +682,8 @@
 - 1.6.0 : july 14
 - #### 1.6.1 : august 01
 - 1.6.2 : september
-- 1.7.0 : october
-- 1.7.1 : november
+- 1.6.3 : october
+- 1.6.4 : november
 - 2.0.0d : december
 - 2.0.1 : december 30
 
