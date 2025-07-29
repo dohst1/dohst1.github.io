@@ -620,6 +620,7 @@
 - #### 1.6.1 (28/07/2025 - 01/08/2025) release
     - updated Change log
     - updated readme file
+    - updated changes page
     - updated all page footers (with latest version info)
     - renamed season 13 to temporary 4
     - added ////////'s quote to quotes page
@@ -631,16 +632,17 @@
     - updated 404 page
     - fixed all v1.6.0 issues (and moved 1 issue to v2.0)
     - updated update schedual - replaced v1.7.0 and v1.7.1 with v1.6.3 and v1.6.4 respectively
+    - removed anchient tower and budding amethyst drops datapacks from dohst page
+    - updated version info on main info page
+    - updated rules and conditions
+    - added season 12 part 3 map
+    - updated datapacks table on main page
 
+    - add single full download for season 11 parts
     - update mods table on main page
-    - update datapacks table on main page
     - update main amazonsmp image
-    - add season 12 part 3 map
-    - update rules and conditions
-    - update version info on main info page
-    - add season 12 part 3 icon
-    - update changes page
     - update main amazonsmp image credit on main info page
+    - add season 12 part 3 202507 download
 
 ---
 
