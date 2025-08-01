@@ -631,21 +631,17 @@
     - removed interactive map
     - updated 404 page
     - fixed all v1.6.0 issues (and moved 1 issue to v2.0)
-    - updated update schedual - replaced v1.7.0 and v1.7.1 with v1.6.3 and v1.6.4 respectively
+    - updated update schedual - replaced v1.7.0 and v1.7.1 with v1.6.3
     - removed anchient tower and budding amethyst drops datapacks from dohst page
     - updated version info on main info page
     - updated rules and conditions
     - added season 12 part 3 map
     - updated datapacks table on main page
-
-    - add single full download for season 11 parts
-    - update mods table on main page
-    - update main amazonsmp image
-    - update main amazonsmp image credit on main info page
-    - add season 12 part 3 202507 download
+    - added single full download for season 11 parts, season 10 parts, season 9 and season 7
+    - updated mods table on main page
+    - added link to Dannygpr's youtube whenever he is mentioned
 
 ---
-
 
 
 ## Updates:
@@ -677,17 +673,17 @@
 - 1.4.1 : September 26
 - 1.4.2 : October 20
 
-### 2025 (8 updates)
+### 2025 (9 updates)
 - 1.5.0d : january 22 (dev)
 - 1.5.1 : March 02
 - 1.5.2 : june 25
 - 1.6.0 : july 14
 - #### 1.6.1 : august 01
-- 1.6.2 : september
-- 1.6.3 : october
-- 1.6.4 : november
-- 2.0.0d : december
+- 1.6.2 : september 20
+- 1.6.3 : october 25
+- 2.0.0d : november
 - 2.0.1 : december 30
 
-### 2026 (1 update)
-- March31
+### 2026 (2 update)
+ - 2.1 : January 31 (Jp translation, fix all remaining bugs) - please download all past worlds you want as they wont be available after the 28th of february 2026.
+ - 2026/02/28 - end

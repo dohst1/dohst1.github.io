@@ -15,10 +15,9 @@ If you want to contribute yourself: i will only allow current AmazonSMP members 
 - 1.5.2 : june 25
 - 1.6.0 : july 14
 - 1.6.1 : august 01 (Current)
-- 1.6.2 : september
-- 1.6.3 : october
-- 1.6.4 : november
-- 2.0.0d : december
+- 1.6.2 : september 20
+- 1.6.3 : october 25
+- 2.0.0d : november
 - 2.0.1 : december 30
 
 
