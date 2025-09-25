@@ -14,7 +14,7 @@
 
 
 
-## 0 part 1 (16/08/2023 - 27/08/2023) alpha
+## Version 0 part 1 (16/08/2023 - 27/08/2023) alpha
 
 ### 0.0-beta (16/08/2023) alpha - setup
 - #### 0.0.0 (16/08/2023)
@@ -102,7 +102,7 @@
 
 
 
-## 0 part 2 (09/11/2023 - 01/12/2023) beta
+## Version 0 part 2 (09/11/2023 - 01/12/2023) beta
 
 ### 0.3-release (09/11/2023 - 25/11/2023) beta - style
 - #### 0.3.0 (09/11/2023)
@@ -231,7 +231,7 @@
 
 
 
-## 1 (01/12/2023 - ??/11/2025) Release (Type 4-5)
+## Version 1 (01/12/2023 - ??/11/2025) Release (Type 4-5)
 
 ### 1.0-release (01/12/2023 - 10/12/2023) Season 10 (release)
 - #### 1.0.0 (01/12/2023 - 10/12/2023)
@@ -641,7 +641,122 @@
     - updated mods table on main page
     - added link to Dannygpr's youtube whenever he is mentioned
 
+- #### 1.6.2 (10/08/2025 - 25/09/2025) release
+    - updated changelog
+    - updated readme
+    - updated changes page
+    - updated footers (for all pages)
+    - dohst page - changed all datapack and texture pack future release text to say 'unavailable'
+    - dohst page - added announcements section with discontinuation message
+    - rules page - updated rules
+    - rules page - reliability order description
+    - started removing capical letters and punctuation in a few places (except names and titles (for now))
+    - everywhere - updated update schedule
+    - main page and main information page - added info text saying older seasons will be added in v2.0
+    - main information page - updated version information
+    - main information page - readded amazonsmp-labled.png file
+    - season12p3 page - updated player list and info section
+    - main page - updated seasons table info for season 12 part 3
+    - main page - updated datapacks table
+    - main page - updated mods table
+
+
 ---
+
+
+
+## Version 2 (2025/10/10 - 2026/02/28) Archive
+
+### v2.0 (2025/10/10 - 2025/11/13) Archive
+
+- #### v2.0.0 (2025/10/23) development
+    - updated Change log
+
+- #### v2.0.1 (2025/11/13) release
+    - updated Change log
+
+
+### v2.1 (2025/12/01 - 2025/12/13) Final
+
+- #### v2.1.0 (2025/12/13) release
+    - updated Change log
+
+
+### v2.2 (2026/01/13 - 2026/02/13) IX
+
+- #### v2.2.0 (2026/01/23) final
+    - updated Change log
+
+- #### v2.2.1 (2026/02/13) ix
+    - IX
+
+
+---
+
+
+
+## Version Issues (v1.4.1+) (last updated 20250925)
+
+
+### Version 1.4.x Known Issues and Enhancement Requests
+
+#### **v1.4.1**
+- Some datapack link labels haven't been updated - Fixed
+- A version is labeled incorrectly on the future updates table - Fixed
+- Dohst nether village datapack description - Fixed
+- Dohst datapack table description - Fixed
+- Some copyright info has too much padding on the sides on mobile - Fixed
+- Table font is too small for mobile - Fixed
+#### **v1.4.2**
+- all downloads dont contain a level.dat file, meaning the folder isnt recognised as a minecraft world (fixed in 1.5.1)
+- season 12 date is incorrect (fixed in 1.5.0)
+- readme file information is out of date (fixed in 1.5.0)
+
+
+### Version 1.5.x Known Issues and Enhancement Requests
+
+#### **v1.5.0** (202502 no release)
+   - none
+
+#### **v1.5.1** (20250302)
+ - 404 error page has outdated footer (fixed in v1.5.2)
+ - rules page should have lists not just paragraphs (fixed in v1.5.2)
+ - season 11 part 3, season 12 pages arent available (fixed in v1.5.2)
+ - season 11 part 3, season 12 downloads arent available (fixed in v1.5.2)
+ - 404 error page had some incorrect links (fixed in v1.5.2)
+ - should add season descriptions for season information pages (moved to 1.5.2)
+
+#### **v1.5.2** (20250625)
+ - should add season descriptions for season information pages (moved to v1.6.0)
+ - information page for season 12 part 2 has incorrect dates (fixed in v1.6.0)
+ - downloads for season 12 part 1 dont have sizes on download text, on main page and information page (fixed in v1.6.0)
+ - some mods are missing links/version information on main page (fixed in v1.6.0)
+
+
+### Version 1.6.x Known Issues and Enhancement Requests
+
+#### **v1.6.0** (20250714)
+ - main information page: main image credit: "9 | Season 11 Part 2 | Secret7" should be "9 | Season 10 Part 2 | Secret7" - fixed in v1.6.1
+ - should add season 4 and 5 back - moved to v1.6.1
+ - should update the main amazonsmp image to include season 11 part 1/2 builds - moved to v1.6.1
+ - main page: seasons table: season 12 part 2 download links should not have "Download:" at the top - fixed in v1.6.1
+
+#### **v1.6.1** (20250801)
+ - should add seasons 1 to 6 info - moved to v1.6.2
+ - should add temporary 1 to 3 world info - wont fix
+ - should add some old seasons info - wont fix
+ - should update the main amazonsmp image to include season 11/12 part 1/2/3 builds - moved to v1.6.2
+ - missing file "amazonsmp-labled.png" - fixed in v1.6.2
+ - updates table on changes page has an extra row for "season 12 part 3" - fixed in v1.6.2
+
+#### **v1.6.2** (20250925)
+ - should add seasons 1 to 6 info - moved to v2.0
+ - should update the main amazonsmp image to include season 11/12 part 1/2/3 builds - moved to v2.0
+ - unknown
+
+
+---
+
 
 
 ## Updates:
@@ -678,12 +793,12 @@
 - 1.5.1 : March 02
 - 1.5.2 : june 25
 - 1.6.0 : july 14
-- #### 1.6.1 : august 01
-- 1.6.2 : september 20
-- 1.6.3 : october 25
-- 2.0.0d : november
-- 2.0.1 : december 30
+- 1.6.1 : august 01
+- #### 1.6.2 : september 25
+- 2.0.0d : october 23
+- 2.0.1 : november 13
+- 2.1 : december 13
 
 ### 2026 (2 update)
- - 2.1 : January 31 (Jp translation, fix all remaining bugs) - please download all past worlds you want as they wont be available after the 28th of february 2026.
- - 2026/02/28 - end
+ - 2.2 : january 23 (Jp translation, fix all remaining bugs) - notice: please download all past worlds and datapacks you want as they wont be available after the 13th of february 2026.
+ - 20260213 - end
