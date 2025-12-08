@@ -14,27 +14,11 @@
     --text-link: rgb(47, 129, 247);
     --font-size: 22px;
     --font-size-small: 20px
-} 
-*/
+}  */
 
-/* Old Dark Blue */
-/* :root {
-    --background: rgb(13, 28, 56);
-    --background-light: rgb(35, 55, 92);
-    old --background-light: rgb(28, 49, 88);
-    --background-gray: rgb(15, 25, 41); 
-    --background-dark: rgb(10, 21, 44); 
-    --border: rgb(63, 74, 87);
-    --border-light: rgb(97, 109, 124);
-    --text: rgb(230, 237, 243);
-    --text-dark: rgb(16, 16, 16);
-    --text-link: rgb(20, 110, 240);
-    --font-size: 22px;
-    --font-size-small: 20px
-} */
 
 /* Dark Blue */
-:root {
+/* :root {
     --background: rgb(10, 21, 44);
     --background-light: rgb(35, 55, 92);
     --background-gray: rgb(15, 25, 41); 
@@ -46,7 +30,38 @@
     --text-link: rgb(20, 110, 240);
     --font-size: 22px;
     --font-size-small: 20px
+} */
+
+/* l */
+/* :root {
+    --background: rgb(41, 10, 44);
+    --background-light: rgb(92, 35, 85);
+    --background-gray: rgb(39, 15, 41); 
+    --background-dark: rgb(19, 6, 24); 
+    --border: rgb(85, 63, 87);
+    --border-light: rgb(124, 97, 122);
+    --text: rgb(243, 230, 243);
+    --text-dark: rgb(19, 19, 19);
+    --text-link: rgb(240, 20, 145);
+    --font-size: 22px;
+    --font-size-small: 20px
+} */
+
+/* idk */
+:root {
+    --background: rgb(10, 13, 44);
+    --background-light: rgb(44, 35, 92);
+    --background-gray: rgb(19, 15, 41); 
+    --background-dark: rgb(8, 6, 24); 
+    --border: rgb(67, 63, 87);
+    --border-light: rgb(102, 97, 124);
+    --text: rgb(231, 230, 243);
+    --text-dark: rgb(16, 16, 16);
+    --text-link: rgb(20, 71, 240);
+    --font-size: 22px;
+    --font-size-small: 20px
 }
+
 
 
 html, body, .sidenav {
@@ -59,7 +74,7 @@ html, body, .sidenav {
 }   
 main, main div {
     background-color: var(--background);
-    border-radius: 10px;
+    border-radius: 20px;
     border: 4px solid var(--border);
 }
 footer, address {
@@ -77,7 +92,7 @@ main address {
 code, table, th, td, button, li, ul, ol, hr, img {
     background-color: var(--background-gray);
     border: 2px solid var(--border);
-    border-radius: 6px;
+    border-radius: 15px;
     padding: 5px 8px;
     margin-left: auto;
     margin-right: auto;
@@ -85,6 +100,7 @@ code, table, th, td, button, li, ul, ol, hr, img {
 }
 code:hover, th:hover, td:hover, button:hover, li:hover {
     border-color: var(--border-light);
+    /* background-color: var(--background-light); */
 }
 
 ol, ul, .small {
@@ -108,11 +124,11 @@ hr, img {
 
 code {
     padding: 3px 5px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 button {
     padding: 12px 38px;
-    border-radius: 100px;
+    border-radius: 30px;
     margin: 3px;
     font-weight: bold;
     text-decoration: none;
@@ -184,7 +200,7 @@ nav button {
     line-height: 32px;
     cursor: pointer;
     min-width: 64px;
-    border-radius: 160px;
+    border-radius: 30px;
     border: none;
     background-color: transparent;
     background-color: var(--background-light);

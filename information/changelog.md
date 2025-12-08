@@ -1,8 +1,9 @@
 # AmazonSMP Website - Change Log
-- by: Dohst
-- Versions: major.minor.patch[label][-date][-name]
+- by: Charlotte and Dohst 
+- Versions: major.minor.patch[-label][-date][-name]
     - label: "rel" or "dev"
     - date: yyyymmdd or dd/mm/yyyy
+    - name: lower case with underscores ("_") for spaces
 - changelog format:
 ## Major (StartDate - EndDate) UpdateName
 ### Major.Minor (StartDate - EndDate) UpdateName
@@ -665,37 +666,85 @@
 
 
 
-## Version 2 (2025/10/10 - 2026/02/28) Archive
+## Version 2 (2025/10/10 - 2026/01/13) Archive
+
 
 ### v2.0 (2025/10/10 - 2025/11/13) Archive
 
 - #### v2.0.0 (2025/10/23) development
+    - log - updated change log
+    - readme - updated readme file
+    - log - updated release dates (v2.0.1-20251130, v2.1.0-20251223, v2.2-20260113, deleted v2.2.1)
+    - css - added a l color scheme
+    - css - removed old dark blue color scheme
+    - css - increased border radius to 40, 20, 60 px depending on the element type
+    - main - split seasons table into (old, new)
+    - main - reformated and updated seasons tables (season, part, dates, version, download) (split parts into different row)
+    - main - season table now includes old seasons and temporary seasons
+    - main - updated mods table
+    - files - added 'as12p3-202510-mods.zip' (latest required mods zip as of 11/30)
+    - main - updated datapacks table
+    - files - removed old season9 download and added 2 downloads for season 9 (before and after 528)
+    - main - added link to season9 full download (for both parts)
+    - dohst - updated some text and page title
+    - quote - removed dannygpr's quote since it sexuallises women from the male gaze
+    - main - reordered dates to be yyyy/mm/dd
+    - main - added data replacing 'xxx' or '???' (most ended up being 'unknown')
+    - all - updated footer for 'v2.0.0-20251023'
+    - files - added downloads to all seasons
+    - files - updated main amazonsmp image (now contains 'dohst - season 12 part 3 - main', 'tackzs - season 12 part 3 - floating island (season 7)', 'secret7 - season 12 part 3 - create area', 'whatcheeseburger - season 9 and season 10 part 2', 'spawn - season 12 part 3', 'mandoeam - season 12 part 3 - main', 'dohst and herbine - season 1', 'cookielotty12 - season 12 part 2', 'tackzs - season 9 or season 10 part 2', 'imgapplejuice - season 12 part 3', 'dohst - season 7 - spawn')
+    - files - removed dohst image
+    - information - updated download instructions
+    - information - updated credit section
+    - information - updated report/request section
+    - information - updated website version information
+    - information - updated sidebar
+    - information folder - moved temporary seasons all on one page, and old seasons (0 to 8) also all on one page
+    - all - reformated dates to be yyyy/mm/dd
+    - information season 9 - updated page (and added description explaing why there are two downloads)
+    - information season 10 - updated page (and combined parts 1 and 2)
+    - information season 11 - updated page (and combined parts 1 and 2)
+    - information season 11 - updated page (and combined parts 1 and 2 and 3)
+    - quote - renamed page to 'update'
+    - 404 - updated pages list
+    - rules - updated page
+    - changes - updated page
+
+- #### v2.0.1 (2025/11/30) release
     - updated Change log
+    - changes - updated page
+    - files - added season12p3_20251207 download
+    - removed l color scheme
 
-- #### v2.0.1 (2025/11/13) release
+
+### v2.1 (2025/12/18 - 2025/12/23) Final
+
+- #### v2.1.0 (2025/12/23) release
     - updated Change log
+    - #### todo
+    - add updates page
+    - add namemc links for all java players
+    - add links to youtube and other socials for members
+    - main - reformating main page
+    - add new ui style
+    - add new layout
+    - add wiki/glossory page (about terms such as 528, and all past players)
+    - main page should have sliding elements kind of like here: https://ichigoproduction.com (with each tile being a "succesfull" season)
+    - add interactive map (radius 4k, zoom from 1:64 to 2:1)
+    - update content pages for new seasons (9 to 12)
+       - players (including uuids and all bases, including images)
+       - unscalled map (with option to download 1 to 1 version) (also unscalled map with areas and locations)
 
 
-### v2.1 (2025/12/01 - 2025/12/13) Final
-
-- #### v2.1.0 (2025/12/13) release
-    - updated Change log
-
-
-### v2.2 (2026/01/13 - 2026/02/13) IX
-
-- #### v2.2.0 (2026/01/23) final
-    - updated Change log
-
-- #### v2.2.1 (2026/02/13) ix
-    - IX
+### v2.2 (2026/01/01 - 2026/01/13) IX
+ - IX
 
 
 ---
 
 
 
-## Version Issues (v1.4.1+) (last updated 20250925)
+## Version Issues (v1.4.1+) (last updated 20251207)
 
 
 ### Version 1.4.x Known Issues and Enhancement Requests
@@ -750,8 +799,25 @@
  - updates table on changes page has an extra row for "season 12 part 3" - fixed in v1.6.2
 
 #### **v1.6.2** (20250925)
- - should add seasons 1 to 6 info - moved to v2.0
- - should update the main amazonsmp image to include season 11/12 part 1/2/3 builds - moved to v2.0
+ - should add seasons 1 to 6 info - fixed in v2.0.0
+ - should update the main amazonsmp image to include season 11/12 part 1/2/3 builds - fixed in v2.0.0
+ - main amazonsmp title on nav bar looks different (should change font) - moved to v2.0.0
+ - 'main page' 'mods table' 'required' column, rowspan for 'yes' should be 1 more than current (since one row isnt in yes but it should be) - fixed in v2.0.0
+
+
+### Version 2.0.x Known Issues and Enhancement Requests
+
+#### **v2.0.0** (20251023)
+ - main amazonsmp title on nav bar looks different (should change font) - (from v1.6.2)
+ - unknown
+
+#### **v2.0.1** (20251130)
+ - unknown
+
+
+### Version 2.1.x Known Issues and Enhancement Requests
+
+#### **v2.1.0** (20251223)
  - unknown
 
 
@@ -794,11 +860,10 @@
 - 1.5.2 : june 25
 - 1.6.0 : july 14
 - 1.6.1 : august 01
-- #### 1.6.2 : september 25
+- 1.6.2 : september 25
 - 2.0.0d : october 23
-- 2.0.1 : november 13
-- 2.1 : december 13
+- #### 2.0.1 : november 30
+- 2.1.0 : december 23 (jp translation, fixed all remaining bugs) - notice: please download all past worlds and datapacks you want as they wont be available after the 13th of february 2026.
 
-### 2026 (2 update)
- - 2.2 : january 23 (Jp translation, fix all remaining bugs) - notice: please download all past worlds and datapacks you want as they wont be available after the 13th of february 2026.
- - 20260213 - end
+### 2026 (1 update)
+ - 2.2 : january 13 (final)
