@@ -1,5 +1,5 @@
 # AmazonSMP Website - Change Log
-- by: Charlotte and Dohst 
+- by: ///////// and Dohst 
 - Versions: major.minor.patch[-label][-date][-name]
     - label: "rel" or "dev"
     - date: yyyymmdd or dd/mm/yyyy
@@ -717,26 +717,40 @@
     - removed l color scheme
 
 
-### v2.1 (2025/12/18 - 2025/12/23) Final
+### v2.1 (2025/12/23 - 2026/01/23) idk
 
-- #### v2.1.0 (2025/12/23) release
-    - updated Change log
+- #### v2.1.0 (2026/01/23) release
+    - files - updated Change log
+    - main - updated mods list (updated origins mod to be v1.10.2)
+    - dohst - updated dohst page
+    - info - updated part 3 information (days count and border and download link)
+    - css - made border radius for tables and other 10px (was 15px)
+    - updates - add updates page
+    - css - added 'limited_big' class which is just 'limited' class but allows more width
+    - 404 - updated 404 error page (updated links to 'update', 'changes' page)
+    - dohst - added 'links' and 'projects' section in comments
+    - info - updated 'updates list' on 'changes' page
+    - main - updated season 12 temporary download link in seasons table
+    - info - updated changes page
+    - files - reorganised some unused files
+    - all - redacted '/////////' in all files for safety reasons
+    - 
     - #### todo
-    - add updates page
-    - add namemc links for all java players
-    - add links to youtube and other socials for members
+    - all - add new ui style
+    - all - add new layout
+    - main - add recommended mods section on main page
     - main - reformating main page
-    - add new ui style
-    - add new layout
-    - add wiki/glossory page (about terms such as 528, and all past players)
-    - main page should have sliding elements kind of like here: https://ichigoproduction.com (with each tile being a "succesfull" season)
-    - add interactive map (radius 4k, zoom from 1:64 to 2:1)
-    - update content pages for new seasons (9 to 12)
-       - players (including uuids and all bases, including images)
-       - unscalled map (with option to download 1 to 1 version) (also unscalled map with areas and locations)
+    - main - main page should have sliding elements kind of like here: https://ichigoproduction.com (with each tile being a "succesfull" season)
+    - info - add links to youtube and other socials for members, namemc links for all java players
+    - info - add wiki/glossory page (about terms such as 528, and all past players)
+    - info - add interactive map (radius 4k, zoom from 1:64 to 2:1)
+    - info - update content pages for new seasons (9 to 12) (players (including uuids and all bases, including images)) (unscalled map (with option to download 1 to 1 version) (also unscalled map with areas and locations))
 
 
-### v2.2 (2026/01/01 - 2026/01/13) IX
+### v2.2 (2026/02/01 - 2026/02/13) idk
+ - none
+
+### v2.3 (2026/03/13 - 2026/03/23) IX
  - IX
 
 
@@ -862,8 +876,10 @@
 - 1.6.1 : august 01
 - 1.6.2 : september 25
 - 2.0.0d : october 23
-- #### 2.0.1 : november 30
-- 2.1.0 : december 23 (jp translation, fixed all remaining bugs) - notice: please download all past worlds and datapacks you want as they wont be available after the 13th of february 2026.
+- 2.0.1 : november 30
+- 2.1.0 (skipped) : december 23 (jp translation, fixed all remaining bugs) - notice: please download all past worlds and datapacks you want as they wont be available after the 13th of february 2026. (to differentiate from official v2.1.0 release, you should refer to this version as 'v2.1.0b' (a beta of v2.1.0))
 
-### 2026 (1 update)
- - 2.2 : january 13 (final)
+### 2026 (3 update)
+ - #### 2.1.0 : january 23
+ - 2.2.0 : february 13
+ - 2.3.0 : march 23 (final)

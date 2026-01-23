@@ -89,10 +89,10 @@ main address {
     margin-right: 25%;
 }
 
-code, table, th, td, button, li, ul, ol, hr, img {
+code, table, th, td, button, li, ul, ol, hr, img, section div {
     background-color: var(--background-gray);
     border: 2px solid var(--border);
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 5px 8px;
     margin-left: auto;
     margin-right: auto;
@@ -116,6 +116,10 @@ ul {
     max-width: 300px;
     text-align: left;
 }
+.limited_big {
+    max-width: 600px;
+    text-align: left;
+}
 
 hr, img {
     padding: 0px;
@@ -132,6 +136,11 @@ button {
     margin: 3px;
     font-weight: bold;
     text-decoration: none;
+}
+section div {
+    background-color: var(--background-gray);
+    text-align: left;
+    max-width: 60%;
 }
 
 p, h2, h3 {
