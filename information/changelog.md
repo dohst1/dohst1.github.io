@@ -1,9 +1,9 @@
 # AmazonSMP Website - Change Log
 - by: ///////// and Dohst 
-- Versions: major.minor.patch[-label][-date][-name]
-    - label: "rel" or "dev"
-    - date: yyyymmdd or dd/mm/yyyy
-    - name: lower case with underscores ("_") for spaces
+- versions: major.minor.patch[-label][-date][-name]
+    - label: 'rel' or 'dev'
+    - date: yyyymmdd or yyyy/mm/dd or dd/mm/yyyy
+    - name: lower case with underscores ('_') for spaces
 - changelog format:
 ## Major (StartDate - EndDate) UpdateName
 ### Major.Minor (StartDate - EndDate) UpdateName
@@ -666,7 +666,7 @@
 
 
 
-## Version 2 (2025/10/10 - 2026/01/13) Archive
+## Version 2 (2025/10/10 - 2026/02/28) Archive
 
 
 ### v2.0 (2025/10/10 - 2025/11/13) Archive
@@ -734,21 +734,19 @@
     - info - updated changes page
     - files - reorganised some unused files
     - all - redacted '/////////' in all files for safety reasons
+
+### v2.2 (2026/02/01 - 2026/02/13) final
+    - files - updated change log
+    - main - updated main page (added announcement)
+    - files - added season 12 part 3 world download final (from 20260210)
+    - files - updated season 12 part 3 dates (end date now 20260210 and time 203 days)
+    - mods - added download for all server mods
+    - information - copied mods and datapacks from main page onto season 12 page
+    - information - updated changelog
     - 
     - #### todo
-    - all - add new ui style
-    - all - add new layout
-    - main - add recommended mods section on main page
     - main - reformating main page
-    - main - main page should have sliding elements kind of like here: https://ichigoproduction.com (with each tile being a "succesfull" season)
-    - info - add links to youtube and other socials for members, namemc links for all java players
-    - info - add wiki/glossory page (about terms such as 528, and all past players)
-    - info - add interactive map (radius 4k, zoom from 1:64 to 2:1)
-    - info - update content pages for new seasons (9 to 12) (players (including uuids and all bases, including images)) (unscalled map (with option to download 1 to 1 version) (also unscalled map with areas and locations))
-
-
-### v2.2 (2026/02/01 - 2026/02/13) idk
- - none
+    - info - update content pages for new seasons (9 to 12)
 
 ### v2.3 (2026/03/13 - 2026/03/23) IX
  - IX
@@ -758,7 +756,7 @@
 
 
 
-## Version Issues (v1.4.1+) (last updated 20251207)
+## Version Issues (v1.4.1+) (last updated 20260213)
 
 
 ### Version 1.4.x Known Issues and Enhancement Requests
@@ -822,17 +820,21 @@
 ### Version 2.0.x Known Issues and Enhancement Requests
 
 #### **v2.0.0** (20251023)
- - main amazonsmp title on nav bar looks different (should change font) - (from v1.6.2)
+ - main amazonsmp title on nav bar looks different (should change font) - (from v1.6.2) (wont fix)
  - unknown
 
-#### **v2.0.1** (20251130)
- - unknown
+
+### **v2.0.1** (20251130)
+ - files - updates page is not finished and is not named correctly (fixed in v2.2.0)
+ - main - required mods list, origins mod is now v1.10.2 not v1.10.0, and link is outdated (fixed in v2.1.0)
+ - main - should add recommended client mods list (wont fix)
+ - update release date delays (fixed in v2.2.0)
 
 
 ### Version 2.1.x Known Issues and Enhancement Requests
 
-#### **v2.1.0** (20251223)
- - unknown
+### **v2.1** (20260223)
+ - unknown / none
 
 
 ---
@@ -880,6 +882,6 @@
 - 2.1.0 (skipped) : december 23 (jp translation, fixed all remaining bugs) - notice: please download all past worlds and datapacks you want as they wont be available after the 13th of february 2026. (to differentiate from official v2.1.0 release, you should refer to this version as 'v2.1.0b' (a beta of v2.1.0))
 
 ### 2026 (3 update)
- - #### 2.1.0 : january 23
- - 2.2.0 : february 13
- - 2.3.0 : march 23 (final)
+ - 2.1.0 : january 23
+ - #### 2.2.0 : february 13
+ - 2.3.0 : february 28 (final) (website will be deleted)
