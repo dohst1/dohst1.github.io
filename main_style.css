@@ -1,0 +1,653 @@
+/* Dohst23 - rai_website - main cascading style sheet */
+
+
+/* Light Blue 2024 */
+/* :root {
+    --background: rgb(18, 45, 92);
+    --background-light: rgb(19, 32, 56);
+    --background-grey: rgb(17, 38, 83); 
+    --background-dark: rgb(19, 36, 70);
+    --border: rgb(63, 74, 87);
+    --border-light: rgb(97, 109, 124);
+    --text: rgb(230, 237, 243);
+    --text-dark: rgb(16, 16, 16);
+    --text-link: rgb(47, 129, 247);
+    --font-size: 22px;
+    --font-size-small: 20px
+}  */
+
+
+/* Dark Blue 2024 */
+/* :root {
+    --background: rgb(10, 21, 44);
+    --background-light: rgb(35, 55, 92);
+    --background-grey: rgb(15, 25, 41); 
+    --background-dark: rgb(6, 12, 24); 
+    --border: rgb(63, 74, 87);
+    --border-light: rgb(97, 109, 124);
+    --text: rgb(230, 237, 243);
+    --text-dark: rgb(16, 16, 16);
+    --text-link: rgb(20, 110, 240);
+    --font-size: 22px;
+    --font-size-small: 20px
+} */
+
+/* l old 2025 */
+/* :root {
+    --background: rgb(41, 10, 44);
+    --background-light: rgb(92, 35, 85);
+    --background-grey: rgb(39, 15, 41); 
+    --background-dark: rgb(19, 6, 24); 
+    --border: rgb(85, 63, 87);
+    --border-light: rgb(124, 97, 122);
+    --text: rgb(243, 230, 243);
+    --text-dark: rgb(19, 19, 19);
+    --text-link: rgb(240, 20, 145);
+    --font-size: 22px;
+    --font-size-small: 20px
+} */
+
+
+/* a 2026 current */
+:root { /* hsl hue saturation lightness */ /* pastel = less saturation, more brightness */
+    --background-light: rgb(36, 40, 50);
+    --background: rgb(31, 33, 37);
+    --background-dark: rgb(28, 28, 28);
+
+    --border-light: rgb(95, 95, 95);
+    --border: rgb(66, 66, 66);
+
+    --text: rgb(220, 220, 220);
+    --text-grey: rgb(180, 180, 180);
+    --text-dark: rgb(216, 216, 216);
+
+    --font-size-big: 32px;
+    --font-size-normal: 26px;
+    --font-size-small: 20px;
+
+    --sat: 20%;
+    --lig1: 50%;
+    --lig2: 40%;
+    --lig3: 25%;
+}
+
+[color_mode="red"] {
+    --background-light: hsl(0, var(--sat), var(--lig1));
+    --background: hsl(0, var(--sat), var(--lig2));
+    --background-dark: hsl(0, var(--sat), var(--lig3));
+}
+
+[color_mode="orange"] {
+    --background-light: hsl(30, var(--sat), var(--lig1));
+    --background: hsl(30, var(--sat), var(--lig2));
+    --background-dark: hsl(30, var(--sat), var(--lig3));
+}
+
+[color_mode="yellow"] {
+    --background-light: hsl(60, var(--sat), var(--lig1));
+    --background: hsl(60, var(--sat), var(--lig2));
+    --background-dark: hsl(60, var(--sat), var(--lig3));
+}
+
+[color_mode="green"] {
+    --background-light: hsl(135, var(--sat), var(--lig1));
+    --background: hsl(135, var(--sat), var(--lig2));
+    --background-dark: hsl(135, var(--sat), var(--lig3));
+}
+
+[color_mode="cyan"] {
+    --background-light: hsl(180, var(--sat), var(--lig1));
+    --background: hsl(180, var(--sat), var(--lig2));
+    --background-dark: hsl(180, var(--sat), var(--lig3));
+}
+
+[color_mode="blue"] {
+    --background-light: hsl(225, var(--sat), var(--lig1));
+    --background:       hsl(225, var(--sat), var(--lig2));
+    --background-dark:  hsl(225, var(--sat), var(--lig3));
+}
+
+[color_mode="indigo"] {
+    --background-light: hsl(270, var(--sat), var(--lig1));
+    --background:       hsl(270, var(--sat), var(--lig2));
+    --background-dark:  hsl(270, var(--sat), var(--lig3));
+}
+
+[color_mode="violet"] {
+    --background-light: hsl(315, var(--sat), var(--lig1));
+    --background:       hsl(315, var(--sat), var(--lig2));
+    --background-dark:  hsl(315, var(--sat), var(--lig3));
+}
+
+[color_mode="grey"] {
+    --background-light: rgb(36, 40, 50);
+    --background: rgb(31, 33, 37);
+    --background-dark: rgb(28, 28, 28);
+    /* transition: all 1s; */
+}
+
+[color_style="dark"] {
+    --sat: 60%;
+    --lig1: 40%;
+    --lig2: 25%;
+    --lig3: 10%;
+}
+[color_style="light"] {
+    --sat: 20%;
+    --lig1: 50%;
+    --lig2: 40%;
+    --lig3: 25%;
+}
+
+
+/* main blue 2026 */
+/* :root {
+    --background: rgb(10, 13, 44);
+    --background-light: rgb(44, 35, 92);
+    --background-grey: rgb(19, 15, 41); 
+    --background-dark: rgb(8, 6, 24); 
+    --border: rgb(67, 63, 87);
+    --border-light: rgb(102, 97, 124);
+    --text: rgb(231, 230, 243);
+    --text-dark: rgb(16, 16, 16);
+    --text-link: rgb(20, 71, 240);
+    --font-size: 22px;
+    --font-size-small: 20px
+} */
+
+/* .zen-old-mincho-regular {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+
+html, body, .sidenav {
+    color: var(--text);
+    /* font-family: Arial, sans-serif; */
+    /* font-family: "Lato", "Zen Old Mincho", sans-serif; */
+    font-family: /* "Zen Old Mincho", */ sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-small);
+    text-align: center;
+    background-color: var(--background-dark);
+}   
+main {
+    background-color: var(--background);
+    border-radius: var(--font-size-big);
+    border: 4px solid var(--border);
+}
+footer, address {
+    font-size: var(--font-size-small);
+    color: var(--text-grey);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+
+
+code, table, th, td, button, li, ul, ol, hr, img, span, div/* , .gallery div */ {
+    background-color: var(--background-dark); /* was light */
+    border: 2px solid var(--border);
+    border-radius: var(--font-size-big);
+    padding: 5px 8px;
+    margin-left: 10%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    font-size: var(--font-size-small);
+    color: var(--text-dark);
+}
+code:hover, th:hover, td:hover, button:hover, li:hover {
+    border-color: var(--border-light);
+    /* background-color: var(--background-light); */
+}
+
+span, table {
+    width: 80%;
+    text-align: left;
+    min-height: 50px;
+    justify-content: start;
+    display: block /* grid */;
+    margin: var(--font-size-normal);
+    margin-left: 10%;
+    padding-left: var(--font-size-big);
+}
+span p, span h3 {
+    display: block;
+    margin-top: 0;
+    width: 90%;
+}
+
+ol, ul, .small {
+    padding-left: 34px;
+    text-align: start;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+hr, img {
+    padding: 0px;
+}
+
+code {
+    padding: 3px 5px;
+    border-radius: 20px;
+}
+button {
+    /* padding: 12px 38px; */
+    margin: 3px;
+    /* font-weight: bold; */
+    /* text-decoration: none; */
+    font-size: var(--font-size-small);
+    color: var(--text-dark);
+    padding: 0 16px;
+    height: var(--font-size-small);
+    cursor: pointer;
+    min-width: 64px;
+    /* border: none; */
+    background-color: transparent;
+    /* background-color: var(--background-light); */
+    min-height: calc(var(--font-size-small)*2);
+    min-width: 100px;
+    border: none;
+}
+div {
+    text-align: left;
+    max-width: 80%;
+}
+main div, header div {
+    border: none;
+    background: none;
+}
+
+p, h2, h3, main h1 {
+    text-align: left;
+    justify-content: start;
+    margin-left: 10%;
+    display: block;
+    margin-right: 10%;
+    padding-left: var(--font-size-big);
+}
+
+h1 {
+    font-size: var(--font-size-big);
+    padding: var(--font-size-big);
+    /* padding-left: var(--font-size-small); */
+    padding-left: 0;
+}
+main h1 {
+    margin-left: 10%;
+}
+h2 {
+    padding: var(--font-size-normal);
+    font-size: var(--font-size-normal);
+    padding-left: var(--font-size-normal);
+    margin-left: 11%;
+}
+h3 {
+    /* padding-top: var(--font-size-small); */
+    font-size: var(--font-size-small);
+    padding: var(--font-size-small);
+    padding-left: var(--font-size-big);
+    margin-left: 12%;
+}
+p {
+    margin-left: 14%;
+}
+
+a, :any-link, a abbr{
+    color: var(--text);
+    text-decoration: none;
+}
+a:hover, :any-link:hover, :any-link:active, button:hover {
+    text-decoration: underline;
+}
+td a{
+    display: block;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: var(--background);
+    /* padding: 0px 20px; */
+    justify-content: start;
+    /* z-index: 10; */
+    border-color: var(--border);
+    border: 2px solid var(--border);
+    z-index: 6;
+    height: calc(var(--font-size-normal)*3);
+}
+nav h1, .dropdown_button {
+    margin: var(--font-size-big);
+    /* makes nav bar title stay in center, but causes some other visual issues with smaller screens
+    padding-left: 6%;
+    padding-right: 6%; */
+}
+
+/* nav button:hover {
+background-color: var(--background);
+} */
+
+    
+/* .sidenav {
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: var(--background-dark);
+    overflow-x: hidden;
+    padding-top: 80px;
+    margin-top: 80px;
+    margin-left: 20px;
+} */
+/* .split {
+    position: fixed;
+    top: 200px;
+    padding-top: 20px;
+} */
+.row {
+    display: flex;
+    padding: 10px;
+}
+.rightcolumn {
+    flex: 85%;
+}
+.leftcolumn {
+    width: 15%;
+    display: block;
+}
+.space {
+    background-color: var(--background);
+    border: none;
+}
+.left {
+    text-align: left;
+    position: flex;
+    justify-content: start;
+}
+.right {
+    text-align: right;
+    position: flex;
+    justify-content: end;
+}
+.active, button:hover, button:hover a, .gallery div:hover {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    border-color: var(--border-light);
+}
+
+.leftcolumn button {
+    width: 90%;
+    min-height: 60px;
+    border-radius: 10px;
+}
+
+.fade {
+    opacity: 0;
+    /* transition: 1s; */
+}
+.fade_in {
+    opacity: 1;
+    transition: 1s;
+}
+.fade_none {
+    display: none;
+}
+
+.top {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.limited {
+    max-width: 300px;
+    text-align: left;
+}
+.limited_big {
+    max-width: 600px;
+    text-align: left;
+}
+
+.leftside {
+    display: inline-block;
+    width: 40%;
+    justify-content: left;
+    margin: 0;
+    justify-content: left;
+    align-content: left;
+    text-align: left;
+    padding: 0;
+}
+.rightside {
+    margin: 0;
+    display: inline-block;
+    /* flex: 40%; */
+    /* right: 0; */
+    width: 40%;
+    justify-self: right;
+    justify-content: start;
+    text-align: start;
+    align-items: center;
+    justify-content: right;
+    align-content: right;
+    /* position: ; */
+    padding: 0;
+}
+
+
+
+/* .gallery {
+} */
+
+.responsive {
+    border-radius: var(--font-size-small);
+    /* padding: 0 6px; */
+    display: inline-block;
+    /* width: 20%; */
+    justify-content: left;
+    align-content: left;
+    text-align: left;
+    margin: 0;
+}
+.description, .responsive img, .rightside *, .leftside * {
+    border-radius: var(--font-size-small);
+    align-self: start;
+    max-width: 384px;
+    min-height: 100px;
+    margin: 10px;
+}
+
+
+.dropdown_button {
+    margin-left: 0;
+    height: auto;
+    width: auto;
+    align-self: left;
+    justify-self: left;
+    /* float: right; */
+    position: sticky;
+}
+/* drop down menu (for now only used for color switching) */
+.dropdown_content {
+    /* position: absolute; */
+    /* background-color: var(--background-light); */
+    position: absolute;
+    y: 0px;
+    justify-content: left;
+    width: auto;
+    overflow: auto;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 8;
+    display: none;
+}
+.dropdown_content * {
+    float: none;
+    display: block;
+}
+/* show dropdown menu on hover */
+.dropdown_show /* .dropdown:hover .dropdown-content */ {
+    display: block;
+}
+.dropdown {
+    float: right;
+    justify-self: right;
+    overflow: hidden;
+    background-color: var(--background-dark);
+}
+
+
+#grey {
+    background-color: rgb(31, 33, 37);
+    color: var(--text-light);
+}
+#red{
+    background-color: hsl(0, 20%, 40%);
+    color: var(--text-light);
+}
+#orange{
+    background-color: hsl(30, 20%, 40%);
+    color: var(--text-light);
+}
+#yellow{
+    background-color: hsl(60, 20%, 40%);
+    color: var(--text-light);
+}
+#green{
+    background-color: hsl(135, 20%, 40%);
+    color: var(--text-light);
+}
+#blue{
+    background-color: hsl(225, 20%, 40%);
+    color: var(--text-light);
+}
+#indigo{
+    background-color: hsl(270, 20%, 40%);
+    color: var(--text-light);
+}
+#violet{
+    background-color: hsl(315, 20%, 40%);
+    color: var(--text-light);
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/* Caption of Modal Image */
+/* #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+} */
+
+
+
+/* @media only screen and *//* (max-width: 600px) *//* (max-width: 1500px) {
+    
+p, h1, h2, h3, ul, ol, main address {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/* removes the 'AmazonSMP Websbite' if the page is too small to show it (makes it generate in the negatives)*/
+/*.right {
+    margin-left: -3000px;
+}
+nav h1 {
+    width: 20%;
+    padding-left: 0%;
+    padding-right: 0%;
+    justify-content: left;
+}
+}
+*/
+
+@media only screen and /* (max-width: 600px) */ (max-width: 1024px) {
+    :root {
+        --font-size: 26px;
+        --font-size-small: 22px
+    }
+    
+    p, h1, h2, h3, ul, ol, main address {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .limited {
+        max-width: 250px;
+    }
+    
+    /* removes the navbar title if the page is too small to show it (makes it generate in the negatives)*/
+    nav h1, .right {
+        display: none;
+    }
+    nav {
+        justify-content: left;
+        text-align: center;
+    }
+    
+    /* nav button {
+        font-size: 20px;
+        height: 48px;
+        line-height: 48px;
+        min-width: 96px;
+    } */
+    .row {
+        display: block;
+        padding: 4px;
+    }
+    .rightcolumn {
+        flex: 100%;
+    }
+    .leftcolumn {
+        width: 100%;
+        justify-content: end;
+    }
+    .space {
+        border: none;
+    }
+    /* .responsive {
+      width: 40%;
+    } */
+     
+}
+
+
+/* @media only screen and (max-width: 512px) {
+.responsive {
+  width: 80%;
+}
+}
+ */

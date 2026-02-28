@@ -1,81 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head id="head">
         <meta charset="UTF-8">
         <meta name="author" content="Dohst"> 
-        <meta name="description" content="AmazonSMP Website - 404 Page not found">
-        <title>AmazonSMP - 404 Page not Found</title>
-        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/main.css" type="text/css">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <link rel="stylesheet" href="main_style.css" type="text/css">
+        <script src="main_script.js"></script>
+        <title>rai_website</title>
+        <meta name="description" content="dohst23-rai_website">
     </head>
 
     <body>
         <!-- header -->
         <header>
-            <nav id="nav" aria-label="primary-navigation">
-                <a href="/index.html" class="left"><button>AmazonSMP</button></a>
-                <a href="/dohst.html" class="left"><button>Dohst</button></a>
-                <a href="/updates.html" class="left"><button>Updates</button></a>
-                <a href="/information/main.html" class="left"><button>Information</button></a>
-                <h1><strong><a href="/index.html">AmazonSMP Website</a></h1></strong>
-                <!-- <h1><a href="/index.html">Amazon<abbr title="Survival MultiPlayer">SMP</abbr> Website</a></h1> -->
-                <a href="#pages" class="right"><button>Pages</button></a>
-                <a href="/index.html" class="right"><button>Home</button></a>
-                <a href="/information/changes.html#1-6" class="right"><button>Changes</button></a>
-            </nav>
+            <nav id="nav" aria-label="primary-navigation"><script>PageContent.set_navigation("info")</script></nav>
             <h1>'</h1>
-            <br>
-            <h1><a href="/index.html">404 - Page Not Found</a></h1>
-            <br><br><br><br>
+            <p id="set_color"></p>
+
+            <br><br>
+            <h1>Page Not Found (404)</h1>
+            <br><br>
         </header>
         
         <!-- main -->
         <main>
-            <h3 id="about">The page or download that you're looking for doesn't exist or has been moved.</h3>
+            <h1 id="about">The page or download that you are looking for does not exist or has been moved.</h1>
             
             <section id="pages">
-                <h2>All pages and sections</h2>
-                <ul class="small">
-                    <li><a href="/index.html">Main AmazonSMP page</a></li>
-                    <li><a href="/index.html#seasons">AmazonSMP Seasons</a></li>
-                    <li><a href="/index.html#mods">AmazonSMP Mods</a></li>
-                    <li><a href="/index.html#datapacks">AmazonSMP Datapacks</a></li>
+                <h1>All Pages and Sections List</h2>
+                <div id="sidebar"><script>PageContent.set_sidebar("404", false)</script></div>
+                <!-- <ul class="small">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/products.html">products</a></li>
+                    <li><a href="/help.html">help</a></li>
+                    <li><a href="/contact.html">contact</a></li>
                     <br>
+                    <li><a href="/main.html">Information</a></li>
+                    <li><a href="/updates.html">Updates</a></li>
+                    <li><a href="/rules.html">Rules</a></li>
                     <li><a href="/dohst.html">Dohst Page</a></li>
-                    <li><a href="/dohst.html#datapacks">Dohst's Datapacks</a></li>
-                    <li><a href="/dohst.html#texturepacks">Dohst's Texturepacks</a></li>
-                    <li><a href="/dohst.html#mods">Dohst's Mods</a></li>
                     <br>
-                    <li><a href="/updates.html">Updates Page</a></li>
-                    <li><a href="/updates.html#year2025">Year 2025</a></li>
-                    <li><a href="/updates.html#year2022">Year 2022</a></li>
-                    <br>
-                    <li><a href="information/main.html">Information Page</a></li>
-                    <li><a href="information/main.html#credit">Credits</a></li>
-                    <li><a href="information/main.html#report">Report</a></li>
-                    <li><a href="information/main.html#version">Version Information</a></li>
-                    <br>
-                    <li><a href="/information/main.html">Information Page</a></li>
-                    <li><a href="/information/rules.html">Rules Page</a></li>
-                    <li><a href="/information/old.html">Old Seasons Page</a></li>
-                    <li><a href="/information/temporaries.html">Temporary Seasons Page</a></li>
-                    <br>
-                    <li><a href="/information/season9.html">Season 9 Page</a></li>
-                    <li><a href="/information/season10.html">Season 10 Page</a></li>
-                    <li><a href="/information/season10.html#part1">Season 10 Part 1 Page</a></li>
-                    <li><a href="/information/season10.html#part2">Season 10 Part 2 Page</a></li>
-                    <li><a href="/information/season11.html">Season 11 Page</a></li>
-                    <li><a href="/information/season11.html#part1">Season 11 Part 1 Page</a></li>
-                    <li><a href="/information/season11.html#part2">Season 11 Part 2 Page</a></li>
-                    <li><a href="/information/season12.html">Season 12 Page</a></li>
-                    <li><a href="/information/season12.html#part1">Season 12 Part 1 Page</a></li>
-                    <li><a href="/information/season12.html#part2">Season 12 Part 2 Page</a></li>
-                    <li><a href="/information/season12.html#part3">Season 12 Part 3 Page</a></li>
-                    <br>
-                    <li><a href="/information/changes.html">Changes Page</a></li>
-                    <li><a href="/information/changes.html#2-1">Version 2.1 Changes</a></li>
-                    <li><a href="/information/changes.html#updates">Future Updates</a></li>
-                </ul>
+                </ul> -->
             </section>
 
             <section id="home">
@@ -86,13 +51,6 @@
         </main>
 
         <!-- footer -->
-        <footer>
-            <br>
-            <address>Website <a href="/information/changes.html#2-2">Version 2.2.0-20260213</a> - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></address>
-            <address>Copyright ©Dohst. ALL RIGHTS RESERVED.</address>
-            <!-- <address>I'm not claiming ownership over the name 'AmazonSMP' because I don't feel like getting sued by the Amazon company (I'll change the name if I have to).</address> -->
-            <p><code> &lt;&lt;&lt; <a href="https://www.gov.uk/copyright" target="_blank">&copy;</a> <a href="https://github.com/dohst1">2026 Dohst</a> &gt;&gt;&gt; </code></p>
-            <br>
-        </footer>
+        <footer id="footer"><script>initialise()</script></footer>
     </body>
 </html>

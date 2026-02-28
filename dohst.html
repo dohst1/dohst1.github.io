@@ -1,43 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head id="head">
         <meta charset="UTF-8">
         <meta name="author" content="Dohst"> 
-        <meta name="description" content="Dohst Page">
-        <title>Dohst Webpage</title>
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <link rel="stylesheet" href="main_style.css" type="text/css">
+        <script src="main_script.js"></script>
+        <title>rai_website</title>
+        <meta name="description" content="dohst23-rai_website">
     </head>
 
     <body>
-
         <!-- header -->
         <header>
-            <nav id="nav" aria-label="primary-navigation">
-                <a href="index.html" class="left"><button>AmazonSMP</button></a>
-                <a href="dohst.html" class="left"><button class="active">Dohst</button></a>
-                <a href="updates.html" class="left"><button>Updates</button></a>
-                <a href="information/main.html"><button>Information</button></a>
-                <h1><strong><a href="index.html">AmazonSMP Website</a></h1></strong>
-                <!-- <h1><a href="index.html">Amazon<abbr title="Survival MultiPlayer">SMP</abbr> Website</a></h1> -->
-                <a href="#datapacks" class="right"><button>Datapacks</button></a>
-                <a href="#texturepacks" class="right"><button>Texturepacks</button></a>
-                <a href="#mods" class="right"><button>Mods</button></a>
-            </nav>
-            <!-- <img src="images/dohst.png" alt="Dohst"  width="100%" height="40%"> -->
-            <h1>'</h1>
-            <br>
-            <h1><a href="/dohst.html">Dohst Page</a></h1>
-            <br><br><br><br>
+            <nav id="nav" aria-label="primary-navigation"><script>PageContent.set_navigation("dohst")</script></nav>
+            <h1 id="set_color">'</h1>
+
+            <!-- <img src="assets/dohst.png" alt="Dohst"  width="100%" height="40%"> -->
+            <!-- <br><br> --><!-- https://avatars.githubusercontent.com/u/95584562 -->
+            <div class="leftside" style="height:200px;"><h1><img src="assets/dohst_icon.png" alt="Dohst's Profile Picture (herta chibi made by https://x.com/Seseren_kr)" width="200px" style="position: absolute;"></h1></div>
+            <div class="rightside" style="height:200px;"><h1><a href="/dohst.html">Dohst Page</a></h1></div>
+            <!-- <br><br> -->
         </header>
         
         <!-- main -->
         <main>
             <section id="about">
-                <h3>Datapacks and Texturepacks will no longer be updated.</h3>
+                <h3></h3>
             </section>
 
-            <section id="datapacks">
+            <!-- <section id="datapacks"> OLD
                 <h2>Datapacks</h2>
                 <table>
                     <thead>
@@ -63,7 +55,7 @@
                             <td><a href="downloads/dohst/nether_village-v2-1.19.zip">Download v2.0</a></td>
                             <td><a href="downloads/dohst/nether_village-v3.0-1.20.1.zip">Download v3.0</a></td>
                             <td><a href="downloads/dohst/nether_village-v3.1-1.21.zip">Download v3.1</a></td>
-                            <!-- Please note that Herbine also contributed to older versions of this datapack, although you cant download them here, some of the structures in the current version were originally made by him. -->
+                            Please note that Herbine also contributed to older versions of this datapack, although you can not download them here, some of the structures in the current version were originally made by him.
                         </tr>
                         <tr id="dp-noendereye">
                             <td>No Ender Eye</td>
@@ -73,35 +65,34 @@
                         </tr>
                     </tbody>
                 </table>
-                <p>All of these datapacks are made by me, please credit me if you use any of these publicly.</p>
-                <!-- <p>I usually update datapacks to the latest Minecraft version in Autumn.</p> -->
-            </section>
-
-            <!-- <section id="links">
-                <h2>Links</h2>
-                <table>
-                    <thead>
-                        <th>Platform</th>
-                        <th>Link</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Github</td>
-                            <td><a href="https://github.com/dohst1">https://github.com/dohst1</a></td>
-                        </tr>
-                        <tr>
-                            <td>Discord</td>
-                            <td>username: dohst_</td>
-                        </tr>
-                        <tr>
-                            <td>Youtube</td>
-                            <td><a href="https://www.youtube.com/@dohst">https://www.youtube.com/@dohst</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <p>All of these datapacks are made by <a href="https://github.com/dohst1">Dohst</a>, please credit <a href="https://github.com/dohst1">Dohst</a> if you use any of them publicly.</p>
+                <p>I usually update datapacks to the latest Minecraft version in Autumn.</p>
             </section> -->
 
-            <section id="projects">
+            <section id="links">
+                <h1>Links</h1>
+                <span>
+                    <a href="https://github.com/dohst1"><button>Github (username: dohst1)</button></a>
+                    <a href="https://discord.com/users/877640768427274280"><button>Discord (username: dohst_)</button></a>
+                    <a href="https://www.youtube.com/@dohst"><button>Youtube (username: dohst)</button></a>
+                    <!-- <a href="https://gitlab.com/dohst1"><button>Gitlab (username: dohst1)</button></a> -->
+                </span>
+            </section>
+
+            <section id="amazonsmp">
+                <h1>AmazonSMP</h1>
+                <h3>World Download (1.26 GB): <a href="https://www.mediafire.com/file/2i03ah993otr8f8/season12p3-world_final.zip/file">https://www.mediafire.com/file/2i03ah993otr8f8/season12p3-world_final.zip/file</a></h3>
+                <h3>Required Mods (153 MB): <a href="https://www.mediafire.com/file/ru4533taoswplkg/as12p3-mods-202511.zip/file">https://www.mediafire.com/file/ru4533taoswplkg/as12p3-mods-202511.zip/file</a></h3>
+                <h3>Server Mods (544 MB): <a href="https://www.mediafire.com/file/9tgz47ufs5smnqb/season12p3-mods_full.zip/file">https://www.mediafire.com/file/9tgz47ufs5smnqb/season12p3-mods_full.zip/file</a></h3>
+                <h3>Other Content (which was posted on website): <a href="https://github.com/dohst1/dohst1.github.io/tree/archive-amazonsmp_website">https://github.com/dohst1/dohst1.github.io/tree/archive-amazonsmp_website</a></h3>
+            </section>
+
+            <!-- <section id="portfolio">
+                <h2>Portfolio</h2>
+                <h3>To be added.</h3>
+            </section> -->
+
+            <!-- <section id="projects">
                 <h2>idk</h2>
                 <table>
                     <thead>
@@ -113,24 +104,24 @@
                             <th scope="col">Download Latest</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody> -->
                         <!-- <tr id="pj-cd">
                             <td>Name</td>
-                            <td><a href="images/projects/">Image</a></td>
+                            <td><a href="assets/projects/">Image</a></td>
                             <td class="limited">Description.</td>
                             <td><a href="downloads/dohst/">Download v1.0</a></td>
                             <td><a href="downloads/dohst/beta">Download b1.1</a></td>
                         </tr>
                         <tr id="pj-af">
                             <td>Name</td>
-                            <td><a href="images/projects/">Image</a></td>
+                            <td><a href="assets/projects/">Image</a></td>
                             <td class="limited">Description.</td>
                             <td><a href="downloads/dohst/">Download v1.0</a></td>
                             <td><a href="downloads/dohst/beta">Download b1.1</a></td>
                         </tr>
                         <tr id="pj-db">
                             <td>Name</td>
-                            <td><a href="images/projects/">Image</a></td>
+                            <td><a href="assets/projects/">Image</a></td>
                             <td class="limited">Description.</td>
                             <td><a href="downloads/dohst/">Download v1.0</a></td>
                             <td><a href="downloads/dohst/beta">Download b1.1</a></td>
@@ -140,71 +131,10 @@
                 <!-- <p></p> -->
             </section>
 
-            <!-- <section id="texturepacks">
-                <h2>Dohst's Texture packs</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Download 1.20</th>
-                            <th scope="col">Download 1.21</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr id="tp-cobblestonebedrock">
-                            <td>Cobblestone Bedrock</td>
-                            <td class="limited">makes Cobblestone look like Bedrock</td>
-                            <td><a href="downloads/dohst/ancient_tower-v2-1.19.zip">Download</a></td>
-                            <td><strong>Discontinued</strong></td>
-                        </tr>
-                        <tr id="tp-amogus">
-                            <td>Amogus</td>
-                            <td class="limited">makes lots of items look like amogus.</td>
-                            <td><strong>None</strong></td>
-                            <td>Unavailable</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p>You can usually use texture packs across versions.</p>
-            </section> -->
-
-            <!-- <section id="mods">
-                # Coming soon (never)
-                <h2>Dohst's Mods</h2>
-                <p>All of my mods will be for fabric 1.20.1, some might be updated for 1.20.4 and 1.21.1 (but no guarantee).</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Download 1.20.1</th>
-                            <th scope="col">Download 1.20.4</th>
-                            <th scope="col">Download 1.21.1</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr id="mods-mod">
-                            <td></td>
-                            <td class="limited"></td>
-                            <td></td>
-                            <td><a href=""></a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section> -->
-
             <br><br>
         </main>
 
         <!-- footer -->
-        <footer>
-            <br>
-            <address>Website <a href="/information/changes.html#2-2">Version 2.2.0-20260213</a> - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></address>
-            <address>Copyright ©Dohst. ALL RIGHTS RESERVED.</address>
-            <!-- <address>I'm not claiming ownership over the name 'AmazonSMP' because I don't feel like getting sued by the Amazon company (I'll change the name if I have to).</address> -->
-            <p><code> &lt;&lt;&lt; <a href="https://www.gov.uk/copyright" target="_blank">&copy;</a> <a href="https://github.com/dohst1">2026 Dohst</a> &gt;&gt;&gt; </code></p>
-            <br>
-        </footer>
+        <footer id="footer"><script>initialise()</script></footer>
     </body>
 </html>
