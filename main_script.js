@@ -3,20 +3,21 @@
 
 
 // variables
-const version = 'v0.3.0-20260228';
+const version = 'v0.3.1-20260301';
 const updates = [
         // newest first (preferably, but the program sorts it either way)
         // shift all (except preset) down when adding new
         [20291231, "title", "description"], // preset (date title description)
-        [20260223, "v0.3.0 beta release", "description2"],
-        [20260223, "v0.2.7 beta release", "description1"],
-        [20260213, "started project", "description"],
+        [20260228, "v0.3 beta release", "description3"],
+        [20260223, "v0.2.7 beta release", "description2"],
+        [20260218, "v0.2", "description1"],
+        [20260213, "v0.1", "description0"],
     ];
 const dohst_error = {
     main: "Error (Please report this to Dohst) D - ",
     
-    unknown: this.main + "2 ",
-    invalid_data: this.main + "3 ",
+    unknown: this.main + "1 ",
+    invalid_data: this.main + "2 ",
 }
 
 
@@ -86,7 +87,7 @@ const PageContent = {
     
     // footer
     content_footer: `<br>
-    <p>Website <a href="/updates.html#latest_web">Version ${version}</a>
+    <p>Website <a href="/main.html#updates">Version ${version}</a>
     - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></p>
     <p>Copyright &copy;<a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
     <br>`,
@@ -174,7 +175,7 @@ const PageContent = {
                         for (let j = sorted.length-1; j < 0; j--) {
                             if (sorted[j][0] >= list[i][0]) {
                                 sorted.unshift(list[i]);
-                                let done = true;
+                                done = true;
                                 break;
                             }
                         }
@@ -281,8 +282,12 @@ const PageEvents = {
         };
     },
 
-    set_color_switching: function (color) {
+    set_color: function () {
         document.body.setAttribute('color_mode', localStorage.getItem("color_mode"));
+        document.body.setAttribute('color_style', localStorage.getItem("color_style"));
+    },
+
+    color_switching: function (color) {
         document.getElementById(color).addEventListener('click', () => {
             document.getElementById(color).classList.add("active")
             document.body.setAttribute('color_mode', color);
@@ -290,7 +295,6 @@ const PageEvents = {
     },
 
     set_color_styling: function () {
-        document.body.setAttribute('color_style', localStorage.getItem("color_style"));
         document.getElementById("toggle_style").addEventListener('click', () => {
             if (localStorage.getItem("color_style") == "light") {
                 document.body.setAttribute('color_style', "dark");
@@ -309,14 +313,15 @@ function initialise() {
     /* PageContent.set_color_button();
     PageEvents.set_color_styling();
     PageEvents.set_dropdown();
-    PageEvents.set_color_switching("grey");
-    PageEvents.set_color_switching("red");
-    PageEvents.set_color_switching("orange");
-    PageEvents.set_color_switching("yellow");
-    PageEvents.set_color_switching("green");
-    PageEvents.set_color_switching("blue");
-    PageEvents.set_color_switching("indigo");
-    PageEvents.set_color_switching("violet"); */
+    PageEvents.color_switching("grey");
+    PageEvents.color_switching("red");
+    PageEvents.color_switching("orange");
+    PageEvents.color_switching("yellow");
+    PageEvents.color_switching("green");
+    PageEvents.color_switching("blue");
+    PageEvents.color_switching("indigo");
+    PageEvents.color_switching("violet"); */
+    PageEvents.set_color()
     PageContent.set_footer();
 }
 

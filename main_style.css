@@ -61,9 +61,9 @@
     --text-grey: rgb(180, 180, 180);
     --text-dark: rgb(216, 216, 216);
 
-    --font-size-big: 32px;
-    --font-size-normal: 26px;
-    --font-size-small: 20px;
+    --font-size-big: 28px;
+    --font-size-normal: 22px;
+    --font-size-small: 16px;
 
     --sat: 20%;
     --lig1: 50%;
@@ -194,6 +194,7 @@ code, table, th, td, button, li, ul, ol, hr, img, span, div/* , .gallery div */ 
     border-radius: var(--font-size-big);
     padding: 5px 8px;
     margin-left: 10%;
+    margin-right: 10%;
     /* margin-left: auto;
     margin-right: auto; */
     font-size: var(--font-size-small);
@@ -204,7 +205,7 @@ code:hover, th:hover, td:hover, button:hover, li:hover {
     /* background-color: var(--background-light); */
 }
 
-span, table {
+span, table, ul {
     width: 80%;
     text-align: left;
     min-height: 50px;
@@ -220,7 +221,7 @@ span p, span h3 {
     width: 90%;
 }
 
-ol, ul, .small {
+/* ol, ul,  */.small {
     padding-left: 34px;
     text-align: start;
     margin-left: 30%;

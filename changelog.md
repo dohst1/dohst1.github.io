@@ -1,5 +1,5 @@
 # Rai Website - changelog
-### by: ///////// and dohst and ////////// (all rights reserved)
+### by: ///////// and dohst (all rights reserved)
 ### information format:
  - versions: {major}.{minor}.{patch}(-{type})(-{date})(-{name})
  - type: 'rel' or 'dev'
@@ -28,7 +28,7 @@
 
 ### v0.1 [20260213 - 20260218] setup
 
-- #### v0.1.0 [20260214] dev
+- #### v0.1.0 [20260214]
     - files - removed all download files
     - files - added 'dohst23' group image as favicon (image is subject to change because it is just an ado plushie right now)
     - files - added 'rai_website' repository image as favicon and image (subject to change because it is just a copy of //////////'s profile picture since i did not know what to use)
@@ -46,12 +46,11 @@
     - updates - deleted some content
 
 - #### issues
-    - v0.1.0 - unknown
-    - v0.1.1 - unknown
+    - none / unknown
 
 
-### v0.2 [20260218 - 20260220]
-- #### v0.2.02-0260220 dev
+### v0.2 [20260218 - 20260220] alpha
+- #### v0.2.02-0260220
     - files - updated changelog
     - script - added '"use strict";' for strict mode
     - script - reformated the code
@@ -63,7 +62,7 @@
     - style - updated color scheme to be neutral by default
     - style - updated some styles (mainly added border on navbar)
 
-- #### v0.2.1-20260220 dev
+- #### v0.2.1-20260220
     - files - updated changelog
     - files - deleted everything from 'information' folder except 'main.html', 'rules.html' and 'updates.html'
     - files - moved 'main.html', 'rules.html' and 'updates.html' to root directory
@@ -72,12 +71,12 @@
     - script - added function to load sidebar for information pages
     - some other small changes
 
-- #### v0.2.2-20260220 dev
+- #### v0.2.2-20260220
     - files - updated changelog
     - pages - updated 404 page list
     - none
 
-- #### v0.2.3-20260221 dev
+- #### v0.2.3-20260221
     - files - updated changelog
     - style - updated css
     - pages - updated main page
@@ -143,8 +142,18 @@
     - pages - added content to products page
     - pages - made space between navbar and main section at the top smaller for all pages
 
+- #### issues
+    - none / unknown
 
-### v0.3 []
+
+---
+
+
+
+## version 0 Part 2 [20260228 - 202603//] beta
+
+
+### v0.3 [20260228 - 20260313] beta
 - #### v0.3.0-20260228
     - files - updated changelog
     - files - removed some pages
@@ -161,12 +170,19 @@
     - pages - changed footer to be a paragraph instead of an address
     - files - some other small updates
 
+- #### v0.3.1-20260301
+    - pages - updated title to be 'dohst website'
+    - script - fixed bug where color settings did not retain when switching pages
+    - pages - fixed old footer link, now directs to main.html'updates
+    - script - fixed incorrect date on v0.3.0 update
+    - pages - updated credit section on information page
+    - pages - updated dohst page
+    - style - made all fonts 4 px smaller
+    - style - updated style for lists
 
----
+- #### issues
+    - none / unknown
 
-
-
-## version 0 Part 2 [2026//// - 2026//// beta
 
 ### v0.4 []
  - none
@@ -185,6 +201,6 @@
 ### 2026 (4 update)
  - v0.0 febraury 13 - fork
  - v0.1 february 14 - setup
- - v0.2 february 23 - javascript and css
- - v0.3 february 23 - beta release
- - v0.4 february //
+ - v0.2 february 23 - alpha
+ - v0.3 february 28 - beta
+ - v0.4 march // - 
