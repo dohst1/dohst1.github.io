@@ -3,7 +3,7 @@
 
 
 // variables
-const version = 'v0.3.3-20260314';
+const version = "v0.3.4-20260314";
 const updates = [
         // newest first (preferably, but the program sorts it either way)
         // shift all (except preset) down when adding new

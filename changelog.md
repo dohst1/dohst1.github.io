@@ -196,9 +196,15 @@
     - pages - updated link to amazonsmp from main page
     - style - made border radius 10px and some small changes
 
+- #### v0.3.4-20260314
+    - files - updated changelog
+    - pages - removed ado plushie image from main page
+    - pages - added title to main page
+    - pages - fixed alignment on dohst page title with profile image using a table
+
 - #### issues
     - v0.3.1 - font size is too small on mobile (fixed in v0.3.2)
-    - v0.3.1 - main icon not showing even when enough space is available (moved to v0.3.3)
+    - v0.3.1 - main icon not showing even when enough space is available (moved to v0.3.4)
     - v0.3.1 - should make it so clicking update descriptions again removes the description (fixed in v0.3.3)
 
 

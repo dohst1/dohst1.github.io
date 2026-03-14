@@ -425,7 +425,7 @@ background-color: var(--background);
 
 .leftside {
     min-height: 100px;
-    display: inline-block;
+    display: flex;
     width: 40%;
     justify-self: left;
     justify-content: left;
@@ -433,10 +433,11 @@ background-color: var(--background);
     padding: 0;
     border: 2px solid var(--border);
     /* float: left; */
+    flex: left;
 }
 .rightside {
     min-height: 100px;
-    /* display: inline-block; */
+    display: flex;
     width: 40%;
     justify-self: right;
     text-align: start;
@@ -444,7 +445,8 @@ background-color: var(--background);
     margin: 0;
     padding: 0;
     border: 2px solid var(--border);
-    float: right;
+    /* float: right; */
+    flex: right;
 }
 .rightside * {
     vertical-align: middle;

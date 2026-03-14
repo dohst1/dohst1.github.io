@@ -9,7 +9,7 @@
 ---
 
 <br>
-<p>Website Version v0.3.3-20260314 - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></p>
+<p>Website Version v0.3.4-20260314 - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></p>
 <p>Copyright &copy;<a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
 <br>
 
