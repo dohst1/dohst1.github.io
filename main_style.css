@@ -62,8 +62,8 @@
     --text-dark: rgb(216, 216, 216);
 
     --font-size-big: 28px;
-    --font-size-normal: 22px;
-    --font-size-small: 16px;
+    --font-size-normal: 24px;
+    --font-size-small: 20px;
 
     --sat: 20%;
     --lig1: 50%;
@@ -218,14 +218,20 @@ span, table, ul {
 span p, span h3 {
     display: block;
     margin-top: 0;
-    width: 90%;
+    width: 80%;
+}
+table * {
+    margin: 0;
+    border-radius: 10px;
+    justify-content: start;
+    /* width: 50%; */
 }
 
 /* ol, ul,  */.small {
     padding-left: 34px;
     text-align: start;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 hr, img {
@@ -285,17 +291,17 @@ h2 {
     padding: var(--font-size-normal);
     font-size: var(--font-size-normal);
     padding-left: var(--font-size-normal);
-    margin-left: 11%;
+    margin-left: 10%;
 }
 h3 {
     /* padding-top: var(--font-size-small); */
     font-size: var(--font-size-small);
     padding: var(--font-size-small);
     padding-left: var(--font-size-big);
-    margin-left: 12%;
+    margin-left: 10%;
 }
 p {
-    margin-left: 14%;
+    margin-left: 15%;
 }
 
 a, :any-link, a abbr{
@@ -598,8 +604,9 @@ nav h1 {
 
 @media only screen and /* (max-width: 600px) */ (max-width: 1024px) {
     :root {
-        --font-size: 26px;
-        --font-size-small: 22px
+        --font-size-big: 32px;
+        --font-size-normal: 28px;
+        --font-size-small: 24px;
     }
     
     p, h1, h2, h3, ul, ol, main address {

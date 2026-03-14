@@ -3,16 +3,28 @@
 
 
 // variables
-const version = 'v0.3.1-20260301';
+const version = 'v0.3.2-20260314';
 const updates = [
         // newest first (preferably, but the program sorts it either way)
         // shift all (except preset) down when adding new
         [20291231, "title", "description"], // preset (date title description)
+        /* [20260399, "v0.4 beta release", "description4"], */
         [20260228, "v0.3 beta release", "description3"],
         [20260223, "v0.2.7 beta release", "description2"],
         [20260218, "v0.2", "description1"],
         [20260213, "v0.1", "description0"],
     ];
+/* const amazonsmp_seasons = [
+        // newest first (preferably, but the program sorts it either way)
+        // shift all (except preset) down when adding new
+        [20291231, "title", "description", ["World Download (size MB)", "", "Required Mods (size MB)", "", "Recommended / Server Mods (size MB)", ""]], // preset (date title description)
+        [, "title", "description", ["World Download (size MB)", "", "Required Mods (size MB)", "", "Recommended / Server Mods (size MB)", ""]], // season12p3
+        [, "title", "description", ["World Download (size MB)", "", "Required Mods (size MB)", "", "Recommended / Server Mods (size MB)", ""]], // season12p2
+        [, "title", "description", ["World Download (size MB)", "", "Required Mods (size MB)", "", "Recommended / Server Mods (size MB)", ""]], // season12p1
+
+        [, "title", "description", ["World Download (size MB)", "", "Required Mods (size MB)", "", "Recommended / Server Mods (size MB)", ""]], // season11p2
+        [, "title", "description", ["World Download (size MB)", "", "Required Mods (size MB)", "", "Recommended / Server Mods (size MB)", ""]], // season11p1
+    ]; */
 const dohst_error = {
     main: "Error (Please report this to Dohst) D - ",
     
@@ -60,6 +72,7 @@ const PageContent = {
         <a href="information/main.html"><button>Information</button></a>`, */
     content_navigation: `<h1><strong><a href="index.html">dohst_website (beta)</a></strong></h1>
         <a href="index.html"><button|>Home</button></a>
+        <a href="amazonsmp.html"><button|>AmazonSMP</button></a>
         <a href="dohst.html"><button|>Dohst</button></a>
         <a href="main.html"><button|>Information</button></a>`,
     /* content_navigation: `<h1><strong><a href="index.html">dohst_website (beta)</a></strong></h1>
@@ -77,8 +90,9 @@ const PageContent = {
         else if (active == "help")      {this.content_navigation = this.recombine_string(content_temporary, 2);}
         else if (active == "contact")   {this.content_navigation = this.recombine_string(content_temporary, 3);}
         else if (active == "info")      {this.content_navigation = this.recombine_string(content_temporary, 4);} */
-        else if (active == "dohst")      {this.content_navigation = this.recombine_string(content_temporary, 1);}
-        else if (active == "info")      {this.content_navigation = this.recombine_string(content_temporary, 2);}
+        else if (active == "amazonsmp")      {this.content_navigation = this.recombine_string(content_temporary, 1);}
+        else if (active == "dohst")      {this.content_navigation = this.recombine_string(content_temporary, 2);}
+        else if (active == "info")      {this.content_navigation = this.recombine_string(content_temporary, 3);}
 
         else {this.content_navigation = this.recombine_string(content_temporary, -1);}
         document.getElementById("nav").innerHTML = this.content_navigation

@@ -153,7 +153,7 @@
 ## version 0 Part 2 [20260228 - 202603//] beta
 
 
-### v0.3 [20260228 - 20260313] beta
+### v0.3 [20260228 - 202603//] beta
 - #### v0.3.0-20260228
     - files - updated changelog
     - files - removed some pages
@@ -171,6 +171,7 @@
     - files - some other small updates
 
 - #### v0.3.1-20260301
+    - files - updated changelog
     - pages - updated title to be 'dohst website'
     - script - fixed bug where color settings did not retain when switching pages
     - pages - fixed old footer link, now directs to main.html'updates
@@ -180,12 +181,26 @@
     - style - made all fonts 4 px smaller
     - style - updated style for lists
 
+- #### v0.3.2-20260314
+    - files - updated changelog
+    - style - increased font size
+    - style - some small changes
+    - pages - added amazonsmp page
+    - script - added amazonsmp page to the navbar
+    - issues - fixed "v0.3.1 - font size is too small on mobile"
+
 - #### issues
-    - none / unknown
+    - v0.3.1 - font size is too small on mobile (fixed in v0.3.2)
+    - v0.3.1 - main icon not showing even when enough space is available (moved to v0.3.2)
+    - v0.3.1 - should make it so clicking update descriptions again removes the description (moved to v0.3.2)
 
 
 ### v0.4 []
- - none
+- #### v0.4.0-20260314
+    - none
+
+- #### issues
+    - none
 
 
 ### v0.5 []
