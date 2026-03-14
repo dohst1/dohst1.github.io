@@ -187,12 +187,19 @@
     - style - some small changes
     - pages - added amazonsmp page
     - script - added amazonsmp page to the navbar
-    - issues - fixed "v0.3.1 - font size is too small on mobile"
+    - issue - fixed "v0.3.1 - font size is too small on mobile"
+
+- #### v0.3.3-20260314
+    - files - updated changelog
+    - issue - fixed "v0.3.1 - should make it so clicking update descriptions again removes the description"
+    - pages - updated ado plushie image on main page
+    - pages - updated link to amazonsmp from main page
+    - style - made border radius 10px and some small changes
 
 - #### issues
     - v0.3.1 - font size is too small on mobile (fixed in v0.3.2)
-    - v0.3.1 - main icon not showing even when enough space is available (moved to v0.3.2)
-    - v0.3.1 - should make it so clicking update descriptions again removes the description (moved to v0.3.2)
+    - v0.3.1 - main icon not showing even when enough space is available (moved to v0.3.3)
+    - v0.3.1 - should make it so clicking update descriptions again removes the description (fixed in v0.3.3)
 
 
 ### v0.4 []

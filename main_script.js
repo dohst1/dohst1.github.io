@@ -3,7 +3,7 @@
 
 
 // variables
-const version = 'v0.3.2-20260314';
+const version = 'v0.3.3-20260314';
 const updates = [
         // newest first (preferably, but the program sorts it either way)
         // shift all (except preset) down when adding new
@@ -70,7 +70,7 @@ const PageContent = {
         <a href="index.html"><button class="active">Home</button></a>
         <a href="dohst.html"><button>Dohst</button></a>
         <a href="information/main.html"><button>Information</button></a>`, */
-    content_navigation: `<h1><strong><a href="index.html">dohst_website (beta)</a></strong></h1>
+    content_navigation: `<h1><strong><a href="index.html">dohst_website (beta)</a></strong></h1><br>
         <a href="index.html"><button|>Home</button></a>
         <a href="amazonsmp.html"><button|>AmazonSMP</button></a>
         <a href="dohst.html"><button|>Dohst</button></a>
@@ -273,9 +273,19 @@ const PageEvents = {
     set_fade_in: function (button, target, index) {
         let effect_fade_target = document.getElementById(target);
         document.getElementById(button).addEventListener("click", function () {
-        PageContent.set_updates(target, index, true)
+            if (effect_fade_target.classList.contains("fade")) {
+                PageContent.set_updates(target, index, true)
+                effect_fade_target.classList.remove("fade");
+                effect_fade_target.classList.add("fade_in");
+            } else {
+                document.getElementById(target).innerHTML = ""
+                effect_fade_target.classList.remove("fade_in");
+                effect_fade_target.classList.add("fade");
+            };
+        })
+        /* PageContent.set_updates(target, index, true)
         effect_fade_target.classList.remove("fade");
-        effect_fade_target.classList.add("fade_in");})
+        effect_fade_target.classList.add("fade_in");}) */
     },
 
     set_dropdown: function () {

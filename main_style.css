@@ -175,7 +175,7 @@ html, body, .sidenav {
 }   
 main {
     background-color: var(--background);
-    border-radius: var(--font-size-big);
+    border-radius: 10px;
     border: 4px solid var(--border);
 }
 footer, address {
@@ -191,7 +191,7 @@ footer, address {
 code, table, th, td, button, li, ul, ol, hr, img, span, div/* , .gallery div */ {
     background-color: var(--background-dark); /* was light */
     border: 2px solid var(--border);
-    border-radius: var(--font-size-big);
+    border-radius: 10px;
     padding: 5px 8px;
     margin-left: 10%;
     margin-right: 10%;
@@ -222,7 +222,7 @@ span p, span h3 {
 }
 table * {
     margin: 0;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     justify-content: start;
     /* width: 50%; */
 }
@@ -240,7 +240,6 @@ hr, img {
 
 code {
     padding: 3px 5px;
-    border-radius: 20px;
 }
 button {
     /* padding: 12px 38px; */
@@ -425,29 +424,31 @@ background-color: var(--background);
 }
 
 .leftside {
+    min-height: 100px;
     display: inline-block;
     width: 40%;
+    justify-self: left;
     justify-content: left;
     margin: 0;
-    justify-content: left;
-    align-content: left;
-    text-align: left;
     padding: 0;
+    border: 2px solid var(--border);
+    /* float: left; */
 }
 .rightside {
-    margin: 0;
-    display: inline-block;
-    /* flex: 40%; */
-    /* right: 0; */
+    min-height: 100px;
+    /* display: inline-block; */
     width: 40%;
     justify-self: right;
-    justify-content: start;
     text-align: start;
-    align-items: center;
-    justify-content: right;
-    align-content: right;
-    /* position: ; */
+    /* flex: 40%; */
+    margin: 0;
     padding: 0;
+    border: 2px solid var(--border);
+    float: right;
+}
+.rightside * {
+    vertical-align: middle;
+    text-align: auto;
 }
 
 
@@ -465,7 +466,7 @@ background-color: var(--background);
     text-align: left;
     margin: 0;
 }
-.description, .responsive img, .rightside *, .leftside * {
+.description, .responsive img/* , .rightside *, .leftside * */ {
     border-radius: var(--font-size-small);
     align-self: start;
     max-width: 384px;
@@ -487,8 +488,8 @@ background-color: var(--background);
 .dropdown_content {
     /* position: absolute; */
     /* background-color: var(--background-light); */
+    margin: 0;
     position: absolute;
-    y: 0px;
     justify-content: left;
     width: auto;
     overflow: auto;
@@ -623,8 +624,22 @@ nav h1 {
     }
     nav {
         justify-content: left;
-        text-align: center;
     }
+    /* nav a {
+    display: inline-block;
+    justify-content: left;
+    align-content: left;
+    text-align: left;
+    margin: 0;
+}
+nav h1 {
+        display: inline-block;
+        margin: 0;
+        padding: 0 0 0 5px;
+        max-width: 100px;
+        vertical-align: top;
+        font-size: var(--font-size-normal);
+    } */
     
     /* nav button {
         font-size: 20px;
