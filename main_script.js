@@ -3,7 +3,7 @@
 
 
 // variables
-const version = "v0.3.4-20260314";
+const version = "v0.3.5-20260315";
 const updates = [
         // newest first (preferably, but the program sorts it either way)
         // shift all (except preset) down when adding new
@@ -183,6 +183,7 @@ const PageContent = {
                 // console.log(list[i][0]);
                 let done = false;
                 
+                // insertion sort on the dates
                 try {
                     if (list[i][0].toString().length != 8) {throw dohst_error.invalid_data + "(updates)";}
                     else {
@@ -228,6 +229,76 @@ const PageContent = {
     <button id="toggle_style" class="toggle_style">Toggle Dark</button>
     </div>`,
     set_color_button: function set_footer() {document.getElementById("set_color").innerHTML = this.content_color_button},
+
+
+    // amazonsmp
+    // unused seasons array (to future me: be a good girl and implement this, please)
+    /* content_amazonsmp_seasons: [
+        // newest first
+        // shift all (except preset) down when adding new
+        [20291231, "title", "description", ["World Download (size MB)", "", "Required Mods (size MB)", "", "Recommended / Server Mods (size MB)", ""]], // preset (date title description)
+        [, "title", "description", ["World Download (size MB)", "", "Required Mods (size MB)", "", "Recommended / Server Mods (size MB)", ""]], // season12p3
+        [, "title", "description", ["World Download (size MB)", "", "Required Mods (size MB)", "", "Recommended / Server Mods (size MB)", ""]], // season12p2
+        [, "title", "description", ["World Download (size MB)", "", "Required Mods (size MB)", "", "Recommended / Server Mods (size MB)", ""]], // season12p1
+
+        [, "title", "description", ["World Download (size MB)", "", "Required Mods (size MB)", "", "Recommended / Server Mods (size MB)", ""]], // season11p2
+        [, "title", "description", ["World Download (size MB)", "", "Required Mods (size MB)", "", "Recommended / Server Mods (size MB)", ""]], // season11p1
+    ], */
+    content_amazonsmp_as12p3_mods_required: [
+    //['name', 'description', 'version', 'link', 'required'], 
+    ['as12p3-mods_required', 'Season 12 Part 3 Required Mods', 'v1.20.1', 'v0.92.6'], 
+    ['BClib', 'Library mod required for better end and better nether.', 'v3.0.14', 'https://modrinth.com/mod/bclib/version/3.0.14', true], 
+    ['Better End', 'Overhauls the end dimension with new blocks, biomes and mobs.', 'v4.0.11', 'https://modrinth.com/mod/betterend/version/4.0.11', true], 
+    ['Better Nether', 'Overhauls the nether dimension with new blocks, biomes and mobs.', 'v9.0.10', 'https://modrinth.com/mod/betternether/version/9.0.10', true], 
+    ['Copper and Tuff Backport', 'Backports new 1.21 copper and tuff blocks to older versions.', 'v1.2', 'https://modrinth.com/mod/copper-and-tuff-backport/version/mc1.20.1-1.2.2-release-fabric', true], 
+    ['Copycats Plus', "All the copycats you've ever wanted, combined into a single mod.", 'v2.2.2', 'https://modrinth.com/mod/copycats/version/2.2.2+mc.1.20.1-fabric', true], 
+    ['Create Enchantment Industry', 'Adds more ways to manage experience with the Create mod.', 'v1.2.16', 'https://modrinth.com/mod/create-enchantment-industry-fabric/version/1.2.16', true], 
+    ['Create Fabric', 'Building Tools and Aesthetic Technology.', 'v0.5.1j', 'https://modrinth.com/mod/create-fabric/version/0.5.1-j-build.1631+mc1.20.1', true], 
+    ['Fabric API', 'Lightweight and modular API providing common hooks and intercompatibility measures utilized by mods using the Fabric toolchain.', 'v0.92.6', 'https://modrinth.com/mod/fabric-api/version/0.92.6+1.20.1', true], 
+    ['Faithful Mace', 'A fully combat accurate backport of the mace, its enchants, and the wind charge.', 'v1.0.9', 'https://modrinth.com/mod/faithful-mace/version/1.0.9', true], 
+    ['Indium', 'Fixes some Create mod visual issues when used with sodium.', 'v1.0.36', 'https://modrinth.com/mod/indium/version/1.0.36+mc1.20.1', true], 
+    ['Origins', 'Lets players pick what species they want to be, each having unique abilities and disabilities.', 'v1.10.2', 'https://modrinth.com/mod/origins/version/1.10.2+mc.1.20.1', true], 
+    ['Platform Fabric', "idk, but its required for 'vanilla backport' mod.", 'v1.2.10.1', 'https://modrinth.com/mod/platform/version/1.20.1-1.2.10.1', true], 
+    ['Sodium', 'The fastest and most compatible rendering optimization mod for Minecraft. Now available for both NeoForge and Fabric.', 'v0.5.12-beta.2', 'https://modrinth.com/mod/sodium/version/mc1.20.1-0.5.12-beta.2-fabric', true], 
+    ['Create Steam and Rails', "Adding depth to Create's rail network and steam system.", 'v1.6.9', 'https://modrinth.com/mod/create-steam-n-rails/version/1.6.9+fabric-mc1.20.1', true], 
+    ['Vanilla backport', 'Backports some newer vanilla features to older versions.', 'v1.1.4.3', 'https://modrinth.com/mod/vanillabackport/version/1.20.1-1.1.4.3', true], 
+    ],
+    //content_amazonsmp_mods_titles: [content_amazonsmp_as12p3_mods_required[0][0], content_amazonsmp_as12p3_mods_all[0][0], content_amazonsmp_as13p1_mods_required[0][0], content_amazonsmp_as13p1_mods_all[0][0]],
+    set_amazonsmp_mods_text: function (type) {
+        if (content_amazonsmp_as12p3_mods_required[0][0]) {
+            DO RECOMBINATION LIKE FOR NAVIGATION BAR
+        } else if {
+            
+        }
+        text = `
+                <thead>
+                    <tr>
+                        <th colspan="3">Required Mods (minecraft v1.20.1, fabric api v0.92.6)</th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Version</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>$</th>
+                        <td>version</td>
+                        <td class="limited_big">description</td>
+                    </tr>
+                </tbody>`
+    },
+
+    set_amazonsmp: function (target, type = "required/all") {
+        // old
+        /* if (index == 0 || index >= updates.length || !index) {return null}
+        else if (description) {document.getElementById(target).innerHTML = updates[index][2]} 
+        else {document.getElementById(target).innerHTML = updates[index][0] + " - " + updates[index][1]} */
+        
+        document.getElementById(target).innerHTML = set_amazonsmp_mods_text(type)
+        
+    },
     
 }
 

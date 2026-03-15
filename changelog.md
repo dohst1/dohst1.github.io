@@ -4,7 +4,7 @@
  - versions: {major}.{minor}.{patch}(-{type})(-{date})(-{name})
  - type: 'rel' or 'dev'
  - date: yyyymmdd
- - label: 'ix' 'bug' 'confirmed' 'critical' 'discussion' 'documentation' 'enhancement' 'suggestion' 'support'
+ - label: 'ix' 'main' 'bug' 'confirmed' 'critical' 'discussion' 'documentation' 'enhancement' 'suggestion' 'support'
  - names and words: always lower case (underscores for spaces if variable) (except public content) (mention information from macro to micro)
 - version format:
 ## version {major} [{date_start} - {date_end}] {name}
@@ -195,12 +195,20 @@
     - pages - updated ado plushie image on main page
     - pages - updated link to amazonsmp from main page
     - style - made border radius 10px and some small changes
+    - files - added assets for amazonsmp (main image and icon)
 
 - #### v0.3.4-20260314
     - files - updated changelog
     - pages - removed ado plushie image from main page
     - pages - added title to main page
     - pages - fixed alignment on dohst page title with profile image using a table
+
+- #### v0.3.5-20260315
+    - files - updated changelog
+    - pages - added 'old seasons' table to amazonsmp page
+    - files - added dohst23-rai_website.py python file
+    - pages - updated amazonsmp page
+    - script - added some functions and arrays for loading amazonsmp mods
 
 - #### issues
     - v0.3.1 - font size is too small on mobile (fixed in v0.3.2)
