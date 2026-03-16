@@ -210,6 +210,11 @@
     - pages - updated amazonsmp page
     - script - added some functions and arrays for loading amazonsmp mods
 
+<!-- - #### v0.3.6-20260316
+    - files - updated changelog
+    - script - finished adding functions for amazonsmp page
+    -  -->
+
 - #### issues
     - v0.3.1 - font size is too small on mobile (fixed in v0.3.2)
     - v0.3.1 - main icon not showing even when enough space is available (moved to v0.3.4)

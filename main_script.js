@@ -264,7 +264,7 @@ const PageContent = {
     ['Vanilla backport', 'Backports some newer vanilla features to older versions.', 'v1.1.4.3', 'https://modrinth.com/mod/vanillabackport/version/1.20.1-1.1.4.3', true], 
     ],
     //content_amazonsmp_mods_titles: [content_amazonsmp_as12p3_mods_required[0][0], content_amazonsmp_as12p3_mods_all[0][0], content_amazonsmp_as13p1_mods_required[0][0], content_amazonsmp_as13p1_mods_all[0][0]],
-    set_amazonsmp_mods_text: function (type) {
+    /* set_amazonsmp_mods_text: function (type) {
         if (content_amazonsmp_as12p3_mods_required[0][0]) {
             DO RECOMBINATION LIKE FOR NAVIGATION BAR
         } else if {
@@ -292,13 +292,13 @@ const PageContent = {
 
     set_amazonsmp: function (target, type = "required/all") {
         // old
-        /* if (index == 0 || index >= updates.length || !index) {return null}
+        if (index == 0 || index >= updates.length || !index) {return null}
         else if (description) {document.getElementById(target).innerHTML = updates[index][2]} 
-        else {document.getElementById(target).innerHTML = updates[index][0] + " - " + updates[index][1]} */
+        else {document.getElementById(target).innerHTML = updates[index][0] + " - " + updates[index][1]}
         
         document.getElementById(target).innerHTML = set_amazonsmp_mods_text(type)
         
-    },
+    }, */
     
 }
 
