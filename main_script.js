@@ -3,12 +3,13 @@
 
 
 // variables
-const version = "v0.3.5-20260315";
+const version = "v3.3.6-20260316";
 const updates = [
         // newest first (preferably, but the program sorts it either way)
         // shift all (except preset) down when adding new
         [20291231, "title", "description"], // preset (date title description)
         /* [20260399, "v0.4 beta release", "description4"], */
+        [20260316, "Version Renamings", "AmazonSMP Website version stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). \nDohst Website (aka rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0."],
         [20260228, "v0.3 beta release", "description3"],
         [20260223, "v0.2.7 beta release", "description2"],
         [20260218, "v0.2", "description1"],
@@ -116,6 +117,7 @@ const PageContent = {
         <a href="index.html"><button|>Home</button></a>
         <a href="main.html"><button|>Information</button></a>
         <a href="dohst.html"><button|>Dohst</button></a>
+        <a href="amazonsmp.html"><button|>AmazonSMP</button></a>
         <a href="404.html"><button|>404</button></a>
         <br><br>
     `,
@@ -139,7 +141,8 @@ const PageContent = {
         if (active == "home")           {this.content_sidebar = this.recombine_string(content_temporary, 1);}
         else if (active == "info")      {this.content_sidebar = this.recombine_string(content_temporary, 2);}
         else if (active == "dohst")     {this.content_sidebar = this.recombine_string(content_temporary, 3);}
-        else if (active == "404")       {this.content_sidebar = this.recombine_string(content_temporary, 4);}
+        else if (active == "amazonsmp")     {this.content_sidebar = this.recombine_string(content_temporary, 4);}
+        else if (active == "404")       {this.content_sidebar = this.recombine_string(content_temporary, 5);}
         
         else {this.content_sidebar = this.recombine_string(content_temporary, -1);};
         document.getElementById("sidebar").innerHTML = "<br><br>" + this.content_sidebar;
@@ -244,7 +247,7 @@ const PageContent = {
         [, "title", "description", ["World Download (size MB)", "", "Required Mods (size MB)", "", "Recommended / Server Mods (size MB)", ""]], // season11p2
         [, "title", "description", ["World Download (size MB)", "", "Required Mods (size MB)", "", "Recommended / Server Mods (size MB)", ""]], // season11p1
     ], */
-    content_amazonsmp_as12p3_mods_required: [
+    /* content_amazonsmp_as12p3_mods_required: [
     //['name', 'description', 'version', 'link', 'required'], 
     ['as12p3-mods_required', 'Season 12 Part 3 Required Mods', 'v1.20.1', 'v0.92.6'], 
     ['BClib', 'Library mod required for better end and better nether.', 'v3.0.14', 'https://modrinth.com/mod/bclib/version/3.0.14', true], 
@@ -262,7 +265,7 @@ const PageContent = {
     ['Sodium', 'The fastest and most compatible rendering optimization mod for Minecraft. Now available for both NeoForge and Fabric.', 'v0.5.12-beta.2', 'https://modrinth.com/mod/sodium/version/mc1.20.1-0.5.12-beta.2-fabric', true], 
     ['Create Steam and Rails', "Adding depth to Create's rail network and steam system.", 'v1.6.9', 'https://modrinth.com/mod/create-steam-n-rails/version/1.6.9+fabric-mc1.20.1', true], 
     ['Vanilla backport', 'Backports some newer vanilla features to older versions.', 'v1.1.4.3', 'https://modrinth.com/mod/vanillabackport/version/1.20.1-1.1.4.3', true], 
-    ],
+    ], */
     //content_amazonsmp_mods_titles: [content_amazonsmp_as12p3_mods_required[0][0], content_amazonsmp_as12p3_mods_all[0][0], content_amazonsmp_as13p1_mods_required[0][0], content_amazonsmp_as13p1_mods_all[0][0]],
     /* set_amazonsmp_mods_text: function (type) {
         if (content_amazonsmp_as12p3_mods_required[0][0]) {
@@ -288,17 +291,97 @@ const PageContent = {
                         <td class="limited_big">description</td>
                     </tr>
                 </tbody>`
-    },
-
-    set_amazonsmp: function (target, type = "required/all") {
-        // old
-        if (index == 0 || index >= updates.length || !index) {return null}
-        else if (description) {document.getElementById(target).innerHTML = updates[index][2]} 
-        else {document.getElementById(target).innerHTML = updates[index][0] + " - " + updates[index][1]}
-        
-        document.getElementById(target).innerHTML = set_amazonsmp_mods_text(type)
-        
     }, */
+    // season name, minecraft version, fabric version, fabric api version
+    content_amazonsmp_mods_details: ["as13p1", "v1.21.x", "x", "x"],
+    //[0'name', 1'description', 2'version', 3'link'], 
+    content_amazonsmp_mods_required: [[]],
+    content_amazonsmp_mods_all: [[]],
+    content_amazonsmp_datapacks: [[]],
+    set_amazonsmp: function (target, option = "all") {
+        // old
+        /* if (index == 0 || index >= updates.length || !index) {return null}
+        else if (description) {document.getElementById(target).innerHTML = updates[index][2]} 
+        else {document.getElementById(target).innerHTML = updates[index][0] + " - " + updates[index][1]} */
+        
+        if (option == "all") {
+            let text = `
+                <h2>Mods</h2>
+
+                <h3>Season 13</h3>
+                <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Required Mods (minecraft ${this.content_amazonsmp_mods_details[1]}, fabric ${this.content_amazonsmp_mods_details[2]})</th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Version</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>`;
+            for (let i = 1; i < this.content_amazonsmp_mods_required.length; i++) {
+                //[0'name', 1'description', 2'version', 3'link'], 
+                text += `<tr>"
+                            <th><a href="${this.content_amazonsmp_mods_required[i][3]}">${this.content_amazonsmp_mods_required[i][0]}</a></th>
+                            <td>${this.content_amazonsmp_mods_required[i][2]}</td>
+                            <td class="limited_big">${this.content_amazonsmp_mods_required[i][1]}</td>
+                        </tr>`;
+            };
+            text += `</tbody>
+            </table>`;
+
+            text += `<table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">All Mods (minecraft ${this.content_amazonsmp_mods_details[1]}, fabric ${this.content_amazonsmp_mods_details[2]})</th>
+                        </tr>
+                        <tr>
+                            <th>Name</th>
+                            <th>Version</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                <tbody>`
+            for (let i = 1; i < this.content_amazonsmp_mods_all.length; i++) {
+                //[0'name', 1'description', 2'version', 3'link'], 
+                text += `<tr>"
+                            <th><a href="${this.content_amazonsmp_mods_all[i][3]}">${this.content_amazonsmp_mods_all[i][0]}</a></th>
+                            <td>${this.content_amazonsmp_mods_all[i][2]}</td>
+                            <td class="limited_big">${this.content_amazonsmp_mods_all[i][1]}</td>
+                        </tr>`;
+            };
+            text += `</tbody>
+            </table>`;
+
+            text += `<table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">Datapacks (minecraft ${this.content_amazonsmp_mods_details[1]})</th>
+                        </tr>
+                        <tr>
+                            <th>Name</th>
+                            <th>Author</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                <tbody>`
+            for (let i = 1; i < this.content_amazonsmp_datapacks.length; i++) {
+                //[0'name', 1'description', 2'version', 3'link'], 
+                text += `<tr>"
+                            <th><a href="${this.content_amazonsmp_datapacks[i][3]}">${this.content_amazonsmp_datapacks[i][0]}</a></th>
+                            <td>${this.content_amazonsmp_datapacks[i][2]}</td>
+                            <td class="limited_big">${this.content_amazonsmp_datapacks[i][1]}</td>
+                        </tr>`;
+            };
+            text += `</tbody></table>`;
+
+            document.getElementById(target).innerHTML = text;
+        };
+        
+        
+    },
     
 }
 

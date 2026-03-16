@@ -54,8 +54,10 @@
     --background: rgb(31, 33, 37);
     --background-dark: rgb(28, 28, 28);
 
-    --border-light: rgb(95, 95, 95);
-    --border: rgb(66, 66, 66);
+    /* --border-light: rgb(95, 95, 95); */
+    --border-light: rgb(160, 160, 160);
+    /* --border: rgb(66, 66, 66); */
+    --border: rgb(16, 16, 16);
 
     --text: rgb(220, 220, 220);
     --text-grey: rgb(180, 180, 180);
@@ -131,6 +133,8 @@
     --lig1: 40%;
     --lig2: 25%;
     --lig3: 10%;
+    --border-light: rgb(200, 200, 200);
+    --border: rgb(120, 120, 120);
 }
 [color_style="light"] {
     --sat: 20%;
@@ -239,7 +243,7 @@ hr, img {
 }
 
 code {
-    padding: 3px 5px;
+    margin: 0;
 }
 button {
     /* padding: 12px 38px; */
@@ -282,6 +286,10 @@ h1 {
     padding: var(--font-size-big);
     /* padding-left: var(--font-size-small); */
     padding-left: 0;
+    margin-top: 10%;
+}
+header h1 {
+    margin-top: 0;
 }
 main h1 {
     margin-left: 10%;
@@ -291,6 +299,7 @@ h2 {
     font-size: var(--font-size-normal);
     padding-left: var(--font-size-normal);
     margin-left: 10%;
+    margin-top: 5%;
 }
 h3 {
     /* padding-top: var(--font-size-small); */
@@ -310,9 +319,9 @@ a, :any-link, a abbr{
 a:hover, :any-link:hover, :any-link:active, button:hover {
     text-decoration: underline;
 }
-td a{
+/* td a{
     display: block;
-}
+} */
 
 nav {
     position: fixed;

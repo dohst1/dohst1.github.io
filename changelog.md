@@ -13,22 +13,25 @@
     - {changes}
 - #### issues (check gitlab repository for up to date information)
     - v{version} [{label}] - {issues} ({status})
-
+## Version Naming Change
+    - AmazonSMP Website version stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). \nDohst Website (aka rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0.
+    - amazonsmp website versions: will keep original version names up to 3 decimal sections (x.y.z) (the rest gets squished to +1 on z) (extra unofficial updates also go +1 on z in release date order)
+    - rai website versions: 0.y.z betas/alphas become 3.y.z (y and z keep original), this is because i want the website version to match Dohst Types, official release will be version 4.
 
 ---
 
 
 
-## version 0 Part 1 [20260213 - 20260223] alpha
+## version 3 Part 1 [20260213 - 20260223] alpha
 
 
-### v0.0 [20260213] fork
+### v3.0 [20260213] fork
     - fork of dohst aw2.2.0
 
 
-### v0.1 [20260213 - 20260218] setup
+### v3.1 [20260213 - 20260218] setup
 
-- #### v0.1.0 [20260214]
+- #### v3.1.0 [20260214]
     - files - removed all download files
     - files - added 'dohst23' group image as favicon (image is subject to change because it is just an ado plushie right now)
     - files - added 'rai_website' repository image as favicon and image (subject to change because it is just a copy of //////////'s profile picture since i did not know what to use)
@@ -36,7 +39,7 @@
     - files - deleted some files
     - files - added new changelog with slightly new format
 
-- #### v0.1.1 [20260214]
+- #### v3.1.1 [20260214]
     - main - added two images on the main page and credited sources
     - main - added unfinished notice
     - files - added 'main_script.js' for javascript
@@ -49,8 +52,8 @@
     - none / unknown
 
 
-### v0.2 [20260218 - 20260220] alpha
-- #### v0.2.02-0260220
+### v3.2 [20260218 - 20260220] alpha
+- #### v3.2.02-0260220
     - files - updated changelog
     - script - added '"use strict";' for strict mode
     - script - reformated the code
@@ -62,7 +65,7 @@
     - style - updated color scheme to be neutral by default
     - style - updated some styles (mainly added border on navbar)
 
-- #### v0.2.1-20260220
+- #### v3.2.1-20260220
     - files - updated changelog
     - files - deleted everything from 'information' folder except 'main.html', 'rules.html' and 'updates.html'
     - files - moved 'main.html', 'rules.html' and 'updates.html' to root directory
@@ -71,19 +74,19 @@
     - script - added function to load sidebar for information pages
     - some other small changes
 
-- #### v0.2.2-20260220
+- #### v3.2.2-20260220
     - files - updated changelog
     - pages - updated 404 page list
     - none
 
-- #### v0.2.3-20260221
+- #### v3.2.3-20260221
     - files - updated changelog
     - style - updated css
     - pages - updated main page
     - pages - updated all footers
     - pages - added new footer for information pages
 
-- #### v0.2.4-20260222
+- #### v3.2.4-20260222
     - files - updated changelog
     - pages - removed '### `<<< © 2026 Dohst >>>`' text from copyright notice
     - pages - finished updates section for information page
@@ -101,7 +104,7 @@
     - pages - reformated all pages to new format
     - files - some other changes
 
-- #### v0.2.5-20260222
+- #### v3.2.5-20260222
     - files - updated changelog
     - script - added 'sort_updates()' function to sort updates array in reverse date order
     - script - made updates array global and added dohst errors
@@ -110,7 +113,7 @@
     - pages - added profile picture to dohst page
     - style - added two new style classes 'leftside' and 'rightside' used for making elements parallel 
 
-- #### v0.2.6-20260223
+- #### v3.2.6-20260223
     - files - updated changelog
     - style - added dropdown menu for color switching
     - style - added a total of 8 useable color schemes
@@ -127,7 +130,7 @@
     - pages - removed references to blue lycoris art
     - pages - made the home page only have a stretched out version of ado plushie picture (stretching is intentional)
 
-- #### v0.2.7-20260223
+- #### v3.2.7-20260223
     - files - updated changelog
     - script - updated dohst errors
     - files - added products page
@@ -150,11 +153,11 @@
 
 
 
-## version 0 Part 2 [20260228 - 202603//] beta
+## version 3 Part 2 [20260228 - 202603//] beta
 
 
-### v0.3 [20260228 - 202603//] beta
-- #### v0.3.0-20260228
+### v3.3 [20260228 - 202603//] beta
+- #### v3.3.0-20260228
     - files - updated changelog
     - files - removed some pages
     - script - updated visual website title to 'dohst_website (beta)'
@@ -170,66 +173,74 @@
     - pages - changed footer to be a paragraph instead of an address
     - files - some other small updates
 
-- #### v0.3.1-20260301
+- #### v3.3.1-20260301
     - files - updated changelog
     - pages - updated title to be 'dohst website'
     - script - fixed bug where color settings did not retain when switching pages
     - pages - fixed old footer link, now directs to main.html'updates
-    - script - fixed incorrect date on v0.3.0 update
+    - script - fixed incorrect date on v3.3.0 update
     - pages - updated credit section on information page
     - pages - updated dohst page
     - style - made all fonts 4 px smaller
     - style - updated style for lists
 
-- #### v0.3.2-20260314
+- #### v3.3.2-20260314
     - files - updated changelog
     - style - increased font size
     - style - some small changes
     - pages - added amazonsmp page
     - script - added amazonsmp page to the navbar
-    - issue - fixed "v0.3.1 - font size is too small on mobile"
+    - issue - fixed "v3.3.1 - font size is too small on mobile"
 
-- #### v0.3.3-20260314
+- #### v3.3.3-20260314
     - files - updated changelog
-    - issue - fixed "v0.3.1 - should make it so clicking update descriptions again removes the description"
+    - issue - fixed "v3.3.1 - should make it so clicking update descriptions again removes the description"
     - pages - updated ado plushie image on main page
     - pages - updated link to amazonsmp from main page
     - style - made border radius 10px and some small changes
     - files - added assets for amazonsmp (main image and icon)
 
-- #### v0.3.4-20260314
+- #### v3.3.4-20260314
     - files - updated changelog
     - pages - removed ado plushie image from main page
     - pages - added title to main page
     - pages - fixed alignment on dohst page title with profile image using a table
 
-- #### v0.3.5-20260315
+- #### v3.3.5-20260315
     - files - updated changelog
     - pages - added 'old seasons' table to amazonsmp page
     - files - added dohst23-rai_website.py python file
     - pages - updated amazonsmp page
     - script - added some functions and arrays for loading amazonsmp mods
 
-<!-- - #### v0.3.6-20260316
+- #### v3.3.6-20260316
     - files - updated changelog
     - script - finished adding functions for amazonsmp page
-    -  -->
+    - style - updated border colors for some color variants
+    - pages - updated amazonsmp page, added 'credit' section
+    - files - added amazonsmp image variants
+    - pages - added amazonsmp announcements
+    - script - updated sidebar to include amazonsmp
+    - pages - removed amazonsmp links from dohst page
+    - pages - updated main page
+    - pages - updated information page 'credit' section
+    - script - updated 'updates' array
 
 - #### issues
-    - v0.3.1 - font size is too small on mobile (fixed in v0.3.2)
-    - v0.3.1 - main icon not showing even when enough space is available (moved to v0.3.4)
-    - v0.3.1 - should make it so clicking update descriptions again removes the description (fixed in v0.3.3)
+    - v3.3.1 - font size is too small on mobile (fixed in v3.3.2)
+    - v3.3.1 - main icon not showing even when enough space is available (moved to v3.3.6)
+    - v3.3.1 - should make it so clicking update descriptions again removes the description (fixed in v3.3.3)
 
 
-### v0.4 []
-- #### v0.4.0-20260314
+### v3.4 []
+- #### v3.4.0-20260300
     - none
 
 - #### issues
     - none
 
 
-### v0.5 []
+### v3.5 []
  - none
 
 
@@ -240,8 +251,8 @@
 ## updates overview
 
 ### 2026 (4 update)
- - v0.0 febraury 13 - fork
- - v0.1 february 14 - setup
- - v0.2 february 23 - alpha
- - v0.3 february 28 - beta
- - v0.4 march // - 
+ - v3.0 febraury 13 - fork
+ - v3.1 february 14 - setup
+ - v3.2 february 23 - alpha
+ - v3.3 february 28 - beta
+ - v3.4 march // - 
