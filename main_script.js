@@ -3,13 +3,13 @@
 
 
 // variables
-const version = "v3.3.6-20260316";
+const version = "v3.3.7-20260317";
 const updates = [
         // newest first (preferably, but the program sorts it either way)
         // shift all (except preset) down when adding new
         [20291231, "title", "description"], // preset (date title description)
         /* [20260399, "v0.4 beta release", "description4"], */
-        [20260316, "Version Renamings", "AmazonSMP Website version stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). \nDohst Website (aka rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0."],
+        [20260316, "Version Renamings", "AmazonSMP Website versions stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). \nDohst Website (aka rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0."],
         [20260228, "v0.3 beta release", "description3"],
         [20260223, "v0.2.7 beta release", "description2"],
         [20260218, "v0.2", "description1"],
@@ -293,10 +293,47 @@ const PageContent = {
                 </tbody>`
     }, */
     // season name, minecraft version, fabric version, fabric api version
-    content_amazonsmp_mods_details: ["as13p1", "v1.21.x", "x", "x"],
+    content_amazonsmp_mods_details: ["as13p1", "1.21.11", "0.18.4", "0.141.3"],
     //[0'name', 1'description', 2'version', 3'link'], 
     content_amazonsmp_mods_required: [[]],
-    content_amazonsmp_mods_all: [[]],
+    content_amazonsmp_mods_all: [['name', 'description', 'version', 'link', 'required'], 
+    ['AmbientSounds', 'listentonature', '6.3.5', 'https://modrinth.com/mod/ambientsounds/version/JZUqW70J', 'client'], 
+    ['Architectury API', 'An intermediary api aimed to ease developing multiplatform mods.', '19.0.1', 'https://modrinth.com/mod/architectury-api/version/19.0.1+fabric', 'both'], 
+    ['Axiom', 'The all-in-one tool for editing Minecraft Worlds.', '5.3.0', 'https://modrinth.com/mod/axiom/version/uoTNUpOT', 'client'], 
+    ['BetterF3', "BetterF3 is a mod that replaces Minecraft's original debug HUD with a highly customizable, more human-readable HUD.", '17.0.0', 'https://modrinth.com/mod/betterf3/version/17.0.0', 'client'], 
+    ['Better Advancements', 'Better Advancements tries to improve the UI and UX for the advancements system in minecraft 1.12+ in a modded environment.', '0.4.8.51', 'https://modrinth.com/mod/better-advancements/version/wPZWTfJd', 'client'], 
+    ['Better Statistics Screen', 'A Minecraft mod that improves the statistics screen and makes it more useful.', '5.0.0-beta.6', 'https://modrinth.com/mod/better-stats/version/5.0.0-beta.6+fabric-1.21.11', 'client'], 
+    ['Chunky', 'Pre-generates chunks, quickly and efficiently.', '1.4.55', 'https://modrinth.com/plugin/chunky/version/1CpEkmcD', 'server'], 
+    ['Cloth Config API', 'Configuration Library for Minecraft Mods.', '21.11.153', 'https://modrinth.com/mod/cloth-config/version/21.11.153+fabric', 'both'], 
+    ['Concurrent Chunk Management Engine (Fabric)', 'A Fabric mod designed to improve the chunk performance of Minecraft.', '0.3.6.0.0', 'https://modrinth.com/mod/c2me-fabric/version/0.3.6.0.0', 'both'], 
+    ['CreativeCore', 'A core mod', '2.14.11', 'https://modrinth.com/mod/creativecore/version/2.14.11', 'client'], 
+    ['Distant Horizons', 'See farther without turning your game into a slide show', '2.4.5-b', 'https://modrinth.com/mod/distanthorizons/version/2.4.5-b-1.21.11', 'client'], 
+    ['Entity Culling', 'Using async path-tracing to hide Block-/Entities that are not visible', '1.9.5', 'https://modrinth.com/mod/entityculling/version/Dx3xsUER', 'client'], 
+    ['Fabric API', 'Lightweight and modular API providing common hooks and intercompatibility measures utilized by mods using the Fabric toolchain.', '0.141.3', 'https://modrinth.com/mod/fabric-api/version/0.141.3+1.21.11', 'both'], 
+    ['FerriteCore', 'Memory usage optimizations.', '8.2.0', 'https://modrinth.com/mod/ferrite-core/version/8.2.0-fabric', 'both'], 
+    ['Floodgate fabric', 'Hybrid mode plugin to allow for connections from Geyser to join online mode servers.', '2.2.6-b54', 'https://modrinth.com/mod/floodgate/version/wzwExuYr', 'server'],
+    ['Freecam', 'A highly customizable freecam mod.', '1.3.6', 'https://modrinth.com/mod/freecam/version/1.3.6+mc1.21.11', 'client'], 
+    ['GeyserMC fabric', 'Enable clients from Minecraft Bedrock Edition to join your Minecraft Java server.', 'Build 1099 14/03/2026', 'https://geysermc.org', 'server'], 
+    ['Iris Shaders', 'A modern shader pack loader for Minecraft intended to be compatible with existing OptiFine shader packs', '1.10.6', 'https://modrinth.com/mod/iris/version/1.10.6+1.21.11-fabric', 'client'], 
+    ['Litematica', 'A client-side schematic mod with extra features for creative mode work', '0.26.1', 'https://modrinth.com/mod/litematica/version/0.26.1', 'client'], 
+    ['Lithium', 'No-compromises game logic optimization mod. Well suited for clients and servers of all kinds. Now available for Fabric and NeoForge!', '0.21.4', 'https://modrinth.com/mod/lithium/version/mc1.21.11-0.21.4-fabric', 'both'], 
+    ['MaLiLib', "A library mod for client-side mods. Contains most of the common/shared code of masa's client mods, and adds some inter-operation support between the dependent mods.", '0.27.7', 'https://modrinth.com/mod/malilib/version/0.27.7', 'client'], 
+    ['MiniHUD', "A 'mini F3' HUD mod, also with various overlays like light level, spawn chunks, slime chunks etc.", '0.38.4', 'https://modrinth.com/mod/minihud/version/0.38.4', 'client'], 
+    ['Mod Menu', 'Adds a mod menu to view the list of mods you have installed.', 'v17.0.0-beta.2', 'https://modrinth.com/mod/modmenu/version/17.0.0-beta.2', 'client'], 
+    ['No Chat Reports', 'Makes chat unreportable (where possible)', '2.18.0', 'https://modrinth.com/mod/no-chat-reports/version/Fabric-1.21.11-v2.18.0', 'both'], 
+    ['No Chat Restrictions', 'Restores access to game chat for all accounts', '1.0.0', 'https://modrinth.com/mod/no-chat-restrictions/version/Fabric-MC1.21.11-v1.0.0', 'client'], 
+    ['ReplayMod', 'A Minecraft Mod to record, relive and share your experience.', '2.6.25', 'https://modrinth.com/mod/replaymod/version/1.21.11-2.6.25', 'client'], 
+    ['Replay Voice Chat', 'A compatibility mod to record Simple Voice Chat with ReplayMod', '1.3.12', 'https://modrinth.com/mod/replay-voice-chat/version/fabric-1.21.11-1.3.12', 'client'], 
+    ['Roughly Enough Items (REI)', 'Clean and Customizable. Alternative to Just Enough Items/JEI.', '12.1.785', 'https://modrinth.com/mod/rei/version/12.1.785+fabric', 'both'], 
+    ['ScalableLux', 'A Fabric mod based on Starlight that improves the performance of light updates in Minecraft.', '0.1.6', 'https://modrinth.com/mod/scalablelux/version/0.1.6+fabric.c25518a', 'both'], 
+    ['Servux', 'Servux is a server-side mod that provides support for some client-side mods, such as sending structure bounding boxes for MiniHUD', '0.9.2', 'https://modrinth.com/mod/servux/version/0.9.2', 'server'], 
+    ['Simple Voice Chat', 'A working voice chat in Minecraft.', '2.6.12', 'https://modrinth.com/plugin/simple-voice-chat/version/fabric-1.21.11-2.6.12', 'both'], 
+    ['Sodium', 'The fastest and most compatible rendering optimization mod for Minecraft. Now available for both NeoForge and Fabric!', '0.8.6', 'https://modrinth.com/mod/sodium/version/mc1.21.11-0.8.6-fabric', 'client'], 
+    ['TCDCommons API', "TheCSDev's personal library mod for the Minecraft modding environment.", '5.0.0-beta.6', 'https://modrinth.com/mod/tcdcommons/version/5.0.0-beta.6+fabric-1.21.11', 'client'], 
+    ['Text Placeholder API', 'Placeholder and Text manipulation library for your Minecraft mods.', '2.8.2', 'https://modrinth.com/mod/placeholder-api/version/2.8.2+1.21.10', 'client'], 
+    ["Xaero's Minimap", "Displays a map of the nearby world terrain, players, mobs, entities in the corner of your screen. Lets you create waypoints which help you find the locations you've marked.", '25.3.10', 'https://modrinth.com/mod/xaeros-minimap/version/fabric-1.21.11-25.3.10', 'client'], 
+    ["Xaero's World Map", "Adds a full screen world map which shows you what you have explored in the world. Works great together with Xaero's Minimap.", '1.40.11', 'https://modrinth.com/mod/xaeros-world-map/version/fabric-1.21.11-1.40.11', 'client'], 
+    ],
     content_amazonsmp_datapacks: [[]],
     set_amazonsmp: function (target, option = "all") {
         // old
@@ -321,14 +358,17 @@ const PageContent = {
                     </tr>
                 </thead>
                 <tbody>`;
-            for (let i = 1; i < this.content_amazonsmp_mods_required.length; i++) {
+            /* for (let i = 1; i < this.content_amazonsmp_mods_required.length; i++) {
                 //[0'name', 1'description', 2'version', 3'link'], 
                 text += `<tr>"
-                            <th><a href="${this.content_amazonsmp_mods_required[i][3]}">${this.content_amazonsmp_mods_required[i][0]}</a></th>
+                            <td><a href="${this.content_amazonsmp_mods_required[i][3]}">${this.content_amazonsmp_mods_required[i][0]}</a></td>
                             <td>${this.content_amazonsmp_mods_required[i][2]}</td>
                             <td class="limited_big">${this.content_amazonsmp_mods_required[i][1]}</td>
                         </tr>`;
-            };
+            }; */
+            text += `<tr>
+                <td colspan="3">There are no required mods this Season, you can join with a vanilla client.</>
+            </tr>`
             text += `</tbody>
             </table>`;
 
@@ -346,8 +386,8 @@ const PageContent = {
                 <tbody>`
             for (let i = 1; i < this.content_amazonsmp_mods_all.length; i++) {
                 //[0'name', 1'description', 2'version', 3'link'], 
-                text += `<tr>"
-                            <th><a href="${this.content_amazonsmp_mods_all[i][3]}">${this.content_amazonsmp_mods_all[i][0]}</a></th>
+                text += `<tr>
+                            <td><a href="${this.content_amazonsmp_mods_all[i][3]}">${this.content_amazonsmp_mods_all[i][0]}</a></td>
                             <td>${this.content_amazonsmp_mods_all[i][2]}</td>
                             <td class="limited_big">${this.content_amazonsmp_mods_all[i][1]}</td>
                         </tr>`;
@@ -370,7 +410,7 @@ const PageContent = {
             for (let i = 1; i < this.content_amazonsmp_datapacks.length; i++) {
                 //[0'name', 1'description', 2'version', 3'link'], 
                 text += `<tr>"
-                            <th><a href="${this.content_amazonsmp_datapacks[i][3]}">${this.content_amazonsmp_datapacks[i][0]}</a></th>
+                            <td><a href="${this.content_amazonsmp_datapacks[i][3]}">${this.content_amazonsmp_datapacks[i][0]}</a></td>
                             <td>${this.content_amazonsmp_datapacks[i][2]}</td>
                             <td class="limited_big">${this.content_amazonsmp_datapacks[i][1]}</td>
                         </tr>`;

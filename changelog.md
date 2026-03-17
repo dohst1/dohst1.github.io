@@ -14,9 +14,10 @@
 - #### issues (check gitlab repository for up to date information)
     - v{version} [{label}] - {issues} ({status})
 ## Version Naming Change
-    - AmazonSMP Website version stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). \nDohst Website (aka rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0.
+    - AmazonSMP Website versions stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). \nDohst Website (aka rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0.
     - amazonsmp website versions: will keep original version names up to 3 decimal sections (x.y.z) (the rest gets squished to +1 on z) (extra unofficial updates also go +1 on z in release date order)
     - rai website versions: 0.y.z betas/alphas become 3.y.z (y and z keep original), this is because i want the website version to match Dohst Types, official release will be version 4.
+## Dohst mentions should all be <a href="https://github.com/dohst1">Dohst</a>
 
 ---
 
@@ -225,6 +226,18 @@
     - pages - updated main page
     - pages - updated information page 'credit' section
     - script - updated 'updates' array
+
+- #### v3.3.7-20260317
+    - files - updated changelog
+    - files - updated python script
+    - pages - updated amazonsmp page 'mods'
+    - pages - updated amazonsmp page 'about'
+    - pages - updated main page 'amazonsmp'
+    - pages - updated amazonsmp page 'links' 'season 13'
+    - pages - updated amazonsmp page 'credit'
+    - script - added as13p1 mods data
+    - pages - added 'download tutorial' to amazonsmp page
+    - pages - restricted discord server link on amazonsmp page
 
 - #### issues
     - v3.3.1 - font size is too small on mobile (fixed in v3.3.2)
