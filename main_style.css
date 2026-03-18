@@ -230,6 +230,10 @@ table * {
     justify-content: start;
     /* width: 50%; */
 }
+main table {
+    border: 0;
+    background: 0;
+}
 
 /* ol, ul,  */.small {
     padding-left: 34px;
@@ -309,7 +313,7 @@ h3 {
     margin-left: 10%;
 }
 p {
-    margin-left: 15%;
+    margin-left: 12%;
 }
 
 a, :any-link, a abbr{
@@ -615,11 +619,11 @@ nav h1 {
 */
 
 @media only screen and /* (max-width: 600px) */ (max-width: 1024px) {
-    :root {
+    /* :root {
         --font-size-big: 32px;
         --font-size-normal: 28px;
         --font-size-small: 24px;
-    }
+    } */
     
     p, h1, h2, h3, ul, ol, main address {
         margin-left: 5%;

@@ -3,18 +3,26 @@
 
 
 // variables
-const version = "v3.3.7-20260317";
+const version = "v3.4.0-20260318";
 const updates = [
         // newest first (preferably, but the program sorts it either way)
-        // shift all (except preset) down when adding new
         [20291231, "title", "description"], // preset (date title description)
-        /* [20260399, "v0.4 beta release", "description4"], */
-        [20260316, "Version Renamings", "AmazonSMP Website versions stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). \nDohst Website (aka rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0."],
-        [20260228, "v0.3 beta release", "description3"],
-        [20260223, "v0.2.7 beta release", "description2"],
-        [20260218, "v0.2", "description1"],
-        [20260213, "v0.1", "description0"],
+        // shift all (except preset) down when adding new
+
+        [20260321, "AmazonSMP Season 13 Start", "description"],
+        [20260320, "Website Version 4.0 Release", "description"],
+        [20260328, "Website Version 3.4 Beta Release", "description4"],
+        [20260316, "Website Version Renaming", "AmazonSMP Website versions stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). Dohst Website (rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0."],
+        [20260301, "Dohst23 Type04 Beginning", "From 20260301 to 20280229, supervised by 230023 and 260026, directed by e16, funded by /////////."],
+
+        //[20260228, "v3.3 beta release", "description3"],
+        [20260228, "AmazonSMP Website Deletion", "Removed the old website. This is also the end of AmazonSMP Type03"],
+        //[20260223, "v3.2.7 beta release", "description2"],
+        //[20260218, "v3.2", "description1"],
+        //[20260213, "v3.1", "description0"],
+        [20260210, "AmazonSMP Season 12 Part 3 End", "Season 12 Part 3 has now permanently ended. You can find downloads for the world, required mods and server mods on the AmazonSMP page. This world was the most successful AmazonSMP season. This will also be the last Type03 world."],
     ];
+    // 私の名前を書いないで.
 /* const amazonsmp_seasons = [
         // newest first (preferably, but the program sorts it either way)
         // shift all (except preset) down when adding new
@@ -324,7 +332,7 @@ const PageContent = {
     ['No Chat Restrictions', 'Restores access to game chat for all accounts', '1.0.0', 'https://modrinth.com/mod/no-chat-restrictions/version/Fabric-MC1.21.11-v1.0.0', 'client'], 
     ['ReplayMod', 'A Minecraft Mod to record, relive and share your experience.', '2.6.25', 'https://modrinth.com/mod/replaymod/version/1.21.11-2.6.25', 'client'], 
     ['Replay Voice Chat', 'A compatibility mod to record Simple Voice Chat with ReplayMod', '1.3.12', 'https://modrinth.com/mod/replay-voice-chat/version/fabric-1.21.11-1.3.12', 'client'], 
-    ['Roughly Enough Items (REI)', 'Clean and Customizable. Alternative to Just Enough Items/JEI.', '12.1.785', 'https://modrinth.com/mod/rei/version/12.1.785+fabric', 'both'], 
+    ['Roughly Enough Items (REI)', 'Clean and Customizable. Alternative to Just Enough Items/JEI.', '21.11.814', 'https://modrinth.com/mod/rei/version/21.11.814+fabric', 'both'], 
     ['ScalableLux', 'A Fabric mod based on Starlight that improves the performance of light updates in Minecraft.', '0.1.6', 'https://modrinth.com/mod/scalablelux/version/0.1.6+fabric.c25518a', 'both'], 
     ['Servux', 'Servux is a server-side mod that provides support for some client-side mods, such as sending structure bounding boxes for MiniHUD', '0.9.2', 'https://modrinth.com/mod/servux/version/0.9.2', 'server'], 
     ['Simple Voice Chat', 'A working voice chat in Minecraft.', '2.6.12', 'https://modrinth.com/plugin/simple-voice-chat/version/fabric-1.21.11-2.6.12', 'both'], 
@@ -367,7 +375,7 @@ const PageContent = {
                         </tr>`;
             }; */
             text += `<tr>
-                <td colspan="3">There are no required mods this Season, you can join with a vanilla client.</>
+                <td colspan="3">There are no required mods this season, you can join with a vanilla client.</>
             </tr>`
             text += `</tbody>
             </table>`;

@@ -241,13 +241,16 @@
 
 - #### issues
     - v3.3.1 - font size is too small on mobile (fixed in v3.3.2)
-    - v3.3.1 - main icon not showing even when enough space is available (moved to v3.3.6)
+    - v3.3.1 - main icon not showing even when enough space is available (moved to v3.3.7)
     - v3.3.1 - should make it so clicking update descriptions again removes the description (fixed in v3.3.3)
+    - v3.3.7 - should make mods list on amazonsmp page clickable to show / hide it (new)
 
 
-### v3.4 []
-- #### v3.4.0-20260300
-    - none
+### v3.4 [20260318]
+- #### v3.4.0-20260318
+    - files - updated changelog
+    - script - updated incorrect mod version and link for 'roughly enough items (rei)'
+    - willl be added later
 
 - #### issues
     - none
