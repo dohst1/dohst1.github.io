@@ -3,7 +3,7 @@
 
 
 // variables
-const version = "v3.4.3-20260319";
+const version = "v4.0.0-20260320";
 const updates = [
         // newest first (preferably, but the program sorts it either way)
         [20291231, "title", "description"], // preset (date title description)
@@ -340,6 +340,9 @@ const PageContent = {
     ['Sodium', 'The fastest and most compatible rendering optimization mod for Minecraft. Now available for both NeoForge and Fabric!', '0.8.6', 'https://modrinth.com/mod/sodium/version/mc1.21.11-0.8.6-fabric', 'client', true], 
     ['TCDCommons API', "TheCSDev's personal library mod for the Minecraft modding environment.", '5.0.0-beta.6', 'https://modrinth.com/mod/tcdcommons/version/5.0.0-beta.6+fabric-1.21.11', 'client'], 
     ['Text Placeholder API', 'Placeholder and Text manipulation library for your Minecraft mods.', '2.8.2', 'https://modrinth.com/mod/placeholder-api/version/2.8.2+1.21.10', 'client'], 
+    ['ViaBackwards', 'Allow older Java Edition clients to connect to newer servers.', '5.7.2', 'https://modrinth.com/plugin/viabackwards/version/5.7.2', 'server']
+    ['ViaFabric', 'Allows to connect to older servers with older versions.', '5.7.2', 'https://modrinth.com/mod/viafabric/version/0.4.21+139-1.14-1.21', 'both', true]
+    ['ViaVersion', 'Allow newer Java Edition clients to connect to older servers.', '5.7.2', 'https://modrinth.com/plugin/viaversion/version/5.7.2', 'server']
     ["Xaero's Minimap", "Displays a map of the nearby world terrain, players, mobs, entities in the corner of your screen. Lets you create waypoints which help you find the locations you've marked.", '25.3.10', 'https://modrinth.com/mod/xaeros-minimap/version/fabric-1.21.11-25.3.10', 'client', true], 
     ["Xaero's World Map", "Adds a full screen world map which shows you what you have explored in the world. Works great together with Xaero's Minimap.", '1.40.11', 'https://modrinth.com/mod/xaeros-world-map/version/fabric-1.21.11-1.40.11', 'client', true], 
     ],
@@ -392,6 +395,8 @@ const PageContent = {
                              ['GoGapplejuice', 'GoGapplejuice', 'c50ab55c-a3b1-42e5-b2d5-772ddc3f5584', 'no', 'no', ''], 
                              ['Dannygpr', '.Dannygpr00981', '00000000-0000-0000-0009-01f66bfb89a7', 'no', 'no', 'https://youtube.com/@danny_gpr'], 
                              ['Filterrs', 'Filterrs', 'b0c9a712-0db0-4f23-9e25-128e259f8223', 'no', 'no', ''], 
+                             ['unknown', 'unknown', 'unknown', 'no', 'no', ''],
+                             ['unknown', 'unknown', 'unknown', 'no', 'no', ''],
                              /* ['230023', 'unknown', 'unknown', '0', 'yes'] */],
                              /* 
                             <tr>

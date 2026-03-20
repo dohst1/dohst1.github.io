@@ -291,9 +291,13 @@
 ## version 4  [20260320 - 20280229] release
 
 
-### v4.1 [20260320 - 2026040?] amazonsmp season 13 part 1
-- #### v4.4.0-20260320
+### v4.0 [20260320 - 2026040?] amazonsmp season 13 part 1
+- #### v4.0.0-20260320
 - files - updated changelog
+- script - updated amazonsmp player list
+- script - updates mods list
+- pages - updated 'about' heading on main page
+- other - rest of 4.0 updates will be in 4.0.1
 
 
 ---
