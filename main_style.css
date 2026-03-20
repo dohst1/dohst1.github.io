@@ -634,11 +634,12 @@ nav h1 {
     }
     
     /* removes the navbar title if the page is too small to show it (makes it generate in the negatives)*/
-    nav h1, .right {
-        display: none;
+    nav h1, .right, nav button {
+        /* display: none; */
+        margin: 0;
     }
     nav {
-        justify-content: left;
+        justify-content: end;
     }
     /* nav a {
     display: inline-block;

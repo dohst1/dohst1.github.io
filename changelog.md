@@ -17,7 +17,7 @@
     - AmazonSMP Website versions stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). \nDohst Website (aka rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0.
     - amazonsmp website versions: will keep original version names up to 3 decimal sections (x.y.z) (the rest gets squished to +1 on z) (extra unofficial updates also go +1 on z in release date order)
     - rai website versions: 0.y.z betas/alphas become 3.y.z (y and z keep original), this is because i want the website version to match Dohst Types, official release will be version 4.
-## Dohst mentions should all be <a href="https://github.com/dohst1">Dohst</a>
+## Dohst mentions should all be <a href="https://gitlab.com/dohst1">Dohst</a>
 
 ---
 
@@ -154,10 +154,10 @@
 
 
 
-## version 3 Part 2 [20260228 - 202603//] beta
+## version 3 Part 2 [20260228 - 20260319] beta
 
 
-### v3.3 [20260228 - 202603//] beta
+### v3.3 [20260228 - 20260317] beta
 - #### v3.3.0-20260228
     - files - updated changelog
     - files - removed some pages
@@ -241,23 +241,59 @@
 
 - #### issues
     - v3.3.1 - font size is too small on mobile (fixed in v3.3.2)
-    - v3.3.1 - main icon not showing even when enough space is available (moved to v3.3.7)
+    - v3.3.1 - main icon not showing even when enough space is available (moved to v3.4)
     - v3.3.1 - should make it so clicking update descriptions again removes the description (fixed in v3.3.3)
-    - v3.3.7 - should make mods list on amazonsmp page clickable to show / hide it (new)
+    - v3.3.7 - should make mods list on amazonsmp page clickable to show / hide it (moved to v3.4)
 
 
-### v3.4 [20260318]
+### v3.4 [20260318 - 20260319] beta 2
 - #### v3.4.0-20260318
     - files - updated changelog
     - script - updated incorrect mod version and link for 'roughly enough items (rei)'
-    - willl be added later
+    - some other changes
+
+- #### v3.4.1-20260318
+    - files - updated changelog
+    - files - added ".gitlab-ci.yml"
+    - files - moved website to gitlab
+
+- #### v3.4.2-20260318
+    - files - updated changelog
+    - files - replaced github links with gitlab links (except for 2 places, dohst page links section, and a comment on main page)
+    - script - updated updates
+
+- #### v3.4.3-20260319
+    - files - updated changelog and readme
+    - pages - updated seasons table on amazonsmp page
+    - script - updated updates
+    - pages - updated dohst page, added minecraft mods and datapacks
+    - pages - updated announcements for amazonsmp on the main page and amazonsmp page
+    - pages - updated main page
+    - style - made it so navbar items are aligned right in small windows to somewhat fix an issue 
+    - issues - fixed "v3.3.1 - main icon not showing even when enough space is available"
+    - script - updated amazonsmp mods list (changed function to print server and client separate)
+    - files - added dohst datapack 'no_ender_eye-v2.1-1.21.zip'
+    - pages - updated link for dohst datapacks
+    - script - updated 'set_amazonsmp' function to also added 'players' section
+    - pages - added 'players' section to amazonsmp page
+    - script - added 'datapacks' data (without descriptions)
 
 - #### issues
-    - none
+    - v3.3.1 - main icon not showing even when enough space is available (fixed in v3.4.3)
+    - v3.3.7 - should make mods list on amazonsmp page clickable to show / hide it (moved to v3.4.3)
+    - v3.4.3 - amazonsmp datapacks are missing descriptions (new)
 
 
-### v3.5 []
- - none
+---
+
+
+
+## version 4  [20260320 - 20280229] release
+
+
+### v4.1 [20260320 - 2026040?] amazonsmp season 13 part 1
+- #### v4.4.0-20260320
+- files - updated changelog
 
 
 ---
@@ -266,9 +302,15 @@
 
 ## updates overview
 
-### 2026 (4 update)
+### 2026 (? update)
  - v3.0 febraury 13 - fork
  - v3.1 february 14 - setup
  - v3.2 february 23 - alpha
  - v3.3 february 28 - beta
- - v3.4 march // - 
+ - v3.4 march 18 - beta 2
+ - v4.0 march 20 - amazonsmp season 13 part 1 (release)
+ - v4.1 april 04 - 
+ - v4.2 april 11 - 
+
+---
+

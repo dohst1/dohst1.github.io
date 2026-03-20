@@ -1,16 +1,16 @@
-# dohst_website (beta)
+# rai_website (beta)
 
-<p>The whole website is written and maintained by <a href="https://github.com/dohst1">Dohst.</a></p>
-<p>Copyright &copy;<a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
-<p>All content is made by <a href="https://github.com/dohst1">Dohst</a> unless it is explicitly stated otherwise.</p>
+<p>The whole website is written and maintained by <a href="https://gitlab.com/dohst1">Dohst.</a></p>
+<p>Copyright &copy;<a href="https://gitlab.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
+<p>All content is made by <a href="https://gitlab.com/dohst1">Dohst</a> unless it is explicitly stated otherwise.</p>
 <p>No AI was used during development. Do NOT use any of this content for AI training.</p>
 
 
 ---
 
 <br>
-<p>Website Version v3.4.0-20260318 - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></p>
-<p>Copyright &copy;<a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
+<p>Website Version v3.4.3-20260319 - Written and Maintained by <!-- ///////// and --> <a href="https://gitlab.com/dohst1">Dohst</a></p>
+<p>Copyright &copy;<a href="https://gitlab.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
 <br>
 
 ---
@@ -54,3 +54,16 @@ For open source projects, say how it is licensed.
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
  -->
+<!-- 
+plain text:
+
+The whole website is written and maintained by Dohst (https://gitlab.com/dohst1).
+Copyright &copy;Dohst (https://gitlab.com/dohst1) 2022-2026, All Rights Reserved.
+All content is made by Dohst (https://gitlab.com/dohst1) unless it is explicitly stated otherwise.
+No AI was used during development. Do NOT use any of this content for AI training.
+
+Website Version v3.4.3-20260319 - Written and Maintained by ///////// and Dohst (https://gitlab.com/dohst1)
+Copyright &copy;Dohst (https://gitlab.com/dohst1)</a> 2022-2026, All Rights Reserved.
+
+ -->
+ 

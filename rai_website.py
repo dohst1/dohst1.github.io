@@ -1,5 +1,5 @@
-# Dohst23 - rai_website - main python script (v0.1.1)
-print("\n\n\n - - - Dohst23 - - - \n\n\n\n")
+# Dohst23 - rai_website - main python script (v0.1.3)
+print("\n\n\n - - - Dohst23 - - - \n\n")
 
 dohst_error = {
     "main": "ERROR D - 0 ",
@@ -13,7 +13,7 @@ dohst_error = {
 class rai_website():
     def __init__(self):
         while True:
-            print("\n\n --- rai_website --- \n\n\n")
+            print("\n\n --- rai_website --- \n")
             mode = input("--Mode: ")
 
             if mode == "" or mode == "exit":
@@ -22,10 +22,10 @@ class rai_website():
             elif mode == "create array":
                 self.create_new_array()
 
-            else: print("invalid input \n")
+            else: print("\ninvalid input")
     
     def create_new_array(self):
-        print("\n--create_new_array--\n\n")
+        print("\n--create_new_array--")
         try:
             settings = input("-Settings (title, sub_array_count, sub_array_elements_count, [element_titles])\n : ")
             #settings = settings.split("/")
@@ -49,19 +49,16 @@ class rai_website():
                             pass_count += 1
                     if input() == "": break
 
-                if pass_count < settings[2]:
+                if pass_count < int(settings[2]):
                     print(f"completed: {sub_array}")
                     new_array.append(sub_array)
-                    print("passed")
 
             print(f"-completed:\n {settings[0]} = {new_array}\n")
             print(f"{settings[0]} = [")
-            for i in range(len(new_array)): print(new_array[i] + ", ")
+            for i in new_array: print(i + ", ")
             print("]")
 
-
-        except TypeError:
-            print(dohst_error["main"] + dohst_error["skill_issue"])
+        except TypeError: print(dohst_error["main"] + dohst_error["skill_issue"])
 
 
 
@@ -117,3 +114,65 @@ rai_website()
     ["Xaero's Minimap", "Displays a map of the nearby world terrain, players, mobs, entities in the corner of your screen. Lets you create waypoints which help you find the locations you've marked.", '25.3.10', 'https://modrinth.com/mod/xaeros-minimap/version/fabric-1.21.11-25.3.10', 'client'], 
     ["Xaero's World Map", "Adds a full screen world map which shows you what you have explored in the world. Works great together with Xaero's Minimap.", '1.40.11', 'https://modrinth.com/mod/xaeros-world-map/version/fabric-1.21.11-1.40.11', 'client'], 
     ], """
+
+
+"""  <th>Name</th>
+                            <th>Username</th>
+                            <th>UUID</th>
+                            <th>Admin</th>
+                            <th>Banned</th> """
+# content_amazonsmp_players, 10, 5, [name, username, uuid, admin, banned]
+# a72d1775-1031-4937-9fcb-3296809ef742
+
+""" content_amazonsmp_players = [['name', 'username', 'uuid', 'admin', 'banned'], 
+                             ['Dohst', 'Dohst0', 'a72d1775-1031-4937-9fcb-3296809ef742', '1', 'no'], 
+                             ['WhatCheeseburger', 'WhatCheeseburger', '438f0db2-ad4f-44d8-8d21-2bbb5600e676', '2', 'no'], 
+                             ['Tackzs', 'Tackzs', 'd105fc83-6c49-4bfe-b8a3-0735cee598b4', 'no', 'no'], 
+                             ['Dannygpr', 'unknown', 'unknown', 'no', 'no'], 
+                             ['MandoEAM', 'MandoEAM', '9df74492-2311-483f-9f8b-4ba35d9af733', '2', 'no'], 
+                             ['Secret7', 'Secret7', '73045442-ec92-419c-a10c-d8efdab5f555', '2', 'no'], 
+                             ['Cookielotty12', 'Cookielotty12', '193df712-49dd-4bd1-a21d-09cc6f953bd9', 'no', 'no'], 
+                             ['Filterrs', 'Filterrs', 'b0c9a712-0db0-4f23-9e25-128e259f8223', 'no', 'no'], 
+                             ['ATAT66', 'ATAT66', '0ca533c1-e6a6-486a-86d0-aabe670031b4', 'no', 'no'], 
+                             ['GoGapplejuice', 'GoGapplejuice', 'c50ab55c-a3b1-42e5-b2d5-772ddc3f5584', 'no', 'no']
+                             ['230023', 'unknown', 'unknown', '0', 'yes']]
+ """
+
+# content_amazonsmp_datapacks, 35, 4, [name, description, author, link]
+""" content_amazonsmp_datapacks = [['name', 'description', 'author', 'link'], 
+                               ['afk display', "Changes a player's name color if they havent moved for over 5 minutes.", 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['age lock', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['armor statues', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['armored elytra', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['cauldron concrete', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['cauldron mud', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['classic fishing loot', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['coordinates hud', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['custom nether portals', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['double shulker shells', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['dragon drops', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['durability ping', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['glass always drops', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['husks drop sand', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['mini blocks', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['more effective tools', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['more mob heads', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['name colors', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['nether portal coords', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['no ender eye (v2.1)', 'Makes eyes of ender uncraftable.', '<a href="https://gitlab.com/dohst1">Dohst</a>', 'dohst.html#datapacks'], 
+                               ['painting picker', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['player head drops', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['silence mobs', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['silk touch budding amethyst', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['spectator conduit power', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['spectator night vision', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['storm channeling', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['track raw statistics', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['unlock all recipes', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['crafting tweaks', 'Everything except rabbit hide buddles and three by three coral blocks.', 'VanillaTweaks', 'https://vanillatweaks.net/picker/crafting-tweaks/'], 
+                               ['villager death messages', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['wandering trader announcements', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['wandering trades', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['xp bottling', '', 'VanillaTweaks', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['amplified nether', 'The nether explorers simple dream, doubled height and amplified terrain.', '<a href="https://www.stardustlabs.net">Stardust Labs</a>', 'https://modrinth.com/datapack/amplified-nether/version/oZdWnGL8']]
+ """
