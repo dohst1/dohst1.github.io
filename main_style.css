@@ -193,11 +193,11 @@ footer, address {
 
 
 code, table, th, td, button, li, ul, ol, hr, img, span, div/* , .gallery div */ {
-    background-color: var(--background-dark); /* was light */
+    background-color: var(--background-dark); /* was dark */
     border: 2px solid var(--border);
     border-radius: 10px;
     padding: 5px 8px;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-right: 10%;
     /* margin-left: auto;
     margin-right: auto; */
@@ -216,7 +216,7 @@ span, table, ul {
     justify-content: start;
     display: block /* grid */;
     margin: var(--font-size-normal);
-    margin-left: 10%;
+    margin-left: 5%;
     padding-left: var(--font-size-big);
 }
 span p, span h3 {
@@ -238,8 +238,8 @@ main table {
 /* ol, ul,  */.small {
     padding-left: 34px;
     text-align: start;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 5%;
+    margin-right: 10%;
 }
 
 hr, img {
@@ -279,7 +279,7 @@ main div, header div {
 p, h2, h3, main h1 {
     text-align: left;
     justify-content: start;
-    margin-left: 10%;
+    margin-left: 5%;
     display: block;
     margin-right: 10%;
     padding-left: var(--font-size-big);
@@ -296,13 +296,13 @@ header h1 {
     margin-top: 0;
 }
 main h1 {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 h2 {
     padding: var(--font-size-normal);
     font-size: var(--font-size-normal);
     padding-left: var(--font-size-normal);
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 24px;
 }
 h3 {
@@ -310,10 +310,10 @@ h3 {
     font-size: var(--font-size-small);
     padding: var(--font-size-small);
     padding-left: var(--font-size-big);
-    margin-left: 10%;
+    margin-left: 5%;
 }
 p {
-    margin-left: 12%;
+    margin-left: 8%;
 }
 
 a, :any-link, a abbr{
@@ -486,7 +486,7 @@ background-color: var(--background);
     align-self: start;
     max-width: 384px;
     min-height: 100px;
-    margin: 10px;
+    margin: 5px;
 }
 
 
@@ -625,9 +625,9 @@ nav h1 {
         --font-size-small: 24px;
     } */
     
-    p, h1, h2, h3, ul, ol, main address {
-        margin-left: 5%;
-        margin-right: 5%;
+    p, h1, h2, h3, ul, ol, main address, span {
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .limited {
         max-width: 250px;
@@ -639,7 +639,7 @@ nav h1 {
         margin: 0;
     }
     nav {
-        justify-content: end;
+        justify-content: center;
     }
     /* nav a {
     display: inline-block;

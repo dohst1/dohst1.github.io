@@ -3,27 +3,27 @@
 
 
 // variables
-const version = "v4.0.0-20260320";
+const version = "v4.0.1-20260321";
 const updates = [
         // newest first (preferably, but the program sorts it either way)
         [20291231, "title", "description"], // preset (date title description)
+        [20291231, "title", "description"], // preset (date title description)
         // shift all (except preset) down when adding new
-
+        
         [20260320, "AmazonSMP Season 13 Start", "description"],
         [20260320, "Website Version 4.0 Release", "description"],
-        [20260319, "Website Moved To Gitlab", 'The main repository for website project files will now be on Gitlab since <a href="https://gitlab.com/dohst1">Dohst</a> has had issues with github recently. The Github version will still be occasionally updated, although mostly only for major updates or patches.'],
+        //[20260319, "Website Moved To Gitlab", 'The main repository for website project files will now be on Gitlab since <a href="https://gitlab.com/dohst1">Dohst</a> has had issues with github recently. The Github version will still be occasionally updated, although mostly only for major updates or patches.'],
         [20260318, "Website Version 3.4 Beta Release", "description4"],
         [20260316, "Website Version Renaming", "AmazonSMP Website versions stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). Dohst Website (rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0."],
         [20260301, "Dohst23 Type04 Beginning", "From 20260301 to 20280229, supervised by 230023 and 260026, directed by e16, funded by /////////."],
 
-        //[20260228, "v3.3 beta release", "description3"],
+        [20260228, "v3.3 beta release", "description3"],
         [20260228, "AmazonSMP Website Deletion", "Removed the old website. This is also the end of AmazonSMP Type03"],
-        //[20260223, "v3.2.7 beta release", "description2"],
-        //[20260218, "v3.2", "description1"],
-        //[20260213, "v3.1", "description0"],
+        [20260223, "v3.2.7 beta release", "description2"],
+        [20260218, "v3.2", "description1"],
+        [20260213, "v3.1", "description0"],
         [20260210, "AmazonSMP Season 12 Part 3 End", "Season 12 Part 3 has now permanently ended. You can find downloads for the world, required mods and server mods on the AmazonSMP page. This world was the most successful AmazonSMP season. This will also be the last Type03 world."],
     ];
-    // 私の名前を書いないで.
 /* const amazonsmp_seasons = [
         // newest first (preferably, but the program sorts it either way)
         // shift all (except preset) down when adding new
@@ -80,10 +80,11 @@ const PageContent = {
         <a href="index.html"><button class="active">Home</button></a>
         <a href="dohst.html"><button>Dohst</button></a>
         <a href="information/main.html"><button>Information</button></a>`, */
-    content_navigation: `<h1><strong><a href="index.html">dohst_website (beta)</a></strong></h1><br>
+    //content_navigation: `<h1><strong><a href="index.html">dohst_website (beta)</a></strong></h1><br>
+    content_navigation: `<h1><strong><a href="index.html">Dohst Website</a></strong></h1><br>
         <a href="index.html"><button|>Home</button></a>
-        <a href="amazonsmp.html"><button|>AmazonSMP</button></a>
         <a href="dohst.html"><button|>Dohst</button></a>
+        <a href="amazonsmp.html"><button|>AmazonSMP</button></a>
         <a href="main.html"><button|>Information</button></a>`,
     /* content_navigation: `<h1><strong><a href="index.html">dohst_website (beta)</a></strong></h1>
         <a href="index.html"><button|>Home</button></a>
@@ -100,8 +101,8 @@ const PageContent = {
         else if (active == "help")      {this.content_navigation = this.recombine_string(content_temporary, 2);}
         else if (active == "contact")   {this.content_navigation = this.recombine_string(content_temporary, 3);}
         else if (active == "info")      {this.content_navigation = this.recombine_string(content_temporary, 4);} */
-        else if (active == "amazonsmp")      {this.content_navigation = this.recombine_string(content_temporary, 1);}
-        else if (active == "dohst")      {this.content_navigation = this.recombine_string(content_temporary, 2);}
+        else if (active == "dohst")      {this.content_navigation = this.recombine_string(content_temporary, 1);}
+        else if (active == "amazonsmp")      {this.content_navigation = this.recombine_string(content_temporary, 2);}
         else if (active == "info")      {this.content_navigation = this.recombine_string(content_temporary, 3);}
 
         else {this.content_navigation = this.recombine_string(content_temporary, -1);}
@@ -112,10 +113,10 @@ const PageContent = {
     // footer
     content_footer: `<br>
     <p>Website <a href="/main.html#updates">Version ${version}</a>
-    - Written and Maintained by <!-- ///////// and --> <a href="https://gitlab.com/dohst1">Dohst</a></p>
-    <p>Copyright &copy;<a href="https://gitlab.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
+    - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></p>
+    <p>Copyright &copy;<a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
     <br>`,
-    //<code> &lt;&lt;&lt;<a href="https://www.gov.uk/copyright" target="_blank">&copy;</a><a href="https://gitlab.com/dohst1">2026 Dohst</a> &gt;&gt;&gt; </code>
+    //<code> &lt;&lt;&lt;<a href="https://www.gov.uk/copyright" target="_blank">&copy;</a><a href="https://github.com/dohst1">2026 Dohst</a> &gt;&gt;&gt; </code>
     // ### `<<< © 2026 Dohst >>>`
     set_footer: function set_footer() {document.getElementById("footer").innerHTML = this.content_footer},
     
@@ -302,19 +303,23 @@ const PageContent = {
                 </tbody>`
     }, */
     // season name, minecraft version, fabric version, fabric api version
-    content_amazonsmp_mods_details: ["as13p1", "1.21.11", "0.18.4", "0.141.3"],
+    content_amazonsmp_details: ["as13p1", "1.21.11", "0.18.4", "0.141.3"],
     //[0'name', 1'description', 2'version', 3'link'], 
-    //content_amazonsmp_mods_required: [[]],
-    content_amazonsmp_mods_all: [['name', 'description', 'version', 'link', 'required'], 
+    content_amazonsmp_mods_descriptions: [
+        `There are no required mods this season, you can join with a vanilla client. However, i recommend that you use at least the mods listed in the 'Recommended Mods' table (If you are not on 1.21.11, then you can use <a href="https://modrinth.com/mod/viafabric">ViaFabric</a> to join).`,
+        `All mods are for <a href="https://fabricmc.net">the Fabric mod loader</a>, and each mod is made by its respective creator (which can be found on the modrinth page of that mod).`,
+        `All mods are linked to <a href="https://modrinth.com">Modrinth</a>, except for GeyserMC which is linked to <a href="https://geysermc.org">GeyserMC</a>.`,
+    ],
+    content_amazonsmp_mods: [['name', 'description', 'version', 'link', 'required'], 
     ['Fabric API', 'Lightweight and modular API providing common hooks and intercompatibility measures utilized by mods using the Fabric toolchain.', '0.141.3', 'https://modrinth.com/mod/fabric-api/version/0.141.3+1.21.11', 'both', true], 
     ['AmbientSounds', 'listentonature', '6.3.5', 'https://modrinth.com/mod/ambientsounds/version/JZUqW70J', 'client'], 
-    ['Architectury API', 'An intermediary api aimed to ease developing multiplatform mods.', '19.0.1', 'https://modrinth.com/mod/architectury-api/version/19.0.1+fabric', 'both'], 
+    ['Architectury API', 'An intermediary api aimed to ease developing multiplatform mods.', '19.0.1', 'https://modrinth.com/mod/architectury-api/version/19.0.1+fabric', 'both', true], 
     ['Axiom', 'The all-in-one tool for editing Minecraft Worlds.', '5.3.0', 'https://modrinth.com/mod/axiom/version/uoTNUpOT', 'client'], 
     ['BetterF3', "BetterF3 is a mod that replaces Minecraft's original debug HUD with a highly customizable, more human-readable HUD.", '17.0.0', 'https://modrinth.com/mod/betterf3/version/17.0.0', 'client'], 
     ['Better Advancements', 'Better Advancements tries to improve the UI and UX for the advancements system in minecraft 1.12+ in a modded environment.', '0.4.8.51', 'https://modrinth.com/mod/better-advancements/version/wPZWTfJd', 'client'], 
     ['Better Statistics Screen', 'A Minecraft mod that improves the statistics screen and makes it more useful.', '5.0.0-beta.6', 'https://modrinth.com/mod/better-stats/version/5.0.0-beta.6+fabric-1.21.11', 'client'], 
     ['Chunky', 'Pre-generates chunks, quickly and efficiently.', '1.4.55', 'https://modrinth.com/plugin/chunky/version/1CpEkmcD', 'server'], 
-    ['Cloth Config API', 'Configuration Library for Minecraft Mods.', '21.11.153', 'https://modrinth.com/mod/cloth-config/version/21.11.153+fabric', 'both'], 
+    ['Cloth Config API', 'Configuration Library for Minecraft Mods.', '21.11.153', 'https://modrinth.com/mod/cloth-config/version/21.11.153+fabric', 'both', true], 
     ['Concurrent Chunk Management Engine (Fabric)', 'A Fabric mod designed to improve the chunk performance of Minecraft.', '0.3.6.0.0', 'https://modrinth.com/mod/c2me-fabric/version/0.3.6.0.0', 'both'], 
     ['CreativeCore', 'A core mod', '2.14.11', 'https://modrinth.com/mod/creativecore/version/2.14.11', 'client'], 
     ['Distant Horizons', 'See farther without turning your game into a slide show', '2.4.5-b', 'https://modrinth.com/mod/distanthorizons/version/2.4.5-b-1.21.11', 'client'], 
@@ -325,7 +330,7 @@ const PageContent = {
     ['GeyserMC fabric', 'Enable clients from Minecraft Bedrock Edition to join your Minecraft Java server.', 'Build 1099 14/03/2026', 'https://geysermc.org', 'server'], 
     ['Iris Shaders', 'A modern shader pack loader for Minecraft intended to be compatible with existing OptiFine shader packs', '1.10.6', 'https://modrinth.com/mod/iris/version/1.10.6+1.21.11-fabric', 'client'], 
     ['Litematica', 'A client-side schematic mod with extra features for creative mode work', '0.26.1', 'https://modrinth.com/mod/litematica/version/0.26.1', 'client'], 
-    ['Lithium', 'No-compromises game logic optimization mod. Well suited for clients and servers of all kinds. Now available for Fabric and NeoForge!', '0.21.4', 'https://modrinth.com/mod/lithium/version/mc1.21.11-0.21.4-fabric', 'both', true], 
+    ['Lithium', 'No-compromises game logic optimization mod. Well suited for clients and servers of all kinds. Now available for Fabric and NeoForge!', '0.21.4', 'https://modrinth.com/mod/lithium/version/mc1.21.11-0.21.4-fabric', 'both', false], 
     ['MaLiLib', "A library mod for client-side mods. Contains most of the common/shared code of masa's client mods, and adds some inter-operation support between the dependent mods.", '0.27.7', 'https://modrinth.com/mod/malilib/version/0.27.7', 'client'], 
     ['MiniHUD', "A 'mini F3' HUD mod, also with various overlays like light level, spawn chunks, slime chunks etc.", '0.38.4', 'https://modrinth.com/mod/minihud/version/0.38.4', 'client'], 
     ['Mod Menu', 'Adds a mod menu to view the list of mods you have installed.', 'v17.0.0-beta.2', 'https://modrinth.com/mod/modmenu/version/17.0.0-beta.2', 'client'], 
@@ -341,63 +346,66 @@ const PageContent = {
     ['TCDCommons API', "TheCSDev's personal library mod for the Minecraft modding environment.", '5.0.0-beta.6', 'https://modrinth.com/mod/tcdcommons/version/5.0.0-beta.6+fabric-1.21.11', 'client'], 
     ['Text Placeholder API', 'Placeholder and Text manipulation library for your Minecraft mods.', '2.8.2', 'https://modrinth.com/mod/placeholder-api/version/2.8.2+1.21.10', 'client'], 
     ['ViaBackwards', 'Allow older Java Edition clients to connect to newer servers.', '5.7.2', 'https://modrinth.com/plugin/viabackwards/version/5.7.2', 'server'],
-    ['ViaFabric', 'Allows to connect to older servers with older versions.', '5.7.2', 'https://modrinth.com/mod/viafabric/version/0.4.21+139-1.14-1.21', 'both', true],
+    ['ViaFabric', 'Allows to connect to older servers with older versions.', '5.7.2', 'https://modrinth.com/mod/viafabric/version/0.4.21+139-1.14-1.21', 'both', false],
     ['ViaVersion', 'Allow newer Java Edition clients to connect to older servers.', '5.7.2', 'https://modrinth.com/plugin/viaversion/version/5.7.2', 'server'],
-    ["Xaero's Minimap", "Displays a map of the nearby world terrain, players, mobs, entities in the corner of your screen. Lets you create waypoints which help you find the locations you've marked.", '25.3.10', 'https://modrinth.com/mod/xaeros-minimap/version/fabric-1.21.11-25.3.10', 'client', true], 
-    ["Xaero's World Map", "Adds a full screen world map which shows you what you have explored in the world. Works great together with Xaero's Minimap.", '1.40.11', 'https://modrinth.com/mod/xaeros-world-map/version/fabric-1.21.11-1.40.11', 'client', true], 
+    ["Xaero's Minimap", "Displays a map of the nearby world terrain, players, mobs, entities in the corner of your screen. Lets you create waypoints which help you find the locations you've marked.", '25.3.10', 'https://modrinth.com/mod/xaeros-minimap/version/fabric-1.21.11-25.3.10', 'client', false], 
+    ["Xaero's World Map", "Adds a full screen world map which shows you what you have explored in the world. Works great together with Xaero's Minimap.", '1.40.11', 'https://modrinth.com/mod/xaeros-world-map/version/fabric-1.21.11-1.40.11', 'client', false], 
     ],
     // content_amazonsmp_datapacks, 35, 4, [name, description, author, link]
     content_amazonsmp_datapacks: [['name', 'description', 'author', 'link'], 
                                ['afk display', "Changes a player's name color if they havent moved for over 5 minutes.", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['age lock', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['armor statues', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['armored elytra', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['cauldron concrete', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['cauldron mud', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['classic fishing loot', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['coordinates hud', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['custom nether portals', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['double shulker shells', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['dragon drops', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['durability ping', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['glass always drops', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['husks drop sand', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['mini blocks', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['more effective tools', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['more mob heads', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['name colors', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['nether portal coords', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['no ender eye (v2.1)', 'Makes eyes of ender uncraftable.', '<a href="https://gitlab.com/dohst1">Dohst</a>', 'dohst.html#datapacks'], 
-                               ['painting picker', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['player head drops', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['silence mobs', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['silk touch budding amethyst', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['spectator conduit power', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['spectator night vision', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['storm channeling', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['track raw statistics', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['unlock all recipes', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['age lock', "Adds the ability to lock a mob's age using a name tag. 'Age lock', 'age lock', 'age_lock' are all acceptable names.", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['armor statues', 'Adds a unique book that allows you to alter the properties of armor stands in survival.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['armored elytra', 'Drop an elytra and a chestplate on an anvil to merge them into one item. Drop the item above a grindstone to separate them again.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['cauldron concrete', 'Drop concrete powder into a water cauldron to instantly harden all of it.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['cauldron mud', 'Drop dirt into a water cauldron to instantly convert all of it into mud.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['classic fishing loot', 'Reverts the fishing look back to its per 1.16 loot table.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['coordinates hud', 'Adds information to your action bar. xyz coordinates and a 24 hour clock.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['custom nether portals', 'Ignite Nether portals of any shape and size you like, or use crying obsidian in the portal frame.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['dohst enhancements', 'Makes netherite uncraftable, makes armor trim recipes cheaper, and more.', '<a href="https://github.com/dohst1">Dohst</a>', 'unavailable.html'],
+                               ['double shulker shells', 'Makes all shulkers drop two shells.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['dragon drops', 'Makes the ender dragon drop an elytra on death (original also drops a dragon egg).', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['durability ping', "Get notified when you damage an item with less than 10% durability. Fully customisable per player with '/trigger duraPing'", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['ender chest always drops', 'Now ender chests drop without silk touch.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['fast leaf decay', 'Leaves decay much faster when trees are mined in survival mode.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['glass always drops', 'Makes all types of glass drop without silk touch.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['husks drop sand', 'Husks drop zero to two sand on death, making it renewable (with looting, the amount is up to two plus the looting level).', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['mini blocks', 'Use a stone cutter to craft certain bocks into mini blocks (heads textured like blocks).', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['more effective tools', 'Sets an effective tool for blocks that do not have one. This excludes blocks specifically designed to have no effective tool.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['more mob heads', "Adds a chance to receive a mob's head upon killing it", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['name colors', "Ender '/trigger color' to list the colors you can set your username to (this gets reset due to afk display if you go afk).", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['nether portal coords', 'Adds a trigger that calculates where a nether portal should be paced in the other dimension.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['no ender eye (v2.2)', 'Makes eyes of ender uncraftable.', '<a href="https://github.com/dohst1">Dohst</a>', 'dohst.html#datapacks'], 
+                               ['painting picker', "Use a stone cutter to choose a painting's variant.", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['player head drops', 'A player will drop their head when killed by another player. The item displays who the killer is.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['silence mobs', "Adds the ability to silence mobs using a name tag. 'silence me', 'Silence me', 'silence_me' are all acceptable names.", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['silk touch budding amethyst', 'Lets you collect budding amethyst using silk touch.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['spectator conduit power', 'Easily toggle conduit power when in spectator.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['spectator night vision', 'Easily toggle night vision when in spectator.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['storm channeling', 'Start a thunder storm by throwing a channeling trident upward from the top of the world, consuming 150 (60%) durability.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['track raw statistics', 'Adds over one hundred scoreboards that track many different statistics. Especially useful for multiplayer.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['unlock all recipes', 'Automatically unlocks all recipes as soon as you start playing.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
                                ['crafting tweaks', 'Everything except rabbit hide buddles and three by three coral blocks.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/crafting-tweaks/'], 
-                               ['villager death messages', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['wandering trader announcements', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['wandering trades', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-                               ['xp bottling', '', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['villager death messages', 'Notifies the server in chat when a villager is killed. Displays coordinates and dimension that it died in.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['wandering trader announcements', 'Notifies nearby players in chat when a wandering trader arrives.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['wandering trades', "Adds mini blocks to the wandering trader's trades.", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
+                               ['xp bottling', 'Right click an enchanting table with an empty bottle to fill it with some of your xp. smelt an xp bottle in a furnace to losslessly get your xp back.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
                                ['amplified nether', 'The nether explorers simple dream, doubled height and amplified terrain.', '<a href="https://www.stardustlabs.net">Stardust Labs</a>', 'https://modrinth.com/datapack/amplified-nether/version/oZdWnGL8']],
 
     content_amazonsmp_players: [['name', 'username', 'uuid', 'admin', 'banned', 'link'], 
-                             ['Dohst', 'Dohst0', 'a72d1775-1031-4937-9fcb-3296809ef742', 'yes', 'no', 'https://gitlab.com/dohst1'], 
-                             ['Secret7', 'Secret7', '73045442-ec92-419c-a10c-d8efdab5f555', 'yes', 'no', ''], 
-                             ['Cookielotty12', 'Cookielotty12', '193df712-49dd-4bd1-a21d-09cc6f953bd9', 'no', 'no', ''], 
-                             ['Tackzs', 'Tackzs', 'd105fc83-6c49-4bfe-b8a3-0735cee598b4', 'no', 'no', ''], 
+                             ['Dohst', 'Dohst0', 'a72d1775-1031-4937-9fcb-3296809ef742', 'yes', 'no', 'https://github.com/dohst1'], 
+                             ['Secret7', 'Secret7', '73045442-ec92-419c-a10c-d8efdab5f555', 'yes', 'no', 'unavailable.html'], 
+                             ['Cookielotty12', 'Cookielotty12', '193df712-49dd-4bd1-a21d-09cc6f953bd9', 'no', 'no', 'unavailable.html'], 
+                             ['Tackzs', 'Tackzs', 'd105fc83-6c49-4bfe-b8a3-0735cee598b4', 'no', 'no', 'unavailable.html'], 
                              ['WhatCheeseburger', 'WhatCheeseburger', '438f0db2-ad4f-44d8-8d21-2bbb5600e676', 'yes', 'no', 'https://www.twitch.tv/whatcheeseburgertv'], 
                              ['MandoEAM', 'MandoEAM', '9df74492-2311-483f-9f8b-4ba35d9af733', 'yes', 'no', 'https://www.youtube.com/@MandoEAM'], 
-                             ['ATAT66', 'ATAT66', '0ca533c1-e6a6-486a-86d0-aabe670031b4', 'no', 'no', ''], 
-                             ['GoGapplejuice', 'GoGapplejuice', 'c50ab55c-a3b1-42e5-b2d5-772ddc3f5584', 'no', 'no', ''], 
+                             ['ATAT66', 'ATAT66', '0ca533c1-e6a6-486a-86d0-aabe670031b4', 'no', 'no', 'unavailable.html'], 
+                             ['ImGapplejuice', 'ImGapplejuice', 'c50ab55c-a3b1-42e5-b2d5-772ddc3f5584', 'no', 'no', 'unavailable.html'], 
                              ['Dannygpr', '.Dannygpr00981', '00000000-0000-0000-0009-01f66bfb89a7', 'no', 'no', 'https://youtube.com/@danny_gpr'], 
-                             ['Filterrs', 'Filterrs', 'b0c9a712-0db0-4f23-9e25-128e259f8223', 'no', 'no', ''], 
-                             ['unknown', 'unknown', 'unknown', 'no', 'no', ''],
-                             ['unknown', 'unknown', 'unknown', 'no', 'no', ''],
-                             ['unknown', 'unknown', 'unknown', 'no', 'no', ''],
+                             ['Filterrs', 'Filterrs', 'b0c9a712-0db0-4f23-9e25-128e259f8223', 'no', 'no', 'unavailable.html'], 
+                             ['Madhatters33', 'Madhatters33', '666a4058-85ba-4755-bec0-de7d652493ab', 'no', 'no', 'unavailable.html'],
+                             ['unknown', 'unknown', 'unknown', 'no', 'no', 'unavailable.html'],
+                             ['unknown', 'unknown', 'unknown', 'no', 'no', 'unavailable.html'],
                              /* ['230023', 'unknown', 'unknown', '0', 'yes'] */],
                              /* 
                             <tr>
@@ -413,125 +421,161 @@ const PageContent = {
                             <th>no</th>
                         </tr> */
 
-    set_amazonsmp: function (target_mods, target_players, option = "all") {
-        // old
-        /* if (index == 0 || index >= updates.length || !index) {return null}
-        else if (description) {document.getElementById(target).innerHTML = updates[index][2]} 
-        else {document.getElementById(target).innerHTML = updates[index][0] + " - " + updates[index][1]} */
-        
-        if (option == "all") {
-            let text = `
-                <h2>Mods and Datapacks</h2>
-                <table>
-                <thead>
-                    <tr>
-                        <th colspan="3">Recommended Mods (minecraft ${this.content_amazonsmp_mods_details[1]}, fabric ${this.content_amazonsmp_mods_details[2]})</th>
-                    </tr>
-                    <tr>
-                        <th>Name</th>
-                        <th>Version</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>`;
-            for (let i = 1; i < this.content_amazonsmp_mods_all.length; i++) {
-                if (this.content_amazonsmp_mods_all[i][5]) {
-                //[0'name', 1'description', 2'version', 3'link'], 
-                text += `<tr>
-                            <td><a href="${this.content_amazonsmp_mods_all[i][3]}">${this.content_amazonsmp_mods_all[i][0]}</a></td>
-                            <td>${this.content_amazonsmp_mods_all[i][2]}</td>
-                            <td class="limited_big">${this.content_amazonsmp_mods_all[i][1]}</td>
-                        </tr>`;
+    set_amazonsmp: function (targets = [2, "mods", "players"], option = "all") { 
+        // targets are the elements which you want the content to be printed in, index 1 is for mods, and index 2 is for players
+        // option can be: 'players' 'datapacks' 'server' 'recommended' 'mods' 'all', if multiple, separate each with a space ' '
+
+        let text = ``;
+
+        let recommended = function () {
+            text += `
+            <table>
+            <thead id="links_recommended-header">
+            <tr>
+            <th colspan="3">Recommended Mods (minecraft ${PageContent.content_amazonsmp_details[1]}, fabric ${PageContent.content_amazonsmp_details[2]})</th>
+            </tr>
+            <tr>
+            <th>Name</th>
+            <th>Version</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody id="links_recommended">`;
+            for (let i = 1; i < PageContent.content_amazonsmp_mods.length; i++) {
+                if (PageContent.content_amazonsmp_mods[i][5]) {
+                    //[0'name', 1'description', 2'version', 3'link'], 
+                    text += `<tr>
+                    <td><a href="${PageContent.content_amazonsmp_mods[i][3]}">${PageContent.content_amazonsmp_mods[i][0]}</a></td>
+                    <td>${PageContent.content_amazonsmp_mods[i][2]}</td>
+                    <td class="limited_big">${PageContent.content_amazonsmp_mods[i][1]}</td>
+                    </tr>`;
+                }};
+                text += `</tbody>
+            </table>`;
+        };
+        let mods = function () {
+            text += `<table>
+            <thead id="links_server-header">
+            <tr>
+            <th colspan="3">Server Mods (minecraft ${PageContent.content_amazonsmp_details[1]}, fabric ${PageContent.content_amazonsmp_details[2]})</th>
+            </tr>
+            <tr>
+            <th>Name</th>
+            <th>Version</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody id="links_server" class="fade_none">`
+            for (let i = 1; i < PageContent.content_amazonsmp_mods.length; i++) {
+                if (PageContent.content_amazonsmp_mods[i][4] != "client") {
+                    //[0'name', 1'description', 2'version', 3'link'], 
+                    text += `<tr>
+                    <td><a href="${PageContent.content_amazonsmp_mods[i][3]}">${PageContent.content_amazonsmp_mods[i][0]}</a></td>
+                    <td>${PageContent.content_amazonsmp_mods[i][2]}</td>
+                    <td class="limited_big">${PageContent.content_amazonsmp_mods[i][1]}</td>
+                    </tr>`;
             }};
             text += `</tbody>
             </table>`;
-
+        };
+        let datapacks = function () {
             text += `<table>
-                    <thead>
-                        <tr>
-                            <th colspan="3">Server Mods (minecraft ${this.content_amazonsmp_mods_details[1]}, fabric ${this.content_amazonsmp_mods_details[2]})</th>
-                        </tr>
-                        <tr>
-                            <th>Name</th>
-                            <th>Version</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                <tbody>`
-            for (let i = 1; i < this.content_amazonsmp_mods_all.length; i++) {
-                if (this.content_amazonsmp_mods_all[i][4] != "client") {
+            <thead id="links_datapacks-header">
+            <tr>
+            <th colspan="3">Server Datapacks (minecraft ${PageContent.content_amazonsmp_details[1]})</th>
+            </tr>
+            <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody id="links_datapacks" class="fade_none">`
+            for (let i = 1; i < PageContent.content_amazonsmp_datapacks.length; i++) {
                 //[0'name', 1'description', 2'version', 3'link'], 
                 text += `<tr>
-                            <td><a href="${this.content_amazonsmp_mods_all[i][3]}">${this.content_amazonsmp_mods_all[i][0]}</a></td>
-                            <td>${this.content_amazonsmp_mods_all[i][2]}</td>
-                            <td class="limited_big">${this.content_amazonsmp_mods_all[i][1]}</td>
-                        </tr>`;
-            }};
-            text += `</tbody>
-            </table>`;
-
-            text += `<table>
-                    <thead>
-                        <tr>
-                            <th colspan="3">Server Datapacks (minecraft ${this.content_amazonsmp_mods_details[1]})</th>
-                        </tr>
-                        <tr>
-                            <th>Name</th>
-                            <th>Author</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                <tbody>`
-            for (let i = 1; i < this.content_amazonsmp_datapacks.length; i++) {
-                //[0'name', 1'description', 2'version', 3'link'], 
-                text += `<tr>
-                            <td><a href="${this.content_amazonsmp_datapacks[i][3]}">${this.content_amazonsmp_datapacks[i][0]}</a></td>
-                            <td>${this.content_amazonsmp_datapacks[i][2]}</td>
-                            <td class="limited_big">${this.content_amazonsmp_datapacks[i][1]}</td>
-                        </tr>`;
+                <td><a href="${PageContent.content_amazonsmp_datapacks[i][3]}">${PageContent.content_amazonsmp_datapacks[i][0]}</a></td>
+                <td>${PageContent.content_amazonsmp_datapacks[i][2]}</td>
+                <td class="limited_big">${PageContent.content_amazonsmp_datapacks[i][1]}</td>
+                </tr>`;
             };
             text += `</tbody></table>`;
-
-
-            let text_players = `
-            <h2>Players</h2>
+        };
+        let text_players = ``
+        let players = function () {
+            text_players = `
                 <table>
-                    <thead>
+                    <thead id="link_players-header">
                         <tr>
                             <th>Name</th>
                             <th>Username</th>
-                            <!-- <th>UUID</th> -->
+                            <th>UUID</th>
                             <th>Admin</th>
                             <th>Banned</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="link_players">
             `
-            for (let i = 1; i < this.content_amazonsmp_players.length; i++) {
+            for (let i = 1; i < PageContent.content_amazonsmp_players.length; i++) {
                 //[0'name', 1'description', 2'version', 3'link'], 
-                if (this.content_amazonsmp_players[i][0] == this.content_amazonsmp_players[i][1]) {
+                if (PageContent.content_amazonsmp_players[i][0] == PageContent.content_amazonsmp_players[i][1]) {
                     text_players += `<tr>
-                            <td colspan="2"><a href="${this.content_amazonsmp_players[i][5]}">${this.content_amazonsmp_players[i][0]}</a></td>
-                            <!-- <td>${this.content_amazonsmp_players[i][2]}</td> -->
-                            <td>${this.content_amazonsmp_players[i][3]}</td>
-                            <td>${this.content_amazonsmp_players[i][4]}</td>
+                            <td colspan="2"><a href="${PageContent.content_amazonsmp_players[i][5]}">${PageContent.content_amazonsmp_players[i][0]}</a></td>
+                            <td>${PageContent.content_amazonsmp_players[i][2]}</td>
+                            <td>${PageContent.content_amazonsmp_players[i][3]}</td>
+                            <td>${PageContent.content_amazonsmp_players[i][4]}</td>
                         </tr>`;
                 } else {
                     text_players += `<tr>
-                            <td><a href="${this.content_amazonsmp_players[i][5]}">${this.content_amazonsmp_players[i][0]}</a></td> 
-                            <td>${this.content_amazonsmp_players[i][1]}</td>
-                            <!-- <td>${this.content_amazonsmp_players[i][2]}</td> -->
-                            <td>${this.content_amazonsmp_players[i][3]}</td>
-                            <td>${this.content_amazonsmp_players[i][4]}</td>
+                            <td><a href="${PageContent.content_amazonsmp_players[i][5]}">${PageContent.content_amazonsmp_players[i][0]}</a></td> 
+                            <td>${PageContent.content_amazonsmp_players[i][1]}</td>
+                            <td>${PageContent.content_amazonsmp_players[i][2]}</td>
+                            <td>${PageContent.content_amazonsmp_players[i][3]}</td>
+                            <td>${PageContent.content_amazonsmp_players[i][4]}</td>
                         </tr>`;
                 }
             };
             text_players += `</tbody></table>`;
+        };
 
-            document.getElementById(target_mods).innerHTML = text;
-            document.getElementById(target_players).innerHTML = text_players;
+        // old
+        /* if (index == 0 || index >= updates.length || !index) {return null}
+        else if (description) {document.getElementById(target).innerHTML = updates[index][2]} 
+        else {document.getElementById(target).innerHTML = updates[index][0] + " - " + updates[index][1]} */
+        option = option.split(" ");
+        let last = "";
+        for (let i = 0; i < option.length; i++) {
+            if (option[i] == last) {
+
+            } else if (option[i] == "all") {
+                text = ``;
+                text_players = ``;
+                recommended();
+                mods();
+                datapacks();
+                players();
+                break;
+            } else if (option == "mods") {
+                recommended();
+                mods();
+            } else if (option == "recommended") {
+                recommended();
+            } else if (option == "server") {
+                mods();
+            } else if (option == "datapacks") {
+                datapacks();
+            } else if (option == "players") {
+                players();
+            };
+            last = option[i];
+        };
+
+        for (let i = 0; i < this.content_amazonsmp_mods_descriptions.length; i++) {
+            text += `<p>${this.content_amazonsmp_mods_descriptions[i]}</p>`
         };
         
+        document.getElementById(targets[1]).innerHTML = text;
+        document.getElementById(targets[2]).innerHTML = text_players;
         
     },
     
@@ -635,6 +679,19 @@ const PageEvents = {
                 localStorage.setItem('color_style', "light");
             }
         })
+    },
+
+    
+    set_clickable_section: function (targets) {
+        // targets are all the element ids of all the elements which you want to be hidden
+        // make sure there is also an element outside of the content element which is named '{content element id}-header' to act as a toggle button
+
+        for (let i = 0; i < targets.length; i++) {
+            document.getElementById(targets[i]+"-header").addEventListener('click', () => {
+                document.getElementById(targets[i]).classList.toggle("fade_none");
+            });
+        };
+        
     },
 }
 
