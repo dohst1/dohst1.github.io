@@ -289,7 +289,7 @@
 
 ## version 4  [20260320 - 20280229] release
 
-### v4.0 [20260320 - 2026040?] amazonsmp season 13 part 1
+### v4.0 [20260320 - 20260321] amazonsmp season 13 part 1
 - #### v4.0.0-20260320
 - files - updated changelog
 - script - updated amazonsmp player list
@@ -320,16 +320,39 @@
 - script - added amazonsmp datapack descriptions
 - issues - fixed "v3.4.3 - amazonsmp datapacks are missing descriptions"
 - files - made most gitlab links be github links for the github version
-- #### v4.0.2-20260322
--
-- add amazonsmp world page for world information
-- updated datapacks descriptions
-- add dropdown system to dohst page and information page
 - #### issues and suggestions
 - v3.3.7 - should make mods list on amazonsmp page clickable to show / hide it (fixed in v4.0.1)
 - v3.4.3 - amazonsmp datapacks are missing descriptions (fixed in v4.0.1)
 - v4.0.0 - dohst datapack 'no ender eye v2.1' does not work (fixed in v4.0.1)
 - v4.0.0 - github version has gitlab links (fixed in v4.0.1)
+
+### v4.1 [20260322 - 2026040?] 
+- #### v4.1.0-20260322
+- files - updated changelog
+- pages - updated announcements on amazonsmp page
+- style - updated 'row' and 'row_item' classes for information page styling
+- style - updated margins and paddings
+- files - removed some unnecessary commended code
+- pages - readded player uuids to players table on amazonsmp page
+- style - fixed some styling issues when using small windows
+- style - added medium window section to avoid information page content from being shown incorrectly
+- pages - added contribution section to about section on information page
+- script - removed season tables from amazonsmp page, and updated set_amazonsmp function to also add the seasons table
+- files - added amazonsmp season pages (directly from amazonsmp_website v2.2.0-20260213) 'season12' 'season11' 'season10.html' 'season9.html' 'seasons_old.html' 'seasons_temporary.html'
+- pages - updated amazonsmp season pages to have new header and footer, and added a note 'Has not been updated since 2026/02/13.' at the top of each page
+- pages - updated amazonsmp season pages to have updated links to images
+- script - updated updates to include changelog for 4.0 and 4.1 versions
+- pages - made main tiles of amazonsmp season pages be similar to dohst page with their respective season icons
+- pages - updated information page credit section
+- #### v4.1.1-2026032?
+-
+- update amazonsmp page style (sidenav with rightcol, click button on sidenav, javascript injects code onto rightcol for that section)
+- make all website content be injected by javascript
+- add dropdown system to dohst page and information page
+- #### issues and suggestions
+- v4.1.0-20260322 - some amazonsmp season pages have outdated download links (new)
+- v4.1.0-20260322 - amazonsmp season 13 page is missing (new)
+
 
 ---
 
