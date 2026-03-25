@@ -33,15 +33,25 @@
 
                 <h2 id="downloads-header">Download Tutorial</h2>
                 <section id="downloads" class="fade_none">
-                    <p>Go to the <a href="amazonsmp.html#links">Seasons Table</a> and download the 'World Download' for the season you want.</p>
-                    <p>After it finishes downloading, extract the zip file, and move the new folder to your Minecraft saves folder (by default for windows it is "%appdata%\.minecraft\saves").</p>
+                    <h3>Worlds</h3>
+                    <p>Go to <a href="amazonsmp.html#links">the Seasons section</a> and download the 'World Download' for the season you want.</p>
+                    <p>After it finishes downloading, extract the zip file, and move the new folder to your Minecraft saves folder (usually located at "%appdata%\.minecraft\saves").</p>
                     <p>Make sure the world folder inside of the 'saves' folder has a file called 'level.dat' (if it instead has another folder, then move the contents of that folder into the world folder (which should be in the 'saves' folder)).</p>
                     <p>When you open Minecraft it should be in your singleplayer worlds.</p>
                     <p>It is highly recommended that you play on the original version of that world with the same mods and datapacks.</p>
+
+                    <!-- <h3>Mods</h3>
+                    <p>Go to <a href="amazonsmp.html#links">the Seasons section</a> and download the mods you want.</p>
+                    <p>If you have not already, download Fabric from <a href="https://fabricmc.net">the FabricMC website</a>, and instal it on your client for the minecraft and fabric version required.</p>
+                    <p>After the mods have finished downloading, extract the zip file, and move all the .jar files directly into your Minecraft client's mods folder (usually located at '%appdata%/.minecraft/mods').</p>
+                    <p></p> -->
                 </section>
                 
                 <h2 id="mods-header">Modifications</h2>
                 <section id="mods" class="fade_none">Mods</section>
+                
+                <h2 id="proxy-header">ViaProxy</h2>
+                <section id="proxy" class="fade_none">ViaProxy</section>
 
                 <h2 id="players-header">Players</h2>
                 <section id="players" class="fade_none">Players</section>
@@ -151,16 +161,38 @@
 
 
             <h1 id="rules-header">Rules</h1>
-            <section id="rules" class="fade_none">
-                <h2 id="rules_main-header">Main</h2>
-                <section id="rules_main">
-                    <p>If an Admin believes someone should be banned, Admins will discuss and vote to decide how long to ban the Member for (between 0 and 8 days).</p>
+            <section id="rules"><!--  class="fade_none" -->
+                <h2 id="rules_main-header">Main Rules</h2>
+                <section id="rules_main" class="fade_none">
+                    <p>If an Admin believes someone should be banned, Admins will discuss and vote to decide how long to ban the Member for (between 0 and 8 days (plus increase from ban time calculation)).</p>
                     <p>Any action which harms the server itself or host machine will result in a permanent ban (no vote will be done, this decision can be taken alone by <a href="https://github.com/dohst1">Dohst</a>).</p>
                     <p>The rules may change over time.</p>
+
+                    <h3>Server and Community Rules</h3>
+                    <ul>
+                        <li>No Cheating / Hacking (ban 2 - 8 days)</li>
+                        <li>No Administrator Power Abuse (ban 2 - 4 days, and admin permissions revoked)</li>
+                        <li>No Griefing (ban 1 - 4 days)</li>
+                        <li>No Inappropriate Content (ban 1 - 4 days)</li>
+                        <li>No Doxing / Impersonation (ban 1 - 4 days)</li>
+                    </ul>
+                    <h3>Conditions</h3>
+                    <ul>
+                        <li>Strong probable cause is enough to ban someone (however evidence is preferred).</li>
+                        <li>Bans for some rules ('Griefing', 'Inappropriate Content', 'Doxing / Impersonation') will only occur if the victim reports it, or requests for the offender to be banned.</li>
+                        <li>Final ban time formula: [final ban time] = [past bans count] * [current offense ban time].</li>
+                        <li>'No Inappropriate Content' can refer to a lot of things, but mainly: <a href="https://www.gov.uk/discrimination-your-rights">discrimination</a> and sexual content.</li>
+                    </ul>
+                    <h3>Official Information Sources (and order of reliability)</h3>
+                    <ul>
+                        <li>AmazonSMP Website / Github Repository (main branch).</li>
+                        <li>AmazonSMP Discord Server (discord.gg/ygpzuppKgy) Information Channel.</li>
+                        <li>AmazonSMP Whatsapp Community Announcements Description.</li>
+                    </ul>
                 </section>
 
                 <h2 id="rules_community-header">Community Code of Conduct</h2>
-                <section id="rules_community">
+                <section id="rules_community" class="fade_none">
                     <h3>Allowed Client Modifications</h3>
                     <p>Anything that does not give you an unfair advantage over other players, and does not disadvantage other players is likely allowed.</p>
                     <p>Types of modifications which are allowed:</p>
@@ -183,12 +215,19 @@
                     </ul>
                 </section>
                 
-                <h2 id="rules_criteria-header">New Member Criteria</h2>
-                <section id="rules_criteria">
+                <h2 id="rules_criteria-header">New Members</h2>
+                <section id="rules_criteria" class="fade_none">
+                    <h3>Criteria</h3>
                     <ul>
                         <li>Must own an official copy of 'Minecraft: Java Edition' or 'Minecraft: Bedrock Edition', and have the ability to play online.</li>
                         <li>Must know at least two members personally in real life.</li>
-                        <li>Must not have been permanently banned in the past.</li>
+                        <li>Must not have been permanently banned in the past.</li> <!-- Except Enda, who may join at any point without following regular procedures -->
+                    </ul>
+                    <h3>Joining</h3>
+                    <ul>
+                        <li>The new Member should <a href="#rules">read the Rules on this page</a> and then complete this form: <a href="https://forms.gle/QU3zj5Pqpp9HGvxh8">AmazonSMP Season 13 Member Registration (2026/03)</a>.</li> <!-- https://docs.google.com/forms/d/e/1FAIpQLSckLAFKMVdJcreU7uzjOHUGKW2maHpUqQJys0Q2Fu2OVQJEMw/viewform?usp=header -->
+                        <li>Then notify an Admin about the new Member (this Admin should also inform <a href="https://github.com/dohst1">Dohst</a> of this before the new Member is whitelisted).</li>
+                        <li>If the form is filled in correctly the new Member will be whitelisted in less than two days.</li>
                     </ul>
                 </section>
 
@@ -224,34 +263,12 @@
                 OLD LINKS <p>AmazonSMP Website / Gitlab Repository (https://dohst23.gitlab.io/rai_website/amazonsmp.html / https://gitlab.com/dohst23/rai_website (main branch))</p>
                 <p>AmazonSMP Discord Server (discord.gg/ygpzuppKgy) Information Channel</p>
                 <p>AmazonSMP Whatsapp Community Announcements Description</p>
-
             </section> -->
-            <!-- <section id="rules">
-                    <h2>Rules:</h2>
-                    <h3>Community (applies anywhere as long as it involves server members)</h3>
-                    <ul>
-                        <li>No Doxing / Impersonation (ban 2 - 8 days)</li>
-                        <li>No Inappropriate Content (ban 2 - 8 days)</li>
-                        <li>No Assaulting ///////// (ban 1 - 2 days)</li>
-                    </ul>
-                    <h3>Server (applies only on the current live server world)</h3>
-                    <ul>
-                        <li>No Cheating / Hacking (ban 2 - 8 days)</li>
-                        <li>No Administator Power Abuse (ban 2 - 4 days, and no more admin permissions)</li>
-                        <li>No Griefing (ban 2 - 8 days)</li>
-                    </ul>
-                    <p>probable cause is enough to ban someone (evidence is preferred).</p>
-                    <p>Bans for 'Community' rules will only occur if the victim reports it, or requests for the offender to be banned.</p>
-                    <p>Final ban time formula: [final ban time] = [past ban amount] * [current offense ban time].</p>
-                    <p>'No Inappropriate Content' can refer to a lot of things, but mainly: <a href="https://www.gov.uk/discrimination-your-rights">discrimination</a> and sexual content.</p>
-                         <li>For every rule above (except Cheating, Hacking, Admin Power Abuse, and Assaulting /////////): Does not apply to small cases, and offender will only be banned if victim wants them to be</li>
-                        <li>Ban Time: [ban_time] = [past_ban_amount] * [current_offense_ban_time]</li> 
-                </section> -->
 
             <br><br>
             <script>
                 PageContent.set_amazonsmp()
-                PageEvents.set_clickable_section(["seasons", "seasons_new", "seasons_old", "seasons_really_old", "downloads", "mods", "links_recommended", "links_server", "links_datapacks", "players", "credit", "rules"])
+                PageEvents.set_clickable_section(["seasons", "seasons_new", "seasons_old", "seasons_really_old", "downloads", "mods", "links_recommended", "links_server", "links_datapacks", "proxy", "players", "credit", "rules_main", "rules_community", "rules_criteria"])
             </script>
         </main>
 

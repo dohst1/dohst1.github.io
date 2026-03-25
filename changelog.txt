@@ -18,7 +18,7 @@
     - AmazonSMP Website versions stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). \nDohst Website (aka rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0.
     - amazonsmp website versions: will keep original version names up to 3 decimal sections (x.y.z) (the rest gets squished to +1 on z) (extra unofficial updates also go +1 on z in release date order)
     - rai website versions: 0.y.z betas/alphas become 3.y.z (y and z keep original), this is because i want the website version to match Dohst Types, official release will be version 4.
-## Dohst mentions should all be <a href="https://gitlab.com/dohst1">Dohst</a>
+## Dohst mentions should all be <a href="https://github.com/dohst1">Dohst</a>
 
 ---
 
@@ -344,14 +344,31 @@
 - script - updated updates to include changelog for 4.0 and 4.1 versions
 - pages - made main tiles of amazonsmp season pages be similar to dohst page with their respective season icons
 - pages - updated information page credit section
-- #### v4.1.1-2026032?
+- #### v4.1.1-20260325
+- files - updated changelog
+- script - updated amazonsmp players 
+- script - updated updates
+- script - updated amazonsmp mods
+- script - updated recommended client mods header
+- pages - fixed seasons tables headers on amazonsmp page
+- pages - fixed modifications section description text not appearing on amazonsmp page
+- pages - fixed season 09 information in seasons section on amazonsmp page
+- pages - fixed seasons section description text not appearing on amazonsmp page
+- pages - added viaproxy section to amazonsmp page
+- pages - fixed the seasons table displaying "Part Part 1" instead of "Part 1" in some cases on the amazonsmp page
+- script - made it so 'rules' header is no longer clickable, now 'main rules', 'community code of conduct' and 'new members' are clickable, on amazonsmp page 
+- pages - updated rules section on amazonsmp page
+- pages - updated about section on amazonsmp page
+- style - fixed an issue where tables and other elements would not cover the whole screen even when squished
+- files - updated links for github version of website
+- #### v4.1.2-2026032?
 -
 - update amazonsmp page style (sidenav with rightcol, click button on sidenav, javascript injects code onto rightcol for that section)
 - make all website content be injected by javascript
 - add dropdown system to dohst page and information page
 - #### issues and suggestions
-- v4.1.0-20260322 - some amazonsmp season pages have outdated download links (new)
-- v4.1.0-20260322 - amazonsmp season 13 page is missing (new)
+- v4.1.0-20260322 - some amazonsmp season pages have outdated download links (moved to v4.1.1)
+- v4.1.0-20260322 - amazonsmp season 13 page is missing (moved to v4.1.1)
 
 
 ---

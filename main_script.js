@@ -3,13 +3,34 @@
 
 
 // variables
-const version = "v4.1.0-20260322";
+const version = "v4.1.1-20260325";
 const updates = [
         // newest first (preferably, but the program sorts it either way)
         [20291231, "title", "description"], // preset (date title description)
         // shift all (except preset) down when adding new
-        
-        [20260327, "Website Version 4.1 Release", `
+        [20260325, "Website Version 4.1.1 Patch", `
+Main Updates: updated amazonsmp page rules section, updated amazonsmp data, fixed issue where some content on amazonsmp page was not showing, added viaproxy section to amazonsmp page, updated some descriptions around the website.
+
+<br><br>Raw Changelog File:
+<br>- #### v4.1.1-20260325
+<br>- files - updated changelog
+<br>- script - updated amazonsmp players 
+<br>- script - updated updates
+<br>- script - updated amazonsmp mods
+<br>- script - updated recommended client mods header
+<br>- pages - fixed seasons tables headers on amazonsmp page
+<br>- pages - fixed modifications section description text not appearing on amazonsmp page
+<br>- pages - fixed season 09 information in seasons section on amazonsmp page
+<br>- pages - fixed seasons section description text not appearing on amazonsmp page
+<br>- pages - added viaproxy section to amazonsmp page
+<br>- pages - fixed the seasons table displaying "Part Part 1" instead of "Part 1" in some cases on the amazonsmp page
+<br>- script - made it so 'rules' header is no longer clickable, now 'main rules', 'community code of conduct' and 'new members' are clickable, on amazonsmp page 
+<br>- pages - updated rules section on amazonsmp page
+<br>- pages - updated about section on amazonsmp page
+<br>- style - fixed an issue where tables and other elements would not cover the whole screen even when squished
+<br>- files - updated links for github version of website`
+        ],
+        [20260322, "Website Version 4.1.0 Release", `
 Main Updates: added separate amazonsmp season pages (for temporary world, really old worlds, season9, season10, season 11, season 12), updated dohst page, updated amazonsmp page, added toggleable sections to amazonsmp page for better navigation, added amazonsmp community code of conduct, updated style.
             
 <br><br>Raw Changelog File (sorry in advance if it contains anything inappropriate):<br>
@@ -315,6 +336,7 @@ const PageContent = {
     
     content_amazonsmp_details: ["as13p1", "1.21.11", "0.18.4", "0.141.3"],
     content_amazonsmp_description_mods: [
+        `Geyser-Fabric is no longer used on the server. Instead, <a href="https://geysermc.org/download">Geyser-ViaProxy</a> is used on <a href="https://github.com/ViaVersion/ViaProxy">ViaProxy</a>, which is technically a separate program from the server. Please check <a href="#proxy">the ViaProxy section</a> for more information.`,
         `There are no required mods this season, you can join with a vanilla client. However, i recommend that you use at least the mods listed in the 'Recommended Mods' table (If you are not on 1.21.11, then you can use <a href="https://modrinth.com/mod/viafabric">ViaFabric</a> to join).`,
         `All mods are for <a href="https://fabricmc.net">the Fabric mod loader</a>, and each mod is made by its respective creator (which can be found on the modrinth page of that mod).`,
         `All mods are linked to <a href="https://modrinth.com">Modrinth</a>, except for GeyserMC which is linked to <a href="https://geysermc.org">GeyserMC</a>.`,
@@ -324,6 +346,7 @@ const PageContent = {
         ['AmbientSounds', 'listentonature', '6.3.5', 'https://modrinth.com/mod/ambientsounds/version/JZUqW70J', 'client'], 
         ['Architectury API', 'An intermediary api aimed to ease developing multiplatform mods.', '19.0.1', 'https://modrinth.com/mod/architectury-api/version/19.0.1+fabric', 'both', true], 
         ['Axiom', 'The all-in-one tool for editing Minecraft Worlds.', '5.3.0', 'https://modrinth.com/mod/axiom/version/uoTNUpOT', 'client'], 
+        ['BanHammer', 'Simple, customisable punishment utility mod for Fabric.', '0.16.2', 'https://modrinth.com/mod/banhammer/version/0.16.2+1.21.11', 'server'], 
         ['BetterF3', "BetterF3 is a mod that replaces Minecraft's original debug HUD with a highly customizable, more human-readable HUD.", '17.0.0', 'https://modrinth.com/mod/betterf3/version/17.0.0', 'client'], 
         ['Better Advancements', 'Better Advancements tries to improve the UI and UX for the advancements system in minecraft 1.12+ in a modded environment.', '0.4.8.51', 'https://modrinth.com/mod/better-advancements/version/wPZWTfJd', 'client'], 
         ['Better Statistics Screen', 'A Minecraft mod that improves the statistics screen and makes it more useful.', '5.0.0-beta.6', 'https://modrinth.com/mod/better-stats/version/5.0.0-beta.6+fabric-1.21.11', 'client'], 
@@ -335,7 +358,8 @@ const PageContent = {
         ['Entity Culling', 'Using async path-tracing to hide Block-/Entities that are not visible', '1.9.5', 'https://modrinth.com/mod/entityculling/version/Dx3xsUER', 'client'], 
         ['FerriteCore', 'Memory usage optimizations.', '8.2.0', 'https://modrinth.com/mod/ferrite-core/version/8.2.0-fabric', 'both'], 
         ['Floodgate fabric', 'Hybrid mode plugin to allow for connections from Geyser to join online mode servers.', '2.2.6-b54', 'https://modrinth.com/mod/floodgate/version/wzwExuYr', 'server'],
-        ['GeyserMC fabric', 'Enable clients from Minecraft Bedrock Edition to join your Minecraft Java server.', 'Build 1099 14/03/2026', 'https://geysermc.org', 'server'], 
+        ['Forge Config API Port', `NeoForge's & Forge's config systems provided to other modding ecosystems. Designed for a multiloader architecture.`, '21.11.1', 'https://modrinth.com/mod/forge-config-api-port/version/uXrWPsCu', 'server', true],
+        //['GeyserMC fabric', 'Enable clients from Minecraft Bedrock Edition to join your Minecraft Java server.', 'Build 1099 14/03/2026', 'https://geysermc.org', 'server'], 
         ['Iris Shaders', 'A modern shader pack loader for Minecraft intended to be compatible with existing OptiFine shader packs', '1.10.6', 'https://modrinth.com/mod/iris/version/1.10.6+1.21.11-fabric', 'client'], 
         ['Litematica', 'A client-side schematic mod with extra features for creative mode work', '0.26.1', 'https://modrinth.com/mod/litematica/version/0.26.1', 'client'], 
         ['Lithium', 'No-compromises game logic optimization mod. Well suited for clients and servers of all kinds. Now available for Fabric and NeoForge!', '0.21.4', 'https://modrinth.com/mod/lithium/version/mc1.21.11-0.21.4-fabric', 'both', false], 
@@ -344,6 +368,8 @@ const PageContent = {
         ['Mod Menu', 'Adds a mod menu to view the list of mods you have installed.', 'v17.0.0-beta.2', 'https://modrinth.com/mod/modmenu/version/17.0.0-beta.2', 'client'], 
         ['No Chat Reports', 'Makes chat unreportable (where possible)', '2.18.0', 'https://modrinth.com/mod/no-chat-reports/version/Fabric-1.21.11-v2.18.0', 'both', true], 
         ['No Chat Restrictions', 'Restores access to game chat for all accounts', '1.0.0', 'https://modrinth.com/mod/no-chat-restrictions/version/Fabric-MC1.21.11-v1.0.0', 'client', true], 
+        ['Open Parties and Claims', `Adds the ability to claim chunks and make player parties, integrates with Xaero's Minimap and World Map.`, '0.25.10', 'https://modrinth.com/mod/open-parties-and-claims/version/fabric-1.21.11-0.25.10', 'server', true],
+        ['Player Roles', 'Role & permission management for Fabric servers.', '1.8.1', 'https://modrinth.com/mod/player-roles/version/1.8.1+1.21.11', 'server'], 
         ['ReplayMod', 'A Minecraft Mod to record, relive and share your experience.', '2.6.25', 'https://modrinth.com/mod/replaymod/version/1.21.11-2.6.25', 'client'], 
         ['Replay Voice Chat', 'A compatibility mod to record Simple Voice Chat with ReplayMod', '1.3.12', 'https://modrinth.com/mod/replay-voice-chat/version/fabric-1.21.11-1.3.12', 'client'], 
         ['Roughly Enough Items (REI)', 'Clean and Customizable. Alternative to Just Enough Items/JEI.', '21.11.814', 'https://modrinth.com/mod/rei/version/21.11.814+fabric', 'both', true], 
@@ -351,6 +377,7 @@ const PageContent = {
         ['Servux', 'Servux is a server-side mod that provides support for some client-side mods, such as sending structure bounding boxes for MiniHUD', '0.9.2', 'https://modrinth.com/mod/servux/version/0.9.2', 'server'], 
         ['Simple Voice Chat', 'A working voice chat in Minecraft.', '2.6.12', 'https://modrinth.com/plugin/simple-voice-chat/version/fabric-1.21.11-2.6.12', 'both'], 
         ['Sodium', 'The fastest and most compatible rendering optimization mod for Minecraft. Now available for both NeoForge and Fabric!', '0.8.6', 'https://modrinth.com/mod/sodium/version/mc1.21.11-0.8.6-fabric', 'client', true], 
+        ['Styled Nicknames', `Simple, but configurable nicknaming mod allowing your server's players (and admins) to change their nickname with full formatting support.`, '1.11.1', 'https://modrinth.com/mod/styled-nicknames/version/1.11.1+1.21.11', 'server'], 
         ['TCDCommons API', "TheCSDev's personal library mod for the Minecraft modding environment.", '5.0.0-beta.6', 'https://modrinth.com/mod/tcdcommons/version/5.0.0-beta.6+fabric-1.21.11', 'client'], 
         ['Text Placeholder API', 'Placeholder and Text manipulation library for your Minecraft mods.', '2.8.2', 'https://modrinth.com/mod/placeholder-api/version/2.8.2+1.21.10', 'client'], 
         ['ViaBackwards', 'Allow older Java Edition clients to connect to newer servers.', '5.7.2', 'https://modrinth.com/plugin/viabackwards/version/5.7.2', 'server'],
@@ -369,7 +396,7 @@ const PageContent = {
         ['classic fishing loot', 'Reverts the fishing look back to its per 1.16 loot table.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
         ['coordinates hud', 'Adds information to your action bar. xyz coordinates and a 24 hour clock.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
         ['custom nether portals', 'Ignite Nether portals of any shape and size you like, or use crying obsidian in the portal frame.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-        ['dohst enhancements', 'Makes netherite uncraftable, makes armor trim recipes cheaper, and more.', '<a href="https://github.com/dohst1">Dohst</a>', 'unavailable.html'],
+        ['dohst enhancements', 'Makes netherite uncraftable, makes armor trim recipes cheaper, increases the build height in the nether, and more.', '<a href="https://github.com/dohst1">Dohst</a>', 'unavailable.html'],
         ['double shulker shells', 'Makes all shulkers drop two shells.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
         ['dragon drops', 'Makes the ender dragon drop an elytra on death (original also drops a dragon egg).', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
         ['durability ping', "Get notified when you damage an item with less than 10% durability. Fully customisable per player with '/trigger duraPing'", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
@@ -400,7 +427,11 @@ const PageContent = {
         ['amplified nether', 'The nether explorers simple dream, doubled height and amplified terrain.', '<a href="https://www.stardustlabs.net">Stardust Labs</a>', 'https://modrinth.com/datapack/amplified-nether/version/oZdWnGL8'],
     ],
     content_amazonsmp_players: [['name', 'username', 'uuid', 'admin', 'banned', 'link'], 
+        //['160016', 'unknown', 'unknown', 'yes', 'yes', 'unavailable.html'],
         ['Dohst', 'Dohst0', 'a72d1775-1031-4937-9fcb-3296809ef742', 'yes', 'no', 'https://github.com/dohst1'], 
+        //['Dohst', '.Dohst8', '00000000-0000-0000-0009-01f49e6d375a', 'yes', 'yes', 'https://github.com/dohst1'],
+        //['Dohst', 'Dohst_', '414ccf90-f3cb-4c38-a3b1-ebeacb4f5882', 'no', 'yes', 'https://github.com/dohst1'],
+        //['Enda', 'EndaDwagon', '3465711c-9766-4f21-87ff-491155d7a591', 'yes', 'no', 'https://www.youtube.com/@endadwagon'],
         ['Secret7', 'Secret7', '73045442-ec92-419c-a10c-d8efdab5f555', 'yes', 'no', 'unavailable.html'], 
         ['Cookielotty12', 'Cookielotty12', '193df712-49dd-4bd1-a21d-09cc6f953bd9', 'no', 'no', 'unavailable.html'], 
         ['Tackzs', 'Tackzs', 'd105fc83-6c49-4bfe-b8a3-0735cee598b4', 'no', 'no', 'unavailable.html'], 
@@ -411,23 +442,30 @@ const PageContent = {
         ['Dannygpr', '.Dannygpr00981', '00000000-0000-0000-0009-01f66bfb89a7', 'no', 'no', 'https://youtube.com/@danny_gpr'], 
         ['Filterrs', 'Filterrs', 'b0c9a712-0db0-4f23-9e25-128e259f8223', 'no', 'no', 'unavailable.html'], 
         ['Madhatters33', 'Madhatters33', '666a4058-85ba-4755-bec0-de7d652493ab', 'no', 'no', 'unavailable.html'],
+        ['Lily_mjr', '.Lily_mjr', '00000000-0000-0000-0009-01f6b26e63a3', 'no', 'no', 'unavailable.html'],
+        ['Cloopyster', '.Cloopyster', '00000000-0000-0000-0009-01f438621ed5', 'no', 'no', 'unavailable.html'],
+        ['UnkownPoint', 'UnkownPoint', 'b00b9fdd-eb7a-446c-bd56-5aba5d0784a6', 'no', 'no', 'unavailable.html'],
         ['unknown', 'unknown', 'unknown', 'no', 'no', 'unavailable.html'],
         ['unknown', 'unknown', 'unknown', 'no', 'no', 'unavailable.html'],
-        //['160016', 'unknown', 'unknown', '0', 'yes', 'unavailable.html'],
-        //['Dohst', 'Dohst_', '414ccf90-f3cb-4c38-a3b1-ebeacb4f5882', 'no', 'yes', 'https://github.com/dohst1'],
-        //['Enda', 'EndaDwagon', 'unknown', 'yes', 'no', 'https://www.youtube.com/@endadwagon'],
+        ['unknown', 'unknown', 'unknown', 'no', 'no', 'unavailable.html'],
     ],
     content_amazonsmp_about: [
-        `AmazonSMP is a private Minecraft server hosted by <a href="https://github.com/dohst1">Dohst</a>.`,
-        `This page is intended to be used only by current or past AmazonSMP Members.`,
+        `AmazonSMP is a private Minecraft server hosted by <a href="https://github.com/dohst1">Dohst</a>. This page is intended to be used only by current or past AmazonSMP Members.`,
         `Click on each section and subsection title (or table headers) to show or hide its content.`,
-        `NEW: <a href="#rules_community">A Community Code of Conduct has been added under Rules.</a>`,
-        `NEW: Pages with more details for each season have been added. You can find links to them from the season tables below (click on the season name).`,
+        `New: The Rules section has been updated.`,
+        `New: Links and details about ViaProxy and GeyserMC have been added.`,
+        //`NEW: <a href="#rules_community">A Community Code of Conduct and General Rules have been added to the Rules section.</a>`,
+        `New: Pages with more details for each season have been added. You can find links to them from the season tables below (click on the season name).`,
         `Season 12 Part 3 has ended, you can find downloads and other information below.`,
     ],
-    content_amazonsmp_seasons_details: [['title', 'name', 'start', 'end', 'types'], ['New Worlds', 'seasons_new', '2026/03/00', '2028/02/29', '4'], ['Old Worlds', 'seasons_old', '2023/03/00', '2026/02/28', '3'], ['Really Old Worlds', 'seasons_really_old', '2020/03/00', '2023/02/28', '0 1 2']],
+    content_amazonsmp_seasons_details: [['title', 'name', 'start', 'end', 'types'], 
+        ['Really Old Worlds', 'seasons_really_old', '2020/03/00', '2023/02/28', '0 1 2'],
+        ['Old Worlds', 'seasons_old', '2023/03/00', '2026/02/28', '3'], 
+        ['New Worlds', 'seasons_new', '2026/03/00', 'Present<!-- 2028/02/29 -->', '4'], 
+    ],
     content_amazonsmp_seasons: [['type', 'name', 'part', 'start', 'end', 'life', 'version', 'description', 'link'], 
-        ['4', 'Season 13', 'none', '2026/03/20', 'present<!-- max 2028/02/29 -->', '&gt;2', '1.21.11 vanilla <br> (with crossplay)', 'World Download Unavailable<br><a href="assets/amazonsmp/as13p1-mods20260321-recomended.zip">Recommended Mods (2026/03/21) (7.68 MB)</a>', 'season13.html'], 
+        ['4', 'Season 13', 'none', '2026/03/20', 'present<!-- max 2028/02/29 -->', '&gt;5', '1.21.11 vanilla <br> (with crossplay)', 'World Download Unavailable<br><a href="assets/amazonsmp/as13p1-mods20260321-recomended.zip">Recommended Client Mods (2026/03/21) (7.68 MB)</a>', 'season13.html'], 
+        
         ['3', 'Temporary 04', 'none', '2025/07/12', '2025/07/22', '10', '1.21.6 - 1.21.7', 'Unavailable', 'seasons_temporary.html#temporary4'], 
         ['3', 'Season 12', 'Part 3', '2025/07/22', '2026/02/10', '203', '1.20.1 modded', '<a href="https://www.mediafire.com/file/2i03ah993otr8f8/season12p3-world_final.zip/file">World Download (1 290 MB)</a><br><a href="https://www.mediafire.com/file/ru4533taoswplkg/as12p3-mods-202511.zip/file">Required Mods (153 MB)</a><br><a href="https://www.mediafire.com/file/9tgz47ufs5smnqb/season12p3-mods_full.zip/file">Server Mods (544 MB)</a>', 'season12.html#part3'], 
         ['3', '', 'Part 2', '2025/06/14', '2025/07/11', '27', '1.21.5 - 1.21.6', '<a href="https://www.mediafire.com/file/hecgl593yvencay/season12p2_full.zip/file">World Download (468 MB)</a>', 'season12.html#part2'], 
@@ -438,14 +476,14 @@ const PageContent = {
         ['3', 'Season 10', 'Part 2', '2023/12/02', '2024/02/20', '80', '1.20.4', '<a href="https://www.mediafire.com/file/i9o0nj6qafc11cb/season10p2_full.zip/file">World Download (252 MB)</a>', 'season10.html#part2'], 
         ['3', '', 'Part 1', '2023/06/10', '2023/10/01', '113', '1.20.1 - 1.20.4', '<a href="https://www.mediafire.com/file/dggv5d0npgsl1lb/season10p1_full.zip/file">World Download (195 MB)</a>', 'season10.html#part1'], 
         ['3', 'Temporary 02', 'none', '2023/05/??', '2023/05/??', '&lt;20', 'Unknown', 'Unavailable', 'seasons_temporary.html#temporary2'], 
-        ['3', 'Season 09', 'After 528', '2023/03/01', '2023/06/10', '101', '1.19.3 - 1.19.4', '<a href="https://www.mediafire.com/file/49i3pubuxhrwt4s/season9p2_full.zip/file">World Download (145 MB)</a>', 'season9.html'], 
-        ['3', '', 'Before 528', '', '', '', '', '<a href="https://www.mediafire.com/file/qw5hp6crqlq76ow/season9p1_full.zip/file">World Download (198 MB)</a>', 'season9.html'], 
+        ['3', 'Season 09', '', '2023/03/01', '2023/06/10', '101', '1.19.3 - 1.19.4', 'After 528:<br><a href="https://www.mediafire.com/file/49i3pubuxhrwt4s/season9p2_full.zip/file">World Download (145 MB)</a> <br>Before 528:<br><a href="https://www.mediafire.com/file/qw5hp6crqlq76ow/season9p1_full.zip/file">World Download (198 MB)</a>', 'season9.html'], 
+
         ['2', 'Season 08', 'none', '2023/01/10', '2023/02/26', '47', '1.19.2 modded', '<a href="https://www.mediafire.com/file/gzs8vlz07g51och/season8.zip/file">World Download (85.9 MB)</a>', 'seasons_old.html#season8'], 
         ['2', 'Season 07', 'none', '2022/12/11', '2022/12/23', '12', '1.19.3', '<a href="https://www.mediafire.com/file/2ftn95ch840un5n/season7_full.zip/file">World Download (151 MB)</a>', 'seasons_old.html#season7'], 
         ['2', 'Temporary 01', 'none', '2022/11/??', '2022/12/??', '&lt;20', '1.19.1 modded', 'Unavailable', 'seasons_temporary.html#temporary1'], 
         ['2', 'Season 06', 'none', '2022/11/09', '2022/11/22', '13', '1.19.2 - 1.19.3', '<a href="https://www.mediafire.com/file/koa63zhwro7qued/season6.zip/file">World Download (94.3 MB)</a>', 'seasons_old.html#season6'], 
         ['2', 'Season 05', 'none', '2022/09/19', '2022/11/06', '48', '1.19.2', '<a href="https://www.mediafire.com/file/17sczuqf9kk5tkb/season5.zip/file">World Download (78.5 MB)</a>', 'seasons_old.html#season5'], 
-        ['2', 'Season 04', 'none', '2022/08/20', '2022/09/16', '27', '1.19 modded', '<a href="https://www.mediafire.com/file/dgdwmcq92wgavpo/season4.zip/file">World Download (95.6 MB)</a>', 'seasons_old.html#season4'], 
+        ['2', 'Season 04', 'none', '2022/08/20', '2022/09/16', '27', '1.19.0 modded', '<a href="https://www.mediafire.com/file/dgdwmcq92wgavpo/season4.zip/file">World Download (95.6 MB)</a>', 'seasons_old.html#season4'], 
         ['1', 'Season 03', 'none', '2022/06/18', '2022/08/18', '61', '1.18.2 - 1.19.2', '<a href="https://www.mediafire.com/file/evz7azbg4k07ztf/season3.zip/file">World Download (96.9 MB)</a>', 'seasons_old.html#season3'], 
         ['1', 'Season 02', 'none', '2022/05/03', '2022/06/05', '34', '1.18.1', 'Unavailable', 'seasons_old.html#season2'], 
         ['1', 'Season 01', 'none', '2022/03/16', '2022/05/02', '47', '1.18.0', 'Unavailable', 'seasons_old.html#season1'], 
@@ -459,11 +497,16 @@ const PageContent = {
         //`Downloads (for world and mods) for the current Season will be updated every Sunday at around 22:00 UTC (These are temporary downloads and will be deleted once a new set is added).`,
         `All downloads are linked to <a href="https://www.mediafire.com">MediaFire</a>, or directly to this website.`,
     ],
+    content_amazonsmp_viaproxy: [
+        `Link: <a href="https://github.com/ViaVersion/ViaProxy">https://github.com/ViaVersion/ViaProxy</a>`,
+        `Description (from github): Standalone proxy which allows players to join EVERY Minecraft server version (Classic, Alpha, Beta, Release, Bedrock)`,
+        `This proxy is used with <a href="https://geysermc.org">GeyserMC</a> and <a href="https://modrinth.com/mod/floodgate/version/wzwExuYr">Floodgate</a> to allow bedrock clients (who are on the latest minecraft version) join the server (which is on minecraft 1.21.11). <a href="https://geysermc.org/download">Geyser-ViaProxy</a> is used on <a href="https://github.com/ViaVersion/ViaProxy">ViaProxy</a>, which is technically a separate program from the server. However, because this is all still server sided, bedrock players will be able to join as they did before without any differences.`,
+        `<a href="https://github.com/ViaVersion/ViaProxy">This program is NOT made by me, all credit for this goes to the developers on the github page</a>.`,
+    ],
 
-    set_amazonsmp: function (targets = [2, "about", "seasons", "mods", "players"], option = "all") {
-        console.log(this.content_amazonsmp_seasons)
+    set_amazonsmp: function (targets = [2, "about", "seasons", "mods", "players", "proxy"], options = "all") {
         // targets are the elements which you want the content to be printed in, index 1 is for mods, and index 2 is for players
-        // option can be: 'players' 'datapacks' 'server' 'recommended' 'mods' 'all', if multiple, separate each with a space ' '
+        // options can be: 'seasons' 'players' 'datapacks' 'server' 'recommended' 'mods' 'all', if multiple, separate each with a space ' '
 
         let text_seasons = ``;
         let set_seasons = function () {
@@ -509,7 +552,7 @@ const PageContent = {
                     text_seasons += `<th rowspan="1" colspan="2"><a href="${PageContent.content_amazonsmp_seasons[i][8]}">${PageContent.content_amazonsmp_seasons[i][1]}</a></th>`
                     parts++
                 } else if (parts != 0) {
-                    text_seasons += `<td><a href="${PageContent.content_amazonsmp_seasons[i][8]}">Part ${PageContent.content_amazonsmp_seasons[i][2]}</a></td>`
+                    text_seasons += `<td><a href="${PageContent.content_amazonsmp_seasons[i][8]}">${PageContent.content_amazonsmp_seasons[i][2]}</a></td>`
                 } else if (PageContent.content_amazonsmp_seasons[i][2] == 'Part 3') {
                     parts = 3;
                     text_seasons += `<th rowspan="3" colspan="1"><a href="${PageContent.content_amazonsmp_seasons[i][8]}">${PageContent.content_amazonsmp_seasons[i][1]}</a></th><td><a href="${PageContent.content_amazonsmp_seasons[i][8]}">Part 3</a></td>`
@@ -536,7 +579,7 @@ const PageContent = {
             <table>
             <thead id="links_recommended-header">
             <tr>
-            <th colspan="3">Recommended Mods (minecraft ${PageContent.content_amazonsmp_details[1]}, fabric ${PageContent.content_amazonsmp_details[2]})</th>
+            <th colspan="3">Recommended Client Mods (minecraft ${PageContent.content_amazonsmp_details[1]}, fabric ${PageContent.content_amazonsmp_details[2]})</th>
             </tr>
             <tr>
             <th>Name</th>
@@ -646,8 +689,20 @@ const PageContent = {
         };
 
         let set_mods_description = function () {
-            for (let i = 0; i < this.content_amazonsmp_description_mods.length; i++) {
-                text_mods += `<p>${this.content_amazonsmp_description_mods[i]}</p>`
+            for (let i = 0; i < PageContent.content_amazonsmp_description_mods.length; i++) {
+                text_mods += `<p>${PageContent.content_amazonsmp_description_mods[i]}</p>`
+            };
+        }
+        let set_seasons_description = function () {
+            for (let i = 0; i < PageContent.content_amazonsmp_description_seasons.length; i++) {
+                text_seasons += `<p>${PageContent.content_amazonsmp_description_seasons[i]}</p>`
+            };
+        }
+
+        let text_proxy = ``
+        let set_viaproxy_description = function () {
+            for (let i = 0; i < PageContent.content_amazonsmp_viaproxy.length; i++) {
+                text_proxy += `<p>${PageContent.content_amazonsmp_viaproxy[i]}</p>`
             };
         }
         
@@ -655,12 +710,12 @@ const PageContent = {
         /* if (index == 0 || index >= updates.length || !index) {return null}
         else if (description) {document.getElementById(target).innerHTML = updates[index][2]} 
         else {document.getElementById(target).innerHTML = updates[index][0] + " - " + updates[index][1]} */
-        option = option.split(" ");
+        options = options.split(" ");
         let last = "";
-        for (let i = 0; i < option.length; i++) {
-            if (option[i] == last) {
+        for (let i = 0; i < options.length; i++) {
+            if (options[i] == last) {
                 
-            } else if (option[i] == "all") {
+            } else if (options[i] == "all") {
                 text_seasons = ``;
                 text_mods = ``;
                 text_players = ``;
@@ -669,22 +724,32 @@ const PageContent = {
                 set_mods();
                 set_datapacks();
                 set_players();
+                set_mods_description()
+                set_viaproxy_description()
+                set_seasons_description()
                 break;
-            } else if (option == "mods") {
+            } else if (options[i] == "mods") {
                 set_recommended();
-                mods();
-            } else if (option == "seasons") {
-                set_seasons();
-            } else if (option == "recommended") {
-                set_recommended();
-            } else if (option == "server") {
                 set_mods();
-            } else if (option == "datapacks") {
+                set_viaproxy_description()
+                set_mods_description()
+            } else if (options[i] == "seasons") {
+                set_seasons();
+                set_seasons_description()
+            } else if (options[i] == "recommended") {
+                set_recommended();
+                set_mods_description()
+            } else if (options[i] == "server") {
+                set_mods();
+                set_viaproxy_description()
+                set_mods_description()
+            } else if (options[i] == "datapacks") {
                 set_datapacks();
-            } else if (option == "players") {
+                //set_mods_description()
+            } else if (options[i] == "players") {
                 set_players();
             };
-            last = option[i];
+            last = options[i];
         };
         
         // about
@@ -697,6 +762,7 @@ const PageContent = {
         document.getElementById(targets[2]).innerHTML = text_seasons;
         document.getElementById(targets[3]).innerHTML = text_mods;
         document.getElementById(targets[4]).innerHTML = text_players;
+        document.getElementById(targets[5]).innerHTML = text_proxy;
         
     },
     

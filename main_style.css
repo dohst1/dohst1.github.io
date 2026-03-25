@@ -47,6 +47,8 @@
     --font-size-small: 20px
 } */
 
+/*  --text-dark: rgb(41, 211, 141);#29d38d */
+
 
 /* a 2026 current */
 :root { /* hsl hue saturation lightness */ /* pastel = less saturation, more brightness */
@@ -211,7 +213,7 @@ code:hover, th:hover, td:hover, button:hover, li:hover {
 }
 
 span, table, ul {
-    width: 80%;
+    /* width: 80%; */
     text-align: left;
     min-height: 50px;
     justify-content: start;
