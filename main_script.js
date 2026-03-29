@@ -3,11 +3,41 @@
 
 
 // variables
-const version = "v4.1.1-20260325";
+const creator = 'Dohst23';
+const project = 'rai_website';
+const project_part = 'main javascript';
+const version = '4.1.4-20260329';
 const updates = [
         // newest first (preferably, but the program sorts it either way)
         [20291231, "title", "description"], // preset (date title description)
         // shift all (except preset) down when adding new
+        [20260329, "Website Version 4.1.2 to 4.1.4 Patch", `
+Main Updates: updated amazonsmp page season 13 information, updated amazonsmp page rules, updated amazonsmp player information, updated amazonsmp season 13 recommended mods table and zip file
+
+<br><br>Raw Changelog file:
+<br>- #### v4.1.2-20260326
+<br>- files - updated changelog
+<br>- files - added scripts
+<br>- #### v4.1.3-20260327
+<br>- files - updated changelog
+<br>- script - added more constants for project data
+<br>- pages - updated rules section on amazonsmp page
+<br>- files - updated python script and data
+<br>- #### v4.1.4-20260329
+<br>- files - updated changelog
+<br>- files - updated script
+<br>- script - updated amazonsmp player list
+<br>- script - updated amazonsmp player table generator (to be compatible with dds2)
+<br>- script - updated amazonsmp season 13 part 1 recommended mods link
+<br>- files - added new amazonsmp season 13 part 1 recommended mods zip file
+<br>- pages - updated amazonsmp recommended mods table
+<br>- pages - updated rules section on amazonsmp page
+<br>- script - updated updates
+<br>- files - updated links for github version
+<br>- #### issues and suggestions
+<br>- v4.1.0-20260322 - some amazonsmp season pages have outdated download links (moved to v4.1.4)
+<br>- v4.1.0-20260322 - amazonsmp season 13 page is missing (moved to v4.1.4)
+            `],
         [20260325, "Website Version 4.1.1 Patch", `
 Main Updates: updated amazonsmp page rules section, updated amazonsmp data, fixed issue where some content on amazonsmp page was not showing, added viaproxy section to amazonsmp page, updated some descriptions around the website.
 
@@ -92,11 +122,10 @@ Main Updates: added separate amazonsmp season pages (for temporary world, really
 <br>- #### issues and suggestions
 <br>- v4.1.0-20260322 - some amazonsmp season pages have outdated download links (new)
 <br>- v4.1.0-20260322 - amazonsmp season 13 page is missing (new)
-            
             `],
         [20260320, "AmazonSMP Season 13 Start", "Started a new world on vanilla minecraft 1.21.11."],
         [20260320, "Website Version 4.0 Release", "Changelog for v4.0.x will be merged with v4.1.0 changes. Please check that for full changes."],
-        [20260319, "Website Moved To Gitlab", 'The main repository for website project files will now be on Gitlab since <a href="https://github.com/dohst1">Dohst</a> has had issues with github recently. The Github version will still be occasionally updated, although mostly only for major updates or patches.'],
+        [20260319, "Website Moved To Gitlab", 'The main repository for website project files will now be on Gitlab since <a href="https://gitlab.com/dohst1">Dohst</a> has had issues with github recently. The Github version will still be occasionally updated, although mostly only for major updates or patches.'],
         [20260318, "Website Version 3.4 Beta Release", "description4"],
         [20260316, "Website Version Renaming", "AmazonSMP Website versions stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). Dohst Website (rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0."],
         //[20260301, "Dohst23 Type04 Beginning", "From 20260301 to 20280229, supervised by 230023 and 260026, directed by e16, funded by /////////."],
@@ -383,8 +412,8 @@ const PageContent = {
         ['ViaBackwards', 'Allow older Java Edition clients to connect to newer servers.', '5.7.2', 'https://modrinth.com/plugin/viabackwards/version/5.7.2', 'server'],
         ['ViaFabric', 'Allows to connect to older servers with older versions.', '5.7.2', 'https://modrinth.com/mod/viafabric/version/0.4.21+139-1.14-1.21', 'both', false],
         ['ViaVersion', 'Allow newer Java Edition clients to connect to older servers.', '5.7.2', 'https://modrinth.com/plugin/viaversion/version/5.7.2', 'server'],
-        ["Xaero's Minimap", "Displays a map of the nearby world terrain, players, mobs, entities in the corner of your screen. Lets you create waypoints which help you find the locations you've marked.", '25.3.10', 'https://modrinth.com/mod/xaeros-minimap/version/fabric-1.21.11-25.3.10', 'client', false], 
-        ["Xaero's World Map", "Adds a full screen world map which shows you what you have explored in the world. Works great together with Xaero's Minimap.", '1.40.11', 'https://modrinth.com/mod/xaeros-world-map/version/fabric-1.21.11-1.40.11', 'client', false], 
+        ["Xaero's Minimap", "Displays a map of the nearby world terrain, players, mobs, entities in the corner of your screen. Lets you create waypoints which help you find the locations you've marked.", '25.3.10', 'https://modrinth.com/mod/xaeros-minimap/version/fabric-1.21.11-25.3.10', 'client', true], 
+        ["Xaero's World Map", "Adds a full screen world map which shows you what you have explored in the world. Works great together with Xaero's Minimap.", '1.40.11', 'https://modrinth.com/mod/xaeros-world-map/version/fabric-1.21.11-1.40.11', 'client', true], 
         ],
     content_amazonsmp_datapacks: [['name', 'description', 'author', 'link'], 
         ['afk display', "Changes a player's name color if they havent moved for over 5 minutes.", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
@@ -426,34 +455,32 @@ const PageContent = {
         ['xp bottling', 'Right click an enchanting table with an empty bottle to fill it with some of your xp. smelt an xp bottle in a furnace to losslessly get your xp back.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
         ['amplified nether', 'The nether explorers simple dream, doubled height and amplified terrain.', '<a href="https://www.stardustlabs.net">Stardust Labs</a>', 'https://modrinth.com/datapack/amplified-nether/version/oZdWnGL8'],
     ],
-    content_amazonsmp_players: [['name', 'username', 'uuid', 'admin', 'banned', 'link'], 
-        //['160016', 'unknown', 'unknown', 'yes', 'yes', 'unavailable.html'],
-        ['Dohst', 'Dohst0', 'a72d1775-1031-4937-9fcb-3296809ef742', 'yes', 'no', 'https://github.com/dohst1'], 
-        //['Dohst', '.Dohst8', '00000000-0000-0000-0009-01f49e6d375a', 'yes', 'yes', 'https://github.com/dohst1'],
-        //['Dohst', 'Dohst_', '414ccf90-f3cb-4c38-a3b1-ebeacb4f5882', 'no', 'yes', 'https://github.com/dohst1'],
-        //['Enda', 'EndaDwagon', '3465711c-9766-4f21-87ff-491155d7a591', 'yes', 'no', 'https://www.youtube.com/@endadwagon'],
-        ['Secret7', 'Secret7', '73045442-ec92-419c-a10c-d8efdab5f555', 'yes', 'no', 'unavailable.html'], 
-        ['Cookielotty12', 'Cookielotty12', '193df712-49dd-4bd1-a21d-09cc6f953bd9', 'no', 'no', 'unavailable.html'], 
-        ['Tackzs', 'Tackzs', 'd105fc83-6c49-4bfe-b8a3-0735cee598b4', 'no', 'no', 'unavailable.html'], 
-        ['WhatCheeseburger', 'WhatCheeseburger', '438f0db2-ad4f-44d8-8d21-2bbb5600e676', 'yes', 'no', 'https://www.twitch.tv/whatcheeseburgertv'], 
-        ['MandoEAM', 'MandoEAM', '9df74492-2311-483f-9f8b-4ba35d9af733', 'yes', 'no', 'https://www.youtube.com/@MandoEAM'], 
-        ['ATAT66', 'ATAT66', '0ca533c1-e6a6-486a-86d0-aabe670031b4', 'no', 'no', 'unavailable.html'], 
-        ['ImGapplejuice', 'ImGapplejuice', 'c50ab55c-a3b1-42e5-b2d5-772ddc3f5584', 'no', 'no', 'unavailable.html'], 
-        ['Dannygpr', '.Dannygpr00981', '00000000-0000-0000-0009-01f66bfb89a7', 'no', 'no', 'https://youtube.com/@danny_gpr'], 
-        ['Filterrs', 'Filterrs', 'b0c9a712-0db0-4f23-9e25-128e259f8223', 'no', 'no', 'unavailable.html'], 
-        ['Madhatters33', 'Madhatters33', '666a4058-85ba-4755-bec0-de7d652493ab', 'no', 'no', 'unavailable.html'],
-        ['Lily_mjr', '.Lily_mjr', '00000000-0000-0000-0009-01f6b26e63a3', 'no', 'no', 'unavailable.html'],
-        ['Cloopyster', '.Cloopyster', '00000000-0000-0000-0009-01f438621ed5', 'no', 'no', 'unavailable.html'],
-        ['UnkownPoint', 'UnkownPoint', 'b00b9fdd-eb7a-446c-bd56-5aba5d0784a6', 'no', 'no', 'unavailable.html'],
-        ['unknown', 'unknown', 'unknown', 'no', 'no', 'unavailable.html'],
-        ['unknown', 'unknown', 'unknown', 'no', 'no', 'unavailable.html'],
-        ['unknown', 'unknown', 'unknown', 'no', 'no', 'unavailable.html'],
+    content_amazonsmp_players: [['04 username', '08 link', '10 namemc', '11 uuid', '12 admin', '13 banned , date time reason, ...', ],
+        ['Dohst', 'https://github.com/dohst1', 'Dohst0', 'a72d1775-1031-4937-9fcb-3296809ef742', '3', 'no, 20260320 0 none', ],
+        ['Secret7', 'unknown', 'Secret7', '73045442-ec92-419c-a10c-d8efdab5f555', '3', 'no, 20260320 0 none', ],
+        ['Cookielotty12', 'unknown', 'Cookielotty12', '193df712-49dd-4bd1-a21d-09cc6f953bd9', '1', 'no, 20260320 0 none', ],
+        ['Tackzs', 'unknown.html', 'Tackzs', 'd105fc83-6c49-4bfe-b8a3-0735cee598b4', '1', 'no, 20260320 0 none', ],
+        ['WhatCheeseburger', 'https://www.twitch.tv/whatcheeseburgertv', 'WhatCheeseburger', '438f0db2-ad4f-44d8-8d21-2bbb5600e676', '3', 'no, 20260320 0 none', ],
+        ['MandoEAM', 'https://www.youtube.com/@MandoEAM', 'MandoEAM', '9df74492-2311-483f-9f8b-4ba35d9af733', '3', 'no, 20260320 0 none', ],
+        ['ATAT66', 'unknown', 'ATAT66', '0ca533c1-e6a6-486a-86d0-aabe670031b4', '0', 'no, 20260320 0 none', ],
+        ['unknown', 'unknown', 'ImGapplejuice', 'c50ab55c-a3b1-42e5-b2d5-772ddc3f5584', '0', 'no, 20260320 0 none', ],
+        ['dannygpr', 'https://youtube.com/@danny_gpr', 'Danny_GPR', '33a86567-4671-4bfe-b0cd-37d957c0d63a', '0', 'no, 20260320 0 none', ],
+        ['unknown', 'unknown', 'Filterrs', 'b0c9a712-0db0-4f23-9e25-128e259f8223', '0', 'no, 20260320 0 none', ],
+        ['unknown', 'unknown.html', 'Madhatters33', '666a4058-85ba-4755-bec0-de7d652493ab', '0', 'no, 20260320 0 none', ],
+        //['lily_mjr', 'unknown.html', '.Lily_mjr', '00000000-0000-0000-0009-01f6b26e63a3', '1', 'no, 20260320 0 none', ],
+        ['cloopyster', 'unknown', '.Cloopyster', '00000000-0000-0000-0009-01f438621ed5', '0', 'no, 20260320 0 none', ],
+        ['UnkownPoint', 'unknown', 'UnkownPoint', 'b00b9fdd-eb7a-446c-bd56-5aba5d0784a6', '0', 'no, 20260320 0 none', ],
+        ['unknown', 'unknown', 'VaJdSvr25', '1de8104f-23a9-4466-81a6-b62b265ccd11', '0', 'no, 20260320 0 none', ],
+        ['unknown', 'unknown', 'unknown', 'unknown', '0', 'no, 20260320 0 none', ],
+        //['unknown', 'unknown', 'unknown', 'unknown', '0', 'no, 20260320 0 none', ],
+        ['unknown', 'unknown', '.Mercuti-oh', 'unknown', '0', 'no, 20260320 0 none', ],
+        //['unknown', 'unknown', 'unknown', 'unknown', '0', 'no, 20260320 0 none', ]
     ],
     content_amazonsmp_about: [
         `AmazonSMP is a private Minecraft server hosted by <a href="https://github.com/dohst1">Dohst</a>. This page is intended to be used only by current or past AmazonSMP Members.`,
         `Click on each section and subsection title (or table headers) to show or hide its content.`,
         `New: The Rules section has been updated.`,
-        `New: Links and details about ViaProxy and GeyserMC have been added.`,
+        //`New: Links and details about ViaProxy and GeyserMC have been added.`,
         //`NEW: <a href="#rules_community">A Community Code of Conduct and General Rules have been added to the Rules section.</a>`,
         `New: Pages with more details for each season have been added. You can find links to them from the season tables below (click on the season name).`,
         `Season 12 Part 3 has ended, you can find downloads and other information below.`,
@@ -464,7 +491,7 @@ const PageContent = {
         ['New Worlds', 'seasons_new', '2026/03/00', 'Present<!-- 2028/02/29 -->', '4'], 
     ],
     content_amazonsmp_seasons: [['type', 'name', 'part', 'start', 'end', 'life', 'version', 'description', 'link'], 
-        ['4', 'Season 13', 'none', '2026/03/20', 'present<!-- max 2028/02/29 -->', '&gt;5', '1.21.11 vanilla <br> (with crossplay)', 'World Download Unavailable<br><a href="assets/amazonsmp/as13p1-mods20260321-recomended.zip">Recommended Client Mods (2026/03/21) (7.68 MB)</a>', 'season13.html'], 
+        ['4', 'Season 13', 'none', '2026/03/20', 'present<!-- max 2028/02/29 -->', '&gt;10', '1.21.11 vanilla <br> (with crossplay)', 'World Download Unavailable<br><a href="assets/amazonsmp/as13p1-mods20260329-recomended.zip">Recommended Client Mods (2026/03/21) (12.5 MB)</a>', 'season13.html'], 
         
         ['3', 'Temporary 04', 'none', '2025/07/12', '2025/07/22', '10', '1.21.6 - 1.21.7', 'Unavailable', 'seasons_temporary.html#temporary4'], 
         ['3', 'Season 12', 'Part 3', '2025/07/22', '2026/02/10', '203', '1.20.1 modded', '<a href="https://www.mediafire.com/file/2i03ah993otr8f8/season12p3-world_final.zip/file">World Download (1 290 MB)</a><br><a href="https://www.mediafire.com/file/ru4533taoswplkg/as12p3-mods-202511.zip/file">Required Mods (153 MB)</a><br><a href="https://www.mediafire.com/file/9tgz47ufs5smnqb/season12p3-mods_full.zip/file">Server Mods (544 MB)</a>', 'season12.html#part3'], 
@@ -667,23 +694,23 @@ const PageContent = {
                     <tbody id="link_players">
             `
             for (let i = 1; i < PageContent.content_amazonsmp_players.length; i++) {
-                //[0'name', 1'description', 2'version', 3'link'], 
-                if (PageContent.content_amazonsmp_players[i][0] == PageContent.content_amazonsmp_players[i][1]) {
+                //['0username', '1link', '2namemc', '3uuid', '4admin', '5banned', ],
+                if (PageContent.content_amazonsmp_players[i][0] == PageContent.content_amazonsmp_players[i][2]) {
                     text_players += `<tr>
-                            <td colspan="2"><a href="${PageContent.content_amazonsmp_players[i][5]}">${PageContent.content_amazonsmp_players[i][0]}</a></td>
-                            <td>${PageContent.content_amazonsmp_players[i][2]}</td>
-                            <td>${PageContent.content_amazonsmp_players[i][3]}</td>
-                            <td>${PageContent.content_amazonsmp_players[i][4]}</td>
-                        </tr>`;
+                            <td colspan="2"><a href="${PageContent.content_amazonsmp_players[i][1]}">${PageContent.content_amazonsmp_players[i][0]}</a></td>`;
                 } else {
                     text_players += `<tr>
-                            <td><a href="${PageContent.content_amazonsmp_players[i][5]}">${PageContent.content_amazonsmp_players[i][0]}</a></td> 
-                            <td>${PageContent.content_amazonsmp_players[i][1]}</td>
-                            <td>${PageContent.content_amazonsmp_players[i][2]}</td>
-                            <td>${PageContent.content_amazonsmp_players[i][3]}</td>
-                            <td>${PageContent.content_amazonsmp_players[i][4]}</td>
-                        </tr>`;
+                            <td><a href="${PageContent.content_amazonsmp_players[i][1]}">${PageContent.content_amazonsmp_players[i][0]}</a></td> 
+                            <td>${PageContent.content_amazonsmp_players[i][2]}</td>`
                 }
+                text_players += `<td>${PageContent.content_amazonsmp_players[i][3]}</td>`
+                if (PageContent.content_amazonsmp_players[i][4] == "3") {
+                    text_players += `<td>yes</td>`
+                } else {
+                    text_players += `<td>no</td>`
+                }
+                text_players += `<td>${PageContent.content_amazonsmp_players[i][5]}</td>
+                        </tr>`;
             };
             text_players += `</tbody></table>`;
         };
