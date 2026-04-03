@@ -132,7 +132,7 @@
 
 [color_style="dark"] {
     --sat: 60%;
-    --lig1: 40%;
+    --lig1: 30%;
     --lig2: 25%;
     --lig3: 10%;
     --border-light: rgb(200, 200, 200);
@@ -140,8 +140,8 @@
 }
 [color_style="light"] {
     --sat: 20%;
-    --lig1: 50%;
-    --lig2: 40%;
+    --lig1: 40%;
+    --lig2: 35%;
     --lig3: 25%;
 }
 
@@ -194,7 +194,7 @@ footer, address {
 
 
 
-code, table, th, td, button, li, ul, ol, hr, img, span, div/* , .gallery div */ {
+code, table, th, td, button, li, ul, ol, hr, img, span, div, section/* , .gallery div */ {
     background-color: var(--background-dark); /* was dark */
     margin: var(--font-size-normal);
     border: 2px solid var(--border);
@@ -210,6 +210,20 @@ code, table, th, td, button, li, ul, ol, hr, img, span, div/* , .gallery div */ 
 code:hover, th:hover, td:hover, button:hover, li:hover {
     border-color: var(--border-light);
     /* background-color: var(--background-light); */
+}
+section {
+    padding: 0;
+}
+section *, section h3, section p {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: var(--font-size-normal);
+}
+section a {
+    padding: 0;
+}
+section section, table th, span {
+    background-color: var(--background-light);
 }
 
 span, table, ul {
@@ -232,6 +246,7 @@ table * {
     justify-content: start;
     /* width: 50%; */
 }
+
 main table, main ul, li {
     border: 0;
     background: 0;
@@ -285,6 +300,19 @@ p, h2, h3, main h1 {
     display: block;
     margin-right: 10%;
     padding-left: var(--font-size-big);
+}
+nav h1, header h1 {
+    border: none;
+}
+
+/* h1, h2 {
+    border: solid;
+    border-width: 2px;
+    border-color: var(--border);
+    border-radius: 10px;
+} */
+h1:hover, h2:hover {
+    text-decoration: underline;
 }
 
 h1 {
@@ -637,7 +665,7 @@ nav h1 {
         --font-size-small: 24px;
     } */
     
-    h1, h2, h3, ul, ol, main address, span, main h1 {
+    h1, h2, h3, ul, ol, main address, span, main h1, section {
         margin-left: 10px;
         margin-right: 10px;
     }

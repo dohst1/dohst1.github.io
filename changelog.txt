@@ -1,25 +1,33 @@
 # Rai Website - changelog
-### by: ///////// and dohst (all rights reserved)
-### information format:
- - versions: {major}.{minor}.{patch}(-{type})(-{date})(-{name})
- - type: 'rel' or 'dev'
- - date: yyyymmdd
- - label: 'documentation' 'suggestion' 'question' 'issue' 'wontfix'
- - label_old: 'ix' 'main' 'bug' 'confirmed' 'critical' 'discussion' 'documentation' 'enhancement' 'suggestion' 'support'
- - names and words: always lower case (underscores for spaces if variable) (except public content) (mention information from macro to micro)
-- version format:
+## by: ///////// and dohst (all rights reserved)
+## information format:
+- versions: {major}.{minor}.{patch}(-{type})(-{date})(-{name})
+- type: 'rel' or 'dev'
+- date: yyyymmdd
+- label: 'documentation' 'suggestion' 'question' 'issue' 'wontfix'
+- label_old: 'ix' 'main' 'bug' 'confirmed' 'critical' 'discussion' 'documentation' 'enhancement' 'suggestion' 'support'
+- names and words: always lower case (underscores for spaces if variable) (except public content) (mention information from macro to micro)
+
+## version format:
 ## version {major} [{date_start} - {date_end}] {name}
 ### v{major.minor} [{date_start} - {date_end}] {name}
 - #### v{major.minor.patch} [{date_release}] {type}
     - {changes}
 - #### issues (check gitlab repository for up to date information)
     - v{version} [{label}] - {issues} ({status})
-## Version Naming Change
-    - AmazonSMP Website versions stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). \nDohst Website (aka rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0.
-    - amazonsmp website versions: will keep original version names up to 3 decimal sections (x.y.z) (the rest gets squished to +1 on z) (extra unofficial updates also go +1 on z in release date order)
-    - rai website versions: 0.y.z betas/alphas become 3.y.z (y and z keep original), this is because i want the website version to match Dohst Types, official release will be version 4.
-## Dohst mentions should all be <a href="https://gitlab.com/dohst1">Dohst</a>
-## Happy Birthday Charlotte, you are a good girl - 20260330 char23
+
+## other
+### Version Naming Change
+- AmazonSMP Website versions stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). \nDohst Website (aka rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0.
+- amazonsmp website versions: will keep original version names up to 3 decimal sections (x.y.z) (the rest gets squished to +1 on z) (extra unofficial updates also go +1 on z in release date order)
+- rai website versions: 0.y.z betas/alphas become 3.y.z (y and z keep original), this is because i want the website version to match Dohst Types, official release will be version 4.
+### Dohst mentions should all be <a href="https://gitlab.com/dohst1">Dohst</a>
+### Happy Birthday Charlotte - 20260331 char23
+### Link for Herbine: https://www.youtube.com/@herblne
+### <a href="https://gitlab.com/dohst1">Dohst</a>
+### <a href="https://www.youtube.com/@MandoEAM">MandoEAM</a>
+### <a href="https://www.twitch.tv/whatcheeseburgertv">WhatCheeseburger</a>
+### <a href="unknown">Secret7</a>
 
 ---
 
@@ -260,13 +268,13 @@
 ## version 4  [20260320 - 20280229] release
 
 ### v4.0 [20260320 - 20260321] amazonsmp season 13 part 1
-- #### v4.0.0-20260320
+- #### v4.0.0-20260320 release
 - files - updated changelog
 - script - updated amazonsmp player list
 - script - updates mods list
 - pages - updated 'about' heading on main page
 - other - rest of 4.0 updates will be in 4.0.1
-- #### v4.0.1-20260321
+- #### v4.0.1-20260321 release
 - files - updated changelog
 - style - reduced left margin to 5% (and 10px on small windows)
 - script - updated mods list
@@ -296,8 +304,8 @@
 - v4.0.0 - dohst datapack 'no ender eye v2.1' does not work (fixed in v4.0.1)
 - v4.0.0 - github version has gitlab links (fixed in v4.0.1)
 
-### v4.1 [20260322 - 2026040?] content
-- #### v4.1.0-20260322
+### v4.1 [20260322 - 20260329] content
+- #### v4.1.0-20260322 release
 - files - updated changelog
 - pages - updated announcements on amazonsmp page
 - style - updated 'row' and 'row_item' classes for information page styling
@@ -314,7 +322,7 @@
 - script - updated updates to include changelog for 4.0 and 4.1 versions
 - pages - made main tiles of amazonsmp season pages be similar to dohst page with their respective season icons
 - pages - updated information page credit section
-- #### v4.1.1-20260325
+- #### v4.1.1-20260325 release
 - files - updated changelog
 - script - updated amazonsmp players 
 - script - updated updates
@@ -331,19 +339,19 @@
 - pages - updated about section on amazonsmp page
 - style - fixed an issue where tables and other elements would not cover the whole screen even when squished
 - files - updated links for github version of website
-- #### v4.1.2-20260326
+- #### v4.1.2-20260326 beta
 - files - updated changelog
 - files - added scripts
-- #### v4.1.3-20260327
+- #### v4.1.3-20260327 beta
 - files - updated changelog
 - script - added more constants for project data
 - pages - updated rules section on amazonsmp page
 - files - updated python script and data
-- #### v4.1.4-20260329
+- #### v4.1.4-20260329 release
 - files - updated changelog
 - files - updated script
 - script - updated amazonsmp player list
-- script - updated amazonsmp player table generator (to be compatible with dds2)
+- script - updated amazonsmp player table generator
 - script - updated amazonsmp season 13 part 1 recommended mods link
 - files - added new amazonsmp season 13 part 1 recommended mods zip file
 - pages - updated amazonsmp recommended mods table
@@ -351,17 +359,75 @@
 - script - updated updates
 - files - updated links for github version
 - files - added birthday note for dohst
-- #### future
-- add 528 section to amazonsmp page
-- make all allll other data compatible with dds2
-- update amazonsmp page style (sidenav with rightcol, click button on sidenav, javascript injects code onto rightcol for that section)
-- make all website content be injected by javascript
-- add dropdown system to dohst page and information page
-- improve dropdown system and visability
-- improve style (more visable sections)
 - #### issues and suggestions
-- v4.1.0-20260322 - some amazonsmp season pages have outdated download links (moved to v4.1.4)
-- v4.1.0-20260322 - amazonsmp season 13 page is missing (moved to v4.1.4)
+- v4.1.0-20260322 - some amazonsmp season pages have outdated download links (moved to v4.2)
+- v4.1.0-20260322 - amazonsmp season 13 page is missing (moved to v4.2)
+
+### v4.2 [20260401 - 202604??] style
+- #### v4.2.0-20260401 beta
+- files - updated changelog
+- files - updated script (now contains all dohst23 log data)
+- style - added borders and backgrounds to sections
+- style - added highlights to sections inside sections and table headers
+- pages - credit section is now toggled by h2 headings on amazonsmp page 
+- script - moved player amazonsmp content into a dictionary
+- #### v4.2.1-20260401 beta
+- files - updated changelog
+- files - updated script
+- script - idk
+- #### v4.2.2-20260402 beta
+- files - updated changelog
+- files - updated script
+- pages amazonsmp - renamed rules section to information section
+- pages amazonsmp - updated information section
+- pages amazonsmp - updated about section
+- pages 404 - restructured page to have about and main section
+- pages amazonsmp - moved download tutorial section content to main script
+- script - moved all amazonsmp content into a single dictionary
+- script - updated amazonsmp content players
+- pages information - updated about section
+- pages - moved amazonsmp credits with information credits (now all credit is on information page)
+- pages information - removed updates
+- pages information - updated amazonsmp builds credit description
+- script - updated sidebar content
+- script - updated navigation bar
+- pages - updated all main pages to new section style
+- pages dohst - updated datapacks table
+- #### 4.2.3-20260403 beta
+- files - updated changelog
+- files - created season13 page
+- script - updated amazonsmp content datapacks
+- script - updated set_amazonsmp function for better section selection (for season 13 page)
+- script - updated set_amazonsmp function to show server mods and old seasons by default
+- pages season13 - added content similarly to other season pages but for season13 and using javascript instead
+- pages information - updated maintenance section
+- pages information - updated features section
+- pages - added dropdown system to dohst page and information page
+- style - improved dropdown system and visability of sections
+- issues - fixed "v4.1.0-20260322 - amazonsmp season 13 page is missing"
+- #### 4.2.4-20260403 release
+- files - updated changelog
+- issues - fixed an issue where 404 error page would not have css or javascript
+- pages updates - updated whole page to standard
+- pages - added updates page with amazonsmp, dohst and other updates
+- script - updated navbar and sidebar with new pages and order
+- pages - added main h1 header for amazonsmp and season13 pages underneath images
+- files - added some screenshots and videos from the end event on 20260402 for amazonsmp season 13
+- files - added season 13 1:4 map
+- pages season13 - added map descriptions
+- pages season13 - added content section with links to amazonsmp season 13 public online content
+- files - updated links for github version
+- 
+- #### future
+- make all website content be injected by javascript
+- add 528 section to amazonsmp page
+- add interactive map
+- add more maps for season 13
+- make all allll other data compatible with dds3
+- update amazonsmp page style (sidenav with rightcol, click button on sidenav, javascript injects code onto rightcol for that section)
+- #### issues and suggestions
+- v4.1.0-20260322 - amazonsmp season 13 page is missing (fixed in 4.2.3)
+- v4.1.0-20260322 - some amazonsmp season pages have outdated download links (moved to v4.2.4)
 
 
 ---
@@ -369,7 +435,7 @@
 
 ## updates overview
 
-### 2026 (? update)
+### 2026 (? updates)
  - v3.0 febraury 13 - fork
  - v3.1 february 14 - setup
  - v3.2 february 23 - alpha
@@ -377,8 +443,11 @@
  - v3.4 march 18 - beta two
  - v4.0 march 20 - amazonsmp season 13 part 1 (release)
  - v4.1 march 22 - content
- - v4.2 april 11 - 
- - v4.3 may 07 - 
- - v4.4 june 23 - 
+ - v4.2 april 03 - style
+ - v4.3 may 29 - 
+ - v4.4 june 26 - 
+
+
+### planned updates and patches: 04/10, 04/17, 04/24, 05/29, 06/26, 07/03
 
 ---

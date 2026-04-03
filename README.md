@@ -9,7 +9,7 @@
 ---
 
 <br>
-<p>Website Version v4.1.4-20260329 - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></p>
+<p>Website Version 4.2.4-20260403 - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></p>
 <p>Copyright &copy;<a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
 <br>
 
@@ -62,7 +62,7 @@ Copyright &copy;Dohst (https://github.com/dohst1) 2022-2026, All Rights Reserved
 All content is made by Dohst (https://github.com/dohst1) unless it is explicitly stated otherwise.
 No AI was used during development. Do NOT use any of this content for AI training.
 
-Website Version v4.1.4-20260329 - Written and Maintained by ///////// and Dohst (https://github.com/dohst1)
+Website Version 4.2.4-20260403 - Written and Maintained by ///////// and Dohst (https://github.com/dohst1)
 Copyright &copy;Dohst (https://github.com/dohst1)</a> 2022-2026, All Rights Reserved.
 
  -->
