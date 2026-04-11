@@ -6,7 +6,7 @@
 const creator = 'Dohst23';
 const project = 'rai_website';
 const project_part = 'main javascript';
-const version = '4.2.4-20260403';
+const version = '4.2.5-20260410';
 const updates = [
         // newest first (preferably, but the program sorts it either way)
         [20291231, "title", "description"], // preset (date title description)
@@ -109,8 +109,8 @@ const PageContent = {
     // footer
     content_footer: `<br>
     <p>Website <a href="/main.html#updates">Version ${version}</a>
-    - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></p>
-    <p>Copyright &copy;<a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
+    - Written and Maintained by <!-- ///////// and --> <a href="https://gitlab.com/dohst1">Dohst</a></p>
+    <p>Copyright &copy;<a href="https://gitlab.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
     <br>`,
     //<code> &lt;&lt;&lt;<a href="https://www.gov.uk/copyright" target="_blank">&copy;</a><a href="https://gitlab.com/dohst1">2026 Dohst</a> &gt;&gt;&gt; </code>
     // ### `<<< © 2026 Dohst >>>`
@@ -266,10 +266,10 @@ const PageContent = {
     
     content_amazonsmp: {
         // from dds3
-        // 20260329
-        "players": [['04 username', '08 link', '10 namemc', '11 uuid', '12 admin', '13 banned , date time reason, ...', ],
+        // 20260409
+        "players": /* [['04 username', '08 link', '10 namemc', '11 uuid', '12 admin', '13 banned , date time reason, ...', ],
             //['unknown', 'unknown', 'unknown', 'unknown', '0', 'no, 20260320 0 none', ],
-            ['Dohst', 'https://github.com/dohst1', 'Dohst0', 'a72d1775-1031-4937-9fcb-3296809ef742', '3', 'no, 20260320 0 none', ],
+            ['Dohst', 'https://gitlab.com/dohst1', 'Dohst0', 'a72d1775-1031-4937-9fcb-3296809ef742', '3', 'no, 20260320 0 none', ],
             ['WhatCheeseburger', 'https://www.twitch.tv/whatcheeseburgertv', 'WhatCheeseburger', '438f0db2-ad4f-44d8-8d21-2bbb5600e676', '3', 'no, 20260320 0 none', ],
             ['MandoEAM', 'https://www.youtube.com/@MandoEAM', 'MandoEAM', '9df74492-2311-483f-9f8b-4ba35d9af733', '3', 'no, 20260320 0 none', ],
             ['Secret7', 'unknown', 'Secret7', '73045442-ec92-419c-a10c-d8efdab5f555', '3', 'no, 20260320 0 none', ],
@@ -284,12 +284,31 @@ const PageContent = {
             ['UnkownPoint', 'unknown', 'UnkownPoint', 'b00b9fdd-eb7a-446c-bd56-5aba5d0784a6', '0', 'no, 20260320 0 none', ],
             ['unknown', 'unknown', 'VaJdSvr25', '1de8104f-23a9-4466-81a6-b62b265ccd11', '0', 'no, 20260320 0 none', ],
             ['unknown', 'unknown', 'unknown', 'unknown', '0', 'no, 20260320 0 none', ], 
+        ], */
+            [['02 name surname username', '06 link', '08 namemc uuid', '09 admin', '10 banned , date time reason, ...', ], 
+            ['Dohst23', 'https://gitlab.com/dohst1', 'Dohst0 a72d1775-1031-4937-9fcb-3296809ef742', '3', 'no, 20260320 0 none', ], 
+            ['Secret7', 'unknown', 'Secret7 73045442-ec92-419c-a10c-d8efdab5f555', '3', 'no, 20260320 0 none', ], 
+            ['CookieLotty12', 'unknown', 'CookieLotty12 193df712-49dd-4bd1-a21d-09cc6f953bd9', 'no', 'no, 20260320 0 none', ], 
+            ['Tackzs', 'unknown.html', 'Tackzs d105fc83-6c49-4bfe-b8a3-0735cee598b4', 'no', 'no, 20260320 0 none', ], 
+            ['WhatCheeseburger', 'https://www.twitch.tv/whatcheeseburgertv', 'WhatCheeseburger 438f0db2-ad4f-44d8-8d21-2bbb5600e676', '3', 'no, 20260320 0 none', ], 
+            ['MandoEAM', 'https://www.youtube.com/@MandoEAM', 'MandoEAM 9df74492-2311-483f-9f8b-4ba35d9af733', '3', 'no, 20260320 0 none', ], 
+            ['ATAT66', 'unknown', 'ATAT66 0ca533c1-e6a6-486a-86d0-aabe670031b4', 'no', 'no, 20260320 0 none', ], 
+            ['GappleJ', 'unknown', 'ImGapplejuice c50ab55c-a3b1-42e5-b2d5-772ddc3f5584', 'no', 'no, 20260320 0 none', ], 
+            ['dannygpr', 'https://youtube.com/@danny_gpr', 'Danny_GPR 33a86567-4671-4bfe-b0cd-37d957c0d63a', '0', 'no, 20260320 0 none', ], 
+            ['unknown', 'unknown', 'Filterrs b0c9a712-0db0-4f23-9e25-128e259f8223', 'no', 'no, 20260320 0 none', ], 
+            ['lily_mjr', 'unknown', '.Lily_mjr 00000000-0000-0000-0009-01f6b26e63a3', 'no', 'no, 20260320 0 none', ], 
+            ['unknown', 'unknown.html', 'Madhatters33 666a4058-85ba-4755-bec0-de7d652493ab', 'no', 'no, 20260320 0 none', ], 
+            ['cloopyster', 'unknown', '.Cloopyster 00000000-0000-0000-0009-01f438621ed5', 'no', 'no, 20260320 0 none', ], 
+            ['unknown', 'unknown', 'unknown unknown', 'no', 'no, 20260320 0 none', ], 
+            ['UnkownPoint', 'unknown', 'UnkownPoint b00b9fdd-eb7a-446c-bd56-5aba5d0784a6', 'no', 'no, 20260320 0 none', ], 
+            ['unknown', 'unknown', 'VaJdSvr25 1de8104f-23a9-4466-81a6-b62b265ccd11', 'no', 'no, 20260320 0 none', ], 
+            ['unknown', 'unknown', 'unknown unknown', 'no', 'no, 20260320 0 none', ], 
         ],
 
         // NOT from dds3
         // 20260327
         "seasons": [['type', 'name', 'part', 'start', 'end', 'life', 'version', 'description', 'link'], 
-            ['4', 'Season 13', 'none', '2026/03/20', 'present<!-- max 2028/02/29 -->', '&gt;14', '1.21.11 vanilla <br> (with crossplay)', 'World Download Unavailable<br><a href="assets/amazonsmp/as13p1-mods20260329-recomended.zip">Recommended Client Mods (2026/03/21) (12.5 MB)</a>', 'season13.html'], 
+            ['4', 'Season 13', 'none', '2026/03/20', 'present<!-- max 2028/02/29 -->', '&gt;21', '1.21.11 vanilla <br> (with crossplay)', 'World Download Unavailable<br><a href="assets/amazonsmp/as13p1-mods20260329-recomended.zip">Recommended Client Mods (2026/03/21) (12.5 MB)</a>', 'season13.html'], 
 
             ['3', 'Temporary 04', 'none', '2025/07/12', '2025/07/22', '10', '1.21.6 - 1.21.7', 'Unavailable', 'seasons_temporary.html#temporary4'], 
             ['3', 'Season 12', 'Part 3', '2025/07/22', '2026/02/10', '203', '1.20.1 modded', '<a href="https://www.mediafire.com/file/2i03ah993otr8f8/season12p3-world_final.zip/file">World Download (1 290 MB)</a><br><a href="https://www.mediafire.com/file/ru4533taoswplkg/as12p3-mods-202511.zip/file">Required Mods (153 MB)</a><br><a href="https://www.mediafire.com/file/9tgz47ufs5smnqb/season12p3-mods_full.zip/file">Server Mods (544 MB)</a>', 'season12.html#part3'], 
@@ -306,7 +325,7 @@ const PageContent = {
             ['2', 'Season 08', 'none', '2023/01/10', '2023/02/26', '47', '1.19.2 modded', '<a href="https://www.mediafire.com/file/gzs8vlz07g51och/season8.zip/file">World Download (85.9 MB)</a>', 'seasons_old.html#season8'], 
             ['2', 'Season 07', 'none', '2022/12/11', '2022/12/23', '12', '1.19.3', '<a href="https://www.mediafire.com/file/2ftn95ch840un5n/season7_full.zip/file">World Download (151 MB)</a>', 'seasons_old.html#season7'], 
             ['2', 'Temporary 01', 'none', '2022/11/??', '2022/12/??', '&lt;20', '1.19.1 modded', 'Unavailable', 'seasons_temporary.html#temporary1'], 
-            ['2', 'Season 06', 'none', '2022/11/09', '2022/11/22', '13', '1.19.2 - 1.19.3', '<a href="https://www.mediafire.com/file/koa63zhwro7qued/season6.zip/file">World Download (94.3 MB)</a>', 'seasons_old.html#season6'], 
+            ['2', 'Season 06', 'none', '2022/11/09', '2022/11/22', '13', '1.19.2', '<a href="https://www.mediafire.com/file/koa63zhwro7qued/season6.zip/file">World Download (94.3 MB)</a>', 'seasons_old.html#season6'], 
             ['2', 'Season 05', 'none', '2022/09/19', '2022/11/06', '48', '1.19.2', '<a href="https://www.mediafire.com/file/17sczuqf9kk5tkb/season5.zip/file">World Download (78.5 MB)</a>', 'seasons_old.html#season5'], 
             ['2', 'Season 04', 'none', '2022/08/20', '2022/09/16', '27', '1.19.0 modded', '<a href="https://www.mediafire.com/file/dgdwmcq92wgavpo/season4.zip/file">World Download (95.6 MB)</a>', 'seasons_old.html#season4'], 
             ['1', 'Season 03', 'none', '2022/06/18', '2022/08/18', '61', '1.18.2 - 1.19.2', '<a href="https://www.mediafire.com/file/evz7azbg4k07ztf/season3.zip/file">World Download (96.9 MB)</a>', 'seasons_old.html#season3'], 
@@ -351,7 +370,7 @@ const PageContent = {
             ['Servux', 'Servux is a server-side mod that provides support for some client-side mods, such as sending structure bounding boxes for MiniHUD', '0.9.2', 'https://modrinth.com/mod/servux/version/0.9.2', 'server'], 
             ['Simple Voice Chat', 'A working voice chat in Minecraft.', '2.6.12', 'https://modrinth.com/plugin/simple-voice-chat/version/fabric-1.21.11-2.6.12', 'both', false], 
             ['Sodium', 'The fastest and most compatible rendering optimization mod for Minecraft. Now available for both NeoForge and Fabric!', '0.8.6', 'https://modrinth.com/mod/sodium/version/mc1.21.11-0.8.6-fabric', 'client', true], 
-            ['Styled Nicknames', `Simple, but configurable nicknaming mod allowing your server's players (and admins) to change their nickname with full formatting support.`, '1.11.1', 'https://modrinth.com/mod/styled-nicknames/version/1.11.1+1.21.11', 'server'], 
+            //['Styled Nicknames', `Simple, but configurable nicknaming mod allowing your server's players (and admins) to change their nickname with full formatting support.`, '1.11.1', 'https://modrinth.com/mod/styled-nicknames/version/1.11.1+1.21.11', 'server'], 
             ['TCDCommons API', "TheCSDev's personal library mod for the Minecraft modding environment.", '5.0.0-beta.6', 'https://modrinth.com/mod/tcdcommons/version/5.0.0-beta.6+fabric-1.21.11', 'client'], 
             ['Text Placeholder API', 'Placeholder and Text manipulation library for your Minecraft mods.', '2.8.2', 'https://modrinth.com/mod/placeholder-api/version/2.8.2+1.21.10', 'client'], 
             ['ViaBackwards', 'Allow older Java Edition clients to connect to newer servers.', '5.7.2', 'https://modrinth.com/plugin/viabackwards/version/5.7.2', 'server'],
@@ -371,7 +390,7 @@ const PageContent = {
             ['classic fishing loot', 'Reverts the fishing look back to its per 1.16 loot table.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['coordinates hud', 'Adds information to your action bar. xyz coordinates and a 24 hour clock.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['custom nether portals', 'Ignite Nether portals of any shape and size you like, or use crying obsidian in the portal frame.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-            ['dohst enhancements', 'Makes netherite uncraftable (not after 2026/04/02), makes armor trim recipes cheaper, increases the build height in the nether, and more.', '<a href="https://github.com/dohst1">Dohst</a>', 'dohst.html#datapacks'],
+            ['dohst enhancements', 'Makes netherite uncraftable (not after 2026/04/02), makes armor trim recipes cheaper, increases the build height in the nether, and more.', '<a href="https://gitlab.com/dohst1">Dohst</a>', 'dohst.html#datapacks'],
             ['double shulker shells', 'Makes all shulkers drop two shells.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['dragon drops', 'Makes the ender dragon drop an elytra on death (original also drops a dragon egg).', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['durability ping', "Get notified when you damage an item with less than 10% durability. Fully customisable per player with '/trigger duraPing'", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
@@ -384,7 +403,7 @@ const PageContent = {
             ['more mob heads', "Adds a chance to receive a mob's head upon killing it", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['name colors', "Ender '/trigger color' to list the colors you can set your username to (this gets reset due to afk display if you go afk).", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['nether portal coords', 'Adds a trigger that calculates where a nether portal should be paced in the other dimension.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-            ['no ender eye (v2.2)<br>(Removed on 2026/04/02)', 'Makes eyes of ender uncraftable.', '<a href="https://github.com/dohst1">Dohst</a>', 'dohst.html#datapacks'], 
+            ['no ender eye (v2.2)<br>(Removed on 2026/04/02)', 'Makes eyes of ender uncraftable.', '<a href="https://gitlab.com/dohst1">Dohst</a>', 'dohst.html#datapacks'], 
             ['painting picker', "Use a stone cutter to choose a painting's variant.", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['player head drops', 'A player will drop their head when killed by another player. The item displays who the killer is.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['silence mobs', "Adds the ability to silence mobs using a name tag. 'silence me', 'Silence me', 'silence_me' are all acceptable names.", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
@@ -417,7 +436,7 @@ const PageContent = {
         // 20260327
         "description": {
             "about": [
-                `AmazonSMP is a private Minecraft server hosted by <a href="https://github.com/dohst1">Dohst</a>. This page is intended to be used only by current or past AmazonSMP Members.`,
+                `AmazonSMP is a private Minecraft server hosted by <a href="https://gitlab.com/dohst1">Dohst</a>. This page is intended to be used only by current or past AmazonSMP Members.`,
                 `Click on each section and subsection title (or table headers) to show or hide its content.`,
                 `New: The Information section has been updated.`,
                 //`New: Links and details about ViaProxy and GeyserMC have been added.`,
@@ -599,7 +618,7 @@ const PageContent = {
             <th>Description</th>
             </tr>
             </thead>
-            <tbody id="links_datapacks" class="fade_none">` //
+            <tbody id="links_datapacks">` // class="fade_none"
             for (let i = 1; i < PageContent.content_amazonsmp["datapacks"].length; i++) {
                 //[0'name', 1'description', 2'version', 3'link'], 
                 text_mods += `<tr>
@@ -627,23 +646,30 @@ const PageContent = {
                     <tbody id="link_players">
             `
             for (let i = 1; i < PageContent.content_amazonsmp["players"].length; i++) {
-                //['0username', '1link', '2namemc', '3uuid', '4admin', '5banned', ],
-                if (PageContent.content_amazonsmp["players"][i][0] == PageContent.content_amazonsmp["players"][i][2]) {
+                //['02 name surname username', '06 link', '08 namemc uuid', '09 admin', '10 banned , date time reason, ...', ], 
+                let name = PageContent.content_amazonsmp["players"][i][0].split(" ")[0] // 2
+                let username = PageContent.content_amazonsmp["players"][i][2].split(" ")[0]
+                let uuid = PageContent.content_amazonsmp["players"][i][2].split(" ")[1]
+                let link = PageContent.content_amazonsmp["players"][i][1]
+                let admin = PageContent.content_amazonsmp["players"][i][3]
+                let banned = PageContent.content_amazonsmp["players"][i][4]
+
+                if (name == username) {
                     text_players += `<tr>
-                            <td colspan="2"><a href="${PageContent.content_amazonsmp["players"][i][1]}">${PageContent.content_amazonsmp["players"][i][0]}</a></td>`;
+                            <td colspan="2"><a href="${link}">${name}</a></td>`;
                 } else {
                     text_players += `<tr>
-                            <td><a href="${PageContent.content_amazonsmp["players"][i][1]}">${PageContent.content_amazonsmp["players"][i][0]}</a></td> 
-                            <td>${PageContent.content_amazonsmp["players"][i][2]}</td>`
+                            <td><a href="${link}">${name}</a></td> 
+                            <td>${username}</td>`
                 }
-                text_players += `<td>${PageContent.content_amazonsmp["players"][i][3]}</td>`
-                if (PageContent.content_amazonsmp["players"][i][4] == "3") {
+                text_players += `<td>${uuid}</td>`
+                if (admin == "3") {
                     text_players += `<td>yes</td>`
                 } else {
                     text_players += `<td>no</td>`
                 }
-                text_players += `<td>${PageContent.content_amazonsmp["players"][i][5]}</td>
-                        </tr>`;
+                text_players += `<td>${banned}</td>
+                    </tr>`;
             };
             text_players += `</tbody></table>`;
         };

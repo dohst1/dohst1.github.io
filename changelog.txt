@@ -22,6 +22,7 @@
 - amazonsmp website versions: will keep original version names up to 3 decimal sections (x.y.z) (the rest gets squished to +1 on z) (extra unofficial updates also go +1 on z in release date order)
 - rai website versions: 0.y.z betas/alphas become 3.y.z (y and z keep original), this is because i want the website version to match Dohst Types, official release will be version 4.
 ### Dohst mentions should all be <a href="https://gitlab.com/dohst1">Dohst</a>
+### Happy Birthday Charlotte, you are a good girl - 20260331 char23
 ### Happy Birthday Charlotte - 20260331 char23
 ### Link for Herbine: https://www.youtube.com/@herblne
 ### <a href="https://gitlab.com/dohst1">Dohst</a>
@@ -339,10 +340,10 @@
 - pages - updated about section on amazonsmp page
 - style - fixed an issue where tables and other elements would not cover the whole screen even when squished
 - files - updated links for github version of website
-- #### v4.1.2-20260326 beta
+- #### v4.1.2-20260326 dev
 - files - updated changelog
 - files - added scripts
-- #### v4.1.3-20260327 beta
+- #### v4.1.3-20260327 dev
 - files - updated changelog
 - script - added more constants for project data
 - pages - updated rules section on amazonsmp page
@@ -364,18 +365,18 @@
 - v4.1.0-20260322 - amazonsmp season 13 page is missing (moved to v4.2)
 
 ### v4.2 [20260401 - 202604??] style
-- #### v4.2.0-20260401 beta
+- #### v4.2.0-20260401 dev
 - files - updated changelog
 - files - updated script (now contains all dohst23 log data)
 - style - added borders and backgrounds to sections
 - style - added highlights to sections inside sections and table headers
 - pages - credit section is now toggled by h2 headings on amazonsmp page 
 - script - moved player amazonsmp content into a dictionary
-- #### v4.2.1-20260401 beta
+- #### v4.2.1-20260401 dev
 - files - updated changelog
 - files - updated script
 - script - idk
-- #### v4.2.2-20260402 beta
+- #### v4.2.2-20260402 dev
 - files - updated changelog
 - files - updated script
 - pages amazonsmp - renamed rules section to information section
@@ -393,7 +394,7 @@
 - script - updated navigation bar
 - pages - updated all main pages to new section style
 - pages dohst - updated datapacks table
-- #### 4.2.3-20260403 beta
+- #### 4.2.3-20260403 dev
 - files - updated changelog
 - files - created season13 page
 - script - updated amazonsmp content datapacks
@@ -417,17 +418,35 @@
 - pages season13 - added map descriptions
 - pages season13 - added content section with links to amazonsmp season 13 public online content
 - files - updated links for github version
+- #### 4.2.5-20260410 release
+- files - updated changelog
+- files - updated script
+- pages - updated season 12 page
+- pages - updated season 11 page
+- script - updated player information
+- script - updated amazonsmp set_players function to support new data format
+- files - add more maps for season 13
+- files - updated folder structure for amazonsmp assets, and updated all links
+- pages - added only new nether maps to season13 page
+- pages - updated season 10 page
+- pages - updated season 09 page
+- pages - updated old seasons page
+- pages - updated temporary seasons page
+- script - updated amazonsmp mods data
+- pages - updated updates page
+- files - updated links for github version
 - 
 - #### future
-- make all website content be injected by javascript
 - add 528 section to amazonsmp page
-- add interactive map
-- add more maps for season 13
+- make all website content be injected by javascript
 - make all allll other data compatible with dds3
+- add interactive map
 - update amazonsmp page style (sidenav with rightcol, click button on sidenav, javascript injects code onto rightcol for that section)
+- add jp, ro, fr translations
+- add button to switch between languages
 - #### issues and suggestions
 - v4.1.0-20260322 - amazonsmp season 13 page is missing (fixed in 4.2.3)
-- v4.1.0-20260322 - some amazonsmp season pages have outdated download links (moved to v4.2.4)
+- v4.1.0-20260322 - some amazonsmp season pages have outdated download links (fixed in v4.2.5)
 
 
 ---
