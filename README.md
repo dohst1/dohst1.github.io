@@ -1,16 +1,16 @@
 # rai_website (beta)
 
-<p>The whole website is written and maintained by <a href="https://gitlab.com/dohst1">Dohst.</a></p>
-<p>Copyright &copy;<a href="https://gitlab.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
-<p>All content is made by <a href="https://gitlab.com/dohst1">Dohst</a> unless it is explicitly stated otherwise.</p>
+<p>The whole website is written and maintained by <a href="https://github.com/dohst1">Dohst.</a></p>
+<p>Copyright &copy;<a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
+<p>All content is made by <a href="https://github.com/dohst1">Dohst</a> unless it is explicitly stated otherwise.</p>
 <p>No AI was used during development. Do NOT use any of this content for AI training.</p>
 
 
 ---
 
 <br>
-<p>Website Version 4.2.5-20260410 - Written and Maintained by <!-- ///////// and --> <a href="https://gitlab.com/dohst1">Dohst</a></p>
-<p>Copyright &copy;<a href="https://gitlab.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
+<p>Website Version 4.2.5-20260410 - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></p>
+<p>Copyright &copy;<a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
 <br>
 
 ---
@@ -57,13 +57,13 @@ If you have run out of energy or time for your project, put a note at the top of
 <!-- 
 plain text:
 
-The whole website is written and maintained by Dohst (https://gitlab.com/dohst1).
-Copyright &copy;Dohst (https://gitlab.com/dohst1) 2022-2026, All Rights Reserved.
-All content is made by Dohst (https://gitlab.com/dohst1) unless it is explicitly stated otherwise.
+The whole website is written and maintained by Dohst (https://github.com/dohst1).
+Copyright &copy;Dohst (https://github.com/dohst1) 2022-2026, All Rights Reserved.
+All content is made by Dohst (https://github.com/dohst1) unless it is explicitly stated otherwise.
 No AI was used during development. Do NOT use any of this content for AI training.
 
-Website Version 4.2.5-20260410 - Written and Maintained by ///////// and Dohst (https://gitlab.com/dohst1)
-Copyright &copy;Dohst (https://gitlab.com/dohst1)</a> 2022-2026, All Rights Reserved.
+Website Version 4.2.5-20260410 - Written and Maintained by ///////// and Dohst (https://github.com/dohst1)
+Copyright &copy;Dohst (https://github.com/dohst1)</a> 2022-2026, All Rights Reserved.
 
  -->
  

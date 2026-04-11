@@ -109,8 +109,8 @@ const PageContent = {
     // footer
     content_footer: `<br>
     <p>Website <a href="/main.html#updates">Version ${version}</a>
-    - Written and Maintained by <!-- ///////// and --> <a href="https://gitlab.com/dohst1">Dohst</a></p>
-    <p>Copyright &copy;<a href="https://gitlab.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
+    - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></p>
+    <p>Copyright &copy;<a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
     <br>`,
     //<code> &lt;&lt;&lt;<a href="https://www.gov.uk/copyright" target="_blank">&copy;</a><a href="https://gitlab.com/dohst1">2026 Dohst</a> &gt;&gt;&gt; </code>
     // ### `<<< © 2026 Dohst >>>`
@@ -286,7 +286,7 @@ const PageContent = {
             ['unknown', 'unknown', 'unknown', 'unknown', '0', 'no, 20260320 0 none', ], 
         ], */
             [['02 name surname username', '06 link', '08 namemc uuid', '09 admin', '10 banned , date time reason, ...', ], 
-            ['Dohst23', 'https://gitlab.com/dohst1', 'Dohst0 a72d1775-1031-4937-9fcb-3296809ef742', '3', 'no, 20260320 0 none', ], 
+            ['Dohst23', 'https://github.com/dohst1', 'Dohst0 a72d1775-1031-4937-9fcb-3296809ef742', '3', 'no, 20260320 0 none', ], 
             ['Secret7', 'unknown', 'Secret7 73045442-ec92-419c-a10c-d8efdab5f555', '3', 'no, 20260320 0 none', ], 
             ['CookieLotty12', 'unknown', 'CookieLotty12 193df712-49dd-4bd1-a21d-09cc6f953bd9', 'no', 'no, 20260320 0 none', ], 
             ['Tackzs', 'unknown.html', 'Tackzs d105fc83-6c49-4bfe-b8a3-0735cee598b4', 'no', 'no, 20260320 0 none', ], 
@@ -390,7 +390,7 @@ const PageContent = {
             ['classic fishing loot', 'Reverts the fishing look back to its per 1.16 loot table.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['coordinates hud', 'Adds information to your action bar. xyz coordinates and a 24 hour clock.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['custom nether portals', 'Ignite Nether portals of any shape and size you like, or use crying obsidian in the portal frame.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-            ['dohst enhancements', 'Makes netherite uncraftable (not after 2026/04/02), makes armor trim recipes cheaper, increases the build height in the nether, and more.', '<a href="https://gitlab.com/dohst1">Dohst</a>', 'dohst.html#datapacks'],
+            ['dohst enhancements', 'Makes netherite uncraftable (not after 2026/04/02), makes armor trim recipes cheaper, increases the build height in the nether, and more.', '<a href="https://github.com/dohst1">Dohst</a>', 'dohst.html#datapacks'],
             ['double shulker shells', 'Makes all shulkers drop two shells.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['dragon drops', 'Makes the ender dragon drop an elytra on death (original also drops a dragon egg).', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['durability ping', "Get notified when you damage an item with less than 10% durability. Fully customisable per player with '/trigger duraPing'", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
@@ -403,7 +403,7 @@ const PageContent = {
             ['more mob heads', "Adds a chance to receive a mob's head upon killing it", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['name colors', "Ender '/trigger color' to list the colors you can set your username to (this gets reset due to afk display if you go afk).", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['nether portal coords', 'Adds a trigger that calculates where a nether portal should be paced in the other dimension.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-            ['no ender eye (v2.2)<br>(Removed on 2026/04/02)', 'Makes eyes of ender uncraftable.', '<a href="https://gitlab.com/dohst1">Dohst</a>', 'dohst.html#datapacks'], 
+            ['no ender eye (v2.2)<br>(Removed on 2026/04/02)', 'Makes eyes of ender uncraftable.', '<a href="https://github.com/dohst1">Dohst</a>', 'dohst.html#datapacks'], 
             ['painting picker', "Use a stone cutter to choose a painting's variant.", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['player head drops', 'A player will drop their head when killed by another player. The item displays who the killer is.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['silence mobs', "Adds the ability to silence mobs using a name tag. 'silence me', 'Silence me', 'silence_me' are all acceptable names.", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
@@ -436,7 +436,7 @@ const PageContent = {
         // 20260327
         "description": {
             "about": [
-                `AmazonSMP is a private Minecraft server hosted by <a href="https://gitlab.com/dohst1">Dohst</a>. This page is intended to be used only by current or past AmazonSMP Members.`,
+                `AmazonSMP is a private Minecraft server hosted by <a href="https://github.com/dohst1">Dohst</a>. This page is intended to be used only by current or past AmazonSMP Members.`,
                 `Click on each section and subsection title (or table headers) to show or hide its content.`,
                 `New: The Information section has been updated.`,
                 //`New: Links and details about ViaProxy and GeyserMC have been added.`,
