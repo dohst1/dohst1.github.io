@@ -13,32 +13,29 @@
     <body>
         <!-- header -->
         <header>
-            <nav id="nav" aria-label="primary-navigation"><script>PageContent.set_navigation("info")</script></nav>
-            <h1>'</h1>
-            <p id="set_color"></p>
-
-            <br><br>
-            <h1>Page Not Found (Error 404)</h1>
-            <br><br>
+            <nav id="nav" aria-label="primary-navigation"></nav><h1>'</h1><p id="set_color"></p>
+            <br><br><h1>Page Not Found (Error 404)</h1><br><br>
         </header>
         
         <!-- main -->
         <main>
+
             <h1 id="about-header">About and Announcements</h1>
             <section id="about">
                 <h2><a href="unavailable">The page or download that you are looking for does not exist or has been moved.</a></h2>
                 <h2><a href="index.html">Back to home page.</a></h2>
             </section>
+
+
             
             <h1 id="pages-header">All Pages and Sections List</h2>
             <section id="pages">
-                <div id="sidebar"><script>PageContent.set_sidebar("404", false)</script></div>
+                <div id="sidebar"></div>
             </section>
 
-            <br><br>
         </main>
 
         <!-- footer -->
-        <footer id="footer"><script>initialise()</script></footer>
+        <footer id="footer"><script>DohstMain.initialise(); DohstPage.set_navigation("info"); DohstPage.set_sidebar("404", false); </script></footer>
     </body>
 </html>

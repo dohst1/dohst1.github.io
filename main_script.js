@@ -2,313 +2,173 @@
 /* Dohst23 - rai_website - main javascript */
 
 
+
 // variables
-const creator = 'Dohst23';
-const project = 'rai_website';
-const project_part = 'main javascript';
-const version = '4.2.5-20260410';
-const updates = [
-        // newest first (preferably, but the program sorts it either way)
-        [20291231, "title", "description"], // preset (date title description)
-        // shift all (except preset) down when adding new
-        [20260329, "Website Version 4.1.2 to 4.1.4 Patch", `Main Updates: updated amazonsmp page season 13 information, updated amazonsmp page rules, updated amazonsmp player information, updated amazonsmp season 13 recommended mods table and zip file`],
-        [20260325, "Website Version 4.1.1 Patch", `Main Updates: updated amazonsmp page rules section, updated amazonsmp data, fixed issue where some content on amazonsmp page was not showing, added viaproxy section to amazonsmp page, updated some descriptions around the website.`],
-        [20260322, "Website Version 4.1.0 Release", `Main Updates: added separate amazonsmp season pages (for temporary world, really old worlds, season9, season10, season 11, season 12), updated dohst page, updated amazonsmp page, added toggleable sections to amazonsmp page for better navigation, added amazonsmp community code of conduct, updated style.`],
-        [20260320, "AmazonSMP Season 13 Start", "Started a new world on vanilla minecraft 1.21.11."],
-        [20260320, "Website Version 4.0 Release", "Changelog for v4.0.x will be merged with v4.1.0 changes. Please check that for full changes."],
-        [20260319, "Website Moved To Gitlab", 'The main repository for website project files will now be on Gitlab since <a href="https://gitlab.com/dohst1">Dohst</a> has had issues with github recently. The Github version will still be occasionally updated, although mostly only for major updates or patches.'],
-        [20260318, "Website Version 3.4 Beta Release", "description4"],
-        [20260316, "Website Version Renaming", "AmazonSMP Website versions stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). Dohst Website (rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0."],
-        //[20260301, "Dohst23 Type04 Beginning", "From 20260301 to 20280229, supervised by 230023 and 260026, directed by e16, funded by /////////."],
-
-        [20260228, "v3.3 beta release", "description3"],
-        [20260228, "AmazonSMP Website Deletion", "Removed the old website. This is also the end of AmazonSMP Type03"],
-        [20260223, "v3.2.7 beta release", "description2"],
-        [20260218, "v3.2", "description1"],
-        [20260213, "v3.1", "description0"],
-        [20260210, "AmazonSMP Season 12 Part 3 End", "Season 12 Part 3 has now permanently ended. You can find downloads for the world, required mods and server mods on the AmazonSMP page. This world was the most successful AmazonSMP season. This will also be the last Type03 world."],
-    ];
-const dohst_error = {
-    main: "Error (Please report this to Dohst) D - ",
-    
-    unknown: this.main + "1 ",
-    invalid_data: this.main + "2 ",
-}
+const dohst23 = {'creator': 'Dohst23', 'project': 'rai_website', 'project_part': 'main javascript', 'version': '4.3.2-20260425', 'dohst_error': {
+    // 0NiDaa_1ErCora_2HaEri_3ReShya_4AbEzu_5Elkate_6PrDani_7DeRachi
+    main: "Error (Please report this to Dohst) D-",
+    unknown: this.main + "01-",
+    invalid_data: this.main + "02-",}
+};
 
 
 
-// generate page content
-const PageContent = {
+// page
+const DohstPage = {
 
-    // other
-    recombine_string: function (content_temporary, active_index) {
-        let content = ""
-        for (let i = 0; i < content_temporary.length; i++) {
-            content += content_temporary[i];
+    // content
+    content: {
+        'head': `
+            <head id="head">
+                <meta charset="UTF-8">
+                <meta name="author" content="Dohst"> 
+                <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+                <link rel="stylesheet" href="main_style.css" type="text/css">
+                <script src="main_script.js"></script>
+                <title>rai_website</title>
+                <meta name="description" content="dohst23-rai_website-${dohst23['version']}">
+            </head>`,
+
+        'navigation': `<h1><strong><a href="index.html"|>Dohst Website</a></strong></h1><br>
+            <a href="main.html"><button|>Information</button></a>
+            <a href="updates.html"><button|>Updates</button></a>
+            <a href="dohst.html"><button|>Dohst</button></a>
+            <a href="amazonsmp.html"><button|>AmazonSMP</button></a>
+            <a href="season13.html"><button|>Season13</button></a>`,
+
+        'footer': `<br>
+            <p>Website <a href="/main.html#updates">Version ${dohst23['version']}</a>
+            - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></p>
+            <p>Copyright &copy;<a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
+            <br>`,
+
+        'sidebar': `<h1>Page List</h1>|
+            <a href="index.html"><button|>Home</button></a>
+            <a href="main.html"><button|>Information</button></a>
+            <a href="updates.html"><button|>Updates</button></a>
+            <a href="dohst.html"><button|>Dohst</button></a>
+            <a href="404.html"><button|>404</button></a>
+            <br>
+            <a href="amazonsmp.html"><button|>AmazonSMP</button></a>
+
+            <a href="season13.html"><button|>Season 13</button></a>
+            <a href="season12.html"><button|>Season 12</button></a>
+            <a href="season11.html"><button|>Season 11</button></a>
+            <a href="season10.html"><button|>Season 10</button></a>
+            <a href="season9.html"><button|>Season 09</button></a>
+            <br><a href="seasons_old.html"><button|>Really Old Seasons</button></a>
+            <a href="seasons_temporary.html"><button|>Temporary Seasons</button></a>
+
+            <br><br>
+            `,
+
+        'color_button': `<div>
+            <button id="dropdown_button" class="dropdown_button">Set Color</button>
+            <div class="dropdown_content" id="dropdown_content">
+            <a href=""><button id="grey">Grey</button></a>
+            <a href=""><button id="red">Red</button></a>
+            <a href=""><button id="orange">Orange</button></a>
+            <a href=""><button id="yellow">Yellow</button></a>
+            <a href=""><button id="green">Green</button></a>
+            <a href=""><button id="blue">Blue</button></a>
+            <a href=""><button id="indigo">Indigo</button></a>
+            <a href=""><button id="violet">Violet</button></a>
+            </div>
+            <button id="toggle_style" class="toggle_style">Toggle Dark</button>
+            </div>`,
+
+    },
+
+
+    // utilities
+
+    recombine_string: function (text_temporary, active_index) {
+        let text = ""
+        for (let i = 0; i < text_temporary.length; i++) {
+            text += text_temporary[i];
             if (i == active_index) {
-                content += ' class="active"';
+                text += ' class="active"';
             };
         };
-        return content;
+        return text;
     },
 
 
-    // head
-    content_head: `
-        <head id="head">
-            <meta charset="UTF-8">
-            <meta name="author" content="Dohst"> 
-            <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-            <link rel="stylesheet" href="main_style.css" type="text/css">
-            <script src="main_script.js"></script>
-            <title>rai_website</title>
-            <meta name="description" content="dohst23-rai_website-${version}">
-        </head>`,
-    set_head: function () {document.getElementById("head").innerHTML = this.content_head},
+    // setters
 
+    set_head: function () {document.getElementById("head").innerHTML = this.content["head"]},
 
-    // nav bar
-    /* content_navigation_original: `
-        <h1><strong><a href="index.html">rai_website (beta)</a></strong></h1>
-        <a href="index.html"><button class="active">Home</button></a>
-        <a href="dohst.html"><button>Dohst</button></a>
-        <a href="information/main.html"><button>Information</button></a>`, */
-        //<a href="index.html"><button|>Home</button></a>
-    content_navigation: `<h1><strong><a href="index.html"|>Dohst Website</a></strong></h1><br>
-        <a href="main.html"><button|>Information</button></a>
-        <a href="updates.html"><button|>Updates</button></a>
-        <a href="dohst.html"><button|>Dohst</button></a>
-        <a href="amazonsmp.html"><button|>AmazonSMP</button></a>
-        <a href="season13.html"><button|>Season13</button></a>`,
-    /* content_navigation: `<h1><strong><a href="index.html">dohst_website (beta)</a></strong></h1>
-        <a href="index.html"><button|>Home</button></a>
-        <a href="products.html"><button|>Products</button></a>
-        <a href="help.html"><button|>Help</button></a>
-        <a href="contact.html"><button|>Contact</button></a>
-        <a href="main.html"><button|>Information</button></a>`, */
-    // sets the active class to the button of the page selected before inserting the code
-    // done by splitting the string by '|' the checking the input parameter and adding elements the active class tag to the end of the list element corresponding to that button (pipe '|' has been placed in the string like this: "<button|>", at every open button tag)
     set_navigation: function set_navigation(active = "none") {
-        let content_temporary = this.content_navigation.split("|")
-        if (active == "home") {this.content_navigation = this.recombine_string(content_temporary, 0);}
-        /* else if (active == "products")   {this.content_navigation = this.recombine_string(content_temporary, 1);}
-        else if (active == "help")      {this.content_navigation = this.recombine_string(content_temporary, 2);}
-        else if (active == "contact")   {this.content_navigation = this.recombine_string(content_temporary, 3);}
-        else if (active == "info")      {this.content_navigation = this.recombine_string(content_temporary, 4);} */
-        else if (active == "info")      {this.content_navigation = this.recombine_string(content_temporary, 1);}
-        else if (active == "updates")      {this.content_navigation = this.recombine_string(content_temporary, 2);}
-        else if (active == "dohst")      {this.content_navigation = this.recombine_string(content_temporary, 3);}
-        else if (active == "amazonsmp")      {this.content_navigation = this.recombine_string(content_temporary, 4);}
-        else if (active == "season13")      {this.content_navigation = this.recombine_string(content_temporary, 5);}
-
-        else {this.content_navigation = this.recombine_string(content_temporary, -1);}
-        document.getElementById("nav").innerHTML = this.content_navigation
+        let placement = -1
+        // sets the active class to the button of the page selected before inserting the code
+        // done by splitting the string by '|' the checking the input parameter and adding elements the active class tag to the end of the list element corresponding to that button (pipe '|' has been placed in the string like this: "<button|>", at every open button tag)
+        if (active == "home") {placement = 0;}
+        else if (active == "info") {placement = 1;}
+        else if (active == "updates") {placement = 2;}
+        else if (active == "dohst") {placement = 3;}
+        else if (active == "amazonsmp") {placement = 4;}
+        else if (active == "season13") {placement = 5;};
+        document.getElementById("nav").innerHTML = this.recombine_string(this.content["navigation"].split("|"), placement);;
     },
 
+    set_footer: function set_footer() {document.getElementById("footer").innerHTML = this.content["footer"]},
     
-    // footer
-    content_footer: `<br>
-    <p>Website <a href="/main.html#updates">Version ${version}</a>
-    - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></p>
-    <p>Copyright &copy;<a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
-    <br>`,
-    //<code> &lt;&lt;&lt;<a href="https://www.gov.uk/copyright" target="_blank">&copy;</a><a href="https://gitlab.com/dohst1">2026 Dohst</a> &gt;&gt;&gt; </code>
-    // ### `<<< © 2026 Dohst >>>`
-    set_footer: function set_footer() {document.getElementById("footer").innerHTML = this.content_footer},
-    
-    
-    // sidebar information
-    content_sidebar: `
-        <h1>Page List</h1>|
-        <a href="index.html"><button|>Home</button></a>
-        <a href="main.html"><button|>Information</button></a>
-        <a href="updates.html"><button|>Updates</button></a>
-        <a href="dohst.html"><button|>Dohst</button></a>
-        <a href="404.html"><button|>404</button></a>
-        <br>
-        <a href="amazonsmp.html"><button|>AmazonSMP</button></a>
-
-        <a href="season13.html"><button|>Season 13</button></a>
-        <a href="season12.html"><button|>Season 12</button></a>
-        <a href="season11.html"><button|>Season 11</button></a>
-        <a href="season10.html"><button|>Season 10</button></a>
-        <a href="season9.html"><button|>Season 09</button></a>
-        <br><a href="seasons_old.html"><button|>Really Old Seasons</button></a>
-        <a href="seasons_temporary.html"><button|>Temporary Seasons</button></a>
-
-        <br><br>
-    `,
     set_sidebar: function set_sidebar(active = "none", title = true) {
-        let content_temporary = this.content_sidebar.split("|");
-        if (!title) {content_temporary[0] = "";}
-        if (active == "home")           {this.content_sidebar = this.recombine_string(content_temporary, 1);}
-        else if (active == "info")      {this.content_sidebar = this.recombine_string(content_temporary, 2);}
-        else if (active == "updates")     {this.content_sidebar = this.recombine_string(content_temporary, 3);}
-        else if (active == "dohst")     {this.content_sidebar = this.recombine_string(content_temporary, 4);}
-        else if (active == "404")       {this.content_sidebar = this.recombine_string(content_temporary, 5);}
-        else if (active == "amazonsmp")     {this.content_sidebar = this.recombine_string(content_temporary, 6);}
+        let placement = -1;
+        if (active == "home") {placement = 1;}
+        else if (active == "info") {placement = 2;}
+        else if (active == "updates") {placement = 3;}
+        else if (active == "dohst") {placement = 4;}
+        else if (active == "404") {placement = 5;}
+        else if (active == "amazonsmp") {placement = 6;};
         // TODO add new page active settings
+        // 20260414 - 230023 (Dohst): what do you mean
         
-        else {this.content_sidebar = this.recombine_string(content_temporary, -1);};
-        document.getElementById("sidebar").innerHTML = "<br><br>" + this.content_sidebar;
+        let text = this.content["sidebar"].split("|");
+        if (!title) {text[0] = "";};
+
+        document.getElementById("sidebar").innerHTML = "<br><br>" + this.recombine_string(text, placement);
     },
     
-    
-    
-    // updates
-    //content_updates: updates,
-    set_updates: function (target, index, description = false) { // why does vs code show errors here, it works fine
-        if (index == 0 || index >= updates.length || !index) {return null}
-        else if (description) {document.getElementById(target).innerHTML = updates[index][2]} 
-        else {document.getElementById(target).innerHTML = updates[index][0] + " - " + updates[index][1]}
-    },
-    
-    set_updates_all: function (target, range = updates.length) { // target is section block id where you want the update spans to be added (string)
-        range = [1, range]
-        let text = "";
-        let text_format = "";
-        for (let i = range[0]; i < range[1]; i++) {
-            text_format = `<span id="fade${i}">
-            <h3 id="update${i}"></h3>
-            <p id="fade${i}_text" class="fade"></p>
-            </span>`;
-            text += text_format
-        }
-        document.getElementById(target).innerHTML = text;
-        
-        for (let i = range[0]; i < range[1]; i++) {
-            PageContent.set_updates(`update${i}`, i);
-            PageEvents.set_fade_in(`fade${i}`, `fade${i}_text`, i);
-        }
-    },
-    
-    sort_updates: function (type = "date") { // avoid use, updates will already be sorted anyways
-        let list = updates;
-        let sorted = [];
-        sorted.push(updates[0]);
-        
-        if (type == "date") {
-            for (let i = 1; i < updates.length; i++) {
-                // console.log(list[i][0]);
-                let done = false;
-                
-                // insertion sort on the dates
-                try {
-                    if (list[i][0].toString().length != 8) {throw dohst_error.invalid_data + "(updates)";}
-                    else {
-                        for (let j = sorted.length-1; j < 0; j--) {
-                            if (sorted[j][0] >= list[i][0]) {
-                                sorted.unshift(list[i]);
-                                done = true;
-                                break;
-                            }
-                        }
-                        if (!done) {
-                            sorted[i] = list[i];
-                        }
-                    }
-                }
-                catch (error) {
-                    console.log(dohst_error.invalid_data + "(updates)");
-                    return dohst_error.invalid_data + "(updates)";
-                };
-            }
-            for (let i of sorted) {
-                console.log(i);
-            }
-            return sorted;
-        }
-        return dohst_error.unknown + "(updates)";
-    },
-    
-    
-    // color button
-    content_color_button: `<div>
-    <button id="dropdown_button" class="dropdown_button">Set Color</button>
-    <div class="dropdown_content" id="dropdown_content">
-    <a href=""><button id="grey">Grey</button></a>
-    <a href=""><button id="red">Red</button></a>
-    <a href=""><button id="orange">Orange</button></a>
-    <a href=""><button id="yellow">Yellow</button></a>
-    <a href=""><button id="green">Green</button></a>
-    <a href=""><button id="blue">Blue</button></a>
-    <a href=""><button id="indigo">Indigo</button></a>
-    <a href=""><button id="violet">Violet</button></a>
-    </div>
-    <button id="toggle_style" class="toggle_style">Toggle Dark</button>
-    </div>`,
-    set_color_button: function set_footer() {document.getElementById("set_color").innerHTML = this.content_color_button},
+    set_color_button: function set_footer() {document.getElementById("set_color").innerHTML = this.content["color_button"]},
+
+};
 
 
-    // amazonsmp
-    
-    /* 
-    //unused:
-    content_amazonsmp_as12p3_mods_required: [['name', 'description', 'version', 'link', 'required'], 
-    ['as12p3-mods_required', 'Season 12 Part 3 Required Mods', 'v1.20.1', 'v0.92.6'], 
-    ['BClib', 'Library mod required for better end and better nether.', 'v3.0.14', 'https://modrinth.com/mod/bclib/version/3.0.14', true], 
-    ['Better End', 'Overhauls the end dimension with new blocks, biomes and mobs.', 'v4.0.11', 'https://modrinth.com/mod/betterend/version/4.0.11', true], 
-    ['Better Nether', 'Overhauls the nether dimension with new blocks, biomes and mobs.', 'v9.0.10', 'https://modrinth.com/mod/betternether/version/9.0.10', true], 
-    ['Copper and Tuff Backport', 'Backports new 1.21 copper and tuff blocks to older versions.', 'v1.2', 'https://modrinth.com/mod/copper-and-tuff-backport/version/mc1.20.1-1.2.2-release-fabric', true], 
-    ['Copycats Plus', "All the copycats you've ever wanted, combined into a single mod.", 'v2.2.2', 'https://modrinth.com/mod/copycats/version/2.2.2+mc.1.20.1-fabric', true], 
-    ['Create Enchantment Industry', 'Adds more ways to manage experience with the Create mod.', 'v1.2.16', 'https://modrinth.com/mod/create-enchantment-industry-fabric/version/1.2.16', true], 
-    ['Create Fabric', 'Building Tools and Aesthetic Technology.', 'v0.5.1j', 'https://modrinth.com/mod/create-fabric/version/0.5.1-j-build.1631+mc1.20.1', true], 
-    ['Fabric API', 'Lightweight and modular API providing common hooks and intercompatibility measures utilized by mods using the Fabric toolchain.', 'v0.92.6', 'https://modrinth.com/mod/fabric-api/version/0.92.6+1.20.1', true], 
-    ['Faithful Mace', 'A fully combat accurate backport of the mace, its enchants, and the wind charge.', 'v1.0.9', 'https://modrinth.com/mod/faithful-mace/version/1.0.9', true], 
-    ['Indium', 'Fixes some Create mod visual issues when used with sodium.', 'v1.0.36', 'https://modrinth.com/mod/indium/version/1.0.36+mc1.20.1', true], 
-    ['Origins', 'Lets players pick what species they want to be, each having unique abilities and disabilities.', 'v1.10.2', 'https://modrinth.com/mod/origins/version/1.10.2+mc.1.20.1', true], 
-    ['Platform Fabric', "idk, but its required for 'vanilla backport' mod.", 'v1.2.10.1', 'https://modrinth.com/mod/platform/version/1.20.1-1.2.10.1', true], 
-    ['Sodium', 'The fastest and most compatible rendering optimization mod for Minecraft. Now available for both NeoForge and Fabric.', 'v0.5.12-beta.2', 'https://modrinth.com/mod/sodium/version/mc1.20.1-0.5.12-beta.2-fabric', true], 
-    ['Create Steam and Rails', "Adding depth to Create's rail network and steam system.", 'v1.6.9', 'https://modrinth.com/mod/create-steam-n-rails/version/1.6.9+fabric-mc1.20.1', true], 
-    ['Vanilla backport', 'Backports some newer vanilla features to older versions.', 'v1.1.4.3', 'https://modrinth.com/mod/vanillabackport/version/1.20.1-1.1.4.3', true], 
-    ], 
-    */
-    
-    content_amazonsmp: {
+
+// amazonsmp
+let DohstAmazonsmp = {
+
+    content: {
         // from dds3
-        // 20260409
-        "players": /* [['04 username', '08 link', '10 namemc', '11 uuid', '12 admin', '13 banned , date time reason, ...', ],
-            //['unknown', 'unknown', 'unknown', 'unknown', '0', 'no, 20260320 0 none', ],
-            ['Dohst', 'https://gitlab.com/dohst1', 'Dohst0', 'a72d1775-1031-4937-9fcb-3296809ef742', '3', 'no, 20260320 0 none', ],
-            ['WhatCheeseburger', 'https://www.twitch.tv/whatcheeseburgertv', 'WhatCheeseburger', '438f0db2-ad4f-44d8-8d21-2bbb5600e676', '3', 'no, 20260320 0 none', ],
-            ['MandoEAM', 'https://www.youtube.com/@MandoEAM', 'MandoEAM', '9df74492-2311-483f-9f8b-4ba35d9af733', '3', 'no, 20260320 0 none', ],
-            ['Secret7', 'unknown', 'Secret7', '73045442-ec92-419c-a10c-d8efdab5f555', '3', 'no, 20260320 0 none', ],
-            ['CookieLotty12', 'unknown', 'CookieLotty12', '193df712-49dd-4bd1-a21d-09cc6f953bd9', '1', 'no, 20260320 0 none', ],
-            ['Tackzs', 'unknown.html', 'Tackzs', 'd105fc83-6c49-4bfe-b8a3-0735cee598b4', '1', 'no, 20260320 0 none', ],
-            ['ATAT66', 'unknown', 'ATAT66', '0ca533c1-e6a6-486a-86d0-aabe670031b4', '0', 'no, 20260320 0 none', ],
-            ['GappleJ', 'unknown', 'ImGapplejuice', 'c50ab55c-a3b1-42e5-b2d5-772ddc3f5584', '0', 'no, 20260320 0 none', ],
-            ['dannygpr', 'https://youtube.com/@danny_gpr', 'Danny_GPR', '33a86567-4671-4bfe-b0cd-37d957c0d63a', '0', 'no, 20260320 0 none', ],
-            ['unknown', 'unknown', 'Filterrs', 'b0c9a712-0db0-4f23-9e25-128e259f8223', '0', 'no, 20260320 0 none', ],
-            ['unknown', 'unknown.html', 'Madhatters33', '666a4058-85ba-4755-bec0-de7d652493ab', '0', 'no, 20260320 0 none', ],
-            ['cloopyster', 'unknown', '.Cloopyster', '00000000-0000-0000-0009-01f438621ed5', '0', 'no, 20260320 0 none', ],
-            ['UnkownPoint', 'unknown', 'UnkownPoint', 'b00b9fdd-eb7a-446c-bd56-5aba5d0784a6', '0', 'no, 20260320 0 none', ],
-            ['unknown', 'unknown', 'VaJdSvr25', '1de8104f-23a9-4466-81a6-b62b265ccd11', '0', 'no, 20260320 0 none', ],
-            ['unknown', 'unknown', 'unknown', 'unknown', '0', 'no, 20260320 0 none', ], 
-        ], */
-            [['02 name surname username', '06 link', '08 namemc uuid', '09 admin', '10 banned , date time reason, ...', ], 
-            ['Dohst23', 'https://github.com/dohst1', 'Dohst0 a72d1775-1031-4937-9fcb-3296809ef742', '3', 'no, 20260320 0 none', ], 
-            ['Secret7', 'unknown', 'Secret7 73045442-ec92-419c-a10c-d8efdab5f555', '3', 'no, 20260320 0 none', ], 
-            ['CookieLotty12', 'unknown', 'CookieLotty12 193df712-49dd-4bd1-a21d-09cc6f953bd9', 'no', 'no, 20260320 0 none', ], 
-            ['Tackzs', 'unknown.html', 'Tackzs d105fc83-6c49-4bfe-b8a3-0735cee598b4', 'no', 'no, 20260320 0 none', ], 
-            ['WhatCheeseburger', 'https://www.twitch.tv/whatcheeseburgertv', 'WhatCheeseburger 438f0db2-ad4f-44d8-8d21-2bbb5600e676', '3', 'no, 20260320 0 none', ], 
-            ['MandoEAM', 'https://www.youtube.com/@MandoEAM', 'MandoEAM 9df74492-2311-483f-9f8b-4ba35d9af733', '3', 'no, 20260320 0 none', ], 
-            ['ATAT66', 'unknown', 'ATAT66 0ca533c1-e6a6-486a-86d0-aabe670031b4', 'no', 'no, 20260320 0 none', ], 
-            ['GappleJ', 'unknown', 'ImGapplejuice c50ab55c-a3b1-42e5-b2d5-772ddc3f5584', 'no', 'no, 20260320 0 none', ], 
-            ['dannygpr', 'https://youtube.com/@danny_gpr', 'Danny_GPR 33a86567-4671-4bfe-b0cd-37d957c0d63a', '0', 'no, 20260320 0 none', ], 
-            ['unknown', 'unknown', 'Filterrs b0c9a712-0db0-4f23-9e25-128e259f8223', 'no', 'no, 20260320 0 none', ], 
-            ['lily_mjr', 'unknown', '.Lily_mjr 00000000-0000-0000-0009-01f6b26e63a3', 'no', 'no, 20260320 0 none', ], 
-            ['unknown', 'unknown.html', 'Madhatters33 666a4058-85ba-4755-bec0-de7d652493ab', 'no', 'no, 20260320 0 none', ], 
-            ['cloopyster', 'unknown', '.Cloopyster 00000000-0000-0000-0009-01f438621ed5', 'no', 'no, 20260320 0 none', ], 
-            ['unknown', 'unknown', 'unknown unknown', 'no', 'no, 20260320 0 none', ], 
-            ['UnkownPoint', 'unknown', 'UnkownPoint b00b9fdd-eb7a-446c-bd56-5aba5d0784a6', 'no', 'no, 20260320 0 none', ], 
-            ['unknown', 'unknown', 'VaJdSvr25 1de8104f-23a9-4466-81a6-b62b265ccd11', 'no', 'no, 20260320 0 none', ], 
-            ['unknown', 'unknown', 'unknown unknown', 'no', 'no, 20260320 0 none', ], 
-        ],
+        // 20260424
+        "players": [['02 name surname username', '03 namemc uuid', '05 tag', '07 banned , date time reason, ...', '08 link', ], 
+            //['unknown unknown unknown', 'unknown unknown', 'inactive', 'no, 20260320 0 none', 'unknown', ], 
+            ['Dohst23', 'Dohst0 a72d1775-1031-4937-9fcb-3296809ef742', 'creator', 'no, 20260320 0 none', 'https://github.com/dohst1', ], 
+            ['Secret7', 'Secret7 73045442-ec92-419c-a10c-d8efdab5f555', 'admin', 'no, 20260320 0 none', 'unknown', ], 
+            ['CookieLotty12', 'CookieLotty12 193df712-49dd-4bd1-a21d-09cc6f953bd9', 'original', 'no, 20260320 0 none', 'unknown', ], 
+            ['Tackzs', 'Tackzs d105fc83-6c49-4bfe-b8a3-0735cee598b4', 'admin', 'no, 20260320 0 none', 'unknown.html', ], 
+            ['WhatCheeseburger', 'WhatCheeseburger 438f0db2-ad4f-44d8-8d21-2bbb5600e676', 'admin', 'no, 20260320 0 none', 'https://www.youtube.com/@whatcheeseburgertv', ], 
+            ['MandoEAM', 'MandoEAM 9df74492-2311-483f-9f8b-4ba35d9af733', 'admin', 'no, 20260320 0 none', 'https://www.youtube.com/@MandoEAM', ], 
+            ['ATAT66', 'ATAT66 0ca533c1-e6a6-486a-86d0-aabe670031b4', 'original', 'no, 20260320 0 none', 'unknown', ], 
+            ['GappleJ', 'ImGapplejuice c50ab55c-a3b1-42e5-b2d5-772ddc3f5584', 'member', 'no, 20260320 0 none', 'unknown', ], 
+            ['dannygpr', 'Danny_GPR 33a86567-4671-4bfe-b0cd-37d957c0d63a', 'member', 'no, 20260320 0 none', 'https://youtube.com/@danny_gpr', ], 
+            ['unknown', 'Ilikekittensone b0c9a712-0db0-4f23-9e25-128e259f8223', 'member', 'no, 20260320 0 none', 'unknown', ], 
+            ['lily_mjr', '.Lily_mjr 00000000-0000-0000-0009-01f6b26e63a3', 'admin', 'no, 20260320 0 none', 'unknown', ], 
+            ['unknown', 'Madhatters33 666a4058-85ba-4755-bec0-de7d652493ab', 'inactive', 'no, 20260320 0 none', 'unknown', ], 
+            ['cloopyster', '.Cloopyster 00000000-0000-0000-0009-01f438621ed5', 'member', 'no, 20260320 0 none', 'unknown', ], 
+            ['UnkownPoint', 'UnkownPoint b00b9fdd-eb7a-446c-bd56-5aba5d0784a6', 'member', 'no, 20260320 0 none', 'unknown', ], 
+            ['unknown', 'VaJdSvr25 1de8104f-23a9-4466-81a6-b62b265ccd11', 'inactive', 'no, 20260320 0 none', 'unknown', ], 
+            ['unknown', 'FresherBerry686 unknown', 'inactive', 'no, 20260320 0 none', 'unknown', ], 
+            ['unknown', 'unknown unknown', 'inactive', 'no, 20260320 0 none', 'unknown', ], 
+            ['haru', 'pikapud1801 652b2374-6425-4fab-b5e1-9f672653b9b2', 'inactive', 'no, 20260320 0 none', 'unknown', ], 
+            ['unknown', 'unknown unknown', 'inactive', 'no, 20260320 0 none', 'unknown', ], 
+        ], 
 
         // NOT from dds3
         // 20260327
         "seasons": [['type', 'name', 'part', 'start', 'end', 'life', 'version', 'description', 'link'], 
-            ['4', 'Season 13', 'none', '2026/03/20', 'present<!-- max 2028/02/29 -->', '&gt;21', '1.21.11 vanilla <br> (with crossplay)', 'World Download Unavailable<br><a href="assets/amazonsmp/as13p1-mods20260329-recomended.zip">Recommended Client Mods (2026/03/21) (12.5 MB)</a>', 'season13.html'], 
+            ['4', 'Season 13', 'none', '2026/03/20', 'present<!-- max 2028/02/29 -->', '&gt;35', '1.21.11 vanilla <br> (with crossplay)', 'World Download Unavailable<br><a href="assets/amazonsmp/as13p1-mods20260329-recommended.zip">Recommended Client Mods (2026/03/29) (12.5 MB)</a>', 'season13.html'], 
 
             ['3', 'Temporary 04', 'none', '2025/07/12', '2025/07/22', '10', '1.21.6 - 1.21.7', 'Unavailable', 'seasons_temporary.html#temporary4'], 
             ['3', 'Season 12', 'Part 3', '2025/07/22', '2026/02/10', '203', '1.20.1 modded', '<a href="https://www.mediafire.com/file/2i03ah993otr8f8/season12p3-world_final.zip/file">World Download (1 290 MB)</a><br><a href="https://www.mediafire.com/file/ru4533taoswplkg/as12p3-mods-202511.zip/file">Required Mods (153 MB)</a><br><a href="https://www.mediafire.com/file/9tgz47ufs5smnqb/season12p3-mods_full.zip/file">Server Mods (544 MB)</a>', 'season12.html#part3'], 
@@ -423,22 +283,23 @@ const PageContent = {
 
         // 20260327
         "details": {
-            "versions": ["as13p1", "1.21.11", "0.18.4", "0.141.3"],
+            "versions": // season code, minecraft version, fabric version, fabric api version
+                ["as13p1", "1.21.11", "0.18.4", "0.141.3"],
             "seasons": [['title', 'name', 'start', 'end', 'types'], 
-                ['Really Old Worlds', 'seasons_really_old', '2020/03/00', '2023/02/28', '0 1 2'],
+                ['Really Old Worlds', 'seasons_really_old', '2022/03/00', '2023/02/28', '0 1 2'],
                 ['Old Worlds', 'seasons_old', '2023/03/00', '2026/02/28', '3'], 
                 ['New Worlds', 'seasons_new', '2026/03/00', 'Present<!-- 2028/02/29 -->', '4'], 
             ],
 
         },
 
-
         // 20260327
         "description": {
             "about": [
                 `AmazonSMP is a private Minecraft server hosted by <a href="https://github.com/dohst1">Dohst</a>. This page is intended to be used only by current or past AmazonSMP Members.`,
                 `Click on each section and subsection title (or table headers) to show or hide its content.`,
-                `New: The Information section has been updated.`,
+                `New: Pages for Season 13, Season 12, Season 11, Season 10, Season 09, Really Old Seasons, and Temporary Seasons have been updated with new links and format.`,
+                //`New: The Information section has been updated.`,
                 //`New: Links and details about ViaProxy and GeyserMC have been added.`,
                 //`NEW: <a href="#rules_community">A Community Code of Conduct and General Rules have been added to the Rules section.</a>`,
                 //`New: Pages with more details for each season have been added. You can find links to them from the season tables below (click on the season name).`,
@@ -483,227 +344,240 @@ const PageContent = {
 
     },
 
+
+    set_seasons: function (text_seasons = ``) {
+        let type = 4;
+        let parts = 0;
+        let last = this.content["seasons"][0];
+        for (let i = 1; i < this.content["seasons"].length; i++) {
+            for (let j = 0; j < this.content["seasons"][0].length; j++) {
+                if (this.content["seasons"][i][j] == "") {
+                    this.content["seasons"][i][j] = last[j];
+                };
+            };
+
+            if (this.content["seasons"][i][0] != last[0]) {
+                type--;
+                if (type < 0) {break;} else if (type != 0 && type != 3) {text_seasons += `</tbody></table>`;};
+                // content_amazonsmp["details"]["seasons"] [0'title', 1'name', 2'start', 3'end', 4'types']
+                if (type != 0) {
+                    text_seasons += `
+                        <table>
+                        <thead id="${this.content["details"]["seasons"][type][1]}-header">
+                            <tr>
+                                <th colspan="5"><!-- Type ${this.content["details"]["seasons"][type][4]} -  -->${this.content["details"]["seasons"][type][0]} (${this.content["details"]["seasons"][type][2]} - ${this.content["details"]["seasons"][type][3]})</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2" style="min-width: 220px;">Name</th>
+                                <th>Start Date - End Date (Lifetime)</th>
+                                <th>Version</th>
+                                <th>Links</th>
+                            </tr>
+                        </thead>`;
+                    if (type == 1) { // was |= 3
+                        text_seasons += `<tbody id="${this.content["details"]["seasons"][type][1]}" class="fade_none">`;
+                    } else {
+                        text_seasons += `<tbody id="${this.content["details"]["seasons"][type][1]}">`;
+                    }
+                };
+            };
+
+            // content_amazonsmp["seasons"] [0'type', 1'name', 2'part', 3'start', 4'end', 5'life', 6'version', 7'description', 8'link']
+            text_seasons += `<tr>`
+            if (this.content["seasons"][i][2] == 'none') {
+                text_seasons += `<td rowspan="1" colspan="2"><a href="${this.content["seasons"][i][8]}">${this.content["seasons"][i][1]}</a></td>`
+                parts++
+            } else if (parts != 0) {
+                text_seasons += `<td><a href="${this.content["seasons"][i][8]}">${this.content["seasons"][i][2]}</a></td>`
+            } else if (this.content["seasons"][i][2] == 'Part 3') {
+                parts = 3;
+                text_seasons += `<td rowspan="3" colspan="1"><a href="${this.content["seasons"][i][8]}">${this.content["seasons"][i][1]}</a></td><td><a href="${this.content["seasons"][i][8]}">Part 3</a></td>`
+            } else if (this.content["seasons"][i][2] == 'Part 2' || this.content["seasons"][i][2] == 'After 528') {
+                parts = 2;
+                text_seasons += `<td rowspan="2" colspan="1"><a href="${this.content["seasons"][i][8]}">${this.content["seasons"][i][1]}</a></td><td><a href="${this.content["seasons"][i][8]}">${this.content["seasons"][i][2]}</a></td>`
+            }
+            parts--;
+
+            text_seasons += `<td>${this.content["seasons"][i][3]} - ${this.content["seasons"][i][4]} <br> (${this.content["seasons"][i][5]} days)</td>
+                <td>${this.content["seasons"][i][6]}</td>
+                <td class="limited_big">${this.content["seasons"][i][7]}</td>
+            </tr>`;
+
+            last = this.content["seasons"][i];
+        };
+        text_seasons += `</tbody></table>`;
+        return text_seasons;
+    },
+
+
+    set_recommended: function (text_mods = ``) {
+        text_mods += `
+        <table>
+        <thead id="links_recommended-header">
+        <tr>
+        <th colspan="3">Recommended Client Mods (minecraft ${this.content["details"]["versions"][1]}, fabric ${this.content["details"]["versions"][2]})</th>
+        </tr>
+        <tr>
+        <th>Name</th>
+        <th>Version</th>
+        <th>Description</th>
+        </tr>
+        </thead>
+        <tbody id="links_recommended">`;
+        for (let i = 1; i < this.content["mods"].length; i++) {
+            if (this.content["mods"][i][5]) {
+                //[0'name', 1'description', 2'version', 3'link'], 
+                text_mods += `<tr>
+                <td><a href="${this.content["mods"][i][3]}">${this.content["mods"][i][0]}</a></td>
+                <td>${this.content["mods"][i][2]}</td>
+                <td class="limited_big">${this.content["mods"][i][1]}</td>
+                </tr>`;
+            }};
+            text_mods += `</tbody>
+        </table>`;
+        return text_mods;
+    },
+
+    set_mods: function (text_mods = ``) {
+        text_mods += `<table>
+        <thead id="links_server-header">
+        <tr>
+        <th colspan="3">Server Mods (minecraft ${this.content["details"]["versions"][1]}, fabric ${this.content["details"]["versions"][2]})</th>
+        </tr>
+        <tr>
+        <th>Name</th>
+        <th>Version</th>
+        <th>Description</th>
+        </tr>
+        </thead>
+        <tbody id="links_server">` //  class="fade_none"
+        for (let i = 1; i < this.content["mods"].length; i++) {
+            if (this.content["mods"][i][4] != "client") {
+                //[0'name', 1'description', 2'version', 3'link'], 
+                text_mods += `<tr>
+                <td><a href="${this.content["mods"][i][3]}">${this.content["mods"][i][0]}</a></td>
+                <td>${this.content["mods"][i][2]}</td>
+                <td class="limited_big">${this.content["mods"][i][1]}</td>
+                </tr>`;
+        }};
+        text_mods += `</tbody>
+        </table>`;
+        return text_mods;
+    },
+
+    set_datapacks: function (text_mods = ``) {
+        text_mods += `<table>
+        <thead id="links_datapacks-header">
+        <tr>
+        <th colspan="3">Server Datapacks (minecraft ${this.content["details"]["versions"][1]})</th>
+        </tr>
+        <tr>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Description</th>
+        </tr>
+        </thead>
+        <tbody id="links_datapacks">` // class="fade_none"
+        for (let i = 1; i < this.content["datapacks"].length; i++) {
+            //[0'name', 1'description', 2'version', 3'link'], 
+            text_mods += `<tr>
+            <td><a href="${this.content["datapacks"][i][3]}">${this.content["datapacks"][i][0]}</a></td>
+            <td>${this.content["datapacks"][i][2]}</td>
+            <td class="limited_big">${this.content["datapacks"][i][1]}</td>
+            </tr>`;
+        };
+        text_mods += `</tbody></table>`;
+        return text_mods;
+    },
+
+    set_players: function (text_players = ``) {
+        text_players = `
+            <table>
+                <thead id="link_players-header">
+                    <tr>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>UUID</th>
+                        <th>Admin</th>
+                        <th>Banned<!-- <br>(currently banned, last ban date, <br>length in days, reason) --></th>
+                    </tr>
+                </thead>
+                <tbody id="link_players">`
+
+        for (let i = 1; i < this.content["players"].length; i++) {
+            // [['02 name surname username', '03 namemc uuid', '05 tag', '07 banned , date time reason, ...', '08 link', ], 
+            let name = this.content["players"][i][0]//.split(" ")[0] // 2
+            let username = this.content["players"][i][1].split(" ")[0]
+            let uuid = this.content["players"][i][1].split(" ")[1]
+            let link = this.content["players"][i][4]
+            let admin = this.content["players"][i][2]
+            let banned = this.content["players"][i][3]
+
+            if (name == username) {
+                text_players += `<tr>
+                        <td colspan="2"><a href="${link}">${name}</a></td>`;
+            } else {
+                text_players += `<tr>
+                        <td><a href="${link}">${name}</a></td> 
+                        <td>${username}</td>`
+            }
+            text_players += `<td>${uuid}</td>`
+            if (admin == "admin" || admin == "creator"/* admin == "3" */) {
+                text_players += `<td>yes</td>`
+            } else {
+                text_players += `<td>no</td>`
+            }
+            text_players += `<td>${banned}</td>
+                </tr>`;
+        };
+        text_players += `</tbody></table>`;
+        return text_players;
+    },
+
+    set_mods_description: function (text_mods = ``) {
+        for (let i = 0; i < this.content["description"]["mods"].length; i++) {
+            text_mods += `<p>${this.content["description"]["mods"][i]}</p>`
+        };
+        return text_mods;
+    },
+    set_seasons_description: function (text_seasons = ``) {
+        for (let i = 0; i < this.content["description"]["seasons"].length; i++) {
+            text_seasons += `<p>${this.content["description"]["seasons"][i]}</p>`
+        };
+        return text_seasons;
+    },
+
+    set_proxy: function (text_proxy = ``) {
+        for (let i = 0; i < this.content["description"]["viaproxy"].length; i++) {
+            text_proxy += `<p>${this.content["description"]["viaproxy"][i]}</p>`
+        };
+        return text_proxy;
+    },
+
+    set_downloads: function (text_downloads = ``) {
+        for (let i = 0; i < this.content["description"]["downloads"].length; i++) {
+            text_downloads += `<p>${this.content["description"]["downloads"][i]}</p>`
+        };
+        return text_downloads;
+    },
+
+    // about
+    
+
+
     set_amazonsmp: function (options = "all", targets = [2, "about", "seasons", "mods", "players", "proxy", "downloads"]) {
         // targets are the elements which you want the content to be printed in, index 1 is for mods, and index 2 is for players
         // options can be: 'seasons' 'players' 'datapacks' 'server' 'recommended' 'mods' 'all', if multiple, separate each with a space ' '
 
         let text_seasons = ``;
-        let set_seasons = function () {
-            let type = 4;
-            let parts = 0;
-            let last = PageContent.content_amazonsmp["seasons"][0];
-            for (let i = 1; i < PageContent.content_amazonsmp["seasons"].length; i++) {
-                for (let j = 0; j < PageContent.content_amazonsmp["seasons"][0].length; j++) {
-                    if (PageContent.content_amazonsmp["seasons"][i][j] == "") {
-                        PageContent.content_amazonsmp["seasons"][i][j] = last[j];
-                    };
-                };
-
-                if (PageContent.content_amazonsmp["seasons"][i][0] != last[0]) {
-                    type--;
-                    if (type < 0) {break;} else if (type != 0 && type != 3) {text_seasons += `</tbody></table>`;};
-                    // content_amazonsmp["details"]["seasons"] [0'title', 1'name', 2'start', 3'end', 4'types']
-                    if (type != 0) {
-                        text_seasons += `
-                            <table>
-                            <thead id="${PageContent.content_amazonsmp["details"]["seasons"][type][1]}-header">
-                                <tr>
-                                    <th colspan="5"><!-- Type ${PageContent.content_amazonsmp["details"]["seasons"][type][4]} -  -->${PageContent.content_amazonsmp["details"]["seasons"][type][0]} (${PageContent.content_amazonsmp["details"]["seasons"][type][2]} - ${PageContent.content_amazonsmp["details"]["seasons"][type][3]})</th>
-                                </tr>
-                                <tr>
-                                    <th colspan="2" style="min-width: 220px;">Name</th>
-                                    <th>Start Date - End Date (Lifetime)</th>
-                                    <th>Version</th>
-                                    <th>Links</th>
-                                </tr>
-                            </thead>`;
-                        if (type == 1) { // was |= 3
-                            text_seasons += `<tbody id="${PageContent.content_amazonsmp["details"]["seasons"][type][1]}" class="fade_none">`;
-                        } else {
-                            text_seasons += `<tbody id="${PageContent.content_amazonsmp["details"]["seasons"][type][1]}">`;
-                        }
-                    };
-                };
-
-                // content_amazonsmp["seasons"] [0'type', 1'name', 2'part', 3'start', 4'end', 5'life', 6'version', 7'description', 8'link']
-                text_seasons += `<tr>`
-                if (PageContent.content_amazonsmp["seasons"][i][2] == 'none') {
-                    text_seasons += `<td rowspan="1" colspan="2"><a href="${PageContent.content_amazonsmp["seasons"][i][8]}">${PageContent.content_amazonsmp["seasons"][i][1]}</a></td>`
-                    parts++
-                } else if (parts != 0) {
-                    text_seasons += `<td><a href="${PageContent.content_amazonsmp["seasons"][i][8]}">${PageContent.content_amazonsmp["seasons"][i][2]}</a></td>`
-                } else if (PageContent.content_amazonsmp["seasons"][i][2] == 'Part 3') {
-                    parts = 3;
-                    text_seasons += `<td rowspan="3" colspan="1"><a href="${PageContent.content_amazonsmp["seasons"][i][8]}">${PageContent.content_amazonsmp["seasons"][i][1]}</a></td><td><a href="${PageContent.content_amazonsmp["seasons"][i][8]}">Part 3</a></td>`
-                } else if (PageContent.content_amazonsmp["seasons"][i][2] == 'Part 2' || PageContent.content_amazonsmp["seasons"][i][2] == 'After 528') {
-                    parts = 2;
-                    text_seasons += `<td rowspan="2" colspan="1"><a href="${PageContent.content_amazonsmp["seasons"][i][8]}">${PageContent.content_amazonsmp["seasons"][i][1]}</a></td><td><a href="${PageContent.content_amazonsmp["seasons"][i][8]}">${PageContent.content_amazonsmp["seasons"][i][2]}</a></td>`
-                }
-                parts--;
-
-                text_seasons += `<td>${PageContent.content_amazonsmp["seasons"][i][3]} - ${PageContent.content_amazonsmp["seasons"][i][4]} <br> (${PageContent.content_amazonsmp["seasons"][i][5]} days)</td>
-                    <td>${PageContent.content_amazonsmp["seasons"][i][6]}</td>
-                    <td class="limited_big">${PageContent.content_amazonsmp["seasons"][i][7]}</td>
-                </tr>`;
-
-                last = PageContent.content_amazonsmp["seasons"][i];
-            };
-            text_seasons += `</tbody></table>`;
-        };
-
-
         let text_mods = ``;
-        let set_recommended = function () {
-            text_mods += `
-            <table>
-            <thead id="links_recommended-header">
-            <tr>
-            <th colspan="3">Recommended Client Mods (minecraft ${PageContent.content_amazonsmp["details"]["versions"][1]}, fabric ${PageContent.content_amazonsmp["details"]["versions"][2]})</th>
-            </tr>
-            <tr>
-            <th>Name</th>
-            <th>Version</th>
-            <th>Description</th>
-            </tr>
-            </thead>
-            <tbody id="links_recommended">`;
-            for (let i = 1; i < PageContent.content_amazonsmp["mods"].length; i++) {
-                if (PageContent.content_amazonsmp["mods"][i][5]) {
-                    //[0'name', 1'description', 2'version', 3'link'], 
-                    text_mods += `<tr>
-                    <td><a href="${PageContent.content_amazonsmp["mods"][i][3]}">${PageContent.content_amazonsmp["mods"][i][0]}</a></td>
-                    <td>${PageContent.content_amazonsmp["mods"][i][2]}</td>
-                    <td class="limited_big">${PageContent.content_amazonsmp["mods"][i][1]}</td>
-                    </tr>`;
-                }};
-                text_mods += `</tbody>
-            </table>`;
-        };
+        let text_players = ``;
+        let text_proxy = ``;
+        let text_downloads = ``;
 
-        let set_mods = function () {
-            text_mods += `<table>
-            <thead id="links_server-header">
-            <tr>
-            <th colspan="3">Server Mods (minecraft ${PageContent.content_amazonsmp["details"]["versions"][1]}, fabric ${PageContent.content_amazonsmp["details"]["versions"][2]})</th>
-            </tr>
-            <tr>
-            <th>Name</th>
-            <th>Version</th>
-            <th>Description</th>
-            </tr>
-            </thead>
-            <tbody id="links_server">` //  class="fade_none"
-            for (let i = 1; i < PageContent.content_amazonsmp["mods"].length; i++) {
-                if (PageContent.content_amazonsmp["mods"][i][4] != "client") {
-                    //[0'name', 1'description', 2'version', 3'link'], 
-                    text_mods += `<tr>
-                    <td><a href="${PageContent.content_amazonsmp["mods"][i][3]}">${PageContent.content_amazonsmp["mods"][i][0]}</a></td>
-                    <td>${PageContent.content_amazonsmp["mods"][i][2]}</td>
-                    <td class="limited_big">${PageContent.content_amazonsmp["mods"][i][1]}</td>
-                    </tr>`;
-            }};
-            text_mods += `</tbody>
-            </table>`;
-        };
+        let text_about = ``;
+        for (let i = 0; i < this.content["description"]["about"].length; i++) {text_about += `<p>${this.content["description"]["about"][i]}</p>`;};
 
-        let set_datapacks = function () {
-            text_mods += `<table>
-            <thead id="links_datapacks-header">
-            <tr>
-            <th colspan="3">Server Datapacks (minecraft ${PageContent.content_amazonsmp["details"]["versions"][1]})</th>
-            </tr>
-            <tr>
-            <th>Name</th>
-            <th>Author</th>
-            <th>Description</th>
-            </tr>
-            </thead>
-            <tbody id="links_datapacks">` // class="fade_none"
-            for (let i = 1; i < PageContent.content_amazonsmp["datapacks"].length; i++) {
-                //[0'name', 1'description', 2'version', 3'link'], 
-                text_mods += `<tr>
-                <td><a href="${PageContent.content_amazonsmp["datapacks"][i][3]}">${PageContent.content_amazonsmp["datapacks"][i][0]}</a></td>
-                <td>${PageContent.content_amazonsmp["datapacks"][i][2]}</td>
-                <td class="limited_big">${PageContent.content_amazonsmp["datapacks"][i][1]}</td>
-                </tr>`;
-            };
-            text_mods += `</tbody></table>`;
-        };
-
-        let text_players = ``
-        let set_players = function () {
-            text_players = `
-                <table>
-                    <thead id="link_players-header">
-                        <tr>
-                            <th>Name</th>
-                            <th>Username</th>
-                            <th>UUID</th>
-                            <th>Admin</th>
-                            <th>Banned<!-- <br>(currently banned, last ban date, <br>length in days, reason) --></th>
-                        </tr>
-                    </thead>
-                    <tbody id="link_players">
-            `
-            for (let i = 1; i < PageContent.content_amazonsmp["players"].length; i++) {
-                //['02 name surname username', '06 link', '08 namemc uuid', '09 admin', '10 banned , date time reason, ...', ], 
-                let name = PageContent.content_amazonsmp["players"][i][0].split(" ")[0] // 2
-                let username = PageContent.content_amazonsmp["players"][i][2].split(" ")[0]
-                let uuid = PageContent.content_amazonsmp["players"][i][2].split(" ")[1]
-                let link = PageContent.content_amazonsmp["players"][i][1]
-                let admin = PageContent.content_amazonsmp["players"][i][3]
-                let banned = PageContent.content_amazonsmp["players"][i][4]
-
-                if (name == username) {
-                    text_players += `<tr>
-                            <td colspan="2"><a href="${link}">${name}</a></td>`;
-                } else {
-                    text_players += `<tr>
-                            <td><a href="${link}">${name}</a></td> 
-                            <td>${username}</td>`
-                }
-                text_players += `<td>${uuid}</td>`
-                if (admin == "3") {
-                    text_players += `<td>yes</td>`
-                } else {
-                    text_players += `<td>no</td>`
-                }
-                text_players += `<td>${banned}</td>
-                    </tr>`;
-            };
-            text_players += `</tbody></table>`;
-        };
-
-        let set_mods_description = function () {
-            for (let i = 0; i < PageContent.content_amazonsmp["description"]["mods"].length; i++) {
-                text_mods += `<p>${PageContent.content_amazonsmp["description"]["mods"][i]}</p>`
-            };
-        }
-        let set_seasons_description = function () {
-            for (let i = 0; i < PageContent.content_amazonsmp["description"]["seasons"].length; i++) {
-                text_seasons += `<p>${PageContent.content_amazonsmp["description"]["seasons"][i]}</p>`
-            };
-        }
-
-        let text_proxy = ``
-        let text_downloads = ``
-        let set_descriptions = function (downloads = true) {
-            for (let i = 0; i < PageContent.content_amazonsmp["description"]["viaproxy"].length; i++) {
-                text_proxy += `<p>${PageContent.content_amazonsmp["description"]["viaproxy"][i]}</p>`
-            };
-            if (downloads) {
-                for (let i = 0; i < PageContent.content_amazonsmp["description"]["downloads"].length; i++) {
-                    text_downloads += `<p>${PageContent.content_amazonsmp["description"]["downloads"][i]}</p>`
-                };
-            };
-        }
-
-        // about
-        let text_about = ``
-        for (let i = 0; i < this.content_amazonsmp["description"]["about"].length; i++) {
-            text_about += `<p>${this.content_amazonsmp["description"]["about"][i]}</p>`
-        };
-        
         // old
         /* if (index == 0 || index >= updates.length || !index) {return null}
         else if (description) {document.getElementById(target).innerHTML = updates[index][2]} 
@@ -717,14 +591,17 @@ const PageContent = {
                 text_seasons = ``;
                 text_mods = ``;
                 text_players = ``;
-                set_seasons();
-                set_recommended();
-                set_mods();
-                set_datapacks();
-                set_players();
-                set_mods_description()
-                set_descriptions()
-                set_seasons_description()
+                text_proxy = ``;
+                text_downloads = ``;
+                text_seasons += this.set_seasons();
+                text_mods += this.set_recommended();
+                text_mods += this.set_mods();
+                text_mods += this.set_datapacks();
+                text_players += this.set_players();
+                text_mods += this.set_mods_description();
+                text_proxy += this.set_proxy();
+                text_downloads += this.set_downloads();
+                text_seasons += this.set_seasons_description();
                 document.getElementById(targets[1]).innerHTML = text_about;
                 document.getElementById(targets[2]).innerHTML = text_seasons;
                 document.getElementById(targets[3]).innerHTML = text_mods;
@@ -733,17 +610,17 @@ const PageContent = {
                 document.getElementById(targets[6]).innerHTML = text_downloads;
                 break;
             } else if (options[i] == "mods") {
-                set_recommended();
-                set_mods();
-                set_descriptions(false)
-                set_mods_description()
+                text_mods += this.set_recommended();
+                text_mods += this.set_mods();
+                text_proxy += this.set_proxy();
+                text_mods += this.set_mods_description();
                 document.getElementById(targets[3]).innerHTML = text_mods;
                 document.getElementById(targets[5]).innerHTML = text_proxy;
             } else if (options[i] == "players") {
-                set_players();
+                text_players += this.set_players();
                 document.getElementById(targets[4]).innerHTML = text_players;
             } else if (options[i] == "datapacks") {
-                set_datapacks();
+                text_mods += this.set_datapacks();
                 document.getElementById(targets[3]).innerHTML = text_mods;
                 //set_mods_description()
             } /* else if (options[i] == "seasons") {
@@ -762,44 +639,12 @@ const PageContent = {
         
     },
     
-}
+};
 
 
 
 // events
-const PageEvents = {
-
-    // fade out effect
-    /* effect_fade_out: function (target) {
-        var fadeTarget = document.getElementById("fade");
-        var fadeEffect = setInterval(function () {
-            if (!fadeTarget.style.opacity) {
-                fadeTarget.style.opacity = 1;
-            }
-            if (fadeTarget.style.opacity > 0) {
-                fadeTarget.style.opacity -= 0.1;
-            } else {
-                clearInterval(fadeEffect);
-            }
-        }, 20);
-    }, */
-    // assigns fade out effect
-    /* set_fade_out: function () {
-        document.getElementById("fade").addEventListener('click', this.effect_fade_out);
-    }, */
-    /* effect_text_fade_in: function (button) {
-        let text = document.getElementById(button);
-        text.classList.remove("hide");
-        setTimeout(function () {
-          text.classList.add("fade_in");
-          setTimeout(function () {
-            text.classList.remove("fade_in");
-            setTimeout(function () {
-              text.classList.add("fade_hide");
-            }, 1000);
-          }, 2000);
-        });
-    }, */
+const DohstEvent = {
 
     set_fade_in: function (button, target, index) {
         let effect_fade_target = document.getElementById(target);
@@ -868,28 +713,26 @@ const PageEvents = {
         // make sure there is also an element outside of the content element which is named '{content element id}-header' to act as a toggle button
         for (let i = 0; i < targets.length; i++) {
             //document.getElementById(targets[i]+"-header").classList.add("section_header")
+            //console.log(targets[i]);
+            
             document.getElementById(targets[i]+"-header").addEventListener('click', () => {
                 document.getElementById(targets[i]).classList.toggle("fade_none");
             });
         };
         
     },
-}
+};
 
 
-function initialise() {
-    /* PageContent.set_color_button();
-    PageEvents.set_color_styling();
-    PageEvents.set_dropdown();
-    PageEvents.color_switching("grey");
-    PageEvents.color_switching("red");
-    PageEvents.color_switching("orange");
-    PageEvents.color_switching("yellow");
-    PageEvents.color_switching("green");
-    PageEvents.color_switching("blue");
-    PageEvents.color_switching("indigo");
-    PageEvents.color_switching("violet"); */
-    PageEvents.set_color()
-    PageContent.set_footer();
-}
+
+// initialise
+const DohstMain = {
+
+    initialise: function () {
+        DohstEvent.set_color()
+        DohstPage.set_footer();
+    },
+
+};
+
 

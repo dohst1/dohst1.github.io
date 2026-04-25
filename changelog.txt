@@ -20,14 +20,15 @@
 ### Version Naming Change
 - AmazonSMP Website versions stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). \nDohst Website (aka rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0.
 - amazonsmp website versions: will keep original version names up to 3 decimal sections (x.y.z) (the rest gets squished to +1 on z) (extra unofficial updates also go +1 on z in release date order)
-- rai website versions: 0.y.z betas/alphas become 3.y.z (y and z keep original), this is because i want the website version to match Dohst Types, official release will be version 4.
+- rai website versions: 0.y.z betas/alphas become 3.y.z (y and z keep original), this is because <a href="https://gitlab.com/dohst1">Dohst</a> wants the website version to match Dohst Types, official release will be version 4.
 ### Dohst mentions should all be <a href="https://gitlab.com/dohst1">Dohst</a>
 ### Happy Birthday Charlotte, you are a good girl - 20260331 char23
 ### Happy Birthday Charlotte - 20260331 char23
 ### Link for Herbine: https://www.youtube.com/@herblne
 ### <a href="https://gitlab.com/dohst1">Dohst</a>
 ### <a href="https://www.youtube.com/@MandoEAM">MandoEAM</a>
-### <a href="https://www.twitch.tv/whatcheeseburgertv">WhatCheeseburger</a>
+### <a href="https://www.youtube.com/@whatcheeseburger">WhatCheeseburger</a>
+### <a href="https://www.twitch.tv/whatcheeseburger">WhatCheeseburger</a>
 ### <a href="unknown">Secret7</a>
 
 ---
@@ -42,7 +43,7 @@
 - #### v3.1.0 [20260214]
 - files - removed all download files
 - files - added 'dohst23' group image as favicon (image is subject to change because it is just an ado plushie right now)
-- files - added 'rai_website' repository image as favicon and image (subject to change because it is just a copy of //////////'s profile picture since i did not know what to use)
+- files - added 'rai_website' repository image as favicon and image (subject to change because it is just a copy of //////////'s profile picture since <a href="https://gitlab.com/dohst1">Dohst</a> did not know what to use)
 - files - moved all unused files to new 'unused' folder
 - files - deleted some files
 - files - added new changelog with slightly new format
@@ -120,8 +121,8 @@
 - script - added function to make dropdown menu work (just adds/removes element classes)
 - script - added an initialise function to avoid script spamming in html files (since most functions have to be executed on every page) 
 - style - had to add a few classes to make the new features work
-- pages - added some content (that i commented) to contact page
-- script - added function which displays all updates (using my span format)
+- pages - added some content (that <a href="https://gitlab.com/dohst1">Dohst</a> commented) to contact page
+- script - added function which displays all updates (using dohst span format)
 - pages - added usernames to links on dohst page
 - files - removed blue lycoris art
 - files - renamed 'ado_plushie_square.ico' to 'favicon.ico' 
@@ -364,7 +365,7 @@
 - v4.1.0-20260322 - some amazonsmp season pages have outdated download links (moved to v4.2)
 - v4.1.0-20260322 - amazonsmp season 13 page is missing (moved to v4.2)
 
-### v4.2 [20260401 - 202604??] style
+### v4.2 [20260401 - 20260410] style
 - #### v4.2.0-20260401 dev
 - files - updated changelog
 - files - updated script (now contains all dohst23 log data)
@@ -435,18 +436,62 @@
 - script - updated amazonsmp mods data
 - pages - updated updates page
 - files - updated links for github version
+- #### issues and suggestions
+- v4.1.0-20260322 - amazonsmp season 13 page is missing (fixed in 4.2.3)
+- v4.1.0-20260322 - some amazonsmp season pages have outdated download links (fixed in v4.2.5)
+
+### v4.3 [20260414 - 20260524] idk
+- #### 4.3.0-20260414 dev
+- files - updated changelog
+- files - updated script
+- pages - updated credits on information page (added dates and rephrased some text)
+- pages - updated about section on amazonsmp page
+- script - updated start date for 'really old worlds' in 'details' in 'amazonsmp'
+- files - added file 'unused.txt' and moved all unused code from all other files to it (this will be shipped with the scripts encrypted folder)
+- script - updated structure of code for amazonsmp content
+- script - moved project information into a dictionary
+- script - moved all the amazonsmp code to a separate object
+- script - renamed all objects to new standard as required by e16 and updated all code to account for this
+- script - updated DohstPage object content to all be in one dictionary
+- script - put the initialise function into an object
+- files - moved 'changelog_old.txt' to the encrypted script folder
+- pages - updated all pages to have somewhat new format for header
+- pages - updated all javascript references and moved all function calls to the footer section
+- pages - updated updates page
+- script - updated amazonsmp object to work with new structure
+- files - updated link for whatcheeseburger, because the old one was incorrect
+- #### 4.3.1-20260417 dev
+- files - updated changelog
+- files - updated script
+- pages - updated wrong player lists for older seasons
+- #### 4.3.2-20260425 release
+- files - updated changelog
+- files - updated script
+- files - updated amazonsmp recommended mods downloads' names to have the correct spelling
+- script - updated amazonsmp player data
+- script - updated all links to 'as13p1-mods20260329-recommended.zip' to have the correct spelling
+- pages - updated information section on amazonsmp page (put dates of last update on each section, and updated 'main' and 'rules')
+- pages - replaced some personal pronouns ('i', 'me', 'my') with dohst
+- pages - updated 'maintenance and contribution' section on information page
+- pages - updated whatcheeseburger link to go to youtube instead of twitch
+- pages - updated updates (added v3p2 updates and april updates and v4.3 updates)
+- files - updated links for github version
 - 
 - #### future
-- add 528 section to amazonsmp page
+- v4.3
 - make all website content be injected by javascript
 - make all allll other data compatible with dds3
+- v4.4
+- add 528 section to amazonsmp page
 - add interactive map
 - update amazonsmp page style (sidenav with rightcol, click button on sidenav, javascript injects code onto rightcol for that section)
 - add jp, ro, fr translations
 - add button to switch between languages
+- v4.5
+- 
 - #### issues and suggestions
-- v4.1.0-20260322 - amazonsmp season 13 page is missing (fixed in 4.2.3)
-- v4.1.0-20260322 - some amazonsmp season pages have outdated download links (fixed in v4.2.5)
+- v4.3.2-20260424 - unknown
+- 
 
 
 ---
@@ -463,10 +508,11 @@
  - v4.0 march 20 - amazonsmp season 13 part 1 (release)
  - v4.1 march 22 - content
  - v4.2 april 03 - style
- - v4.3 may 29 - 
- - v4.4 june 26 - 
+ - v4.3 april 24 - idk
+ - v4.4 june 19 - 
+ - v4.5 july 03 - 
 
 
-### planned updates and patches: 04/10, 04/17, 04/24, 05/29, 06/26, 07/03
+### planned updates and patches: 04/24, 05/08, 05/22, 06/19, 07/03
 
 ---

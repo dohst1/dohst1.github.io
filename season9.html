@@ -13,11 +13,8 @@
     <body>
         <!-- header -->
         <header>
-            <nav id="nav" aria-label="primary-navigation"><script>PageContent.set_navigation("amazonsmp")</script></nav>
-            <h1 id="set_color">'</h1>
-            <!-- <br><br>
-            <h1>AmazonSMP - Season 09</h1>
-            <br><br> -->
+            <nav id="nav" aria-label="primary-navigation"></nav><h1 id="set_color">'</h1>
+            <!-- <br><br><h1>AmazonSMP - Season 09</h1><br><br> -->
             <table style="border: none;">
                 <tr>
                     <td style="border: none;"><h1><a href="main.html#credit-amazonsmp_icon_old"><img src="assets/amazonsmp/new/as9.png" alt="AmazonSMP Season 9 Icon Made by Dohst" width="200px"></a></h1></td>
@@ -26,10 +23,9 @@
             </table>
         </header>
 
+        <!-- main -->
         <main>
-                <!-- <p>Has not been updated since 2026/02/13.</p> -->
 
-                <!-- main -->
             <h1 id="main">Before and After 528</h1>
             <section id="main">
 
@@ -54,7 +50,7 @@
                             <br><a href="https://www.mediafire.com/file/49i3pubuxhrwt4s/season9p2_full.zip/file">Single Full Download (145 MB)</a> (external)
                         </li>
                     </ul>
-                    <p>There are two downloads for this world, they are before and after 528, this is because the 'Before' backup doesnt include some of the things that the 'After' does, mainly inventories. However they are the same world and are not considered different Parts (but in the files i refer to the 'Before' as 'p1', and 'After' as 'p2').</p>
+                    <p>There are two downloads for this world, they are before and after 528, this is because the 'Before' backup doesnt include some of the things that the 'After' does, mainly inventories. However they are the same world and are not considered different Parts (but in the files <a href="https://github.com/dohst1">Dohst</a> refers to the 'Before' as 'p1', and 'After' as 'p2').</p>
                     
                     <h3>Map</h3>
                     <img src="/assets/amazonsmp/new/as9_map.png" alt="Season 9 Map (1:1)" width="800px">
@@ -279,14 +275,14 @@
                             <td>No</td>
                             <td>No</td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <th>Geodeplays</th>
                             <td>91ad2e9e-a489-4354-b866-7be6bcb52479</td>
                             <td></td>
                             <td>ImGapplejuice</td>
                             <td>No</td>
                             <td>No</td>
-                        </tr>
+                        </tr> -->
                         <!-- <tr>
                             <th>herbine</th>
                             <td>b0e94580-016f-4828-b21d-fca0d8fd73b7</td>
@@ -334,14 +330,9 @@
             
             </section>
 
-            <br><br>
         </main>
-
-        <script>
-            PageEvents.set_clickable_section(["world", "mods", "players"])
-        </script>
         
         <!-- footer -->
-        <footer id="footer"><script>initialise()</script></footer>
+        <footer id="footer"><script>DohstMain.initialise(); DohstPage.set_navigation("amazonsmp"); DohstEvent.set_clickable_section(["world", "mods", "players"]); </script></footer>
     </body>
 </html>

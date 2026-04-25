@@ -13,15 +13,14 @@
     <body>
         <!-- header -->
         <header>
-            <nav id="nav" aria-label="primary-navigation"><script>PageContent.set_navigation("amazonsmp")</script></nav>
-            <h1 id="set_color">'</h1>
+            <nav id="nav" aria-label="primary-navigation"></nav><h1 id="set_color">'</h1>
             <img src="assets/amazonsmp.png" alt="AmazonSMP Page" width="80%" height="60%">
-            <h1>AmazonSMP</h1>
-            <br><br>
+            <!-- <br><br> --><h1>AmazonSMP</h1><br><br>
         </header>
         
         <!-- main -->
         <main>
+
             <h1 id="about-header">About and Announcements</h1>
             <section id="about">about</section>
 
@@ -49,12 +48,12 @@
 
             <h1 id="info-header">Information</h1>
             <section id="info"><!--  class="fade_none" -->
-                <h2 id="info_main-header">Main</h2>
+                <h2 id="info_main-header">Main (2026/04/25)</h2>
                 <section id="info_main">
                     <h3>Welcome to AmazonSMP</h3>
-                    <p>Please read the rules (below here)</p>
-                    <p><a href="https://forms.gle/QU3zj5Pqpp9HGvxh8">Complete the member registration form (if you have not already): https://forms.gle/QU3zj5Pqpp9HGvxh8.</a></p>
-                    <p>Also read the announcements on the Website/Discord/WhatsApp regularly (updated every Friday at about 22:00 utc).</p>
+                    <p>Please read the rules (below here) and the announcements (on <a href="updates.html#amazonsmp">the Updates page</a> or on whatsapp announcements group or on discord announcements channel)</p>
+                    <!-- <p><a href="https://forms.gle/QU3zj5Pqpp9HGvxh8">Complete the member registration form (if you have not already): https://forms.gle/QU3zj5Pqpp9HGvxh8.</a></p> -->
+                    <!-- <p>Also read the announcements on the Website/Discord/WhatsApp regularly (updated every Friday at about 22:00 utc).</p> -->
 
                     <h3>Server Information</h3>
                     <p>Current World: <a href="season13">Season 13.</a></p>
@@ -64,12 +63,12 @@
                 
                 </section>
 
-                <h2 id="info_rules-header">Rules</h2>
+                <h2 id="info_rules-header">Rules (2026/04/25)</h2>
                 <section id="info_rules">
                     <h3>Main</h3>
                     <ul>
                         <li>No Cheating / Hacking (ban 2 - 8 days)</li>
-                        <li>No Administrator Power Abuse (ban 2 - 4 days, and admin permissions revoked)</li>
+                        <li>No Administrator Power Abuse (ban 2 - 8 days, and admin permissions revoked)</li>
                         <li>No Griefing / Doxing / Impersonation (ban 1 - 4 days)</li>
                         <li>No Inappropriate Content (ban 1 - 4 days)</li>
                         <li>Be Respectful (ban 1 - 2 days)</li>
@@ -86,7 +85,7 @@
 
                 </section>
 
-                <h2 id="info_community-header">Community Code of Conduct</h2>
+                <h2 id="info_community-header">Community Code of Conduct (2026/03/29)</h2>
                 <section id="info_community">
                     <h3>Allowed Client Modifications</h3>
                     <p>Anything that does not give you an unfair advantage over other players, and does not disadvantage other players is likely allowed.</p>
@@ -109,7 +108,7 @@
 
                 </section>
                 
-                <h2 id="info_criteria-header">New Members</h2>
+                <h2 id="info_criteria-header">New Members (2026/04/09)</h2>
                 <section id="info_criteria">
                     <h3>Criteria</h3>
                     <p>Must own an official copy of 'Minecraft: Java Edition' or 'Minecraft: Bedrock Edition', and have the ability to play online.</p>
@@ -124,15 +123,10 @@
                 </section>
 
             </section>
-            
-            <br><br>
-            <script>
-                PageContent.set_amazonsmp()
-                PageEvents.set_clickable_section(["seasons", "seasons_new", "seasons_old", "seasons_really_old", "downloads", "mods", "links_recommended", "links_server", "links_datapacks", "proxy", "players", "info_main", "info_rules", "info_community", "info_criteria"])
-            </script>
+                
         </main>
 
         <!-- footer -->
-        <footer id="footer"><script>initialise()</script></footer>
+        <footer id="footer"><script>DohstMain.initialise(); DohstPage.set_navigation("amazonsmp"); DohstAmazonsmp.set_amazonsmp(); DohstEvent.set_clickable_section(["seasons", "seasons_new", "seasons_old", "seasons_really_old", "downloads", "mods", "links_recommended", "links_server", "links_datapacks", "proxy", "players", "info_main", "info_rules", "info_community", "info_criteria"]); </script></footer>
     </body>
 </html>
