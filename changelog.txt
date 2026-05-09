@@ -1,1 +1,561 @@
-ix nihility
+# Rai Website - changelog
+## by: ///////// and dohst (all rights reserved)
+## information format:
+- versions: {major}.{minor}.{patch}(-{type})(-{date})(-{name})
+- type: 'rel' or 'dev'
+- date: yyyymmdd
+- label: 'documentation' 'suggestion' 'question' 'issue' 'wontfix'
+- label_old: 'ix' 'main' 'bug' 'confirmed' 'critical' 'discussion' 'documentation' 'enhancement' 'suggestion' 'support'
+- names and words: always lower case (underscores for spaces if variable) (except public content) (mention information from macro to micro)
+
+## version format:
+## version {major} [{date_start} - {date_end}] {name}
+### v{major.minor} [{date_start} - {date_end}] {name}
+- #### v{major.minor.patch} [{date_release}] {type}
+    - {changes}
+- #### issues (check gitlab repository for up to date information)
+    - v{version} [{label}] - {issues} ({status})
+
+## other
+### Version Naming Change
+- AmazonSMP Website versions stay as x.y.z (extras, such as x.y.z.v.w, become x.y.(z+v+w)). \nDohst Website (aka rai_website) versions all go from 0.y.z to 3.y.z. Then official release for Dohst Website will be 4.0.0.
+- amazonsmp website versions: will keep original version names up to 3 decimal sections (x.y.z) (the rest gets squished to +1 on z) (extra unofficial updates also go +1 on z in release date order)
+- rai website versions: 0.y.z betas/alphas become 3.y.z (y and z keep original), this is because <a href="https://gitlab.com/dohst1">Dohst</a> wants the website version to match Dohst Types, official release will be version 4.
+### Dohst mentions should all be <a href="https://gitlab.com/dohst1">Dohst</a>
+### Happy Birthday Charlotte, you are a good girl - 20260331 char23
+### Happy Birthday Charlotte - 20260331 char23
+### Link for Herbine: https://www.youtube.com/@herblne
+### <a href="https://gitlab.com/dohst1">Dohst</a>
+### <a href="https://www.youtube.com/@MandoEAM">MandoEAM</a>
+### <a href="https://www.youtube.com/@whatcheeseburger">WhatCheeseburger</a>
+### <a href="https://www.twitch.tv/whatcheeseburger">WhatCheeseburger</a>
+### <a href="unknown">Secret7</a>
+
+---
+
+
+## version 3 Part 1 [20260213 - 20260223] alpha
+
+### v3.0 [20260213] fork
+- fork of dohst aw2.2.0
+
+### v3.1 [20260213 - 20260218] setup
+- #### v3.1.0 [20260214]
+- files - removed all download files
+- files - added 'dohst23' group image as favicon (image is subject to change because it is just an ado plushie right now)
+- files - added 'rai_website' repository image as favicon and image (subject to change because it is just a copy of //////////'s profile picture since <a href="https://gitlab.com/dohst1">Dohst</a> did not know what to use)
+- files - moved all unused files to new 'unused' folder
+- files - deleted some files
+- files - added new changelog with slightly new format
+- #### v3.1.1 [20260214]
+- main - added two images on the main page and credited sources
+- main - added unfinished notice
+- files - added 'main_script.js' for javascript
+- pages - removed footer and navigation bar code for all main pages (index, dohst, updates, 404), and added it to javascript classes, then ran it on every page in the same place
+- files - renamed 'images' folder to 'assets'
+- files - deleted some more unused files
+- updates - deleted some content
+- #### issues
+- none / unknown
+
+### v3.2 [20260218 - 20260220] alpha
+- #### v3.2.02-0260220
+- files - updated changelog
+- script - added '"use strict";' for strict mode
+- script - reformated the code
+- script - added options for custom navbar active button
+- pages - reformated headers for main pages
+- pages - updated 404 page
+- files - rearranged some files
+- style - renamed the main file to "main_style.css"
+- style - updated color scheme to be neutral by default
+- style - updated some styles (mainly added border on navbar)
+- #### v3.2.1-20260220
+- files - updated changelog
+- files - deleted everything from 'information' folder except 'main.html', 'rules.html' and 'updates.html'
+- files - moved 'main.html', 'rules.html' and 'updates.html' to root directory
+- pages - added new formatting to 'main.html', 'rules.html' and 'updates.html'
+- files - deleted 'information' folder
+- script - added function to load sidebar for information pages
+- some other small changes
+- #### v3.2.2-20260220
+- files - updated changelog
+- pages - updated 404 page list
+- none
+- #### v3.2.3-20260221
+- files - updated changelog
+- style - updated css
+- pages - updated main page
+- pages - updated all footers
+- pages - added new footer for information pages
+- #### v3.2.4-20260222
+- files - updated changelog
+- pages - removed '### `<<< © 2026 Dohst >>>`' text from copyright notice
+- pages - finished updates section for information page
+- script - added fade function to fade in update information when object is clicked
+- script - added function to fill updates sections
+- pages - updated 'report / request' section on information page
+- pages - updated 'credit' section on information page
+- style - lots of small updates
+- style - added classes 'fade' 'fade_in' for fade animation
+- style - updated styling for small windows (for navbar now title stops being displayed and buttons are centered)
+- script - added a function 'recombine_string' to recombine the split strings when generating navbar and sidebar content
+- pages - removed sidebar from information pages
+- pages - removed unneeded content on home page
+- pages - removed all old updates on updates page
+- pages - reformated all pages to new format
+- files - some other changes
+- #### v3.2.5-20260222
+- files - updated changelog
+- script - added 'sort_updates()' function to sort updates array in reverse date order
+- script - made updates array global and added dohst errors
+- style - fixed bug where link text in button is hard to see when hovering (now normal)
+- pages - reformated dohst page (removed old content and added links)
+- pages - added profile picture to dohst page
+- style - added two new style classes 'leftside' and 'rightside' used for making elements parallel 
+- #### v3.2.6-20260223
+- files - updated changelog
+- style - added dropdown menu for color switching
+- style - added a total of 8 useable color schemes
+- script - added function for color switching functionality (the color is saved as a local variable in the client browser (unfortunately), but it allows reloading and page switching without losing color setting)
+- script - added function to make dropdown menu work (just adds/removes element classes)
+- script - added an initialise function to avoid script spamming in html files (since most functions have to be executed on every page) 
+- style - had to add a few classes to make the new features work
+- pages - added some content (that <a href="https://gitlab.com/dohst1">Dohst</a> commented) to contact page
+- script - added function which displays all updates (using dohst span format)
+- pages - added usernames to links on dohst page
+- files - removed blue lycoris art
+- files - renamed 'ado_plushie_square.ico' to 'favicon.ico' 
+- files - added dohst profile picture (herta kurukuru)
+- pages - removed references to blue lycoris art
+- pages - made the home page only have a stretched out version of ado plushie picture (stretching is intentional)
+- #### v3.2.7-20260223
+- files - updated changelog
+- script - updated dohst errors
+- files - added products page
+- style - added an option to toggle color style (darkness) (changes lightness and saturation of original)
+- script - added an event check to allow color style toggle to work
+- pages - updated ado plushie image description
+- pages - removed color switching buttons from all except main information page
+- style - small changes
+- pages - added temporary products to products page
+- script - small changes
+- files - added 'products' folder
+- pages - added content to products page
+- pages - made space between navbar and main section at the top smaller for all pages
+- #### issues
+- none / unknown
+
+---
+
+
+## version 3 Part 2 [20260228 - 20260319] beta
+
+### v3.3 [20260228 - 20260317] beta
+- #### v3.3.0-20260228
+- files - updated changelog
+- files - removed some pages
+- script - updated visual website title to 'dohst_website (beta)'
+- style - changed all background light colors to background dark
+- files - added dohst icon as an ico .file
+- files - swapped old ado plush icon for new dohst profile icon
+- pages - added some of the html from product pages onto the information page 
+- script - updated navbar and sidebar content
+- files - encrypted and compressed unused folder
+- pages - updates main page
+- pages - added amazonsmp section on dohst page
+- pages - commented out unused sections
+- pages - changed footer to be a paragraph instead of an address
+- files - some other small updates
+- #### v3.3.1-20260301
+- files - updated changelog
+- pages - updated title to be 'dohst website'
+- script - fixed bug where color settings did not retain when switching pages
+- pages - fixed old footer link, now directs to main.html'updates
+- script - fixed incorrect date on v3.3.0 update
+- pages - updated credit section on information page
+- pages - updated dohst page
+- style - made all fonts 4 px smaller
+- style - updated style for lists
+- #### v3.3.2-20260314
+- files - updated changelog
+- style - increased font size
+- style - some small changes
+- pages - added amazonsmp page
+- script - added amazonsmp page to the navbar
+- issue - fixed "v3.3.1 - font size is too small on mobile"
+- #### v3.3.3-20260314
+- files - updated changelog
+- issue - fixed "v3.3.1 - should make it so clicking update descriptions again removes the description"
+- pages - updated ado plushie image on main page
+- pages - updated link to amazonsmp from main page
+- style - made border radius 10px and some small changes
+- files - added assets for amazonsmp (main image and icon)
+- #### v3.3.4-20260314
+- files - updated changelog
+- pages - removed ado plushie image from main page
+- pages - added title to main page
+- pages - fixed alignment on dohst page title with profile image using a table
+- #### v3.3.5-20260315
+- files - updated changelog
+- pages - added 'old seasons' table to amazonsmp page
+- files - added dohst23-rai_website.py python file
+- pages - updated amazonsmp page
+- script - added some functions and arrays for loading amazonsmp mods
+- #### v3.3.6-20260316
+- files - updated changelog
+- script - finished adding functions for amazonsmp page
+- style - updated border colors for some color variants
+- pages - updated amazonsmp page, added 'credit' section
+- files - added amazonsmp image variants
+- pages - added amazonsmp announcements
+- script - updated sidebar to include amazonsmp
+- pages - removed amazonsmp links from dohst page
+- pages - updated main page
+- pages - updated information page 'credit' section
+- script - updated 'updates' array
+- #### v3.3.7-20260317
+- files - updated changelog
+- files - updated python script
+- pages - updated amazonsmp page 'mods'
+- pages - updated amazonsmp page 'about'
+- pages - updated main page 'amazonsmp'
+- pages - updated amazonsmp page 'links' 'season 13'
+- pages - updated amazonsmp page 'credit'
+- script - added as13p1 mods data
+- pages - added 'download tutorial' to amazonsmp page
+- pages - restricted discord server link on amazonsmp page
+- #### issues
+- v3.3.1 - font size is too small on mobile (fixed in v3.3.2)
+- v3.3.1 - main icon not showing even when enough space is available (moved to v3.4)
+- v3.3.1 - should make it so clicking update descriptions again removes the description (fixed in v3.3.3)
+- v3.3.7 - should make mods list on amazonsmp page clickable to show / hide it (moved to v3.4)
+
+### v3.4 [20260318 - 20260319] beta 2
+- #### v3.4.0-20260318
+- files - updated changelog
+- script - updated incorrect mod version and link for 'roughly enough items (rei)'
+- some other changes
+- #### v3.4.1-20260318
+- files - updated changelog
+- files - added ".gitlab-ci.yml"
+- files - moved website to gitlab
+- #### v3.4.2-20260318
+- files - updated changelog
+- files - replaced github links with gitlab links (except for 2 places, dohst page links section, and a comment on main page)
+- script - updated updates
+- #### v3.4.3-20260319
+- files - updated changelog and readme
+- pages - updated seasons table on amazonsmp page
+- script - updated updates
+- pages - updated dohst page, added minecraft mods and datapacks
+- pages - updated announcements for amazonsmp on the main page and amazonsmp page
+- pages - updated main page
+- style - made it so navbar items are aligned right in small windows to somewhat fix an issue 
+- issues - fixed "v3.3.1 - main icon not showing even when enough space is available"
+- script - updated amazonsmp mods list (changed function to print server and client separate)
+- files - added dohst datapack 'no_ender_eye-v2.1-1.21.zip'
+- pages - updated link for dohst datapacks
+- script - updated 'set_amazonsmp' function to also added 'players' section
+- pages - added 'players' section to amazonsmp page
+- script - added 'datapacks' data (without descriptions)
+- #### issues
+- v3.3.1 - main icon not showing even when enough space is available (fixed in v3.4.3)
+- v3.3.7 - should make mods list on amazonsmp page clickable to show / hide it (moved to v3.4.3)
+- v3.4.3 - amazonsmp datapacks are missing descriptions (new)
+
+---
+
+
+## version 4  [20260320 - 20280229] release
+
+### v4.0 [20260320 - 20260321] release (amazonsmp season 13 part 1)
+- #### v4.0.0-20260320 release
+- files - updated changelog
+- script - updated amazonsmp player list
+- script - updates mods list
+- pages - updated 'about' heading on main page
+- other - rest of 4.0 updates will be in 4.0.1
+- #### v4.0.1-20260321 release
+- files - updated changelog
+- style - reduced left margin to 5% (and 10px on small windows)
+- script - updated mods list
+- script - updated player list
+- script - updated 
+- issues - fixed 'v4.0.0 - dohst datapack 'no ender eye v2.1' does not work'
+- script - added 'set_clickable_section' function which makes section titles clickable to show and hide the content
+- pages - amazonsmp page now uses 'set_clickable_section' for all h1 and h2 sections
+- pages - updated about section on amazonsmp page
+- script - updated website title to be 'Dohst Website'
+- pages - removed mods description from amazonsmp page and added it into the 'set_amazonsmp' function in script
+- pages - updated the amazonsmp page
+- pages - updated credit section on information page
+- pages - updated updates section on information page
+- files - renamed 'changelog.md' to 'changelog.txt'
+- files - added amazonsmp_website changelog as 'changelog_old.txt'
+- files - added amazonsmp images 
+- files - added amazonsmp recommended mods download
+- pages - updated information page
+- pages - updated about section on all pages
+- script - added amazonsmp datapack descriptions
+- issues - fixed "v3.4.3 - amazonsmp datapacks are missing descriptions"
+- files - made most gitlab links be github links for the github version
+- #### issues and suggestions
+- v3.3.7 - should make mods list on amazonsmp page clickable to show / hide it (fixed in v4.0.1)
+- v3.4.3 - amazonsmp datapacks are missing descriptions (fixed in v4.0.1)
+- v4.0.0 - dohst datapack 'no ender eye v2.1' does not work (fixed in v4.0.1)
+- v4.0.0 - github version has gitlab links (fixed in v4.0.1)
+
+### v4.1 [20260322 - 20260329] content
+- #### v4.1.0-20260322 release
+- files - updated changelog
+- pages - updated announcements on amazonsmp page
+- style - updated 'row' and 'row_item' classes for information page styling
+- style - updated margins and paddings
+- files - removed some unnecessary commended code
+- pages - readded player uuids to players table on amazonsmp page
+- style - fixed some styling issues when using small windows
+- style - added medium window section to avoid information page content from being shown incorrectly
+- pages - added contribution section to about section on information page
+- script - removed season tables from amazonsmp page, and updated set_amazonsmp function to also add the seasons table
+- files - added amazonsmp season pages (directly from amazonsmp_website v2.2.0-20260213) 'season12' 'season11' 'season10.html' 'season9.html' 'seasons_old.html' 'seasons_temporary.html'
+- pages - updated amazonsmp season pages to have new header and footer, and added a note 'Has not been updated since 2026/02/13.' at the top of each page
+- pages - updated amazonsmp season pages to have updated links to images
+- script - updated updates to include changelog for 4.0 and 4.1 versions
+- pages - made main tiles of amazonsmp season pages be similar to dohst page with their respective season icons
+- pages - updated information page credit section
+- #### v4.1.1-20260325 release
+- files - updated changelog
+- script - updated amazonsmp players 
+- script - updated updates
+- script - updated amazonsmp mods
+- script - updated recommended client mods header
+- pages - fixed seasons tables headers on amazonsmp page
+- pages - fixed modifications section description text not appearing on amazonsmp page
+- pages - fixed season 09 information in seasons section on amazonsmp page
+- pages - fixed seasons section description text not appearing on amazonsmp page
+- pages - added viaproxy section to amazonsmp page
+- pages - fixed the seasons table displaying "Part Part 1" instead of "Part 1" in some cases on the amazonsmp page
+- script - made it so 'rules' header is no longer clickable, now 'main rules', 'community code of conduct' and 'new members' are clickable, on amazonsmp page 
+- pages - updated rules section on amazonsmp page
+- pages - updated about section on amazonsmp page
+- style - fixed an issue where tables and other elements would not cover the whole screen even when squished
+- files - updated links for github version of website
+- #### v4.1.2-20260326 dev
+- files - updated changelog
+- files - added scripts
+- #### v4.1.3-20260327 dev
+- files - updated changelog
+- script - added more constants for project data
+- pages - updated rules section on amazonsmp page
+- files - updated python script and data
+- #### v4.1.4-20260329 release
+- files - updated changelog
+- files - updated script
+- script - updated amazonsmp player list
+- script - updated amazonsmp player table generator
+- script - updated amazonsmp season 13 part 1 recommended mods link
+- files - added new amazonsmp season 13 part 1 recommended mods zip file
+- pages - updated amazonsmp recommended mods table
+- pages - updated rules section on amazonsmp page
+- script - updated updates
+- files - updated links for github version
+- files - added birthday note for dohst
+- #### issues and suggestions
+- v4.1.0-20260322 - some amazonsmp season pages have outdated download links (moved to v4.2)
+- v4.1.0-20260322 - amazonsmp season 13 page is missing (moved to v4.2)
+
+### v4.2 [20260401 - 20260410] style
+- #### v4.2.0-20260401 dev
+- files - updated changelog
+- files - updated script (now contains all dohst23 log data)
+- style - added borders and backgrounds to sections
+- style - added highlights to sections inside sections and table headers
+- pages - credit section is now toggled by h2 headings on amazonsmp page 
+- script - moved player amazonsmp content into a dictionary
+- #### v4.2.1-20260401 dev
+- files - updated changelog
+- files - updated script
+- script - idk
+- #### v4.2.2-20260402 dev
+- files - updated changelog
+- files - updated script
+- pages amazonsmp - renamed rules section to information section
+- pages amazonsmp - updated information section
+- pages amazonsmp - updated about section
+- pages 404 - restructured page to have about and main section
+- pages amazonsmp - moved download tutorial section content to main script
+- script - moved all amazonsmp content into a single dictionary
+- script - updated amazonsmp content players
+- pages information - updated about section
+- pages - moved amazonsmp credits with information credits (now all credit is on information page)
+- pages information - removed updates
+- pages information - updated amazonsmp builds credit description
+- script - updated sidebar content
+- script - updated navigation bar
+- pages - updated all main pages to new section style
+- pages dohst - updated datapacks table
+- #### 4.2.3-20260403 dev
+- files - updated changelog
+- files - created season13 page
+- script - updated amazonsmp content datapacks
+- script - updated set_amazonsmp function for better section selection (for season 13 page)
+- script - updated set_amazonsmp function to show server mods and old seasons by default
+- pages season13 - added content similarly to other season pages but for season13 and using javascript instead
+- pages information - updated maintenance section
+- pages information - updated features section
+- pages - added dropdown system to dohst page and information page
+- style - improved dropdown system and visability of sections
+- issues - fixed "v4.1.0-20260322 - amazonsmp season 13 page is missing"
+- #### 4.2.4-20260403 release
+- files - updated changelog
+- issues - fixed an issue where 404 error page would not have css or javascript
+- pages updates - updated whole page to standard
+- pages - added updates page with amazonsmp, dohst and other updates
+- script - updated navbar and sidebar with new pages and order
+- pages - added main h1 header for amazonsmp and season13 pages underneath images
+- files - added some screenshots and videos from the end event on 20260402 for amazonsmp season 13
+- files - added season 13 1:4 map
+- pages season13 - added map descriptions
+- pages season13 - added content section with links to amazonsmp season 13 public online content
+- files - updated links for github version
+- #### 4.2.5-20260410 release
+- files - updated changelog
+- files - updated script
+- pages - updated season 12 page
+- pages - updated season 11 page
+- script - updated player information
+- script - updated amazonsmp set_players function to support new data format
+- files - add more maps for season 13
+- files - updated folder structure for amazonsmp assets, and updated all links
+- pages - added only new nether maps to season13 page
+- pages - updated season 10 page
+- pages - updated season 09 page
+- pages - updated old seasons page
+- pages - updated temporary seasons page
+- script - updated amazonsmp mods data
+- pages - updated updates page
+- files - updated links for github version
+- #### issues and suggestions
+- v4.1.0-20260322 - amazonsmp season 13 page is missing (fixed in 4.2.3)
+- v4.1.0-20260322 - some amazonsmp season pages have outdated download links (fixed in v4.2.5)
+
+### v4.3 [20260414 - 20260524] idk
+- #### 4.3.0-20260414 dev
+- files - updated changelog
+- files - updated script
+- pages - updated credits on information page (added dates and rephrased some text)
+- pages - updated about section on amazonsmp page
+- script - updated start date for 'really old worlds' in 'details' in 'amazonsmp'
+- files - added file 'unused.txt' and moved all unused code from all other files to it (this will be shipped with the scripts encrypted folder)
+- script - updated structure of code for amazonsmp content
+- script - moved project information into a dictionary
+- script - moved all the amazonsmp code to a separate object
+- script - renamed all objects to new standard as required by e16 and updated all code to account for this
+- script - updated DohstPage object content to all be in one dictionary
+- script - put the initialise function into an object
+- files - moved 'changelog_old.txt' to the encrypted script folder
+- pages - updated all pages to have somewhat new format for header
+- pages - updated all javascript references and moved all function calls to the footer section
+- pages - updated updates page
+- script - updated amazonsmp object to work with new structure
+- files - updated link for whatcheeseburger, because the old one was incorrect
+- #### 4.3.1-20260417 dev
+- files - updated changelog
+- files - updated script
+- pages - updated wrong player lists for older seasons
+- #### 4.3.2-20260425 release
+- files - updated changelog
+- files - updated script
+- files - updated amazonsmp recommended mods downloads' names to have the correct spelling
+- script - updated amazonsmp player data
+- script - updated all links to 'as13p1-mods20260329-recommended.zip' to have the correct spelling
+- pages - updated information section on amazonsmp page (put dates of last update on each section, and updated 'main' and 'rules')
+- pages - replaced some personal pronouns ('i', 'me', 'my') with dohst
+- pages - updated 'maintenance and contribution' section on information page
+- pages - updated whatcheeseburger link to go to youtube instead of twitch
+- pages - updated updates (added v3p2 updates and april updates and v4.3 updates)
+- files - updated links for github version
+- #### 4.3.3-20260426 dev
+- files - updated changelog
+- files - updated script
+- issue - fixed "v4.3.2-20260425 - 404 page links dont work if url is not in root folder" by adding a slash infront of all link in javascript file
+- issue - fixed "v4.3.2-20260425 - doxed 2 members by accident in april updates on updates page"
+- #### 4.3.4-20260430 dev
+- files - updated changelog
+- files - updated script
+- pages - added 'definitions' subsection to 'information' section
+- files - renamed and reformated amazonsmp assets
+- pages - removed '/' from most links which dont need it
+- #### 4.3.5-20260502 dev
+- files - updated changelog
+- files - updated script
+- script - updated amazonsmp mods list
+- files - renamed and reordered some amazonsmp assets (all the ones changed are now in the 'content' folder)
+- #### 4.3.6-20260508 release
+- files - updated changelog
+- files - updated script
+- pages - updated index and 404 pages
+- pages - updated season 13 page to include everything from amazonsmp page except for seasons archive and about section
+- pages - updated season 13 page maps to have 'product' display style (which before was only used temporarily in v3 once)
+- files - added new recommended mods zip file
+- files - updated all season 13 maps to latest
+- script - updated script main dict for new formatting
+- script - updated mods list to include more recommended mods
+- script - added amazonsmp information
+- pages - removed raw amazonsmp information from amazonsmp page (now uses javascript)
+- pages - reordered and removed some amazonsmp page contents
+- script - added new setter for amazonsmp information content
+- pages - added links to google drive for amazonsmp season 13 part 1 temporary encrypted download from 20260430
+- pages - updated season 13 world info on season 13 page
+- pages - updated amazonsmp about section
+- pages - slightly updated some amazonsmp section descriptions
+- script - replaced most dohst links with a new variable from main dict for efficiency
+- pages - on information page, updated 'contribution', 'new feature' and 'planned updates' sections 
+- issues - fixed "v4.3.2 - season 13 maps are outdated"
+- issues - fixed "v4.3.2 - when loading 404 page outside of root directory the links and style of the page do not work"
+- issues - fixed "v4.3.2 - some mods on the amazonsmp page have incorrect versions listed"
+- files - updated links for github version
+- pages - updated updates
+-
+- #### future
+- v4.3
+- make all website content be injected by javascript
+- make all allll other data compatible with dds3
+- v4.4
+- add interactive map
+- update amazonsmp page style (sidenav with rightcol, click button on sidenav, javascript injects code onto rightcol for that section)
+- add jp, ro, fr translations
+- add button to switch between languages
+- v4.5
+- 
+- #### issues and suggestions
+- v4.3.2 - season 13 maps are outdated - fixed in v4.3.5
+- v4.3.2 - when loading 404 page outside of root directory the links and style of the page do not work - fixed in v4.3.5
+- v4.3.2 - some mods on the amazonsmp page have incorrect versions listed - fixed in v4.3.5
+- v4.3.2 - gitlab version of website has some incorrect reference links due to the way gitlab pages works (links that start with '/')
+- v4.3.5-20260508 - unknown
+- 
+
+
+---
+
+
+## updates overview
+
+### 2026 (x updates)
+ - v3.0 febraury 13 - fork
+ - v3.1 february 14 - setup
+ - v3.2 february 23 - alpha
+ - v3.3 february 28 - beta
+ - v3.4 march 18 - beta two
+ - v4.0 march 20 - release (amazonsmp season 13 part 1 )
+ - v4.1 march 22 - content
+ - v4.2 april 03 - style
+ - v4.3 april 24 - idk
+ - v4.4 july 03 - 
+ - #### planned updates and patches: 05/22, 06/19, 07/03
+ - 
+
+
+---
