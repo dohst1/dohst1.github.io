@@ -4,7 +4,7 @@
 
 
 // variables
-const dohst23 = {'creator': 'Dohst23', 'link': 'https://github.com/dohst1', 'did': '230023-pj_rw-202602', 'project': 'rai_website', 'part': 'main javascript', 'version': '4.3.6-20260508', 
+const dohst23 = {'creator': 'Dohst23', 'link': 'https://github.com/dohst1', 'did': '230023-pj_rw-202602', 'project': 'rai_website', 'part': 'main javascript', 'version': '4.4.0-20260522', 
     // 0NiDaa_1ErCora_2HaEri_3ReShya_4AbEzu_5Elkate_6PrDani_7DeRachi
 
     'dohst_error': {
@@ -145,65 +145,83 @@ let DohstAmazonsmp = {
 
     content: {
         
-        // 20260508
+        // 20260522
         "information": [
             "information",
             "Information",
             [
                 "info_main",
-                "Main (2026/05/08)",
+                "Main (2026/05/22)",
                 [
-                    "Server Information",
-                    `Official Information: any information which comes directly from Dohst (https://github.com/dohst1), or comes directly from an Admin.`,
-                    `Current World: Season 13.`,
+                    "Server",
+                    `Current World: Season 13<!-- Part 1 -->.`,
                     `Server IP: /// (Java port is 25565 (default), Bedrock port is 25566) (ask an Admin for the server ip).`,
-                    `Versions: Minecraft 1.21.11 with Fabric 0.19.2.`,
+                    `Versions: Minecraft 1.21.11 with Fabric 0.19.2, Geyser viaproxy v2.10.0-b1148, Viaproxy v3.4.11`,
                     `Website: https://dohst1.github.io/amazonsmp.`,
                     `Discord: https://discord.gg/ygpzuppKgy.`,
-                    `Registration Form: https://forms.gle/QU3zj5Pqpp9HGvxh8`,
-                    `Admins: Dohst (https://github.com/dohst1), WhatCheeseburger (https://www.youtube.com/@whatcheeseburger), MandoEAM (https://www.youtube.com/@MandoEAM), Tackzs, Secret7.`,
+                    `Registration Form: https://forms.gle/viLDVgURCKZXF6wn9.`,
+                    `Administrators (Admins): Dohst (https://github.com/dohst1), WhatCheeseburger (https://www.youtube.com/@whatcheeseburger), MandoEAM (https://www.youtube.com/@MandoEAM), Tackzs, Secret7.`,
                 ],
                 [
+                    "System",
+                    `All of this Information (in this whole document) may change over time.`,
+                    `Official Information is any information which comes directly from Dohst (https://github.com/dohst1), or comes directly from an Admin. In case of contradictions, the priority order is: Dohst (https://github.com/dohst1), Dohst Website (https://dohst1.github.io/amazonsmp), Admins, Discord Server Information Channel, Whatsapp Community Announcements Description, Members.`,
+                    `All dates will be written in the yyyy/mm/dd format<!-- (yyyy is year, mm is month, dd is day, sometimes days and/or slashes are removed)-->. All times will be in UTC (Universal Coordinated Time) (unless stated otherwise), and written in the HH:MM:SS format<!-- (HH is hour, MM is minute, SS is second, sometimes seconds and/or colons are removed)-->.`,
+                    `Please remember that at the end of the day, this server is a dictatorship, this means that Dohst (https://github.com/dohst1) has full control over any decisions.<!-- For simplicity, you should consider the Member Dohst (https://github.com/dohst1) as a different person from the Admin/Owner Dohst (https://github.com/dohst1).-->`,
+                    `Any action which harms the server itself or host machine will result in a Permanent Ban (no vote will be done, this decision can be taken alone by Dohst (https://github.com/dohst1)). Obtaining a Permanent Ban will result in nihility for everything relating to the Member being banned.`,
+                    `<!-- All punishments and counts reset at the start of a new Phase (last reset was on 2026/03/01) (next reset planned is on 2028/02/27). -->`,
+                ],
+            ],
+            [
+                "info_rules",
+                "Rules (2026/05/22)",
+                [
                     "Rules",
-                    `No Cheating / Hacking (ban 2 - 8 days).`,
-                    `No Administrator Power Abuse (ban 2 - 8 days, and admin permissions revoked).`,
-                    `No Griefing / Doxing / Impersonation (ban 1 - 4 days).`,
-                    `No Inappropriate Content (ban 1 - 4 days).`,
-                    `No Disrespectfulness (ban 1 - 2 days).`,
+                    `No Cheating / Hacking (ban 2 to 8 days).`,
+                    `No Administrator Power Abuse (ban 2 to 8 days, and admin permissions revoked).`,
+                    `No Griefing / Doxing / Impersonation (ban 1 to 4 days).`,
+                    `No Inappropriate Content (ban 1 to 4 days).`,
+                    `No Disrespectfulness (ban 1 to 2 days).`,
                 ],
                 [
                     "Conditions",
                     `Breaking a rule will result in a ban, Admins will discuss and vote on ban length (if an Admin is being banned, said Admin will not be able to participate in the discussion and vote).`,
-                    `Strong probable cause is enough to ban someone (however evidence is preferred).`,
+                    `Strong probable cause is enough to consider someone guilty (however evidence is preferred).`,
                     `Bans for some rules ('Griefing / Doxing / Impersonation', 'Inappropriate Content', 'Disrespectfulness') will only occur if the victim reports it, or requests for the offender to be banned.`,
-                    `Final ban time formula: [final ban time] = [past bans count] * [current offense ban time].`,
                     `'No Inappropriate Content' can refer to a lot of things, but mainly: discrimination (https://www.gov.uk/discrimination-your-rights), sexual content and sensitive topics (like politics, war and religion).`,
-                    `All punishments and counts reset at the start of a new Type (last reset was on 2026/03/01).`,
-                    `Any action which harms the server itself or host machine will result in a Permanent Ban (no vote will be done, this decision can be taken alone by Dohst (https://github.com/dohst1)).`,
-                    `Obtaining a Permanent Ban will result in nihility for anything relating to the "Member".`,
-                    `The rules may change over time.`,
+                    `Final ban time formula: [final ban time] = [past bans count] * [current offense ban time].`,
                 ],
             ],
             [
-                "info_members",
-                "New Members (2026/05/08)",
+                "info_privacy",
+                "Privacy (2026/05/22)",
                 [
-                    "Criteria",
-                    `Must own an official copy of 'Minecraft: Java Edition' or 'Minecraft: Bedrock Edition', and have the ability to play online.`,
-                    `Must know at least two current members personally in real life.`,
-                    `Must not have had a Permanent Ban in the past (after 2026/03, if before 2026/03 then it does not count as a Permanent Ban).`,
+                    "Data Collected (and how it is collected) (and what it is used for)",
+                    `Name (first/preferred name, last name, minecraft username and uuid, optional Discord username) (from form submission) (for identification and for the whitelist on the server).`,
+                    `Minecraft Edition (Java or Bedrock) (from form submission) (for technical planning (since Bedrock players join through a different method than Java players)).`,
+                    `Device Type (only the one that you use to join) (from form submission) (for technical planning and so issues can be fixed easier if its device specific).`,
+                    `Internet Protocol Address (from joining the server) (to allow people to form a connection with the server).`,
+                    `Birth Year (from form submission) (for general data).`,
+                    `Join Date (from form submission) (for general data).`,
+                    `Log of Past Actions on the Server (including join/leave date time and commands executed) (from joining and playing on the server) (for the possibility of checking records to solve issues (such as griefing), and calculating total join time and some other information).`,
                 ],
                 [
-                    "Joining",
-                    `The Member inviting the New Member should inform the New Member of all Information in 'AmazonSMP Information' (https://dohst1.github.io/amazonsmp#information)`,
-                    `The Member inviting should then inform an Admin of the New Member's wish to join.`,
-                    `Then the New Member should complete the Registration Form (https://forms.gle/QU3zj5Pqpp9HGvxh8).`,
-                    `After Dohst (https://github.com/dohst1) confirms the New Member's registration, the New Member will be considered a Member and may be whitelisted by an Admin (if the Member is on Bedrock Edition, then an Admin may have to turn off the whitelist for the first time they join).`,
+                    "Data Sharing and Storage",
+                    `Your 'Name', 'Minecraft Edition', 'Device Type' and 'Log of Past Actions on the Server' will be shared with Admins. This Data is not sensitive so it should not be an issue, however you may request for it to not be shared.`,
+                    `All other Data will not be shared with anyone.`,
+                    `All of your data will be stored with AES-256 encryption and LZMA2 compression), except for you 'Name' and 'Internet Protocol Address' which is stored in some plain minecraft server files on the server machine.`,
+                ],
+                [
+                    "Collection and Deletion",
+                    `Data is only collected starting from after you submit the current 'Member Registration' form.`,
+                    `You may request to stop your Data being collected and stored. In this case Dohst (https://github.com/dohst1) will remove all data from all backups and current saves. To do this you can either directly contact Dohst (https://github.com/dohst1), or open a new issue on the github repository for this website (https://github.com/dohst1/dohst1.github.io/issues), you will need to at least provide your minecraft username and a method to confirm your identity (as the Member that you want the Data deleted for, not real life identification, please do not send any private information). Your data will then be deleted within (at most) six days. Also please note that doing this will also mean that you will no longer be a Member of the AmazonSMP.`,
+                    `Your data is also removed when you stop being a Member, (so if you decide to leave the AmazonSMP, all of your data will be removed from all backups and current saves).`,
+                    `This 'Data' or 'all data' does not include any data stored in the server files. If you would like absolutely all of your data (including player data and all interactions and actions on the server) to be removed, you will have to specify this when leaving or requesting to delete your data. This process could take up to twelve days, (independently of the previously mentioned six days).`,
                 ],
             ],
             [
                 "info_community",
-                "Community Code of Conduct (2026/03/29)",
+                "Community Code of Conduct (2026/05/22)",
                 [
                     "Allowed Client Modifications",
                     `Anything that does not give you an unfair advantage over other players, and does not disadvantage other players is likely allowed.`,
@@ -223,41 +241,110 @@ let DohstAmazonsmp = {
                     `Do not use players' real names in public content, instead, use their online name or minecraft username.`,
                     `Try to avoid unnecessary conflict. If you have concerns with a Member or Admin, contact Dohst (https://github.com/dohst1) or another Admin.`,
                 ],
+                [
+                    "Voting",
+                    `Votes about almost anything can be requested. If you request a vote, Admins will decide wherever it should be done. Votes will be done on Whatsapp groups because all Members are only present on Whatsapp.`,
+                    `Points per vote from:`,
+                    `- Original Members (anyone who joined before March 2024): 2 points.`,
+                    `- Normal Members: 1 point.`, 
+                    `- Original and Inactive Members: 1 point.`, 
+                    `- Inactive Members (anyone who has not joined the server in the last 14 days): 0.5 points.`,
+                    `- New Members (anyone who has joined the group but has not completed the registration form and has never joined): 0.5 points.`,
+                    `A vote will end 30 minutes after everyone has seen the vote message. The results will be recorded and total points for each option will be calculated.`,
+                    `If there is a significant majority (10% over any other option) for one of the options then the vote will end (and that option wins).`,
+                    `If there is not a significant majority (go down the list until a winner is determined, and check for significant majority at the end of each):`,
+                    `- Redo the vote but Members will be asked to pick their second best option, then these results will be multiplied by 0.5 and added to the first vote results for each option.`,
+                    `- Optional: Do same as above but for third favorite and multiply by 0.25 and add to second and first options.`,
+                    `- Use 5% as significant majority.`,
+                    `- Winner is just the majority.`,
+                    `(Round all final results up to the nearest integer before comparing results).`,
+                    `(x% significant majority means that when decreasing the option with the most points by x%, you get an amount which is still greater than all other options).`
+                ],
+            ],
+            [
+                "info_members",
+                "New Members (2026/05/22)",
+                [
+                    "Criteria",
+                    `Must own an official copy of 'Minecraft: Java Edition' or 'Minecraft: Bedrock Edition', and have the ability to play online.`,
+                    `Must know at least two current Members personally in real life, (and each of any of those current Members (who you know) must know an Admin personally in real life).`,
+                    `Must not have had a Permanent Ban in the past (after 2026/03/01, if before 2026/03/01 then it does not count as a Permanent Ban).`,
+                ],
+                [
+                    "Joining",
+                    `The Member inviting the New Member should inform the New Member of at least what is stated in the Rules and Privacy Notice here: 'AmazonSMP Information' (https://dohst1.github.io/amazonsmp#information)`,
+                    `The Member inviting should then inform an Admin of the New Member's wish to join.`,
+                    `Then the New Member should complete the Registration Form (https://forms.gle/viLDVgURCKZXF6wn9).`,
+                    `After Dohst (https://github.com/dohst1) confirms the New Member's registration, the New Member will be considered a Member and may be whitelisted by an Admin (if the Member is on Bedrock Edition, then an Admin may have to turn off the whitelist for the first time they join).`,
+                ],
+            ],
+            [
+                "info_contingencies",
+                "Contingencies (2026/05/22)",
+                [
+                    "Backups",
+                    `to be added`,
+                    ``,
+                ],
+                [
+                    "Admins",
+                    `to be added`,
+                    ``,
+                ],
+                [
+                    "Dohst",
+                    `to be added`,
+                    ``,
+                ],
             ],
         ],
 
         // from dds3 (half)
-        // 20260424
-        "players": [['02 name surname username', '03 namemc uuid', '05 tag', '07 banned , date time reason, ...', '08 link', ], 
-            //['unknown unknown unknown', 'unknown unknown', 'inactive', 'no, 20260320 0 none', 'unknown', ], 
-            ['Dohst', 'Dohst0 a72d1775-1031-4937-9fcb-3296809ef742', 'creator', 'no, 20260320 0 none', `${dohst23['link']}`, ], 
-            /* ['Endadwagon', 'Endadwagon 3465711c-9766-4f21-87ff-491155d7a591', 'no', 'no, 20260320 0 none', 'unknown', ], 
-            ['The_hammerhead78', 'The_hammerhead78 3da5fffd-4284-44f6-9855-4b5c6c888c31', 'no', 'no, 20260320 0 none', 'unknown', ], 
-            ['Herbine', 'Herbine b0e94580-016f-4828-b21d-fca0d8fd73b7', 'no', 'no, 20260320 0 none', 'unknown', ], 
-            ['unknown', 'unknown unknown', 'no', 'no, 20260320 0 none', 'unknown', ], 
-            ['unknown', 'unknown unknown', 'no', 'no, 20260320 0 none', 'unknown', ],  */
-            ['Secret7', 'Secret7 73045442-ec92-419c-a10c-d8efdab5f555', 'admin', 'no, 20260320 0 none', 'unknown', ], 
-            ['CookieLotty12', 'CookieLotty12 193df712-49dd-4bd1-a21d-09cc6f953bd9', 'original', 'no, 20260320 0 none', 'unknown', ], 
-            ['Tackzs', 'Tackzs d105fc83-6c49-4bfe-b8a3-0735cee598b4', 'admin', 'no, 20260320 0 none', 'unknown.html', ], 
-            ['WhatCheeseburger', 'WhatCheeseburger 438f0db2-ad4f-44d8-8d21-2bbb5600e676', 'admin', 'no, 20260320 0 none', 'https://www.youtube.com/@whatcheeseburgertv', ], 
-            ['MandoEAM', 'MandoEAM 9df74492-2311-483f-9f8b-4ba35d9af733', 'admin', 'no, 20260320 0 none', 'https://www.youtube.com/@MandoEAM', ], 
-            ['ATAT66', 'ATAT66 0ca533c1-e6a6-486a-86d0-aabe670031b4', 'original', 'no, 20260320 0 none', 'unknown', ], 
-            ['GappleJ', 'ImGapplejuice c50ab55c-a3b1-42e5-b2d5-772ddc3f5584', 'member', 'no, 20260320 0 none', 'unknown', ], 
-            ['dannygpr', 'Danny_GPR 33a86567-4671-4bfe-b0cd-37d957c0d63a', 'member', 'no, 20260320 0 none', 'https://youtube.com/@danny_gpr', ], 
-            ['unknown', 'Ilikekittensone b0c9a712-0db0-4f23-9e25-128e259f8223', 'member', 'no, 20260320 0 none', 'unknown', ], 
-            ['lily_mjr', '.Lily_mjr 00000000-0000-0000-0009-01f6b26e63a3', 'no', 'no, 20260320 0 none', 'unknown', ], 
-            ['unknown', 'Madhatters33 666a4058-85ba-4755-bec0-de7d652493ab', 'inactive', 'no, 20260320 0 none', 'unknown', ], 
-            ['cloopyster', '.Cloopyster 00000000-0000-0000-0009-01f438621ed5', 'member', 'no, 20260320 0 none', 'unknown', ], 
-            ['UnkownPoint', 'UnkownPoint b00b9fdd-eb7a-446c-bd56-5aba5d0784a6', 'member', 'no, 20260320 0 none', 'unknown', ], 
-            ['unknown', 'VaJdSvr25 1de8104f-23a9-4466-81a6-b62b265ccd11', 'inactive', 'no, 20260320 0 none', 'unknown', ], 
-            ['unknown', 'FresherBerry686 unknown', 'inactive', 'no, 20260320 0 none', 'unknown', ], 
-            ['haru', 'pikapud1801 652b2374-6425-4fab-b5e1-9f672653b9b2', 'inactive', 'no, 20260320 0 none', 'unknown', ],
-        ], 
+
+        
 
         // NOT from dds3
+
+        // 20260522
+        "players": [['02 name surname username', '03 namemc uuid', '05 tag', '07 banned , date time reason, ...', '08 link', ], 
+            // 0
+            //[`Danielle`, `DaniE gs93`, `creator`, `yes, 20240220 i gs23`, ``,],
+            // 1
+            [`Dohst`, `Dohst0 a72d1775-1031-4937-9fcb-3296809ef742`, `creator`, `no, 20260320 0 none`, `https://github.com/dohst1`,],
+            [`enda`, `Endadwagon 3465711c-9766-4f21-87ff-491155d7a591`, `original`, `no, 20260320 0 none`, ``,],
+            //[`herbine`, `herbine b0e94580-016f-4828-b21d-fca0d8fd73b7`, `original`, `no, 20260320 0 none`, ``,],
+            [`hammerhead`, `the_hammerhead78 3da5fffd-4284-44f6-9855-4b5c6c888c31`, `original`, `no, 20260320 0 none`, ``,],
+            //[`chase`, `unknown unknown`, `original`, `no, 20260320 0 none`, ``,],
+            //[`luka`, `unknown unknown`, `original`, `no, 20260320 0 none`, ``,],
+            // 2
+            [`Secret7`, `Secret7 73045442-ec92-419c-a10c-d8efdab5f555`,	`Admin`, `no, 20260320 0 none`, ``,],
+            [`Cookielotty`, `CookieLotty12 193df712-49dd-4bd1-a21d-09cc6f953bd9`, `original`, `no, 20260320 0 none`, ``,],
+            [`Tackzs`, `Tackzs d105fc83-6c49-4bfe-b8a3-0735cee598b4`, `Admin`, `no, 20260320 0 none`, ``,],
+            [`WhatCheeseburger`, `WhatCheeseburger 438f0db2-ad4f-44d8-8d21-2bbb5600e676`, `Admin`, `no, 20260320 0 none`, `https://www.twitch.tv/whatcheeseburgertv`,],
+            [`Mandoeam`, `MandoEAM 9df74492-2311-483f-9f8b-4ba35d9af733`, `Admin`, `no, 20260320 0 none`, `https://www.youtube.com/@MandoEAM`,],
+            [`ATAT`, `ATAT66 0ca533c1-e6a6-486a-86d0-aabe670031b4`, `original`, `no, 20260320 0 none`, ``,],
+            // 3
+            [`GappleJ`, `ImGapplejuice c50ab55c-a3b1-42e5-b2d5-772ddc3f5584`, `original`, `no, 20260320 0 none`, ``,],
+            // 4
+            [`Danny_GPR`, `Danny_GPR 33a86567-4671-4bfe-b0cd-37d957c0d63a`, `Member`, `no, 20260320 0 none`, `https://youtube.com/@danny_gpr`,],
+            [`Ilikekittensone`, `Ilikekittensone b0c9a712-0db0-4f23-9e25-128e259f8223`,	`Member`, `no, 20260320 0 none`, ``,],
+            [`Lilymjr`, `.Lily_mjr 00000000-0000-0000-0009-01f6b26e63a3`, `Admin`, `no, 20260320 0 none`, ``,],
+            [`Cloopy`, `.Cloopyster 00000000-0000-0000-0009-01f438621ed5`, `Member`, `no, 20260320 0 none`, ``,],
+            // 5
+            [`Madhatters33`, `Madhatters33 666a4058-85ba-4755-bec0-de7d652493ab`, `Innactive`, `no, 20260320 0 none`, ``,],
+            [`UnkownPoint`, `UnkownPoint b00b9fdd-eb7a-446c-bd56-5aba5d0784a6`,	`Innactive`, `no, 20260320 0 none`, ``,],
+            [`VaJdSvr25`, `VaJdSvr25 1de8104f-23a9-4466-81a6-b62b265ccd11`, `Innactive`, `no, 20260320 0 none`, ``,],
+            //[`Dhian`, `FresherBerry686 unknown`, `Innactive`, `no, 20260320 0 none`, ``,],
+            [`pikapud1801`, `pikapud1801 652b2374-6425-4fab-b5e1-9f672653b9b2`,	`Innactive`, `no, 20260320 0 none`, ``,],
+            [`EXD_CHAMPION441`, `.EXD_CHAMPION441 00000000-0000-0000-0009-01ff7b1aaf8e`, `Member`, `no, 20260320 0 none`, ``,],
+            [`seasaw0963`, `seasaw0963 bd28812a-94e4-4f83-bbf3-ba3a22743a9a`, `Member`, `no, 20260320 0 none`, ``,],
+            [`GGRUIREOL`, `.ActionZER0 00000000-0000-0000-0009-01fd21a42276`, `Admin`, `no, 20260320 0 none`, ``,],
+                
+        ], 
+
         // 20260327
         "seasons": [['type', 'name', 'part', 'start', 'end', 'life', 'version', 'description', 'link'], 
-            ['4', 'Season 13', 'none', '2026/03/20', 'present<!-- max 2028/02/29 -->', '&gt;49', '1.21.11 vanilla <br> (with crossplay)', 'World Download Unavailable<br><a href="assets/amazonsmp/as13p1-mods20260508-recommended.zip">Recommended Client Mods (2026/05/08) (37.7 MB)</a><br><a href="https://drive.google.com/file/d/16FaQmG44TpcpPmNSE_flV1gwO5V5BMes/view?usp=drive_link">as13p1-world20260430-temp.7z (1 540 MB)</a> (encrypted)<br><a href="https://drive.google.com/file/d/1A5wgqEQlTZF8PHfmazp6Jm8EA52tQaZQ/view?usp=drive_link">as13p1-server20260430-temp.7z (545 MB)</a> (encrypted)', 'season13.html'], 
+            ['4', 'Season 13', 'none', '2026/03/20', 'present<!-- max 2028/02/29 -->', '&gt;63', 'Minecraft 1.21.11, <br> with Fabric 0.19.2, <br> Geyser viaproxy v2.10.0-b1148, <br> Viaproxy v3.4.11', 'World Download Unavailable<br><a href="assets/amazonsmp/as13p1-mods20260508-recommended.zip">Recommended Client Mods (2026/05/08) (37.7 MB)</a><br><a href="https://drive.google.com/file/d/16FaQmG44TpcpPmNSE_flV1gwO5V5BMes/view?usp=drive_link">as13p1-world20260430-temp.7z (1 540 MB)</a> (encrypted)<br><a href="https://drive.google.com/file/d/1A5wgqEQlTZF8PHfmazp6Jm8EA52tQaZQ/view?usp=drive_link">as13p1-server20260430-temp.7z (545 MB)</a> (encrypted)', 'season13.html'], 
 
             ['3', 'Temporary 04', 'none', '2025/07/12', '2025/07/22', '10', '1.21.6 - 1.21.7', 'Unavailable', 'seasons_temporary.html#temporary4'], 
             ['3', 'Season 12', 'Part 3', '2025/07/22', '2026/02/10', '203', '1.20.1 modded', '<a href="https://www.mediafire.com/file/2i03ah993otr8f8/season12p3-world_final.zip/file">World Download (1 290 MB)</a><br><a href="https://www.mediafire.com/file/ru4533taoswplkg/as12p3-mods-202511.zip/file">Required Mods (153 MB)</a><br><a href="https://www.mediafire.com/file/9tgz47ufs5smnqb/season12p3-mods_full.zip/file">Server Mods (544 MB)</a>', 'season12.html#part3'], 
@@ -271,16 +358,6 @@ let DohstAmazonsmp = {
             ['3', 'Temporary 02', 'none', '2023/05/??', '2023/05/??', '&lt;20', 'Unknown', 'Unavailable', 'seasons_temporary.html#temporary2'], 
             ['3', 'Season 09', '', '2023/03/01', '2023/06/10', '101', '1.19.3 - 1.19.4', 'After 528:<br><a href="https://www.mediafire.com/file/49i3pubuxhrwt4s/season9p2_full.zip/file">World Download (145 MB)</a> <br>Before 528:<br><a href="https://www.mediafire.com/file/qw5hp6crqlq76ow/season9p1_full.zip/file">World Download (198 MB)</a>', 'season9.html'], 
 
-            ['2', 'Season 08', 'none', '2023/01/10', '2023/02/26', '47', '1.19.2 modded', '<a href="https://www.mediafire.com/file/gzs8vlz07g51och/season8.zip/file">World Download (85.9 MB)</a>', 'seasons_old.html#season8'], 
-            ['2', 'Season 07', 'none', '2022/12/11', '2022/12/23', '12', '1.19.3', '<a href="https://www.mediafire.com/file/2ftn95ch840un5n/season7_full.zip/file">World Download (151 MB)</a>', 'seasons_old.html#season7'], 
-            ['2', 'Temporary 01', 'none', '2022/11/??', '2022/12/??', '&lt;20', '1.19.1 modded', 'Unavailable', 'seasons_temporary.html#temporary1'], 
-            ['2', 'Season 06', 'none', '2022/11/09', '2022/11/22', '13', '1.19.2', '<a href="https://www.mediafire.com/file/koa63zhwro7qued/season6.zip/file">World Download (94.3 MB)</a>', 'seasons_old.html#season6'], 
-            ['2', 'Season 05', 'none', '2022/09/19', '2022/11/06', '48', '1.19.2', '<a href="https://www.mediafire.com/file/17sczuqf9kk5tkb/season5.zip/file">World Download (78.5 MB)</a>', 'seasons_old.html#season5'], 
-            ['2', 'Season 04', 'none', '2022/08/20', '2022/09/16', '27', '1.19.0 modded', '<a href="https://www.mediafire.com/file/dgdwmcq92wgavpo/season4.zip/file">World Download (95.6 MB)</a>', 'seasons_old.html#season4'], 
-            ['1', 'Season 03', 'none', '2022/06/18', '2022/08/18', '61', '1.18.2 - 1.19.2', '<a href="https://www.mediafire.com/file/evz7azbg4k07ztf/season3.zip/file">World Download (96.9 MB)</a>', 'seasons_old.html#season3'], 
-            ['1', 'Season 02', 'none', '2022/05/03', '2022/06/05', '34', '1.18.1', 'Unavailable', 'seasons_old.html#season2'], 
-            ['1', 'Season 01', 'none', '2022/03/16', '2022/05/02', '47', '1.18.0', 'Unavailable', 'seasons_old.html#season1'], 
-            ['0', 'Seasons 00 <br> (not continuous)', 'none', '2020/03/00', '2022/03/10', 'unknown', '1.15.2 - 1.18.0', 'Unavailable', 'seasons_old.html#season0'],
         ],
         // 20260508
         "mods": [['name', 'description', 'version', 'link', 'required'], 
@@ -340,7 +417,7 @@ let DohstAmazonsmp = {
             ['more mob heads', "Adds a chance to receive a mob's head upon killing it", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['name colors', "Ender '/trigger color' to list the colors you can set your username to (this gets reset due to afk display if you go afk).", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['nether portal coords', 'Adds a trigger that calculates where a nether portal should be paced in the other dimension.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
-            ['no ender eye (v2.2)<br>(Removed on 2026/04/02)', 'Makes eyes of ender uncraftable.', '<a href="https://github.com/dohst1">Dohst</a>', 'dohst.html#datapacks'], 
+            ['no ender eye (v2.2)<br>(Removed on 2026/04/02)', 'Makes eyes of ender uncraftable.', `<a href="${dohst23['link']}">Dohst</a>`, 'dohst.html#datapacks'], 
             ['painting picker', "Use a stone cutter to choose a painting's variant.", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['player head drops', 'A player will drop their head when killed by another player. The item displays who the killer is.', '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
             ['silence mobs', "Adds the ability to silence mobs using a name tag. 'silence me', 'Silence me', 'silence_me' are all acceptable names.", '<a href="https://vanillatweaks.net">VanillaTweaks</a>', 'https://vanillatweaks.net/picker/datapacks/'], 
@@ -374,18 +451,11 @@ let DohstAmazonsmp = {
         "description": {
             "about": [
                 `AmazonSMP is a private Minecraft server created and hosted by <a href="${dohst23['link']}">Dohst</a> since 2022. This page is intended to be used only by current or past AmazonSMP Members.`,
-                `This page is for the AmazonSMP in general, for information about the current season see <a href="season13.html">Season 13</a>`,
-                /* `Click on each section and subsection title (or table headers) to show/hide its content.`, */
+                `This page is for the AmazonSMP in general, for information about the current season see: <a href="season13.html">Season 13</a>.`,
                 `New: The Information section has been updated.`,
-                /* `New: Pages for Season 13, Season 12, Season 11, Season 10, Season 09, Really Old Seasons, and Temporary Seasons have been updated with new links and format.`, */
-                `2026/02: Season 12 Part 3 has ended, you can find downloads and other information below.`,
+                `2026/02/20: Season 12 Part 3 has ended, you can find downloads and other information below.`,
             ],
             "seasons": [
-                //`Season 12 Part 3 was compressed using <a href="https://www.7-zip.org">7zip</a> (you can extract it without downloading 7zip if you have another software which can unzip files).`,
-                //`Seasons Parts which are not '1' have parts of their worlds which are not from the original seed, meaning that chunk boundaries may have weird generation.`,
-                `Please note that some of the really old seasons (before 2023/03) may have incorrect dates and information.`,
-                `'Unavailable' downloads for Season 1 and Season 2 (and Temporary Seasons) will not become available since the world files were not saved.`,
-                //`Downloads (for world and mods) for the current Season will be updated every Sunday at around 22:00 UTC (These are temporary downloads and will be deleted once a new set is added).`,
                 `All downloads are linked to <a href="https://www.mediafire.com">MediaFire</a>, to <a href="https://drive.google.com">Google Drive</a> or directly to this website.`,
             ],
             "mods": [
@@ -408,11 +478,6 @@ let DohstAmazonsmp = {
                 `When you open Minecraft it should be in your singleplayer worlds.`,
                 `It is highly recommended that you play on the original version of that world with the same mods and datapacks.`,
 
-                /* `Mods`,
-                `Go to <a href="amazonsmp.html#links">the Seasons section</a> and download the mods you want.`,
-                `If you have not already, download Fabric from <a href="https://fabricmc.net">the FabricMC website</a>, and install it on your client for the minecraft and fabric version required.`,
-                `After the mods have finished downloading, extract the zip file, and move all the .jar files directly into your Minecraft client's mods folder (usually located at '%appdata%/.minecraft/mods').`,
-                ``, */
             ],
 
         },
@@ -480,7 +545,6 @@ let DohstAmazonsmp = {
                 };
             };
 
-            // content_amazonsmp["seasons"] [0'type', 1'name', 2'part', 3'start', 4'end', 5'life', 6'version', 7'description', 8'link']
             text_seasons += `<tr>`
             if (this.content["seasons"][i][2] == 'none') {
                 text_seasons += `<td rowspan="1" colspan="2"><a href="${this.content["seasons"][i][8]}">${this.content["seasons"][i][1]}</a></td>`
@@ -677,10 +741,6 @@ let DohstAmazonsmp = {
         let text_about = ``;
         for (let i = 0; i < this.content["description"]["about"].length; i++) {text_about += `<p>${this.content["description"]["about"][i]}</p>`;};
 
-        // old
-        /* if (index == 0 || index >= updates.length || !index) {return null}
-        else if (description) {document.getElementById(target).innerHTML = updates[index][2]} 
-        else {document.getElementById(target).innerHTML = updates[index][0] + " - " + updates[index][1]} */
         options = options.split(" ");
         let last = "";
         for (let i = 0; i < options.length; i++) {
@@ -737,17 +797,7 @@ let DohstAmazonsmp = {
                 document.getElementById("information").innerHTML = text_information;
 
                 //set_mods_description()
-            } /* else if (options[i] == "seasons") {
-                set_seasons();
-                set_seasons_description()
-            } else if (options[i] == "recommended") {
-                set_recommended();
-                set_mods_description()
-            } else if (options[i] == "server") {
-                set_mods();
-                set_descriptions()
-                set_mods_description()
-            }; */
+            }
             last = options[i];
         };
         
@@ -773,9 +823,6 @@ const DohstEvent = {
                 effect_fade_target.classList.add("fade");
             };
         })
-        /* PageContent.set_updates(target, index, true)
-        effect_fade_target.classList.remove("fade");
-        effect_fade_target.classList.add("fade_in");}) */
     },
 
     set_dropdown: function () {
@@ -823,12 +870,7 @@ const DohstEvent = {
 
     
     set_clickable_section: function (targets) {
-        // targets are all the element ids of all the elements which you want to be hidden
-        // make sure there is also an element outside of the content element which is named '{content element id}-header' to act as a toggle button
         for (let i = 0; i < targets.length; i++) {
-            //document.getElementById(targets[i]+"-header").classList.add("section_header")
-            //console.log(targets[i]);
-            
             document.getElementById(targets[i]+"-header").addEventListener('click', () => {
                 document.getElementById(targets[i]).classList.toggle("fade_none");
             });
