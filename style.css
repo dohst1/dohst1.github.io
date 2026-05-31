@@ -1,4 +1,5 @@
-/* Dohst23 - rai_website - main cascading style sheet */
+/* Dohst23-rw-style-v4.4.8-20260531 */
+/* dohst23 = {'creator': 'Dohst23【ドスト二十三】', 'link': 'https://gitlab.com/dohst', 'did': '230023-pj_rw_20260222', 'project': 'rai_website', 'part': 'style (cascading style sheet file)', 'version': '4.4.8-20260531',}; */
 
 
 /* v3 - 2026 current */
@@ -7,7 +8,9 @@
     --background: rgb(31, 33, 37);
     --background-dark: rgb(28, 28, 28);
 
+    /* --border-light: rgb(95, 95, 95); */
     --border-light: rgb(160, 160, 160);
+    /* --border: rgb(66, 66, 66); */
     --border: rgb(16, 16, 16);
 
     --text: rgb(220, 220, 220);
@@ -19,8 +22,8 @@
     --font-size-small: 20px;
 
     --sat: 20%;
-    --lig1: 50%;
-    --lig2: 40%;
+    --lig1: 40%;
+    --lig2: 35%;
     --lig3: 25%;
 }
 
@@ -83,9 +86,9 @@
     --sat: 60%;
     --lig1: 30%;
     --lig2: 25%;
-    --lig3: 10%;
+    --lig3: 20%;
     --border-light: rgb(200, 200, 200);
-    --border: rgb(120, 120, 120);
+    --border: rgb(160, 160, 160);
 }
 [color_style="light"] {
     --sat: 20%;
@@ -195,14 +198,19 @@ code, li {
 }
 
 button {
+    /* padding: 12px 38px; */
     margin: 3px;
+    /* font-weight: bold; */
+    /* text-decoration: none; */
     font-size: var(--font-size-small);
     color: var(--text-dark);
     padding: 0 16px;
     height: var(--font-size-small);
     cursor: pointer;
     min-width: 64px;
+    /* border: none; */
     background-color: transparent;
+    /* background-color: var(--background-light); */
     min-height: calc(var(--font-size-small)*2);
     min-width: 100px;
     border: none;
@@ -228,6 +236,12 @@ nav h1, header h1 {
     border: none;
 }
 
+/* h1, h2 {
+    border: solid;
+    border-width: 2px;
+    border-color: var(--border);
+    border-radius: 10px;
+} */
 h1:hover, h2:hover {
     text-decoration: underline;
 }
@@ -235,6 +249,7 @@ h1:hover, h2:hover {
 h1 {
     font-size: var(--font-size-big);
     padding: var(--font-size-big);
+    /* padding-left: var(--font-size-small); */
     padding-left: 0;
     margin-top: 48px;
 }
@@ -248,6 +263,7 @@ h2 {
     margin-top: 24px;
 }
 h3 {
+    /* padding-top: var(--font-size-small); */
     font-size: var(--font-size-small);
     padding: var(--font-size-small);
     padding-left: var(--font-size-big);
@@ -263,6 +279,9 @@ a, :any-link, a abbr{
 a:hover, :any-link:hover, :any-link:active, button:hover {
     text-decoration: underline;
 }
+/* td a{
+    display: block;
+} */
 
 nav {
     position: fixed;
@@ -273,7 +292,9 @@ nav {
     align-items: center;
     height: 100px;
     background-color: var(--background);
+    /* padding: 0px 20px; */
     justify-content: start;
+    /* z-index: 10; */
     border-color: var(--border);
     border: 2px solid var(--border);
     z-index: 6;
@@ -281,8 +302,32 @@ nav {
 }
 nav h1, .dropdown_button {
     margin: var(--font-size-big);
+    /* makes nav bar title stay in center, but causes some other visual issues with smaller screens
+    padding-left: 6%;
+    padding-right: 6%; */
 }
 
+/* nav button:hover {
+background-color: var(--background);
+} */
+
+/* .sidenav {
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: var(--background-dark);
+    overflow-x: hidden;
+    padding-top: 80px;
+    margin-top: 80px;
+    margin-left: 20px;
+} */
+/* .split {
+    position: fixed;
+    top: 200px;
+    padding-top: 20px;
+} */
 .row {
     display: flex;
     padding: 10px;
@@ -359,6 +404,7 @@ nav h1, .dropdown_button {
     margin: 0;
     padding: 0;
     border: 2px solid var(--border);
+    /* float: left; */
     flex: left;
 }
 .rightside {
@@ -367,9 +413,11 @@ nav h1, .dropdown_button {
     width: 40%;
     justify-self: right;
     text-align: start;
+    /* flex: 40%; */
     margin: 0;
     padding: 0;
     border: 2px solid var(--border);
+    /* float: right; */
     flex: right;
 }
 .rightside * {
@@ -378,9 +426,14 @@ nav h1, .dropdown_button {
 }
 
 
+/* .gallery {
+} */
+
 .responsive {
     border-radius: var(--font-size-small);
+    /* padding: 0 6px; */
     display: inline-block;
+    /* width: 20%; */
     justify-content: left;
     align-content: left;
     text-align: left;
@@ -389,7 +442,7 @@ nav h1, .dropdown_button {
 .description, .responsive img/* , .rightside *, .leftside * */ {
     border-radius: var(--font-size-small);
     align-self: start;
-    max-width: 384px;
+    max-width: 256px;
     min-height: 100px;
     margin: 5px;
 }
@@ -401,14 +454,19 @@ nav h1, .dropdown_button {
     width: auto;
     align-self: left;
     justify-self: left;
+    /* float: right; */
     position: sticky;
 }
+/* drop down menu (for now only used for color switching) */
 .dropdown_content {
+    /* position: absolute; */
+    /* background-color: var(--background-light); */
     margin: 0;
     position: absolute;
     justify-content: left;
     width: auto;
     overflow: auto;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 8;
     display: none;
 }
@@ -483,7 +541,38 @@ nav h1, .dropdown_button {
   width: 80%;
   max-width: 700px;
 }
+/* Caption of Modal Image */
+/* #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+} */
 
+
+/* @media only screen and *//* (max-width: 600px) *//* (max-width: 1500px) {
+    
+p, h1, h2, h3, ul, ol, main address {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/* removes the 'AmazonSMP Websbite' if the page is too small to show it (makes it generate in the negatives)*/
+/*.right {
+    margin-left: -3000px;
+}
+nav h1 {
+    width: 20%;
+    padding-left: 0%;
+    padding-right: 0%;
+    justify-content: left;
+}
+}
+*/
 
 
 @media only screen and (max-width: 1536px) {
@@ -497,6 +586,11 @@ nav h1, .dropdown_button {
 
 
 @media only screen and /* (max-width: 600px) */ (max-width: 1024px) {
+    /* :root {
+        --font-size-big: 32px;
+        --font-size-normal: 28px;
+        --font-size-small: 24px;
+    } */
     
     h1, h2, h3, ul, ol, main address, span, main h1, section {
         margin-left: 10px;
@@ -510,6 +604,7 @@ nav h1, .dropdown_button {
         max-width: 250px;
     }
     
+    /* removes the navbar title if the page is too small to show it (makes it generate in the negatives)*/
     nav h1, .right, nav button, main table {
         /* display: none; */
         margin: 0;
@@ -517,6 +612,28 @@ nav h1, .dropdown_button {
     nav {
         justify-content: center;
     }
+    /* nav a {
+    display: inline-block;
+    justify-content: left;
+    align-content: left;
+    text-align: left;
+    margin: 0;
+    }
+    nav h1 {
+        display: inline-block;
+        margin: 0;
+        padding: 0 0 0 5px;
+        max-width: 100px;
+        vertical-align: top;
+        font-size: var(--font-size-normal);
+    } */
+    
+    /* nav button {
+        font-size: 20px;
+        height: 48px;
+        line-height: 48px;
+        min-width: 96px;
+    } */
     .row {
         display: block;
         padding: 4px;
@@ -531,4 +648,18 @@ nav h1, .dropdown_button {
     .space {
         border: none;
     }
+    /* .responsive {
+      width: 40%;
+    } */
+     
 }
+
+
+/* @media only screen and (max-width: 512px) {
+.responsive {
+  width: 80%;
+}
+}
+ */
+
+ 
