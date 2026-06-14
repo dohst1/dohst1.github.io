@@ -1,5 +1,5 @@
-/* Dohst23-rw-style-v4.4.8-20260531 */
-/* dohst23 = {'creator': 'Dohst23【ドスト二十三】', 'link': 'https://gitlab.com/dohst', 'did': '230023-pj_rw_20260222', 'project': 'rai_website', 'part': 'style (cascading style sheet file)', 'version': '4.4.8-20260531',}; */
+/* Dohst23-rw-style-v4.4.9-20260614 */
+/* dohst23 = {'creator': 'Dohst23【ドスト二十三】', 'link': 'https://gitlab.com/dohst', 'did': '230023-pj_rw_20260222', 'project': 'rai_website', 'part': 'style (cascading style sheet file)', 'version': '4.4.9-20260614',}; */
 
 
 /* v3 - 2026 current */
@@ -17,9 +17,9 @@
     --text-grey: rgb(180, 180, 180);
     --text-dark: rgb(216, 216, 216);
 
-    --font-size-big: 28px;
-    --font-size-normal: 24px;
-    --font-size-small: 20px;
+    --font-size-big: 26px;
+    --font-size-normal: 22px;
+    --font-size-small: 18px;
 
     --sat: 20%;
     --lig1: 40%;

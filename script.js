@@ -1,6 +1,6 @@
 "use strict";
-// Dohst23-rw-script-v4.4.8-20260531
-const dohst23 = {'creator': 'Dohst23【ドスト二十三】', 'link': 'https://gitlab.com/dohst', 'did': '230023-pj_rw_20260222', 'project': 'rai_website', 'part': 'script (javascript file)', 'version': '4.4.8-20260531',};
+// Dohst23-rw-script-v4.4.9-20260614
+const dohst23 = {'creator': 'Dohst23【ドスト二十三】', 'link': 'https://gitlab.com/dohst', 'did': '230023-pj_rw_20260222', 'project': 'rai_website', 'part': 'script (javascript file)', 'version': '4.4.9-20260614',};
 
 
 
@@ -23,14 +23,15 @@ const DohstPage = {
             <a href="/404.html"><button|>404</button></a>
             <br>
             <a href="/amazonsmp.html"><button|>AmazonSMP</button></a>
-
+            <a href="/maintenance.html"><button|>AmazonSMP Maintenance</button></a>
+            <br>
             <a href="/season13.html"><button|>Season 13</button></a>
             <a href="/season12.html"><button|>Season 12</button></a>
             <a href="/season11.html"><button|>Season 11</button></a>
             <a href="/season10.html"><button|>Season 10</button></a>
             <a href="/season9.html"><button|>Season 09</button></a>
-            <br><a href="/seasons_old.html"><button|>Really Old Seasons</button></a>
-            <a href="/seasons_temporary.html"><button|>Temporary Seasons</button></a>
+            <!--<br><a href="/seasons_old.html"><button|>Really Old Seasons</button></a>
+            <a href="/seasons_temporary.html"><button|>Temporary Seasons</button></a>-->
 
             <br><br>
             `,
@@ -49,12 +50,9 @@ const DohstPage = {
             </div>
             <button id="toggle_style" class="toggle_style">Toggle Dark</button>
             </div>`,
-
     },
 
-
     // utilities
-
     recombine_string: function (text_temporary, active_index) {
         let text = ""
         for (let i = 0; i < text_temporary.length; i++) {
@@ -67,7 +65,6 @@ const DohstPage = {
     },
 
     // setters
-
     set_navigation: function set_navigation(active = "none") {
         let placement = -1
         // sets the active class to the button of the page selected before inserting the code
@@ -92,19 +89,17 @@ const DohstPage = {
         else if (active == "dohst") {placement = 4;}
         else if (active == "404") {placement = 5;}
         else if (active == "amazonsmp") {placement = 6;};
-        // TODO add new page active settings
-        // 20260414 - 230023 (Dohst): what do you mean
+        // toupdate add new page active settings
+        // 20260414 - 260023 (Dohst): what do you mean
         
         let text = this.content["sidebar"].split("|");
         if (!title) {text[0] = "";};
 
         document.getElementById("sidebar").innerHTML = "<br><br>" + this.recombine_string(text, placement);
     },
-    
     set_color_button: function set_footer() {document.getElementById("set_color").innerHTML = this.content["color_button"]},
 
 };
-
 
 
 // events
@@ -171,14 +166,10 @@ const DohstEvent = {
         })
     },
 
-    
     set_clickable_section: function (targets) {
         // targets are all the element ids of all the elements which you want to be hidden
         // make sure there is also an element outside of the content element which is named '{content element id}-header' to act as a toggle button
         for (let i = 0; i < targets.length; i++) {
-            //document.getElementById(targets[i]+"-header").classList.add("section_header")
-            //console.log(targets[i]);
-            
             document.getElementById(targets[i]+"-header").addEventListener('click', () => {
                 document.getElementById(targets[i]).classList.toggle("fade_none");
             });
@@ -188,14 +179,10 @@ const DohstEvent = {
 };
 
 
-
 // initialise
 const DohstMain = {
-
     initialise: function () {
         DohstEvent.set_color();
     },
-
 };
-
 
