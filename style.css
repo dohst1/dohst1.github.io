@@ -142,7 +142,7 @@ code:hover, th:hover, td:hover, button:hover, li:hover {
 }
 section {
     padding: 0;
-    max-width: 1536px;
+    max-width: 1024px; /* 1536px;*/
 }
 section *, section h3, section p {
     margin-left: 0;
