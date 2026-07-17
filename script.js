@@ -1,6 +1,6 @@
 "use strict"; 
-// Dohst23-rw-script-v4.4.15-20260707
-const dohst23 = {'creator': 'Dohst23【ドスト二十三】', 'link': 'https://gitlab.com/dohst', 'did': '230023-pj_rw_20260222', 'project': 'rai_website', 'part': 'script (javascript file)', 'version': '4.4.15-20260707',};
+// Dohst23-rw-script-v4.5.1-20260717
+const dohst23 = {'creator': 'Dohst23【ドスト二十三】', 'link': 'https://gitlab.com/dohst', 'did': '230023-pj_rw_20260222', 'project': 'rai_website', 'part': 'script (javascript file)', 'version': '4.5.1-20260717',};
 
 
 
