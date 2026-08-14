@@ -1,7 +1,7 @@
 # Dohst Website <!-- rai_website -->
 
 <p>The whole website is written and maintained by <a href="https://github.com/dohst1">Dohst</a>.</p>
-<p>Copyright &copy;<a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
+<p>Copyright <a href"https://www.gov.uk/copyright">&copy;</a><a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
 <p>All content is made by <a href="https://github.com/dohst1">Dohst</a> unless it is stated otherwise.</p>
 <p>No artificial intelligence was used during development/creation. Do NOT use any of this content to train artificial intelligence.</p>
 
@@ -10,7 +10,7 @@
 ---
 
 <br>
-<p>Website Version 4.5.2-20260721 - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></p>
+<p>Website Version 4.5.4-20260814 - Written and Maintained by <!-- ///////// and --> <a href="https://github.com/dohst1">Dohst</a></p>
 <p>Copyright &copy;<a href="https://github.com/dohst1">Dohst</a> 2022-2026, All Rights Reserved.</p>
 <br>
 

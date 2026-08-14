@@ -1,6 +1,6 @@
 "use strict"; 
-// Dohst23-rw-script-v4.5.2-20260721
-const dohst23 = {'creator': 'Dohst23【ドスト二十三】', 'link': 'https://gitlab.com/dohst', 'did': '230023-pj_rw_20260222', 'project': 'rai_website', 'part': 'script (javascript file)', 'version': '4.5.2-20260721',};
+// Dohst23-rw-script-v4.5.4-20260814
+const dohst23 = {'creator': 'Dohst23【ドスト二十三】', 'link': 'https://gitlab.com/dohst', 'did': '230023-pj_rw_20260222', 'project': 'rai_website', 'part': 'script (javascript file)', 'version': '4.5.4-20260814',};
 
 
 
@@ -8,28 +8,28 @@ const dohst23 = {'creator': 'Dohst23【ドスト二十三】', 'link': 'https://
 const DohstPage = {
     // content
     content: {
-        'navigation': `<h1><strong><a href="/index.html"|>Dohst Website</a></strong></h1><br>
-            <a href="/main.html"><button|>Information</button></a>
-            <a href="/updates.html"><button|>Updates</button></a>
-            <a href="/dohst.html"><button|>Dohst</button></a>
-            <a href="/amazonsmp.html"><button|>AmazonSMP</button></a>
-            <a href="/season13.html"><button|>Season 13</button></a>`,
+        'navigation': `<h1><strong><a href="index.html"|>Dohst Website</a></strong></h1><br>
+            <a href="main.html"><button|>Information</button></a>
+            <a href="updates.html"><button|>Updates</button></a>
+            <a href="dohst.html"><button|>Dohst</button></a>
+            <a href="amazonsmp.html"><button|>AmazonSMP</button></a>
+            <a href="season13.html"><button|>Season 13</button></a>`,
 
         'sidebar': `<h1>Page List</h1>|
-            <a href="/index.html"><button|>Home</button></a>
-            <a href="/main.html"><button|>Information</button></a>
-            <a href="/updates.html"><button|>Updates</button></a>
-            <a href="/dohst.html"><button|>Dohst</button></a>
-            <a href="/404.html"><button|>404</button></a>
+            <a href="index.html"><button|>Home</button></a>
+            <a href="main.html"><button|>Information</button></a>
+            <a href="updates.html"><button|>Updates</button></a>
+            <a href="dohst.html"><button|>Dohst</button></a>
+            <a href="404.html"><button|>404</button></a>
             <br>
-            <a href="/amazonsmp.html"><button|>AmazonSMP</button></a>
-            <a href="/maintenance.html"><button|>AmazonSMP Maintenance</button></a>
+            <a href="amazonsmp.html"><button|>AmazonSMP</button></a>
+            <a href="maintenance.html"><button|>AmazonSMP Maintenance</button></a>
             <br>
-            <a href="/season13.html"><button|>Season 13</button></a>
-            <a href="/season12.html"><button|>Season 12</button></a>
-            <a href="/season11.html"><button|>Season 11</button></a>
-            <a href="/season10.html"><button|>Season 10</button></a>
-            <a href="/season9.html"><button|>Season 09</button></a>
+            <a href="season13.html"><button|>Season 13</button></a>
+            <a href="season12.html"><button|>Season 12</button></a>
+            <a href="season11.html"><button|>Season 11</button></a>
+            <a href="season10.html"><button|>Season 10</button></a>
+            <a href="season9.html"><button|>Season 09</button></a>
             <!--<br><a href="/seasons_old.html"><button|>Really Old Seasons</button></a>
             <a href="/seasons_temporary.html"><button|>Temporary Seasons</button></a>-->
 
@@ -49,15 +49,24 @@ const DohstPage = {
             <a href=""><button id="violet">Violet</button></a>
             </div>
             <button id="toggle_style" class="toggle_style">Toggle Dark</button>
+            
+            <button id="dropdown_button_language" class="dropdown_button">Set Language</button>
+            <div class="dropdown_content" id="dropdown_content_language">
+            <a href=""><button id="en">En</button></a>
+            <a href="ja/"><button id="ja">Red</button></a>
+            <a href="fr/"><button id="fr">Fr</button></a>
+            <a href="ro/"><button id="ro">Yellow</button></a>
+            </div>
+            
             </div>`,
     },
 
     // utilities
-    recombine_string: function (text_temporary, active_index) {
+    recombine_string: function (original, index) {
         let text = ""
-        for (let i = 0; i < text_temporary.length; i++) {
-            text += text_temporary[i];
-            if (i == active_index) {
+        for (let i = 0; i < original.length; i++) {
+            text += original[i];
+            if (i == index) {
                 text += ' class="active"';
             };
         };
@@ -77,9 +86,6 @@ const DohstPage = {
         else if (active == "season13") {placement = 5;};
         document.getElementById("nav").innerHTML = this.recombine_string(this.content["navigation"].split("|"), placement);;
     },
-
-    set_head: function () {document.getElementById("head").innerHTML = this.content["head"]},
-    set_foot: function () {document.getElementById("foot").innerHTML = this.content["foot"]},
     
     set_sidebar: function set_sidebar(active = "none", title = true) {
         let placement = -1;
@@ -89,8 +95,6 @@ const DohstPage = {
         else if (active == "dohst") {placement = 4;}
         else if (active == "404") {placement = 5;}
         else if (active == "amazonsmp") {placement = 6;};
-        // toupdate add new page active settings
-        // 20260414 - 260023 (Dohst): what do you mean
         
         let text = this.content["sidebar"].split("|");
         if (!title) {text[0] = "";};
@@ -122,6 +126,26 @@ const DohstEvent = {
         effect_fade_target.classList.remove("fade");
         effect_fade_target.classList.add("fade_in");}) */
     },
+    
+    
+    set_dropdown_language: function () {
+        let dropdowns = document.getElementById("dropdown_content_language");
+        document.getElementById("dropdown_button_language").addEventListener("click", function () {
+            dropdowns.classList.toggle("dropdown_show");
+            dropdowns.classList.toggle('active');
+        });
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropdown_button')) {
+                //for (let i = 0; i < dropdowns.length; i++) {
+                    if (dropdowns/* [i] */.classList.contains('dropdown_show')) {
+                        dropdowns/* [i] */.classList.remove('dropdown_show');
+                        dropdowns.classList.remove('active');
+                    }
+                //}
+            }
+        };
+    },
+    
 
     set_dropdown: function () {
         let dropdowns = document.getElementById("dropdown_content");
@@ -141,9 +165,13 @@ const DohstEvent = {
         };
     },
 
+
+   // color
     set_color: function () {
         document.body.setAttribute('color_mode', localStorage.getItem("color_mode"));
         document.body.setAttribute('color_style', localStorage.getItem("color_style"));
+        
+        /*document.body.setAttribute('language', localStorage.getItem("language"));*/
     },
 
     color_switching: function (color) {
@@ -165,7 +193,17 @@ const DohstEvent = {
             }
         })
     },
+    
+    // language
+    /*language_switching: function (language) {
+        document.getElementById(language).addEventListener('click', () => {
+            document.getElementById(language).classList.add("active")
+            document.body.setAttribute('language', language);
+            localStorage.setItem('language', language);});
+    },*/
 
+
+   // utilities
     set_clickable_section: function (targets) {
         // targets are all the element ids of all the elements which you want to be hidden
         // make sure there is also an element outside of the content element which is named '{content element id}-header' to act as a toggle button
