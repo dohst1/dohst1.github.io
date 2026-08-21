@@ -1,6 +1,6 @@
 "use strict"; 
-// Dohst23-rw-script-v4.5.4-20260814
-const dohst23 = {'creator': 'Dohst23【ドスト二十三】', 'link': 'https://gitlab.com/dohst', 'did': '230023-pj_rw_20260222', 'project': 'rai_website', 'part': 'script (javascript file)', 'version': '4.5.4-20260814',};
+// Dohst23-rw-script-v4.5.5-20260821
+const dohst23 = {'creator': 'Dohst23【ドスト二十三】', 'link': 'https://gitlab.com/dohst', 'did': '230023-pj_rw_20260222', 'project': 'rai_website', 'part': 'script (javascript file)', 'version': '4.5.5-20260821',};
 
 
 
@@ -50,15 +50,19 @@ const DohstPage = {
             </div>
             <button id="toggle_style" class="toggle_style">Toggle Dark</button>
             
-            <button id="dropdown_button_language" class="dropdown_button">Set Language</button>
-            <div class="dropdown_content" id="dropdown_content_language">
-            <a href=""><button id="en">En</button></a>
-            <a href="ja/"><button id="ja">Red</button></a>
-            <a href="fr/"><button id="fr">Fr</button></a>
-            <a href="ro/"><button id="ro">Yellow</button></a>
-            </div>
+            
             
             </div>`,
+
+            //
+            //<button id="dropdown_button_language" class="dropdown_button2">Set Language</button>
+            //            <div class="dropdown_content2" id="dropdown_content_language">
+            //            <a href=""><button id="en">En</button></a>
+            //            <a href="ja/"><button id="ja">Red</button></a>
+            //            <a href="fr/"><button id="fr">Fr</button></a>
+            //            <a href="ro/"><button id="ro">Yellow</button></a>
+            //            </div>
+            //
     },
 
     // utilities
@@ -128,23 +132,23 @@ const DohstEvent = {
     },
     
     
-    set_dropdown_language: function () {
-        let dropdowns = document.getElementById("dropdown_content_language");
-        document.getElementById("dropdown_button_language").addEventListener("click", function () {
-            dropdowns.classList.toggle("dropdown_show");
-            dropdowns.classList.toggle('active');
-        });
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropdown_button')) {
-                //for (let i = 0; i < dropdowns.length; i++) {
-                    if (dropdowns/* [i] */.classList.contains('dropdown_show')) {
-                        dropdowns/* [i] */.classList.remove('dropdown_show');
-                        dropdowns.classList.remove('active');
-                    }
-                //}
-            }
-        };
-    },
+    //set_dropdown_language: function () {
+    //    let dropdowns_language = document.getElementById("dropdown_content_language");
+    //    document.getElementById("dropdown_button_language").addEventListener("click", function () {
+    //        dropdowns_language.classList.toggle("dropdown_show");
+    //        dropdowns_language.classList.toggle('active');
+    //    });
+    //    window.onclick2 = function (event) {
+    //        if (!event.target.matches('.dropdown_button')) {
+    //            //for (let i = 0; i < dropdowns_language.length; i++) {
+    //                if (dropdowns_language/* [i] */.classList.contains('dropdown_show')) {
+    //                    dropdowns_language/* [i] */.classList.remove('dropdown_show');
+    //                    dropdowns_language.classList.remove('active');
+    //                }
+    //            //}
+    //        }
+    //    };
+    //}, 
     
 
     set_dropdown: function () {
@@ -195,12 +199,12 @@ const DohstEvent = {
     },
     
     // language
-    /*language_switching: function (language) {
-        document.getElementById(language).addEventListener('click', () => {
-            document.getElementById(language).classList.add("active")
-            document.body.setAttribute('language', language);
-            localStorage.setItem('language', language);});
-    },*/
+    //language_switching: function (language) {
+    //    document.getElementById(language).addEventListener('click', () => {
+    //        document.getElementById(language).classList.add("active")
+    //        document.body.setAttribute('language', language);
+    //        localStorage.setItem('language', language);});
+    //},
 
 
    // utilities

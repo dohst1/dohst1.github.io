@@ -1,5 +1,5 @@
-/* Dohst23-rw-style-v4.5.4-20260814 */
-/* dohst23 = {'creator': 'Dohst23【ドスト二十三】', 'link': 'https://gitlab.com/dohst', 'did': '230023-pj_rw_20260222', 'project': 'rai_website', 'part': 'style (cascading style sheet file)', 'version': '4.5.4-20260814',}; */
+/* Dohst23-rw-style-v4.5.5-20260821 */
+/* dohst23 = {'creator': 'Dohst23【ドスト二十三】', 'link': 'https://gitlab.com/dohst', 'did': '230023-pj_rw_20260222', 'project': 'rai_website', 'part': 'style (cascading style sheet file)', 'version': '4.5.5-20260821',}; */
 
 
 
@@ -302,7 +302,7 @@ nav {
     z-index: 6;
     height: calc(var(--font-size-normal)*3);
 }
-nav h1, .dropdown_button {
+nav h1, .dropdown_button, .dropdown_button2 {
     margin: var(--font-size-big);
     /* makes nav bar title stay in center, but causes some other visual issues with smaller screens
     padding-left: 6%;
@@ -450,7 +450,7 @@ background-color: var(--background);
 }
 
 
-.dropdown_button {
+.dropdown_button, .dropdown_button2 {
     margin-left: 0;
     height: auto;
     width: auto;
@@ -460,7 +460,7 @@ background-color: var(--background);
     position: sticky;
 }
 /* drop down menu (for now only used for color switching) */
-.dropdown_content {
+.dropdown_content, .dropdown_content2 {
     /* position: absolute; */
     /* background-color: var(--background-light); */
     margin: 0;
@@ -472,7 +472,7 @@ background-color: var(--background);
     z-index: 8;
     display: none;
 }
-.dropdown_content * {
+.dropdown_content *, dropdown_content2 * {
     float: none;
     display: block;
 }
